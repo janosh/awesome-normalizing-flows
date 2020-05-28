@@ -1,6 +1,6 @@
-<img src="normalizing-flow.svg" alt="Normalizing Flow" align="right" height="120">
-
 # Awesome Normalizing Flows &thinsp; [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
+<img src="normalizing-flow.svg" alt="Normalizing Flow" align="right" height="120">
 
 A list of awesome resources for understanding and applying normalizing flows (NF). It's a relatively simple yet powerful new tool in statistics for constructing expressive probability distributions from simple base distribution using smooth bijective transformations (diffeomorphisms).
 
@@ -19,8 +19,9 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ## Blog Posts
 
+- Jan 17, 2018 - [Normalizing Flows Tutorial](https://blog.evjang.com/2018/01/nf1.html) by Eric Jang. Part 1: Distributions and Determinants. [Part 2: Modern Normalizing Flows](https://blog.evjang.com/2018/01/nf2.html). Features lots of great graphics.
+- Apr 3, 2018 - [Normalizing Flows](https://akosiorek.github.io/ml/2018/04/03/norm_flows) by Adam Kosiorek
 - Oct 13, 2018 - [Flow-based Deep Generative Models by Lilian Weng](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models)
-- Apr 3, 2018 - ["Normalizing Flows" by Adam Kosiorek](https://akosiorek.github.io/ml/2018/04/03/norm_flows.html)
 
 ## Code
 
@@ -29,4 +30,4 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ## Open to Suggestions!
 
-Feel free to submit a PR to extend this list.
+Know something that's missing from this list? [PRs welcome!](https://github.com/janosh/awesome-normalizing-flows/edit/master/readme.md)
