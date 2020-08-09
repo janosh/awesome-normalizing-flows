@@ -1,6 +1,6 @@
 # Awesome Normalizing Flows &thinsp; [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-<img src="normalizing-flow.svg" alt="Normalizing Flow" align="right" height="120">
+<img src="normalizing-flow.svg" alt="Normalizing Flow" width="1000">
 
 A list of awesome resources for understanding and applying normalizing flows (NF). It's a relatively simple yet powerful new tool in statistics for constructing expressive probability distributions from simple base distribution using a chain (flow) of trainable smooth bijective transformations (diffeomorphisms).
 
