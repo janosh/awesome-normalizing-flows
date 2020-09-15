@@ -10,7 +10,12 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 - Oct 30, 2014 - [Non-linear Independent Components Estimation](https://arxiv.org/abs/1410.8516) by Laurent Dinh, David Krueger, Yoshua Bengio.
 
+  > Introduces the additive coupling layer (NICE) and shows how to use it for image generation and inpainting.
+
 - Feb 12, 2015 - [Masked Autoencoder for Distribution Estimation](https://arxiv.org/abs/1502.03509) by Mathieu Germain, Karol Gregor, Iain Murray, Hugo Larochelle.
+
+  > Introduces MADE, a feed-forward network that uses carefully constructed binary masks on its weights to control the precise flow of information through the network. The masks ensure that each output unit receives signals only from input units that come before it in some arbitrary order. Yet all outputs can be computed in a single pass.<br>
+  > A popular and efficient method to bestow flows with autoregressivity is to construct them from MADE nets.
 
 - May 21, 2015 - [Variational Inference with Normalizing Flows](https://arxiv.org/abs/1505.05770) by Danilo Rezende, Shakir Mohamed.
 
@@ -29,6 +34,8 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 - May 19, 2017 - [Masked Autoregressive Flow for Density Estimation](https://arxiv.org/abs/1705.07057) by George Papamakarios, Theo Pavlakou, Iain Murray.
 
   > To improve predictive accuracy and uncertainty in Bayesian neural networks, they interpret multiplicative noise in neural network parameters as auxiliary random variables and show how to model these using flows. As in variational inference, the idea is again to use the power of flows to augment the approximate posterior while maintaining tractability.
+  > <img src="made.svg" alt="MADE"><br>
+  > <sup>Figure created in TikZ. Source code found [here](https://github.com/janosh/tikz/tree/master/assets/made).</sup>
 
 - 9 Jul, 2018 - [Glow: Generative Flow with Invertible 1x1 Convolutions](http://arxiv.org/abs/1807.03039) by Kingma, Dhariwal.
 
