@@ -150,7 +150,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > Offers RNVP, MAF and other autoregressive models.
 
-### <img src="assets/jax.png" alt="JAX" height="15px"> &nbsp;JAX Packages
+### <img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages
 
 1. [Mar 9, 2020](https://github.com/Information-Fusion-Lab-Umass/NuX/commit/24e9d6fe28b63ac23469982c0cddd3e0d4ed5ffd) - [`NuX`](https://github.com/Information-Fusion-Lab-Umass/NuX) by Information Fusion Labs (UMass)
 
@@ -188,7 +188,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > A tutorial about how to use the `pyro-ppl` library (based on PyTorch) to use Normalizing flows. They provide some SOTA methods including NSF and MAF. [Parts 2 and 3 coming later](https://github.com/pyro-ppl/pyro/issues/1992).
 
-### <img src="assets/jax.png" alt="JAX" height="15px"> &nbsp;JAX Repos
+### <img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos
 
 1. [Jul 19, 2019](https://github.com/pyro-ppl/numpyro/commit/781baf51752e5919c358362c2ef745a3df55f709#diff-177a79ac143e3f5df6fabf6604c28559) - [`Neural Transport`](https://pyro.ai/numpyro/examples/neutra) by [numpyro](http://num.pyro.ai/en/stable)
 
