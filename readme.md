@@ -1,10 +1,26 @@
 # Awesome Normalizing Flows &thinsp; [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) ![Pull Requests Welcome](https://img.shields.io/badge/pull%20requests-welcome-brightgreen.svg)
 
-<img src="assets/normalizing-flow.svg" alt="Normalizing Flow" width="1000">
-
 A list of awesome resources for understanding and applying normalizing flows (NF). It's a relatively simple yet powerful new tool in statistics for constructing expressive probability distributions from simple base distributions using a chain (flow) of trainable smooth bijective transformations (diffeomorphisms).
 
+<img src="assets/normalizing-flow.svg" alt="Normalizing Flow" width="1000">
+
 <sup>_Figure inspired by [Lilian Weng](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models). Created in TikZ. Source code found [here](https://github.com/janosh/tikz/tree/master/assets/normalizing-flow)._</sup>
+
+## Table of Contents
+
+1. [📝 Publications](#-publications)
+   1. [🛠️ Applications](#️-applications)
+2. [📺 Videos](#-videos)
+3. [🌐 Blog Posts](#-blog-posts)
+4. [📦 Packages](#-packages)
+   1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages](#-pytorch-packages)
+   2. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
+   3. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
+5. [🧑‍💻 Code](#-code)
+   1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
+   2. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
+   3. [Others](#-others)
+6. [🎉 Open to Suggestions!](#-open-to-suggestions)
 
 ## 📝 Publications
 
