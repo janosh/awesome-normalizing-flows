@@ -1,0 +1,8 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^#",
+      "comment": "ignore links starting with a dash (those in the readme's ToC)"
+    }
+  ]
+}
