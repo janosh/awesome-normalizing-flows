@@ -4,7 +4,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 <img src="assets/normalizing-flow.svg" alt="Normalizing Flow" width="1000">
 
-<sup>_Figure inspired by [Lilian Weng](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models). Created in TikZ. Source code found [here](https://github.com/janosh/tikz/tree/master/assets/normalizing-flow)._</sup>
+<sup>_Figure inspired by [Lilian Weng](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models). Created in TikZ. [View source](https://github.com/janosh/tikz/tree/master/assets/normalizing-flow)._</sup>
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 5. [🧑‍💻 Code](#-code)
    1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
    2. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
-   3. [Others](#-others)
+   3. [<img src="assets/ellipsis.svg" alt="Others" height="20px"> &nbsp;Others](#-others)
 6. [🎉 Open to Suggestions!](#-open-to-suggestions)
 
 ## 📝 Publications
@@ -36,7 +36,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > Introduces MADE, a feed-forward network that uses carefully constructed binary masks on its weights to control the precise flow of information through the network. The masks ensure that each output unit receives signals only from input units that come before it in some arbitrary order. Yet all outputs can be computed in a single pass.<br>
    > A popular and efficient method to bestow flows with autoregressivity is to construct them from MADE nets.
-   > <br><img src="assets/made.svg" alt="MADE"><br><sup>_Figure created in TikZ. Source code found [here](https://github.com/janosh/tikz/tree/master/assets/made)._</sup>
+   > <br><img src="assets/made.svg" alt="MADE"><br><sup>_Figure created in TikZ. [View source](https://github.com/janosh/tikz/tree/master/assets/made)._</sup>
 
 4. May 21, 2015 - [Variational Inference with Normalizing Flows](https://arxiv.org/abs/1505.05770) by Danilo Rezende, Shakir Mohamed.
 
@@ -262,19 +262,24 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > Features an example of how Normalizing flows can be used to get more robust posteriors from Monte Carlo methods. Uses the `numpyro` library which is a PPL with JAX as the backend. The NF implementations include the basic ones like IAF and BNAF.
 
-### Others
+### <img src="assets/ellipsis.svg" alt="Others" height="20px"> &nbsp;Others
 
 1. Mar 21, 2017 - ['NormFlows'](https://github.com/andymiller/NormFlows)
 
-   > Simple didactic example using autograd.
+   > Simple didactic example using [`autograd`](https://github.com/HIPS/autograd), so pretty low-level.
 
 2. Jul 11, 2017 - [`normalizing_flows_overview.ipynb`](https://docs.pymc.io/notebooks/normalizing_flows_overview.html) by PyMC3.
 
-   > A very helpful notebook showcasing how to work with flows in practice and comparing it to PyMC3's NUTS-based HMC kernel.
+   > A very helpful notebook showcasing how to work with flows in practice and comparing it to PyMC3's NUTS-based HMC kernel. Based on [Theano](https://github.com/Theano/Theano).
 
 3. Jun 11, 2018 - [`destructive-deep-learning`](https://github.com/davidinouye/destructive-deep-learning) by [David Inouye](https://davidinouye.com)
 
-   > An entire suite of iterative methods to normalizing flows. Includes tree-based as well as Gaussianization methods.
+   > Code base for the paper [Deep Density Destructors](http://proceedings.mlr.press/v80/inouye18a.html) by Inouye & Ravikumar (2018). An entire suite of iterative methods including tree-based as well as Gaussianization methods which are similar to normalizing flows except they converge iteratively instead of fully parametrized. That is, they still use bijective transforms, compute the Jacobian, check the likelihood and you can still sample and get probability density estimates. The only difference is you repeat the following two steps until convergence:
+   >
+   > 1. compute one layer or block layer (e.g. Marginal Gaussianization + PCA rotation)
+   > 2. check for convergence (e.g log-likelihood using the change-of-variables formula)
+   >
+   > Table 1 in the paper has a good comparison with traditional NFs.
 
 ## 🎉 Open to Suggestions!
 
