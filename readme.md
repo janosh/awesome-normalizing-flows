@@ -8,19 +8,21 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ## Table of Contents
 
-1. [📝 Publications](#-publications)
-   1. [🛠️ Applications](#️-applications)
-2. [📺 Videos](#-videos)
-3. [🌐 Blog Posts](#-blog-posts)
-4. [📦 Packages](#-packages)
-   1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages](#-pytorch-packages)
-   2. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
-   3. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
-5. [🧑‍💻 Code](#-code)
-   1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
-   2. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
-   3. [<img src="assets/ellipsis.svg" alt="Others" height="20px"> &nbsp;Others](#-others)
-6. [🎉 Open to Suggestions!](#-open-to-suggestions)
+- [Awesome Normalizing Flows &thinsp; ![Awesome](https://github.com/sindresorhus/awesome) ![Pull Requests Welcome](https://img.shields.io/badge/pull%20requests-welcome-brightgreen.svg)](#awesome-normalizing-flows---)
+  - [Table of Contents](#table-of-contents)
+  - [📝 Publications](#-publications)
+    - [🛠️ Applications](#️-applications)
+  - [📺 Videos](#-videos)
+  - [🌐 Blog Posts](#-blog-posts)
+  - [📦 Packages](#-packages)
+    - [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages](#-pytorch-packages)
+    - [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
+    - [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
+  - [🧑‍💻 Code](#-code)
+    - [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
+    - [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
+    - [<img src="assets/ellipsis.svg" alt="Others" height="20px"> &nbsp;Others](#-others)
+  - [🎉 Open to Suggestions!](#-open-to-suggestions)
 
 ## 📝 Publications
 
@@ -133,6 +135,10 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 28. Mar 31, 2020 - [Flows for simultaneous manifold learning and density estimation](https://arxiv.org/abs/2003.13913) by Brehmer & Cranmer.
 
     > Normalizing flows that learn the data manifold and probability density function on that manifold. ([Tweet](https://twitter.com/kylecranmer/status/1250129080395223040?lang=es) | [Authors Code](https://github.com/johannbrehmer/manifold-flow))
+
+29. April 8, 2020 - [Normalizing Flows with Multi-Scale Autoregressive Priors](https://arxiv.org/abs/2004.03891) by Mahajan & Bhattacharyya et. al.
+
+    > Improves the representational power of flow-based models by introducing channel-wise dependencies in their latent space through multi-scale autoregressive priors (mAR) ([Authors Code](https://github.com/visinf/mar-scf))
 
 29. Jun 3, 2020 - [Equivariant Flows: exact likelihood generative learning for symmetric densities](https://arxiv.org/abs/2006.02425) by Jonas Köhler, Leon Klein, Frank Noé.
 
