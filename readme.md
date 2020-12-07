@@ -8,21 +8,19 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ## Table of Contents
 
-- [Awesome Normalizing Flows &thinsp; ![Awesome](https://github.com/sindresorhus/awesome) ![Pull Requests Welcome](https://img.shields.io/badge/pull%20requests-welcome-brightgreen.svg)](#awesome-normalizing-flows---)
-  - [Table of Contents](#table-of-contents)
-  - [📝 Publications](#-publications)
-    - [🛠️ Applications](#️-applications)
-  - [📺 Videos](#-videos)
-  - [🌐 Blog Posts](#-blog-posts)
-  - [📦 Packages](#-packages)
-    - [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages](#-pytorch-packages)
-    - [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
-    - [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
-  - [🧑‍💻 Code](#-code)
-    - [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
-    - [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
-    - [<img src="assets/ellipsis.svg" alt="Others" height="20px"> &nbsp;Others](#-others)
-  - [🎉 Open to Suggestions!](#-open-to-suggestions)
+- [📝 Publications](#-publications)
+  - [🛠️ Applications](#️-applications)
+- [📺 Videos](#-videos)
+- [🌐 Blog Posts](#-blog-posts)
+- [📦 Packages](#-packages)
+  - [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages](#-pytorch-packages)
+  - [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
+  - [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
+- [🧑‍💻 Code](#-code)
+  - [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
+  - [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
+  - [<img src="assets/ellipsis.svg" alt="Others" height="20px"> &nbsp;Others](#-others)
+- [🎉 Open to Suggestions!](#-open-to-suggestions)
 
 ## 📝 Publications
 
