@@ -1,4 +1,6 @@
-# Awesome Normalizing Flows &thinsp; [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) ![Pull Requests Welcome](https://img.shields.io/badge/pull%20requests-welcome-brightgreen.svg)
+# Awesome Normalizing Flows
+
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) ![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg) [![License](https://img.shields.io/github/license/janosh/awesome-normalizing-flows?label=License)](license) ![GitHub last commit](https://img.shields.io/github/last-commit/janosh/awesome-normalizing-flows?label=Last+Commit)
 
 A list of awesome resources for understanding and applying normalizing flows (NF): a relatively simple yet powerful new tool in statistics for constructing expressive probability distributions from simple base distributions using a chain (flow) of trainable smooth bijective transformations (diffeomorphisms).
 
@@ -8,7 +10,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 <br>
 
-## Table of Contents
+## <img src="assets/toc.svg" alt="Contents" height="18px"> &nbsp;Table of Contents
 
 1. [📝 Publications](#-publications)
    1. [🛠️ Applications](#️-applications)
@@ -21,7 +23,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 5. [🧑‍💻 Code](#-code)
    1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
    2. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
-   3. [<img src="assets/ellipsis.svg" alt="Others" height="20px"> &nbsp;Others](#-others)
+   3. [<img src="assets/ellipsis.svg" alt="Others" height="15px"> &nbsp;Others](#-others)
 6. [🎉 Open to Suggestions!](#-open-to-suggestions)
 
 <br>
@@ -78,7 +80,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 13. Nov 6, 2018 - [FloWaveNet : A Generative Flow for Raw Audio](https://arxiv.org/abs/1811.02155) by Kim et. al.
 
-    > A flow-based generative model for raw audo synthesis. ([Authors Code](https://github.com/ksw0306/FloWaveNet))
+    > A flow-based generative model for raw audo synthesis. ([Author's Code](https://github.com/ksw0306/FloWaveNet))
 
 14. Apr 9, 2019 - [Block Neural Autoregressive Flow](https://arxiv.org/abs/1904.04676) - De Cao et. al.
 
@@ -112,7 +114,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 22. Jan 17, 2020 - [Training Normalizing Flows with the Information Bottleneck for Competitive Generative Classification](https://arxiv.org/abs/2001.06448) by Ardizzone et. al.
 
-    > They introduce a class of conditional normalizing flows with an information bottleneck objective. ([Authors Code](https://github.com/VLL-HD/exact_information_bottleneck))
+    > They introduce a class of conditional normalizing flows with an information bottleneck objective. ([Author's Code](https://github.com/VLL-HD/exact_information_bottleneck))
 
 23. Feb 16, 2020 - [Stochastic Normalizing Flows](https://arxiv.org/abs/2002.06707) by Hao Wu, Jonas Köhler, Frank Noé.
 
@@ -128,19 +130,19 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 26. Feb 27, 2020 - [Gradient Boosted Normalizing Flows](https://arxiv.org/abs/2002.11896) by Giaquinto & Banerjee
 
-    > Augment traditional normalizing flows with gradient boosting. They show that training multiple models can achieve good results and it's not necessary to have more complex distributions. ([Authors Code](https://github.com/robert-giaquinto/gradient-boosted-normalizing-flows))
+    > Augment traditional normalizing flows with gradient boosting. They show that training multiple models can achieve good results and it's not necessary to have more complex distributions. ([Author's Code](https://github.com/robert-giaquinto/gradient-boosted-normalizing-flows))
 
 27. Mar 4, 2020 - [Gaussianization Flows](https://arxiv.org/abs/2003.01941) by Meng et. al.
 
-    > Uses a repeated composition of trainable kernel layers and orthogonal transformations. Very competitive versus some of the SOTA like Real-NVP, Glow and FFJORD. ([Authors Code](https://github.com/chenlin9/Gaussianization_Flows))
+    > Uses a repeated composition of trainable kernel layers and orthogonal transformations. Very competitive versus some of the SOTA like Real-NVP, Glow and FFJORD. ([Author's Code](https://github.com/chenlin9/Gaussianization_Flows))
 
 28. Mar 31, 2020 - [Flows for simultaneous manifold learning and density estimation](https://arxiv.org/abs/2003.13913) by Brehmer & Cranmer.
 
-    > Normalizing flows that learn the data manifold and probability density function on that manifold. ([Tweet](https://twitter.com/kylecranmer/status/1250129080395223040?lang=es) | [Authors Code](https://github.com/johannbrehmer/manifold-flow))
+    > Normalizing flows that learn the data manifold and probability density function on that manifold. ([Tweet](https://twitter.com/kylecranmer/status/1250129080395223040?lang=es) | [Author's Code](https://github.com/johannbrehmer/manifold-flow))
 
 29. April 8, 2020 - [Normalizing Flows with Multi-Scale Autoregressive Priors](https://arxiv.org/abs/2004.03891) by Mahajan & Bhattacharyya et. al.
 
-    > Improves the representational power of flow-based models by introducing channel-wise dependencies in their latent space through multi-scale autoregressive priors (mAR) ([Authors Code](https://github.com/visinf/mar-scf))
+    > Improves the representational power of flow-based models by introducing channel-wise dependencies in their latent space through multi-scale autoregressive priors (mAR) ([Author's Code](https://github.com/visinf/mar-scf))
 
 30. Jun 3, 2020 - [Equivariant Flows: exact likelihood generative learning for symmetric densities](https://arxiv.org/abs/2006.02425) by Jonas Köhler, Leon Klein, Frank Noé.
 
@@ -148,11 +150,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 31. Jun 15, 2020 - [Why Normalizing Flows Fail to Detect Out-of-Distribution Data](https://proceedings.neurips.cc//paper/2020/hash/ecb9fe2fbb99c31f567e9823e884dbec-Abstract.html) by Kirichenko et. al.
 
-    > This study how traditional normalizing flow models can suffer from out-of-distribution data. They offer a solution to combat this issue by modifying the coupling layers. ([Tweet](https://twitter.com/polkirichenko/status/1272715634544119809) | [Authors Code](https://github.com/PolinaKirichenko/flows_ood))
+    > This study how traditional normalizing flow models can suffer from out-of-distribution data. They offer a solution to combat this issue by modifying the coupling layers. ([Tweet](https://twitter.com/polkirichenko/status/1272715634544119809) | [Author's Code](https://github.com/PolinaKirichenko/flows_ood))
 
 32. July 15, 2020 - [AdvFlow: Inconspicuous Black-box Adversarial Attacks using Normalizing Flows](https://arxiv.org/abs/2007.07435) by Dolatabadi etl. al.
 
-    > An adversarial attack method on image classifiers that use normalizing flows. ([Authors Code](https://github.com/hmdolatabadi/AdvFlow))
+    > An adversarial attack method on image classifiers that use normalizing flows. ([Author's Code](https://github.com/hmdolatabadi/AdvFlow))
 
 33. Sept 21, 2020 - [Haar Wavelet based Block Autoregressive Flows for Trajectories](https://arxiv.org/abs/2009.09878) by Bhattacharyya et. al.
     > Introduce a Haar wavelet-based block autoregressive model.
@@ -292,7 +294,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 <br>
 
-### <img src="assets/ellipsis.svg" alt="Others" height="20px"> &nbsp;Others
+### <img src="assets/ellipsis.svg" alt="Others" height="18px"> &nbsp;Others
 
 1. Mar 21, 2017 - ['NormFlows'](https://github.com/andymiller/NormFlows)
 
