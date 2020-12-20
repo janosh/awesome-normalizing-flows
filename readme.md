@@ -68,7 +68,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 10. April 3, 2018 - [Neural Autoregressive Flows](https://arxiv.org/abs/1804.00779) by Chin-Wei Huang, David Krueger, Alexandre Lacoste, Aaron Courville.
 
-   > Unifies and generalize autoregressive and normalizing flow approaches, replacing the (conditionally) affine univariate transformations of MAF/IAF with a more general class of invertible univariate transformations expressed as monotonic neural networks. Also demonstrates that the proposed neural autoregressive flows (NAF) are universal approximators for continuous probability distributions.
+    > Unifies and generalize autoregressive and normalizing flow approaches, replacing the (conditionally) affine univariate transformations of MAF/IAF with a more general class of invertible univariate transformations expressed as monotonic neural networks. Also demonstrates that the proposed neural autoregressive flows (NAF) are universal approximators for continuous probability distributions.
 
 11. July 3, 2018 - [Deep Density Destructors](http://proceedings.mlr.press/v80/inouye18a.html) by Inouye & Ravikumar
 
