@@ -212,6 +212,10 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > A really thorough explanation of normalizing flows. Also includes some sample code.
 
+7. January 16, 2021 - [Normalizing Flows - Motivations, The Big Idea & Essential Foundations](https://www.youtube.com/watch?v=IuXU2dBOJyw) by [Kapil Sachdeva](https://github.com/ksachdeva)
+
+   > A comprehensive tutorial on Normalizing Flows. The tutorial explains the challenges addressed by this class of algorithm, then develops your intuition on how to address those challenges, and explains the underlying mathematics using a simple step by step approach.
+
 <br>
 
 ## 🌐 Blog Posts
