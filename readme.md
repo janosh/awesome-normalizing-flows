@@ -1,6 +1,10 @@
 # Awesome Normalizing Flows
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) ![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg) [![License](https://img.shields.io/github/license/janosh/awesome-normalizing-flows?label=License)](license) ![GitHub last commit](https://img.shields.io/github/last-commit/janosh/awesome-normalizing-flows?label=Last+Commit)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+[![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg)](https://github.com/janosh/awesome-normalizing-flows/pulls)
+[![License](https://img.shields.io/github/license/janosh/awesome-normalizing-flows?label=License)](license)
+[![GitHub last commit](https://img.shields.io/github/last-commit/janosh/awesome-normalizing-flows?label=Last+Commit)](https://github.com/janosh/awesome-normalizing-flows/commits)
+[![Markdown linting](https://github.com/janosh/awesome-normalizing-flows/workflows/Markdown%20linting/badge.svg)](https://github.com/janosh/awesome-normalizing-flows/actions)
 
 A list of awesome resources for understanding and applying normalizing flows (NF): a relatively simple yet powerful new tool in statistics for constructing expressive probability distributions from simple base distributions using a chain (flow) of trainable smooth bijective transformations (diffeomorphisms).
 
@@ -212,9 +216,9 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > A really thorough explanation of normalizing flows. Also includes some sample code.
 
-7. January 16, 2021 - [Normalizing Flows - Motivations, The Big Idea & Essential Foundations](https://www.youtube.com/watch?v=IuXU2dBOJyw) by [Kapil Sachdeva](https://github.com/ksachdeva)
+7. January 16, 2021 - [Normalizing Flows - Motivations, The Big Idea & Essential Foundations](https://youtu.be/IuXU2dBOJyw) by [Kapil Sachdeva](https://github.com/ksachdeva)
 
-   > A comprehensive tutorial on Normalizing Flows. The tutorial explains the challenges addressed by this class of algorithm, then develops your intuition on how to address those challenges, and explains the underlying mathematics using a simple step by step approach.
+   > A comprehensive tutorial on flows explaining the challenges addressed by this class of algorithm. Provides intuition on how to address those challenges, and explains the underlying mathematics using a simple step by step approach.
 
 <br>
 
@@ -327,7 +331,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 <br>
 
-## 🎉 Open to Suggestions!
+## 🎉 Open to Suggestions
 
 See something that's missing from this list? [PRs welcome!](https://github.com/janosh/awesome-normalizing-flows/edit/master/readme.md)
 

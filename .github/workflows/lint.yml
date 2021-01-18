@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: markdownlint
-        uses: prologic/action-markdownlint@master
+        uses: reviewdog/action-markdownlint@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
