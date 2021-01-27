@@ -1,10 +1,10 @@
-name: Markdown linting
+name: Linter
 
 on: [push, pull_request]
 
 jobs:
   markdownlint:
-    name: runner / markdownlint
+    name: markdownlint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
