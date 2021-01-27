@@ -4,7 +4,7 @@
 [![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg)](https://github.com/janosh/awesome-normalizing-flows/pulls)
 [![License](https://img.shields.io/github/license/janosh/awesome-normalizing-flows?label=License)](license)
 [![GitHub last commit](https://img.shields.io/github/last-commit/janosh/awesome-normalizing-flows?label=Last+Commit)](https://github.com/janosh/awesome-normalizing-flows/commits)
-[![Markdown linting](https://github.com/janosh/awesome-normalizing-flows/workflows/Markdown%20linting/badge.svg)](https://github.com/janosh/awesome-normalizing-flows/actions)
+[![Markdown linting](https://github.com/janosh/awesome-normalizing-flows/workflows/Linter/badge.svg)](https://github.com/janosh/awesome-normalizing-flows/actions)
 
 A list of awesome resources for understanding and applying normalizing flows (NF): a relatively simple yet powerful new tool in statistics for constructing expressive probability distributions from simple base distributions using a chain (flow) of trainable smooth bijective transformations (diffeomorphisms).
 
