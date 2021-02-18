@@ -196,7 +196,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 6. Dec 6, 2020 - [Normalizing Kalman Filters for Multivariate Time Series Analysis](https://proceedings.neurips.cc/paper/2020/hash/1f47cef5e38c952f94c5d61726027439-Abstract.html)
 
-   > Augments state space models with normalizing flows and thereby mitigates imprecisions stemming from idealized assumptions. Aimed at forecasting real world data and handling varying levels of missing data. (Also available at [Amazon Science](https://amazon.science/publications/normalizing-kalman-filters-for-multivariate-time-series-analysis))
+   > Augments state space models with normalizing flows and thereby mitigates imprecisions stemming from idealized assumptions. Aimed at forecasting real-world data and handling varying levels of missing data. (Also available at [Amazon Science](https://amazon.science/publications/normalizing-kalman-filters-for-multivariate-time-series-analysis).)
 
 <br>
 
@@ -224,7 +224,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > A really thorough explanation of normalizing flows. Also includes some sample code.
 
-7. Nov 23, 2020 - [Introduction to Normalizing Flows](https://youtu.be/u3vVyFVU_lI) by [Marcus Brubaker](https://mbrubake.github.io) (York Univerity, Toronto)
+7. Nov 23, 2020 - [Introduction to Normalizing Flows](https://youtu.be/u3vVyFVU_lI) by [Marcus Brubaker](https://mbrubake.github.io) (York University, Toronto)
 
    > A great introduction to normalizing flows by one of the creators of [Stan](https://mc-stan.org) presented at ECCV 2020. The tutorial also provides an excellent review of various practical implementations.
 
@@ -252,11 +252,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ### <img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages
 
-1. Sep 7, 2018 - [`FrEIA`](https://github.com/VLL-HD/FrEIA) by [VLL Heidelberg](https://hci.iwr.uni-heidelberg.de/vislearn) ![GitHub Repo stars](https://img.shields.io/github/stars/VLL-HD/FrEIA)
+1. Sep 7, 2018 - [`FrEIA`](https://github.com/VLL-HD/FrEIA) by [VLL Heidelberg](https://hci.iwr.uni-heidelberg.de/vislearn) ![GitHub repo stars](https://img.shields.io/github/stars/VLL-HD/FrEIA)
 
    > The Framework for Easily Invertible Architectures (FrEIA) is based on RNVP flows. Easy to setup, it allows to define complex Invertible Neural Networks (INNs) from simple invertible building blocks.
 
-2. Feb 9, 2020 - [`nflows`](https://github.com/bayesiains/nflows) by [Bayesiains](https://homepages.inf.ed.ac.uk/imurray2/group) ![GitHub Repo stars](https://img.shields.io/github/stars/bayesiains/nflows)
+2. Feb 9, 2020 - [`nflows`](https://github.com/bayesiains/nflows) by [Bayesiains](https://homepages.inf.ed.ac.uk/imurray2/group) ![GitHub repo stars](https://img.shields.io/github/stars/bayesiains/nflows)
 
    > A suite of most of the SOTA methods using PyTorch. From an ML group in Edinburgh. They created the current SOTA spline flows. Almost as complete as you'll find from a single repo.
 
@@ -264,7 +264,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ### <img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages
 
-1. [Jun 22, 2018](https://github.com/tensorflow/probability/commit/67a55b2ef5e94da203991ed102c9e41d085a840a#diff-b89d05520b0fa976a2c5c918c1114b17) - [TensorFlow Probability](https://tensorflow.org/probability) ![GitHub Repo stars](https://img.shields.io/github/stars/tensorflow/probability)
+1. [Jun 22, 2018](https://github.com/tensorflow/probability/commit/67a55b2ef5e94da203991ed102c9e41d085a840a#diff-b89d05520b0fa976a2c5c918c1114b17) - [TensorFlow Probability](https://tensorflow.org/probability) ![GitHub repo stars](https://img.shields.io/github/stars/tensorflow/probability)
 
    > Large first-party library that offers RNVP, MAF among other autoregressive models plus a collection of composable bijectors.
 
@@ -272,11 +272,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ### <img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages
 
-1. [Mar 9, 2020](https://github.com/Information-Fusion-Lab-Umass/NuX/commit/24e9d6fe28b63ac23469982c0cddd3e0d4ed5ffd) - [`NuX`](https://github.com/Information-Fusion-Lab-Umass/NuX) by Information Fusion Labs (UMass) ![GitHub Repo stars](https://img.shields.io/github/stars/Information-Fusion-Lab-Umass/NuX)
+1. [Mar 9, 2020](https://github.com/Information-Fusion-Lab-Umass/NuX/commit/24e9d6fe28b63ac23469982c0cddd3e0d4ed5ffd) - [`NuX`](https://github.com/Information-Fusion-Lab-Umass/NuX) by Information Fusion Labs (UMass) ![GitHub repo stars](https://img.shields.io/github/stars/Information-Fusion-Lab-Umass/NuX)
 
    > A library that offers normalizing flows using JAX as the backend. Has some SOTA methods. They also feature a surjective flow via quantization.
 
-2. [Mar 23, 2020](https://github.com/ChrisWaites/jax-flows/commit/9d5af75d3bf89499b279f83e7ae9a637246cd6f1) - [`jax-flows`](https://github.com/ChrisWaites/jax-flows) by [Chris Waites](https://chriswaites.com) ![GitHub Repo stars](https://img.shields.io/github/stars/ChrisWaites/jax-flows)
+2. [Mar 23, 2020](https://github.com/ChrisWaites/jax-flows/commit/9d5af75d3bf89499b279f83e7ae9a637246cd6f1) - [`jax-flows`](https://github.com/ChrisWaites/jax-flows) by [Chris Waites](https://chriswaites.com) ![GitHub repo stars](https://img.shields.io/github/stars/ChrisWaites/jax-flows)
 
    > Another library that has normalizing flows using JAX as the backend. Has some of the SOTA methods.
 
@@ -288,27 +288,27 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ### <img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos
 
-1. Sep 1, 2018 - [`pytorch-flows`](https://github.com/ikostrikov/pytorch-flows) by Ilya Kostrikov. ![GitHub Repo stars](https://img.shields.io/github/stars/ikostrikov/pytorch-flows)
+1. Sep 1, 2018 - [`pytorch-flows`](https://github.com/ikostrikov/pytorch-flows) by Ilya Kostrikov. ![GitHub repo stars](https://img.shields.io/github/stars/ikostrikov/pytorch-flows)
 
    > PyTorch implementations of density estimation algorithms: MAF, RNVP, Glow.
 
-2. Dec 30, 2018 - [`normalizing_flows`](https://github.com/kamenbliznashki/normalizing_flows) by Kamen Bliznashki. ![GitHub Repo stars](https://img.shields.io/github/stars/kamenbliznashki/normalizing_flows)
+2. Dec 30, 2018 - [`normalizing_flows`](https://github.com/kamenbliznashki/normalizing_flows) by Kamen Bliznashki. ![GitHub repo stars](https://img.shields.io/github/stars/kamenbliznashki/normalizing_flows)
 
    > Pytorch implementations of density estimation algorithms: BNAF, Glow, MAF, RealNVP, planar flows.
 
-3. Feb 6, 2019 - [`pytorch_flows`](https://github.com/acids-ircam/pytorch_flows) by [acids-ircam](https://github.com/acids-ircam) ![GitHub Repo stars](https://img.shields.io/github/stars/acids-ircam/pytorch_flows)
+3. Feb 6, 2019 - [`pytorch_flows`](https://github.com/acids-ircam/pytorch_flows) by [acids-ircam](https://github.com/acids-ircam) ![GitHub repo stars](https://img.shields.io/github/stars/acids-ircam/pytorch_flows)
 
    > A great repo with some basic PyTorch implementations of normalizing flows from scratch.
 
-4. Dec 9, 2019 - [`pytorch-normalizing-flows`](https://github.com/karpathy/pytorch-normalizing-flows) by Andrej Karpathy. ![GitHub Repo stars](https://img.shields.io/github/stars/karpathy/pytorch-normalizing-flows)
+4. Dec 9, 2019 - [`pytorch-normalizing-flows`](https://github.com/karpathy/pytorch-normalizing-flows) by Andrej Karpathy. ![GitHub repo stars](https://img.shields.io/github/stars/karpathy/pytorch-normalizing-flows)
 
    > A Jupyter notebook with PyTorch implementations of the most commonly used flows: NICE, RNVP, MAF, Glow, NSF.
 
-5. [Jul 3, 2020](https://github.com/DiffEqML/torchdyn/commit/349fbae0576a38bdb138633cfea4483706e11dd0#diff-2442d08f4c0753b452c9d2a8cd8a1a41) - [Density Estimation with Neural ODEs](https://torchdyn.readthedocs.io/en/latest/tutorials/07a_continuous_normalizing_flows.html) and [Density Estimation with FFJORDs](https://torchdyn.readthedocs.io/en/latest/tutorials/07b_ffjord.html) by [`torchdyn`](https://torchdyn.readthedocs.io) ![GitHub Repo stars](https://img.shields.io/github/stars/DiffEqML/torchdyn)
+5. [Jul 3, 2020](https://github.com/DiffEqML/torchdyn/commit/349fbae0576a38bdb138633cfea4483706e11dd0#diff-2442d08f4c0753b452c9d2a8cd8a1a41) - [Density Estimation with Neural ODEs](https://torchdyn.readthedocs.io/en/latest/tutorials/07a_continuous_normalizing_flows.html) and [Density Estimation with FFJORDs](https://torchdyn.readthedocs.io/en/latest/tutorials/07b_ffjord.html) by [`torchdyn`](https://torchdyn.readthedocs.io) ![GitHub repo stars](https://img.shields.io/github/stars/DiffEqML/torchdyn)
 
    > Example of how to use FFJORD as a continuous normalizing flow (CNF). Based on the PyTorch suite `torchdyn` which offers continuous neural architectures.
 
-6. July 19, 2020 - [`Normalizing Flows - Introduction (Part 1)`](https://pyro.ai/examples/normalizing_flows_i) by [pyro.ai](http://pyro.ai) ![GitHub Repo stars](https://img.shields.io/github/stars/pyro-ppl/pyro)
+6. July 19, 2020 - [`Normalizing Flows - Introduction (Part 1)`](https://pyro.ai/examples/normalizing_flows_i) by [pyro.ai](http://pyro.ai) ![GitHub repo stars](https://img.shields.io/github/stars/pyro-ppl/pyro)
 
    > A tutorial about how to use the `pyro-ppl` library (based on PyTorch) to use Normalizing flows. They provide some SOTA methods including NSF and MAF. [Parts 2 and 3 coming later](https://github.com/pyro-ppl/pyro/issues/1992).
 
@@ -316,7 +316,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ### <img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos
 
-1. [Jul 19, 2019](https://github.com/pyro-ppl/numpyro/commit/781baf51752e5919c358362c2ef745a3df55f709#diff-177a79ac143e3f5df6fabf6604c28559) - [`Neural Transport`](https://pyro.ai/numpyro/examples/neutra) by [numpyro](http://num.pyro.ai) ![GitHub Repo stars](https://img.shields.io/github/stars/pyro-ppl/numpyro)
+1. [Jul 19, 2019](https://github.com/pyro-ppl/numpyro/commit/781baf51752e5919c358362c2ef745a3df55f709#diff-177a79ac143e3f5df6fabf6604c28559) - [`Neural Transport`](https://pyro.ai/numpyro/examples/neutra) by [numpyro](http://num.pyro.ai) ![GitHub repo stars](https://img.shields.io/github/stars/pyro-ppl/numpyro)
 
    > Features an example of how Normalizing flows can be used to get more robust posteriors from Monte Carlo methods. Uses the `numpyro` library which is a PPL with JAX as the backend. The NF implementations include the basic ones like IAF and BNAF.
 
@@ -324,15 +324,15 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ### <img src="assets/ellipsis.svg" alt="Others" height="18px"> &nbsp;Others
 
-1. Mar 21, 2017 - ['NormFlows'](https://github.com/andymiller/NormFlows) ![GitHub Repo stars](https://img.shields.io/github/stars/andymiller/NormFlows)
+1. Mar 21, 2017 - ['NormFlows'](https://github.com/andymiller/NormFlows) ![GitHub repo stars](https://img.shields.io/github/stars/andymiller/NormFlows)
 
    > Simple didactic example using [`autograd`](https://github.com/HIPS/autograd), so pretty low-level.
 
-2. Jul 11, 2017 - [`normalizing_flows_overview.ipynb`](https://docs.pymc.io/notebooks/normalizing_flows_overview.html) by PyMC3. ![GitHub Repo stars](https://img.shields.io/github/stars/pymc-devs/pymc3)
+2. Jul 11, 2017 - [`normalizing_flows_overview.ipynb`](https://docs.pymc.io/notebooks/normalizing_flows_overview.html) by PyMC3. ![GitHub repo stars](https://img.shields.io/github/stars/pymc-devs/pymc3)
 
    > A very helpful notebook showcasing how to work with flows in practice and comparing it to PyMC3's NUTS-based HMC kernel. Based on [Theano](https://github.com/Theano/Theano).
 
-3. Jun 11, 2018 - [`destructive-deep-learning`](https://github.com/davidinouye/destructive-deep-learning) by [David Inouye](https://davidinouye.com) ![GitHub Repo stars](https://img.shields.io/github/stars/davidinouye/destructive-deep-learning)
+3. Jun 11, 2018 - [`destructive-deep-learning`](https://github.com/davidinouye/destructive-deep-learning) by [David Inouye](https://davidinouye.com) ![GitHub repo stars](https://img.shields.io/github/stars/davidinouye/destructive-deep-learning)
 
    > Code base for the paper [Deep Density Destructors](http://proceedings.mlr.press/v80/inouye18a.html) by Inouye & Ravikumar (2018). An entire suite of iterative methods including tree-based as well as Gaussianization methods which are similar to normalizing flows except they converge iteratively instead of fully parametrized. That is, they still use bijective transforms, compute the Jacobian, check the likelihood and you can still sample and get probability density estimates. The only difference is you repeat the following two steps until convergence:
    >
