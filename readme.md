@@ -224,9 +224,9 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > A really thorough explanation of normalizing flows. Also includes some sample code.
 
-7. Nov 23, 2020 - [Introduction to Normalizing Flows](https://www.youtube.com/watch?v=u3vVyFVU_lI) by [Marcus Brubaker](https://mbrubake.github.io/)
+7. Nov 23, 2020 - [Introduction to Normalizing Flows](https://youtu.be/u3vVyFVU_lI) by [Marcus Brubaker](https://mbrubake.github.io) (York Univerity, Toronto)
 
-   > A great introduction to normalizing flows presented at ECCV 2020. The tutorial also provides an excellent review of various practical implementations.
+   > A great introduction to normalizing flows by one of the creators of [Stan](https://mc-stan.org) presented at ECCV 2020. The tutorial also provides an excellent review of various practical implementations.
 
 8. January 16, 2021 - [Normalizing Flows - Motivations, The Big Idea & Essential Foundations](https://youtu.be/IuXU2dBOJyw) by [Kapil Sachdeva](https://github.com/ksachdeva)
 
