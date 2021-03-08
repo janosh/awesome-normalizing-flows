@@ -242,7 +242,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. Apr 3, 2018 - [Normalizing Flows](https://akosiorek.github.io/ml/2018/04/03/norm_flows) by Adam Kosiorek.
 
+1. May 19, 2018 - [Change of Variables: A Precursor to Normalizing Flows](http://ruishu.io/2018/05/19/change-of-variables/) by Rui Shu
+
 1. Oct 13, 2018 - [Flow-based Deep Generative Models](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models) by Lilian Weng.
+
+1. Oct 21, 2018 - [Change of Variables for Normalizing Flows](https://nealjean.com/ml/change-of-variables/) by Neal Jean 
 
 <br>
 
