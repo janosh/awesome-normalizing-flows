@@ -18,17 +18,17 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. [📝 Publications](#-publications)
    1. [🛠️ Applications](#️-applications)
-2. [📺 Videos](#-videos)
-3. [🌐 Blog Posts](#-blog-posts)
-4. [📦 Packages](#-packages)
+1. [📺 Videos](#-videos)
+1. [📦 Packages](#-packages)
    1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages](#-pytorch-packages)
-   2. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
-   3. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
-5. [🧑‍💻 Code](#-code)
+   1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
+   1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
+1. [🧑‍💻 Code](#-code)
    1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
-   2. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
-   3. [<img src="assets/ellipsis.svg" alt="Others" height="15px"> &nbsp;Others](#-others)
-6. [🎉 Open to Suggestions!](#-open-to-suggestions)
+   1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
+   1. [<img src="assets/ellipsis.svg" alt="Others" height="15px"> &nbsp;Others](#-others)
+1. [🌐 Blog Posts](#-blog-posts)
+1. [🎉 Open to Suggestions!](#-open-to-suggestions)
 
 <br>
 
