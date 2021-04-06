@@ -351,4 +351,4 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 See something that's missing from this list? [PRs welcome!](https://github.com/janosh/awesome-normalizing-flows/edit/master/readme.md)
 
-If you're unsure if a paper or resource belongs in this list, feel free to [open an issue](https://github.com/janosh/awesome-normalizing-flows/issues/new) and start a discussion. This repo is meant to be a community effort. So don't hesitate to voice an opinion.
+If you're unsure if a paper or resource belongs in this list, feel free to [open an issue](https://github.com/janosh/awesome-normalizing-flows/issues/new) or [start a discussion](https://github.com/janosh/awesome-normalizing-flows/discussions). This repo is meant to be a community effort. So don't hesitate to voice an opinion.
