@@ -311,11 +311,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 <br>
 
-### <img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos.
+### <img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos
 
 1. Jun 12, 2020 - [Variational Inference using Normalizing Flows (VINF)](https://github.com/pierresegonne/VINF) by Pierre Segonne ![GitHub repo stars](https://img.shields.io/github/stars/pierresegonne/VINF)
 
-   >This repository provides a hands-on `tensorflow` implementation of Normalizing Flows as presented in the [paper](https://arxiv.org/pdf/1505.05770.pdf) introducing the concept (D. Rezende & S. Mohamed). The final report of the course, that details all experiments run with this repository can directly be accessed at [PDF](https://pierresegonne.github.io/VINF/).
+   > This repository provides a hands-on TensorFlow implementation of Normalizing Flows as presented in the [paper](https://arxiv.org/pdf/1505.05770.pdf) introducing the concept (D. Rezende & S. Mohamed).
 
 <br>
 
