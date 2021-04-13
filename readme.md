@@ -26,6 +26,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. [🧑‍💻 Code](#-code)
    1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
    1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
+   1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos](#-tensorflow-repos)
    1. [<img src="assets/ellipsis.svg" alt="Others" height="15px"> &nbsp;Others](#-others)
 1. [🌐 Blog Posts](#-blog-posts)
 1. [🎉 Open to Suggestions!](#-open-to-suggestions)
@@ -307,6 +308,14 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. [Jul 19, 2019](https://github.com/pyro-ppl/numpyro/commit/781baf51752e5919c358362c2ef745a3df55f709#diff-177a79ac143e3f5df6fabf6604c28559) - [`Neural Transport`](https://pyro.ai/numpyro/examples/neutra) by [numpyro](http://num.pyro.ai) ![GitHub repo stars](https://img.shields.io/github/stars/pyro-ppl/numpyro)
 
    > Features an example of how Normalizing flows can be used to get more robust posteriors from Monte Carlo methods. Uses the `numpyro` library which is a PPL with JAX as the backend. The NF implementations include the basic ones like IAF and BNAF.
+
+<br>
+
+### <img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos
+
+1. Jun 12, 2020 - [Variational Inference using Normalizing Flows (VINF)](https://github.com/pierresegonne/VINF) by Pierre Segonne ![GitHub repo stars](https://img.shields.io/github/stars/pierresegonne/VINF)
+
+   > This repository provides a hands-on TensorFlow implementation of Normalizing Flows as presented in the [paper](https://arxiv.org/pdf/1505.05770.pdf) introducing the concept (D. Rezende & S. Mohamed).
 
 <br>
 
