@@ -23,6 +23,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
    1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages](#-pytorch-packages)
    1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
    1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
+   1. [<img src="assets/julia.svg" alt="Julia" height="15px"> &nbsp;Julia Packages](#-julia-packages)
 1. [🧑‍💻 Code](#-code)
    1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
    1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
