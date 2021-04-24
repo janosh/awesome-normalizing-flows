@@ -276,7 +276,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. [Feb 7, 2020](https://github.com/slimgroup/InvertibleNetworks.jl/commit/e72da19f78085d270940722606922ae318dfe53d) - [`InvertibleNetworks.jl`](https://github.com/slimgroup/InvertibleNetworks.jl) by [SLIM](https://slim.gatech.edu/) ![GitHub repo stars](https://img.shields.io/github/stars/slimgroup/InvertibleNetworks.jl)
 
-   > A Flux based library implementing invertible neural networks and normalizing flows using memory-efficient backpropagation. Uses manually implemented gradients to take advantage of the invertibility of building blocks, which allows for scaling to large-scale problem sizes.
+   > A Flux compatible library implementing invertible neural networks and normalizing flows using memory-efficient backpropagation. Uses manually implemented gradients to take advantage of the invertibility of building blocks, which allows for scaling to large-scale problem sizes.
 
 <br>
 
