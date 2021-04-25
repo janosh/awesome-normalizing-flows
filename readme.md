@@ -23,6 +23,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
    1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages](#-pytorch-packages)
    1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
    1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
+   1. [<img src="assets/julia.svg" alt="Julia" height="15px"> &nbsp;Julia Packages](#-julia-packages)
 1. [🧑‍💻 Code](#-code)
    1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
    1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
@@ -268,6 +269,14 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 2. [Mar 23, 2020](https://github.com/ChrisWaites/jax-flows/commit/9d5af75d3bf89499b279f83e7ae9a637246cd6f1) - [`jax-flows`](https://github.com/ChrisWaites/jax-flows) by [Chris Waites](https://chriswaites.com) ![GitHub repo stars](https://img.shields.io/github/stars/ChrisWaites/jax-flows)
 
    > Another library that has normalizing flows using JAX as the backend. Has some of the SOTA methods.
+
+<br>
+
+### <img src="assets/julia.svg" alt="Julia" height="15px"> &nbsp;Julia Packages
+
+1. [Feb 7, 2020](https://github.com/slimgroup/InvertibleNetworks.jl/commit/e72da19f78085d270940722606922ae318dfe53d) - [`InvertibleNetworks.jl`](https://github.com/slimgroup/InvertibleNetworks.jl) by [SLIM](https://slim.gatech.edu/) ![GitHub repo stars](https://img.shields.io/github/stars/slimgroup/InvertibleNetworks.jl)
+
+   > A Flux compatible library implementing invertible neural networks and normalizing flows using memory-efficient backpropagation. Uses manually implemented gradients to take advantage of the invertibility of building blocks, which allows for scaling to large-scale problem sizes.
 
 <br>
 
