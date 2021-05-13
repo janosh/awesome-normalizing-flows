@@ -2,8 +2,6 @@
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg)](https://github.com/janosh/awesome-normalizing-flows/pulls)
-[![License](https://img.shields.io/github/license/janosh/awesome-normalizing-flows?label=License)](license)
-[![GitHub last commit](https://img.shields.io/github/last-commit/janosh/awesome-normalizing-flows?label=Last+Commit)](https://github.com/janosh/awesome-normalizing-flows/commits)
 [![Markdown linting](https://github.com/janosh/awesome-normalizing-flows/workflows/Linter/badge.svg)](https://github.com/janosh/awesome-normalizing-flows/actions)
 
 A list of awesome resources for understanding and applying normalizing flows (NF): a relatively simple yet powerful new tool in statistics for constructing expressive probability distributions from simple base distributions using a chain (flow) of trainable smooth bijective transformations (diffeomorphisms).
@@ -196,7 +194,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 5. Oct 13, 2020 - [Targeted free energy estimation via learned mappings](https://aip.scitation.org/doi/10.1063/5.0018903)
    > Normalizing flows used to estimate free energy differences.
 
-6. Dec 6, 2020 - [Normalizing Kalman Filters for Multivariate Time Series Analysis](https://proceedings.neurips.cc/paper/2020/hash/1f47cef5e38c952f94c5d61726027439-Abstract.html)
+6. Nov 2, 2020 - [On the Sentence Embeddings from Pre-trained Language Models](https://aclweb.org/anthology/2020.emnlp-main.733) by Li et al.
+
+   > Proposes to use flows to transform anisotropic sentence embedding distributions from BERT to a smooth and isotropic Gaussian, learned through unsupervised objective. Demonstrates performance gains over SOTA sentence embeddings on semantic textual similarity tasks. Code available at <https://github.com/bohanli/BERT-flow>.
+
+7. Dec 6, 2020 - [Normalizing Kalman Filters for Multivariate Time Series Analysis](https://proceedings.neurips.cc/paper/2020/hash/1f47cef5e38c952f94c5d61726027439-Abstract.html)
 
    > Augments state space models with normalizing flows and thereby mitigates imprecisions stemming from idealized assumptions. Aimed at forecasting real-world data and handling varying levels of missing data. (Also available at [Amazon Science](https://amazon.science/publications/normalizing-kalman-filters-for-multivariate-time-series-analysis).)
 
@@ -325,6 +327,10 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. Jun 12, 2020 - [Variational Inference using Normalizing Flows (VINF)](https://github.com/pierresegonne/VINF) by Pierre Segonne ![GitHub repo stars](https://img.shields.io/github/stars/pierresegonne/VINF)
 
    > This repository provides a hands-on TensorFlow implementation of Normalizing Flows as presented in the [paper](https://arxiv.org/pdf/1505.05770.pdf) introducing the concept (D. Rezende & S. Mohamed).
+
+2. Nov 2, 2020 - [BERT-flow](https://github.com/bohanli/BERT-flow) by Bohan Li ![GitHub repo stars](https://img.shields.io/github/stars/bohanli/BERT-flow)
+
+   > TensorFlow implementation of "On the Sentence Embeddings from Pre-trained Language Models" (EMNLP 2020)
 
 <br>
 
