@@ -202,6 +202,9 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > Augments state space models with normalizing flows and thereby mitigates imprecisions stemming from idealized assumptions. Aimed at forecasting real-world data and handling varying levels of missing data. (Also available at [Amazon Science](https://amazon.science/publications/normalizing-kalman-filters-for-multivariate-time-series-analysis).)
 
+8. May 7 2021 - [Deep Learning Hamiltonian Monte Carlo](https://arxiv.org/abs/2105.03418)
+  
+   > Generalized implementation of the original [`l2hmc`](http://arxiv.org/abs/1711.09268) algorithm proposed by Lévy et. al. This work looks at applying this approach to a Lattice Gauge Theory model and demonstrates a significant improvement in sampling quality.
 <br>
 
 ## 📺 Videos
