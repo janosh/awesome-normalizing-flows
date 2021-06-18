@@ -74,11 +74,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
     > Unifies and generalize autoregressive and normalizing flow approaches, replacing the (conditionally) affine univariate transformations of MAF/IAF with a more general class of invertible univariate transformations expressed as monotonic neural networks. Also demonstrates that the proposed neural autoregressive flows (NAF) are universal approximators for continuous probability distributions. ([Author's Code](https://github.com/CW-Huang/NAF))
 
-11. July 3, 2018 - [Deep Density Destructors](http://proceedings.mlr.press/v80/inouye18a.html) by Inouye & Ravikumar
+11. July 3, 2018 - [Deep Density Destructors](https://proceedings.mlr.press/v80/inouye18a.html) by Inouye & Ravikumar
 
     > Normalizing flows but from an iterative perspective. Features a Tree-based density estimator.
 
-12. Jul 9, 2018 - [Glow: Generative Flow with Invertible 1x1 Convolutions](http://arxiv.org/abs/1807.03039) by Kingma, Dhariwal.
+12. Jul 9, 2018 - [Glow: Generative Flow with Invertible 1x1 Convolutions](https://arxiv.org/abs/1807.03039) by Kingma, Dhariwal.
 
     > They show that flows using invertible 1x1 convolution achieve high likelihood on standard generative benchmarks and can efficiently synthesize realistic-looking, large images.
 
@@ -189,7 +189,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 4. Jul 15, 2020 - [Faster Uncertainty Quantification for Inverse Problems with Conditional Normalizing Flows](https://arxiv.org/abs/2007.07985) by Siahkoohi et. al.
 
-   > Uses conditional normalizing flows for inverse problems. ([Video](https://www.youtube.com/watch?v=nPvZIKaRBkI&feature=youtu.be))
+   > Uses conditional normalizing flows for inverse problems. ([Video](https://youtu.be/nPvZIKaRBkI))
 
 5. Oct 13, 2020 - [Targeted free energy estimation via learned mappings](https://aip.scitation.org/doi/10.1063/5.0018903)
    > Normalizing flows used to estimate free energy differences.
@@ -210,7 +210,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > Introduces Sylvester normalizing flows which remove the single-unit bottleneck from planar flows for increased flexibility in the variational posterior.
 
-2. Mar 24, 2019 - [PixelCNN, Wavenet, Normalizing Flows - Santiago Pascual - UPC Barcelona 2018](https://www.youtube.com/watch?v=7XRpVKpbxq8&feature=youtu.be)
+2. Mar 24, 2019 - [PixelCNN, Wavenet, Normalizing Flows - Santiago Pascual - UPC Barcelona 2018](https://youtu.be/7XRpVKpbxq8)
 
 3. Sep 24, 2019 - [Graph Normalizing Flows](https://youtu.be/frMPP30QQgY) by Jenny Liu (University of Toronto, Vector Institute).
 
@@ -272,7 +272,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > Another library that has normalizing flows using JAX as the backend. Has some of the SOTA methods.
 
-3. Jun 17, 2021 - [`pzflow`](https://github.com/jfcrenshaw/pzflow) by [John Franklin Crenshaw](https://jfcrenshaw.github.io/) ![GitHub repo stars](https://img.shields.io/github/stars/jfcrenshaw/pzflow)
+3. Jun 17, 2021 - [`pzflow`](https://github.com/jfcrenshaw/pzflow) by [John Franklin Crenshaw](https://jfcrenshaw.github.io) ![GitHub repo stars](https://img.shields.io/github/stars/jfcrenshaw/pzflow)
 
    > A package that focuses on probabilistic modeling of tabular data, with a focus on sampling and posterior calculation.
 
@@ -280,7 +280,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ### <img src="assets/julia.svg" alt="Julia" height="15px"> &nbsp;Julia Packages
 
-1. [Feb 7, 2020](https://github.com/slimgroup/InvertibleNetworks.jl/commit/e72da19f78085d270940722606922ae318dfe53d) - [`InvertibleNetworks.jl`](https://github.com/slimgroup/InvertibleNetworks.jl) by [SLIM](https://slim.gatech.edu/) ![GitHub repo stars](https://img.shields.io/github/stars/slimgroup/InvertibleNetworks.jl)
+1. [Feb 7, 2020](https://github.com/slimgroup/InvertibleNetworks.jl/commit/e72da19f78085d270940722606922ae318dfe53d) - [`InvertibleNetworks.jl`](https://github.com/slimgroup/InvertibleNetworks.jl) by [SLIM](https://slim.gatech.edu) ![GitHub repo stars](https://img.shields.io/github/stars/slimgroup/InvertibleNetworks.jl)
 
    > A Flux compatible library implementing invertible neural networks and normalizing flows using memory-efficient backpropagation. Uses manually implemented gradients to take advantage of the invertibility of building blocks, which allows for scaling to large-scale problem sizes.
 
@@ -312,7 +312,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > Example of how to use FFJORD as a continuous normalizing flow (CNF). Based on the PyTorch suite `torchdyn` which offers continuous neural architectures.
 
-6. July 19, 2020 - [`Normalizing Flows - Introduction (Part 1)`](https://pyro.ai/examples/normalizing_flows_i) by [pyro.ai](http://pyro.ai) ![GitHub repo stars](https://img.shields.io/github/stars/pyro-ppl/pyro)
+6. July 19, 2020 - [`Normalizing Flows - Introduction (Part 1)`](https://pyro.ai/examples/normalizing_flows_i) by [pyro.ai](https://pyro.ai) ![GitHub repo stars](https://img.shields.io/github/stars/pyro-ppl/pyro)
 
    > A tutorial about how to use the `pyro-ppl` library (based on PyTorch) to use Normalizing flows. They provide some SOTA methods including NSF and MAF. [Parts 2 and 3 coming later](https://github.com/pyro-ppl/pyro/issues/1992).
 
@@ -320,7 +320,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ### <img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos
 
-1. [Jul 19, 2019](https://github.com/pyro-ppl/numpyro/commit/781baf51752e5919c358362c2ef745a3df55f709#diff-177a79ac143e3f5df6fabf6604c28559) - [`Neural Transport`](https://pyro.ai/numpyro/examples/neutra) by [numpyro](http://num.pyro.ai) ![GitHub repo stars](https://img.shields.io/github/stars/pyro-ppl/numpyro)
+1. [Jul 19, 2019](https://github.com/pyro-ppl/numpyro/commit/781baf51752e5919c358362c2ef745a3df55f709#diff-177a79ac143e3f5df6fabf6604c28559) - [`Neural Transport`](https://pyro.ai/numpyro/examples/neutra) by [numpyro](https://num.pyro.ai) ![GitHub repo stars](https://img.shields.io/github/stars/pyro-ppl/numpyro)
 
    > Features an example of how Normalizing flows can be used to get more robust posteriors from Monte Carlo methods. Uses the `numpyro` library which is a PPL with JAX as the backend. The NF implementations include the basic ones like IAF and BNAF.
 
@@ -350,7 +350,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 3. Jun 11, 2018 - [`destructive-deep-learning`](https://github.com/davidinouye/destructive-deep-learning) by [David Inouye](https://davidinouye.com) ![GitHub repo stars](https://img.shields.io/github/stars/davidinouye/destructive-deep-learning)
 
-   > Code base for the paper [Deep Density Destructors](http://proceedings.mlr.press/v80/inouye18a.html) by Inouye & Ravikumar (2018). An entire suite of iterative methods including tree-based as well as Gaussianization methods which are similar to normalizing flows except they converge iteratively instead of fully parametrized. That is, they still use bijective transforms, compute the Jacobian, check the likelihood and you can still sample and get probability density estimates. The only difference is you repeat the following two steps until convergence:
+   > Code base for the paper [Deep Density Destructors](https://proceedings.mlr.press/v80/inouye18a.html) by Inouye & Ravikumar (2018). An entire suite of iterative methods including tree-based as well as Gaussianization methods which are similar to normalizing flows except they converge iteratively instead of fully parametrized. That is, they still use bijective transforms, compute the Jacobian, check the likelihood and you can still sample and get probability density estimates. The only difference is you repeat the following two steps until convergence:
    >
    > 1. compute one layer or block layer (e.g. Marginal Gaussianization + PCA rotation)
    > 2. check for convergence (e.g log-likelihood using the change-of-variables formula)
@@ -367,11 +367,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. Apr 3, 2018 - [Normalizing Flows](https://akosiorek.github.io/ml/2018/04/03/norm_flows) by Adam Kosiorek.
 
-1. May 19, 2018 - [Change of Variables: A Precursor to Normalizing Flows](http://ruishu.io/2018/05/19/change-of-variables/) by Rui Shu
+1. May 19, 2018 - [Change of Variables: A Precursor to Normalizing Flows](http://ruishu.io/2018/05/19/change-of-variables) by Rui Shu
 
 1. Oct 13, 2018 - [Flow-based Deep Generative Models](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models) by Lilian Weng.
 
-1. Oct 21, 2018 - [Change of Variables for Normalizing Flows](https://nealjean.com/ml/change-of-variables/) by Neal Jean
+1. Oct 21, 2018 - [Change of Variables for Normalizing Flows](https://nealjean.com/ml/change-of-variables) by Neal Jean
 
 <br>
 
