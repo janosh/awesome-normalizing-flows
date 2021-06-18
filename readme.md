@@ -272,6 +272,10 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > Another library that has normalizing flows using JAX as the backend. Has some of the SOTA methods.
 
+3. Jun 17, 2021 - [`pzflow`](https://github.com/jfcrenshaw/pzflow) by [John Franklin Crenshaw](https://jfcrenshaw.github.io/) ![GitHub repo stars](https://img.shields.io/github/stars/jfcrenshaw/pzflow)
+
+   > A package that focuses on probabilistic modeling of tabular data, with a focus on sampling and posterior calculation.
+
 <br>
 
 ### <img src="assets/julia.svg" alt="Julia" height="15px"> &nbsp;Julia Packages
