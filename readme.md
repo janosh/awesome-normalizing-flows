@@ -315,7 +315,10 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 6. July 19, 2020 - [`Normalizing Flows - Introduction (Part 1)`](https://pyro.ai/examples/normalizing_flows_i) by [pyro.ai](https://pyro.ai) ![GitHub repo stars](https://img.shields.io/github/stars/pyro-ppl/pyro)
 
    > A tutorial about how to use the `pyro-ppl` library (based on PyTorch) to use Normalizing flows. They provide some SOTA methods including NSF and MAF. [Parts 2 and 3 coming later](https://github.com/pyro-ppl/pyro/issues/1992).
+   
+7. Aug 21, 2021 - [NICE: Non-linear Independent Components Estimation](https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/NICE_Non_linear_Independent_Components_Estimation) by Maxime Vandegar. ![GitHub repo stars](https://img.shields.io/github/stars/MaximeVandegar/Papers-in-100-Lines-of-Code)
 
+   > PyTorch implementation that reproduces results from the paper NICE in about 100 lines of code.
 <br>
 
 ### <img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos
