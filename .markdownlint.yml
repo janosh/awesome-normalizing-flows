@@ -1,4 +1,10 @@
 # https://github.com/igorshubovych/markdownlint-cli#configuration
-MD013: false  # disable line length errors
-MD033: false  # disable inline HTML errors
-MD041: false  # disable first line in a file should be a top-level heading
+
+# disable line length errors
+MD013: false
+
+# disable inline HTML errors
+MD033: false
+
+# disable first line in a file should be a top-level heading
+MD041: false
