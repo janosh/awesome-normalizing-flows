@@ -14,3 +14,4 @@ jobs:
         # docs at https://git.io/JBaKu
         with:
           config-file: ".github/workflows/link-check-config.json"
+          max-depth: 1 # only check readme.md
