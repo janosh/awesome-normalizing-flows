@@ -310,7 +310,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > A Jupyter notebook with PyTorch implementations of the most commonly used flows: NICE, RNVP, MAF, Glow, NSF.
 
-5. [Jul 3, 2020](https://github.com/DiffEqML/torchdyn/commit/349fbae0576a38bdb138633cfea4483706e11dd0#diff-2442d08f4c0753b452c9d2a8cd8a1a41) - [Density Estimation with Neural ODEs](https://torchdyn.readthedocs.io/en/latest/tutorials/07a_continuous_normalizing_flows.html) and [Density Estimation with FFJORDs](https://torchdyn.readthedocs.io/en/latest/tutorials/07b_ffjord.html) by [`torchdyn`](https://torchdyn.readthedocs.io) ![GitHub repo stars](https://img.shields.io/github/stars/DiffEqML/torchdyn)
+5. [Jul 3, 2020](https://git.io/JiWaJ) - [Density Estimation with Neural ODEs](https://git.io/JiWaG) and [Density Estimation with FFJORDs](https://git.io/JiW2H) by [`torchdyn`](https://torchdyn.readthedocs.io) ![GitHub repo stars](https://img.shields.io/github/stars/DiffEqML/torchdyn)
 
    > Example of how to use FFJORD as a continuous normalizing flow (CNF). Based on the PyTorch suite `torchdyn` which offers continuous neural architectures.
 
@@ -350,7 +350,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > Simple didactic example using [`autograd`](https://github.com/HIPS/autograd), so pretty low-level.
 
-2. Jul 11, 2017 - [`normalizing_flows_overview.ipynb`](https://docs.pymc.io/notebooks/normalizing_flows_overview.html) by PyMC3. ![GitHub repo stars](https://img.shields.io/github/stars/pymc-devs/pymc3)
+2. Jul 11, 2017 - [Normalizing Flows Overview](https://docs.pymc.io/en/stable/pymc-examples/examples/variational_inference/normalizing_flows_overview.html) static Jupyter notebook by PyMC3. ![GitHub repo stars](https://img.shields.io/github/stars/pymc-devs/pymc3)
 
    > A very helpful notebook showcasing how to work with flows in practice and comparing it to PyMC3's NUTS-based HMC kernel. Based on [Theano](https://github.com/Theano/Theano).
 
