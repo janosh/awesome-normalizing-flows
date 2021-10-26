@@ -2,7 +2,8 @@
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg)](https://github.com/janosh/awesome-normalizing-flows/pulls)
-[![Markdown linting](https://github.com/janosh/awesome-normalizing-flows/workflows/Linter/badge.svg)](https://github.com/janosh/awesome-normalizing-flows/actions)
+[![Link Check](https://github.com/janosh/awesome-normalizing-flows/actions/workflows/link-check.yml/badge.svg)](https://github.com/janosh/awesome-normalizing-flows/actions/workflows/link-check.yml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/awesome-normalizing-flows/main.svg)](https://results.pre-commit.ci/latest/github/janosh/awesome-normalizing-flows/main)
 
 A list of awesome resources for understanding and applying normalizing flows (NF): a relatively simple yet powerful new tool in statistics for constructing expressive probability distributions from simple base distributions using a chain (flow) of trainable smooth bijective transformations (diffeomorphisms).
 
@@ -192,6 +193,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
    > Uses conditional normalizing flows for inverse problems. ([Video](https://youtu.be/nPvZIKaRBkI))
 
 5. Oct 13, 2020 - [Targeted free energy estimation via learned mappings](https://aip.scitation.org/doi/10.1063/5.0018903)
+
    > Normalizing flows used to estimate free energy differences.
 
 6. Nov 2, 2020 - [On the Sentence Embeddings from Pre-trained Language Models](https://aclweb.org/anthology/2020.emnlp-main.733) by Li et al.
@@ -315,10 +317,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 6. July 19, 2020 - [`Normalizing Flows - Introduction (Part 1)`](https://pyro.ai/examples/normalizing_flows_i) by [pyro.ai](https://pyro.ai) ![GitHub repo stars](https://img.shields.io/github/stars/pyro-ppl/pyro)
 
    > A tutorial about how to use the `pyro-ppl` library (based on PyTorch) to use Normalizing flows. They provide some SOTA methods including NSF and MAF. [Parts 2 and 3 coming later](https://github.com/pyro-ppl/pyro/issues/1992).
-   
+
 7. Aug 21, 2021 - [NICE: Non-linear Independent Components Estimation](https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/NICE_Non_linear_Independent_Components_Estimation) by Maxime Vandegar. ![GitHub repo stars](https://img.shields.io/github/stars/MaximeVandegar/Papers-in-100-Lines-of-Code)
 
    > PyTorch implementation that reproduces results from the paper NICE in about 100 lines of code.
+
 <br>
 
 ### <img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos
