@@ -19,10 +19,42 @@ repos:
     rev: v2.4.1
     hooks:
       - id: prettier
-        args: [--write]
+        args: [--write, --single-quote]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.29.0
     hooks:
       - id: markdownlint
-        # args: [--config, dotfiles/.markdownlint.yml]
+
+  - repo: local
+    hooks:
+      - id: no-bracket-links
+        name: 'Brackets should not be inside links [[link]](url) -> [[link](url)]'
+        entry: '\]\]\('
+        language: pygrep
+        types: [markdown]
+
+  - repo: local
+    hooks:
+      - id: no-trailing-slash
+        name: URLs should not have trailing slashes
+        entry: 'https?:\/\/.+\/(\s|\?)'
+        language: pygrep
+        types_or: [markdown, yaml]
+
+  - repo: local
+    hooks:
+      - id: no-http
+        name: URLs must use HTTPS
+        entry: 'http:'
+        language: pygrep
+        types_or: [markdown, yaml]
+        exclude: .pre-commit-config.yaml
+
+  - repo: local
+    hooks:
+      - id: no-repeated-whitespace
+        name: No repeated spaces
+        entry: '\S+\s{2,}'
+        language: pygrep
+        types: [text]
