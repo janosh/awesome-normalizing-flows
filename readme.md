@@ -178,7 +178,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. Apr 9, 2019 - [Latent Space Policies for Hierarchical Reinforcement Learning](https://arxiv.org/abs/1804.02808) by Haarnoja et. al.
 
-   > Uses normalizing flows, specifically RealNVPs, as parameterized policies for reinforcement learning and also applies them for hierarchical reinforcement learning.
+   > Uses normalizing flows, specifically RealNVPs, as policies for reinforcement learning and also applies them for the hierarchical reinforcement learning setting.
 
 2. Aug 14, 2018 - [Analyzing Inverse Problems with Invertible Neural Networks](https://arxiv.org/abs/1808.04730) by Ardizzone et. al.
 
