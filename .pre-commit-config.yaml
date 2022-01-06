@@ -1,6 +1,8 @@
 ci:
   autoupdate_schedule: quarterly
 
+default_stages: [commit]
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.1.0
@@ -25,6 +27,10 @@ repos:
     rev: v0.30.0
     hooks:
       - id: markdownlint
+        # MD013: line length
+        # MD033: no inline HTML
+        # MD041: first line in a file should be a top-level heading
+        args: [--disable, MD013, MD033, MD041, '--']
 
   - repo: local
     hooks:
@@ -58,3 +64,10 @@ repos:
         entry: '\S+\s{2,}'
         language: pygrep
         types: [text]
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.1.0
+    hooks:
+      - id: codespell
+        stages: [commit, commit-msg]
+        exclude: yarn.lock
