@@ -169,8 +169,12 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
     > An adversarial attack method on image classifiers that use normalizing flows. ([Author's Code](https://github.com/hmdolatabadi/AdvFlow))
 
-35. Sept 21, 2020 - [Haar Wavelet based Block Autoregressive Flows for Trajectories](https://arxiv.org/abs/2009.09878) by Bhattacharyya et. al.
+35. Sep 21, 2020 - [Haar Wavelet based Block Autoregressive Flows for Trajectories](https://arxiv.org/abs/2009.09878) by Bhattacharyya et. al.
+
     > Introduce a Haar wavelet-based block autoregressive model.
+
+36. Jan 14, 2022 - [`E(n)` Equivariant Normalizing Flows](https://arxiv.org/abs/2105.09016) by Garcia Satorras, Hoogeboom et. al.
+    > Introduces equivariant graph neural networks into the normalizing flow framework which combine to give invertible equivariant functions. Demonstrates their flow beats prior equivariant models and allows sampling of molecular configurations with positions, atom types and charges.
 
 <br>
 
