@@ -266,7 +266,6 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > [FlowTorch Docs](https://flowtorch.ai) is a PyTorch library for learning and sampling from complex probability distributions using a class of methods called Normalizing Flows.
 
-
 <br>
 
 ### <img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages
