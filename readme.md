@@ -262,7 +262,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > A suite of most of the SOTA methods using PyTorch. From an ML group in Edinburgh. They created the current SOTA spline flows. Almost as complete as you'll find from a single repo.
 
-3. [flowtorch](https://github.com/facebookincubator/flowtorch) by [Facebook / Meta](https://opensource.fb.com) ![GitHub repo stars](https://img.shields.io/github/stars/facebookincubator/flowtorch)
+3. Dec 7, 2020 - [`flowtorch`](https://github.com/facebookincubator/flowtorch) by [Facebook / Meta](https://opensource.fb.com) ![GitHub repo stars](https://img.shields.io/github/stars/facebookincubator/flowtorch)
 
    > [FlowTorch Docs](https://flowtorch.ai) is a PyTorch library for learning and sampling from complex probability distributions using a class of methods called Normalizing Flows.
 
