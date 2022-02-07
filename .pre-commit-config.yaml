@@ -42,14 +42,6 @@ repos:
 
   - repo: local
     hooks:
-      - id: no-trailing-slash
-        name: URLs should not have trailing slashes
-        entry: 'https?:\/\/.+\/(\s|\?)'
-        language: pygrep
-        types_or: [markdown, yaml]
-
-  - repo: local
-    hooks:
       - id: no-http
         name: URLs must use HTTPS
         entry: 'http:'
