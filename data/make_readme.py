@@ -59,6 +59,9 @@ for key, sec in sections.items():
     # keep in outer loop to refill subsections for Code/Packages
     lang_names = ["PyTorch", "TensorFlow", "JAX", "Julia", "Others"]
 
+    # sort first by language with order determined by lang_names (only applies to
+    # Package and Code sections), then by date
+    sec["items"].sort(key=lambda x: x["date"], reverse=True)
     if key in ("packages", "code"):
         sec["items"].sort(key=lambda x: lang_names.index(x["lang"]))
 
