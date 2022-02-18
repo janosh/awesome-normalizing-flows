@@ -1,0 +1,53 @@
+- id: vid-1
+  title: Sylvester Normalizing Flow for Variational Inference
+  url: https://youtu.be/VeYyUcIDVHI
+  date: 2018-10-04
+  authors: Rianne van den Berg
+  description: Introduces Sylvester normalizing flows which remove the single-unit bottleneck from planar flows for increased flexibility in the variational posterior.
+
+- id: vid-2
+  title: Graph Normalizing Flows
+  url: https://youtu.be/frMPP30QQgY
+  date: 2019-09-24
+  authors: Jenny Liu
+  description: Introduces a new graph generating model for use e.g. in drug discovery, where training on molecules that are known to bind/dissolve/etc. may help to generate novel, similarly effective molecules.
+
+- id: vid-3
+  title: A primer on normalizing flows
+  url: https://youtu.be/P4Ta-TZPVi0
+  date: 2019-10-09
+  authors: Laurent Dinh
+  authorsUrl: https://laurent-dinh.github.io
+  description: The first author on both the NICE and RNVP papers and one of the first in this field gives an introductory talk at "Machine Learning for Physics and the Physics Learning of, 2019".
+
+- id: vid-4
+  title: What are normalizing flows?
+  url: https://youtu.be/i7LjDvsLWCg
+  date: 2019-12-06
+  authors: Ari Seff
+  authorsUrl: https://scholar.google.com/citations?user=IxBGctYAAAAJ
+  description: A great 3blue1brown-style video explaining the basics of normalizing flows.
+
+- id: vid-5
+  title: Flow Models
+  url: https://youtu.be/JBb5sSC0JoY
+  date: 2020-02-06
+  authors: Pieter Abbeel
+  authorsUrl: https://sites.google.com/view/berkeley-cs294-158-sp20/home
+  description: A really thorough explanation of normalizing flows. Also includes some sample code.
+
+- id: vid-6
+  title: Introduction to Normalizing Flows
+  url: https://youtu.be/u3vVyFVU_lI
+  date: 2020-11-23
+  authors: Marcus Brubaker
+  authorsUrl: https://mbrubake.github.io
+  description: A great introduction to normalizing flows by one of the creators of [Stan](https://mc-stan.org) presented at ECCV 2020. The tutorial also provides an excellent review of various practical implementations.
+
+- id: vid-7
+  title: Normalizing Flows - Motivations, The Big Idea & Essential Foundations
+  url: https://youtu.be/IuXU2dBOJyw
+  date: 2021-01-16
+  authors: Kapil Sachdeva
+  authorsUrl: https://github.com/ksachdeva
+  description: A comprehensive tutorial on flows explaining the challenges addressed by this class of algorithm. Provides intuition on how to address those challenges, and explains the underlying mathematics using a simple step by step approach.
