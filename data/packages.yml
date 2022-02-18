@@ -4,7 +4,7 @@
   url: https://github.com/VLL-HD/FrEIA
   authors: VLL Heidelberg
   authorsUrl: https://hci.iwr.uni-heidelberg.de/vislearn
-  for: PyTorch
+  lang: PyTorch
   description: The Framework for Easily Invertible Architectures (FrEIA) is based on RNVP flows. Easy to setup, it allows to define complex Invertible Neural Networks (INNs) from simple invertible building blocks.
 
 - id: pkg-2
@@ -13,7 +13,7 @@
   url: https://github.com/bayesiains/nflows
   authors: Bayesiains
   authorsUrl: https://homepages.inf.ed.ac.uk/imurray2/group
-  for: PyTorch
+  lang: PyTorch
   description: A suite of most of the SOTA methods using PyTorch. From an ML group in Edinburgh. They created the current SOTA spline flows. Almost as complete as you'll find from a single repo.
 
 - id: pkg-3
@@ -22,7 +22,7 @@
   url: https://github.com/facebookincubator/flowtorch
   authors: Facebook / Meta
   authorsUrl: https://opensource.fb.com
-  for: PyTorch
+  lang: PyTorch
   description: |
     [FlowTorch Docs](https://flowtorch.ai) is a PyTorch library for learning and sampling from complex probability distributions using a class of methods called Normalizing Flows.
 
@@ -32,7 +32,7 @@
   url: https://github.com/tensorflow/probability
   authors: Google
   authorsUrl: https://tensorflow.org/probability
-  for: TensorFlow
+  lang: TensorFlow
   description: Large first-party library that offers RNVP, MAF among other autoregressive models plus a collection of composable bijectors.
 
 - id: pkg-5
@@ -40,7 +40,7 @@
   title: NuX
   url: https://github.com/Information-Fusion-Lab-Umass/NuX
   authors: Information Fusion Labs (UMass)
-  for: JAX
+  lang: JAX
   description: A library that offers normalizing flows using JAX as the backend. Has some SOTA methods. They also feature a surjective flow via quantization.
 
 - id: pkg-6
@@ -49,7 +49,7 @@
   url: https://github.com/ChrisWaites/jax-flows
   authors: Chris Waites
   authorsUrl: https://chriswaites.com
-  for: JAX
+  lang: JAX
   description: Another library that has normalizing flows using JAX as the backend. Has some of the SOTA methods.
 
 - id: pkg-7
@@ -58,7 +58,7 @@
   url: https://github.com/deepmind/distrax
   authors: DeepMind
   authorsUrl: https://deepmind.com
-  for: JAX
+  lang: JAX
   description: Distrax is a lightweight library of probability distributions and bijectors. It acts as a JAX-native re-implementation of a subset of TensorFlow Probability (TFP), with some new features and emphasis on extensibility.
 
 - id: pkg-8
@@ -67,7 +67,7 @@
   url: https://github.com/jfcrenshaw/pzflow
   authors: John Franklin Crenshaw
   authorsUrl: https://jfcrenshaw.github.io
-  for: JAX
+  lang: JAX
   description: A package that focuses on probabilistic modeling of tabular data, with a focus on sampling and posterior calculation.
 
 - id: pkg-9
@@ -76,5 +76,5 @@
   url: https://github.com/slimgroup/InvertibleNetworks.jl
   authors: SLIM
   authorsUrl: https://slim.gatech.edu
-  for: Julia
+  lang: Julia
   description: A Flux compatible library implementing invertible neural networks and normalizing flows using memory-efficient backpropagation. Uses manually implemented gradients to take advantage of the invertibility of building blocks, which allows for scaling to large-scale problem sizes.

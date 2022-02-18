@@ -1,113 +1,115 @@
 - id: code-1
-  date: Sep 1, 2018
   title: pytorch-flows
+  date: Sep 1, 2018
   url: https://github.com/ikostrikov/pytorch-flows
   authors: Ilya Kostrikov
-  for: PyTorch
+  lang: PyTorch
   description: 'PyTorch implementations of density estimation algorithms: MAF, RNVP, Glow.'
 
 - id: code-2
-  date: Dec 30, 2018
   title: normalizing_flows
+  date: Dec 30, 2018
   url: https://github.com/kamenbliznashki/normalizing_flows
   authors: Kamen Bliznashki
-  for: PyTorch
+  lang: PyTorch
   description: 'Pytorch implementations of density estimation algorithms: BNAF, Glow, MAF, RealNVP, planar flows.'
 
 - id: code-3
-  date: Feb 6, 2019
   title: pytorch_flows
+  date: Feb 6, 2019
   url: https://github.com/acids-ircam/pytorch_flows
   authors: acids-ircam
   authorsUrl: https://github.com/acids-ircam
-  for: PyTorch
+  lang: PyTorch
   description: A great repo with some basic PyTorch implementations of normalizing flows from scratch.
 
 - id: code-4
-  date: Dec 9, 2019
   title: pytorch-normalizing-flows
+  date: Dec 9, 2019
   url: https://github.com/karpathy/pytorch-normalizing-flows
   authors: Andrej Karpathy
-  for: PyTorch
+  lang: PyTorch
   description: 'A Jupyter notebook with PyTorch implementations of the most commonly used flows: NICE, RNVP, MAF, Glow, NSF.'
 
 - id: code-5
-  date: Jul 3, 2020
   title: Density Estimation with Neural ODEs and Density Estimation with FFJORDs
-  # NB1: https://git.io/JiWaG, NB2: https://git.io/JiW2H
+  date: Jul 3, 2020
+  url: https://git.io/JiWaG # Jupyter notebook 1
+  # Jupyter notebook 2: https://git.io/JiW2H
   authors: torchdyn
-  url: https://torchdyn.readthedocs.io)
-  for: PyTorch
+  authorsUrl: https://torchdyn.readthedocs.io
+  lang: PyTorch
   description: Example of how to use FFJORD as a continuous normalizing flow (CNF). Based on the PyTorch suite `torchdyn` which offers continuous neural architectures.
 
 - id: code-6
-  date: July 19, 2020
   title: Normalizing Flows - Introduction (Part 1)
+  date: July 19, 2020
   url: https://pyro.ai/examples/normalizing_flows_i
   authors: pyro.ai
   authorsUrl: https://pyro.ai
-  for: PyTorch
+  lang: PyTorch
   description: A tutorial about how to use the `pyro-ppl` library (based on PyTorch) to use Normalizing flows. They provide some SOTA methods including NSF and MAF. [Parts 2 and 3 coming later](https://github.com/pyro-ppl/pyro/issues/1992).
 
 - id: code-7
-  date: Aug 21, 2021
   title: 'NICE: Non-linear Independent Components Estimation'
+  date: Aug 21, 2021
   url: https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/NICE_Non_linear_Independent_Components_Estimation
   authors: Maxime Vandegar
-  for: PyTorch
+  lang: PyTorch
   description: PyTorch implementation that reproduces results from the paper NICE in about 100 lines of code.
 
 - id: code-8
-  date: Jul 19, 2019
   title: Neural Transport
+  date: Jul 19, 2019
   url: https://pyro.ai/numpyro/examples/neutra
   authors: numpyro
   authorsUrl: https://num.pyro.ai
-  for: JAX
+  lang: JAX
   description: Features an example of how Normalizing flows can be used to get more robust posteriors from Monte Carlo methods. Uses the `numpyro` library which is a PPL with JAX as the backend. The NF implementations include the basic ones like IAF and BNAF.
 
 - id: code-9
-  date: Jun 12, 2020
   title: Variational Inference using Normalizing Flows (VINF)
+  date: Jun 12, 2020
   url: https://github.com/pierresegonne/VINF
   authors: Pierre Segonne
-  for: TensorFlow
+  lang: TensorFlow
   description: This repository provides a hands-on TensorFlow implementation of Normalizing Flows as presented in the [paper](https://arxiv.org/pdf/1505.05770.pdf) introducing the concept (D. Rezende & S. Mohamed).
 
 - id: code-10
-  date: Nov 2, 2020
   title: BERT-flow
+  date: Nov 2, 2020
   url: https://github.com/bohanli/BERT-flow
   authors: Bohan Li
-  for: TensorFlow
+  lang: TensorFlow
   description: TensorFlow implementation of "On the Sentence Embeddings from Pre-trained Language Models" (EMNLP 2020)
 
 - id: code-11
+  title: NormFlows
   date: Mar 21, 2017
-  title: 'NormFlows'
   url: https://github.com/andymiller/NormFlows
   authors: Andy Miller
-  for: Others
+  lang: Others
   description: Simple didactic example using [`autograd`](https://github.com/HIPS/autograd), so pretty low-level.
 
 - id: code-12
-  date: Jul 11, 2017
   title: Normalizing Flows Overview
+  date: Jul 11, 2017
   url: https://docs.pymc.io/en/stable/pymc-examples/examples/variational_inference/normalizing_flows_overview.html
   authors: PyMC3
-  for: Others
+  lang: Others
   description: A very helpful notebook showcasing how to work with flows in practice and comparing it to PyMC3's NUTS-based HMC kernel. Based on [Theano](https://github.com/Theano/Theano).
 
 - id: code-13
-  date: Jun 11, 2018
   title: destructive-deep-learning
+  date: Jun 11, 2018
   url: https://github.com/davidinouye/destructive-deep-learning
   authors: David Inouye
   authorsUrl: https://davidinouye.com
-  for: Others
+  lang: Others
   description: |
     Code base for the paper [Deep Density Destructors](https://proceedings.mlr.press/v80/inouye18a.html) by Inouye & Ravikumar (2018). An entire suite of iterative methods including tree-based as well as Gaussianization methods which are similar to normalizing flows except they converge iteratively instead of fully parametrized. That is, they still use bijective transforms, compute the Jacobian, check the likelihood and you can still sample and get probability density estimates. The only difference is you repeat the following two steps until convergence:
-      1. compute one layer or block layer (e.g. Marginal Gaussianization + PCA rotation)
-      2. check for convergence (e.g log-likelihood using the change-of-variables formula)
 
-      Table 1 in the paper has a good comparison with traditional NFs.
+    1. compute one layer or block layer (e.g. Marginal Gaussianization + PCA rotation)
+    2. check for convergence (e.g log-likelihood using the change-of-variables formula)
+
+    Table 1 in the paper has a good comparison with traditional NFs.

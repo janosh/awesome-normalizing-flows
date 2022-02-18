@@ -17,7 +17,7 @@
   url: https://arxiv.org/abs/1502.03509
   date: Feb 12, 2015
   authors: Mathieu Germain, Karol Gregor, Iain Murray, Hugo Larochelle.
-  description: |-
+  description: |
     Introduces MADE, a feed-forward network that uses carefully constructed binary masks on its weights to control the precise flow of information through the network. The masks ensure that each output unit receives signals only from input units that come before it in some arbitrary order. Yet all outputs can be computed in a single pass.<br>
     A popular and efficient method to bestow flows with autoregressivity is to construct them from MADE nets.
     <br><img src="assets/made.svg" alt="MADE"><br><sup>_Figure created in TikZ. [View source](https://github.com/janosh/tikz/tree/main/assets/made)._</sup>
@@ -220,9 +220,9 @@
 
 - id: pub-32
   title: Why Normalizing Flows Fail to Detect Out-of-Distribution Data
-  url: https://proceedings.neurips.cc//paper/2020/hash/ecb9fe2fbb99c31f567e9823e884dbec-Abstract.html
+  url: https://arxiv.org/abs/2006.08545
   date: Jun 15, 2020
-  authors: Kirichenko et. al.
+  authors: Polina Kirichenko, Pavel Izmailov, Andrew Gordon Wilson
   description: This study how traditional normalizing flow models can suffer from out-of-distribution data. They offer a solution to combat this issue by modifying the coupling layers. ([Tweet](https://twitter.com/polkirichenko/status/1272715634544119809) | [Author's Code](https://github.com/PolinaKirichenko/flows_ood))
 
 - id: pub-33
