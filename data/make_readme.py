@@ -1,8 +1,10 @@
 import re
+from os.path import dirname
 from typing import cast
 
 import yaml
 
+ROOT = dirname(dirname(__file__))
 
 sections = {
     "publications": {"title": "## 📝 Publications"},
@@ -14,7 +16,7 @@ sections = {
 }
 
 for key in sections:
-    with open(f"data/{key}.yml") as file:
+    with open(f"{ROOT}/data/{key}.yml") as file:
         sections[key]["items"] = yaml.safe_load(file.read())
 
 
@@ -107,7 +109,7 @@ start_section_pat = lambda title: f"(?<={title}\n\n)"
 next_section_pat = "(?=<br>\n\n## )"
 
 
-with open("readme.md", "r+") as file:
+with open(f"{ROOT}/readme.md", "r+") as file:
 
     readme = file.read()
 

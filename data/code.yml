@@ -1,6 +1,6 @@
 - id: code-1
   title: pytorch-flows
-  date: Sep 1, 2018
+  date: 2018-09-01
   url: https://github.com/ikostrikov/pytorch-flows
   authors: Ilya Kostrikov
   lang: PyTorch
@@ -8,7 +8,7 @@
 
 - id: code-2
   title: normalizing_flows
-  date: Dec 30, 2018
+  date: 2018-12-30
   url: https://github.com/kamenbliznashki/normalizing_flows
   authors: Kamen Bliznashki
   lang: PyTorch
@@ -16,7 +16,7 @@
 
 - id: code-3
   title: pytorch_flows
-  date: Feb 6, 2019
+  date: 2019-02-06
   url: https://github.com/acids-ircam/pytorch_flows
   authors: acids-ircam
   authorsUrl: https://github.com/acids-ircam
@@ -25,7 +25,7 @@
 
 - id: code-4
   title: pytorch-normalizing-flows
-  date: Dec 9, 2019
+  date: 2019-12-09
   url: https://github.com/karpathy/pytorch-normalizing-flows
   authors: Andrej Karpathy
   lang: PyTorch
@@ -33,7 +33,7 @@
 
 - id: code-5
   title: Density Estimation with Neural ODEs and Density Estimation with FFJORDs
-  date: Jul 3, 2020
+  date: 2020-07-03
   url: https://git.io/JiWaG # Jupyter notebook 1
   # Jupyter notebook 2: https://git.io/JiW2H
   authors: torchdyn
@@ -43,7 +43,7 @@
 
 - id: code-6
   title: Normalizing Flows - Introduction (Part 1)
-  date: July 19, 2020
+  date: 2020-07-19
   url: https://pyro.ai/examples/normalizing_flows_i
   authors: pyro.ai
   authorsUrl: https://pyro.ai
@@ -52,7 +52,7 @@
 
 - id: code-7
   title: 'NICE: Non-linear Independent Components Estimation'
-  date: Aug 21, 2021
+  date: 2021-08-21
   url: https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/NICE_Non_linear_Independent_Components_Estimation
   authors: Maxime Vandegar
   lang: PyTorch
@@ -60,7 +60,7 @@
 
 - id: code-8
   title: Neural Transport
-  date: Jul 19, 2019
+  date: 2020-06-12
   url: https://pyro.ai/numpyro/examples/neutra
   authors: numpyro
   authorsUrl: https://num.pyro.ai
@@ -69,7 +69,7 @@
 
 - id: code-9
   title: Variational Inference using Normalizing Flows (VINF)
-  date: Jun 12, 2020
+  date: 2020-11-02
   url: https://github.com/pierresegonne/VINF
   authors: Pierre Segonne
   lang: TensorFlow
@@ -77,7 +77,7 @@
 
 - id: code-10
   title: BERT-flow
-  date: Nov 2, 2020
+  date: 2019-07-19
   url: https://github.com/bohanli/BERT-flow
   authors: Bohan Li
   lang: TensorFlow
@@ -85,7 +85,7 @@
 
 - id: code-11
   title: NormFlows
-  date: Mar 21, 2017
+  date: 2017-03-21
   url: https://github.com/andymiller/NormFlows
   authors: Andy Miller
   lang: Others
@@ -93,7 +93,7 @@
 
 - id: code-12
   title: Normalizing Flows Overview
-  date: Jul 11, 2017
+  date: 2017-07-11
   url: https://docs.pymc.io/en/stable/pymc-examples/examples/variational_inference/normalizing_flows_overview.html
   authors: PyMC3
   lang: Others
@@ -101,7 +101,7 @@
 
 - id: code-13
   title: destructive-deep-learning
-  date: Jun 11, 2018
+  date: 2018-06-11
   url: https://github.com/davidinouye/destructive-deep-learning
   authors: David Inouye
   authorsUrl: https://davidinouye.com
