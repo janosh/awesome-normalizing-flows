@@ -233,7 +233,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > The first author on both the NICE and RNVP papers and one of the first in this field gives an introductory talk at "Machine Learning for Physics and the Physics Learning of, 2019".
 
-1. Dec 6, 2019 - [What are normalizing flows?](https://youtu.be/i7LjDvsLWCg) by [Ari Seff](https://cs.princeton.edu/~aseff)
+1. Dec 6, 2019 - [What are normalizing flows?](https://youtu.be/i7LjDvsLWCg) by [Ari Seff](https://scholar.google.com/citations?user=IxBGctYAAAAJ)
 
    > A great 3blue1brown-style video explaining the basics of normalizing flows.
 
