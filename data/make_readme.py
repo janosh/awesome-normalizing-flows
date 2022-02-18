@@ -8,7 +8,7 @@ ROOT = dirname(dirname(__file__))
 
 sections = {
     "publications": {"title": "## 📝 Publications"},
-    "applications": {"title": "### 🛠️ Applications"},
+    "applications": {"title": "## 🛠️ Applications"},
     "videos": {"title": "## 📺 Videos"},
     "packages": {"title": "## 📦 Packages"},
     "code": {"title": "## 🧑‍💻 Code"},
