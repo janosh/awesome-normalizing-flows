@@ -49,7 +49,7 @@
 
 - id: app-8
   title: Normalizing Kalman Filters for Multivariate Time Series Analysis
-  url: https://proceedings.neurips.cc/paper/2020/hash/1f47cef5e38c952f94c5d61726027439-Abstract.html
+  url: https://assets.amazon.science/ea/0c/88b7bdd54eae8c08983fa4cc3e06/normalizing-kalman-filters-for-multivariate-time-series-analysis.pdf
   date: Dec 6, 2020
   authors: Emmanuel de Bézenac, Syama Sundar Rangapuram, Konstantinos Benidis, Michael Bohlke-Schneider, Richard Kurle, Lorenzo Stella, Hilaf Hasson, Patrick Gallinari, Tim Januschowski
   description: Augments state space models with normalizing flows and thereby mitigates imprecisions stemming from idealized assumptions. Aimed at forecasting real-world data and handling varying levels of missing data. (Also available at [Amazon Science](https://amazon.science/publications/normalizing-kalman-filters-for-multivariate-time-series-analysis).)
