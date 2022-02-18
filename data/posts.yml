@@ -1,0 +1,35 @@
+- id: post-1
+  date: 2018-01-17
+  title: Normalizing Flows Tutorial
+  url: https://blog.evjang.com/2018/01/nf1.html
+  authors: Eric Jang
+  description: |
+    [Part 1](https://blog.evjang.com/2018/01/nf1.html): Distributions and Determinants. [Part 2](https://blog.evjang.com/2018/01/nf2.html): Modern Normalizing Flows. Lots of great graphics.
+
+- id: post-2
+  date: 2018-04-03
+  title: Normalizing Flows
+  url: https://akosiorek.github.io/ml/2018/04/03/norm_flows
+  authors: Adam Kosiorek
+  description: Introduction to flows covering change of variables, planar flow, radial flow, RNVP and autoregressive flows like MAF, IAF and Parallel WaveNet.
+
+- id: post-3
+  date: 2018-05-19
+  title: 'Change of Variables: A Precursor to Normalizing Flows'
+  url: https://ruishu.io/2018/05/19/change-of-variables
+  authors: Rui Shu
+  description: Extended introduction to the change of variables theorem.
+
+- id: post-4
+  date: 2018-10-13
+  title: Flow-based Deep Generative Models
+  url: https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models
+  authors: Lilian Weng
+  description: Covers change of variables, NICE, RNVP, MADE, Glow, MAF, IAF, WaveNet, PixelRNN.
+
+- id: post-5
+  date: 2018-10-21
+  title: Change of Variables for Normalizing Flows
+  url: https://nealjean.com/ml/change-of-variables
+  authors: Neal Jean
+  description: Short and simple explanation of change of variables theorem i.t.o. probability mass conservation.

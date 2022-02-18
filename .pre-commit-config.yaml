@@ -56,6 +56,7 @@ repos:
         entry: '\S+\s{2,}'
         language: pygrep
         types: [text]
+        exclude_types: [python]
 
   - repo: https://github.com/codespell-project/codespell
     rev: v2.1.0

@@ -1,0 +1,41 @@
+name: Update readme
+
+on:
+  pull_request:
+    branches: [main]
+    paths: [data/*]
+  push:
+    branches: [main]
+    paths: [data/*]
+
+jobs:
+  make_readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Set up python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Run make_readme.py
+        run: python data/make_readme.py
+
+      - name: Push changes if any
+        run: |
+          if git diff --quiet readme.md; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name 'Janosh Riebesell'
+          git config user.email janosh.riebesell@gmail.com
+          git add readme.md
+          git commit -m 'update readme'
+          git push

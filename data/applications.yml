@@ -1,0 +1,55 @@
+- id: app-1
+  title: Latent Space Policies for Hierarchical Reinforcement Learning
+  url: https://arxiv.org/abs/1804.02808
+  date: 2018-04-09
+  authors: Haarnoja et. al.
+  description: Uses normalizing flows, specifically RealNVPs, as policies for reinforcement learning and also applies them for the hierarchical reinforcement learning setting.
+
+- id: app-2
+  title: Analyzing Inverse Problems with Invertible Neural Networks
+  url: https://arxiv.org/abs/1808.04730
+  date: 2018-08-14
+  authors: Ardizzone et. al.
+  description: Normalizing flows for inverse problems.
+
+- id: app-3
+  title: NeuTra-lizing Bad Geometry in Hamiltonian Monte Carlo Using Neural Transport
+  url: https://arxiv.org/abs/1903.03704
+  date: 2019-03-09
+  authors: Hoffman et. al.
+  description: Uses normalizing flows in conjunction with Monte Carlo estimation to have more expressive distributions and better posterior estimation.
+
+- id: app-4
+  title: 'SRFlow: Learning the Super-Resolution Space with Normalizing Flow'
+  url: https://arxiv.org/abs/2006.14200
+  date: 2020-06-25
+  authors: Lugmayr et. al.
+  description: Uses normalizing flows for super-resolution.
+
+- id: app-5
+  title: Faster Uncertainty Quantification for Inverse Problems with Conditional Normalizing Flows
+  url: https://arxiv.org/abs/2007.07985
+  date: 2020-07-15
+  authors: Siahkoohi et. al.
+  description: Uses conditional normalizing flows for inverse problems. ([Video](https://youtu.be/nPvZIKaRBkI))
+
+- id: app-6
+  title: Targeted free energy estimation via learned mappings
+  url: https://aip.scitation.org/doi/10.1063/5.0018903
+  date: 2020-10-13
+  authors: Peter Wirnsberger, Andrew J. Ballard, George Papamakarios, Stuart Abercrombie, Sébastien Racanière, Alexander Pritzel, Danilo Jimenez Rezende, Charles Blundell
+  description: Normalizing flows used to estimate free energy differences.
+
+- id: app-7
+  title: On the Sentence Embeddings from Pre-trained Language Models
+  url: https://aclweb.org/anthology/2020.emnlp-main.733
+  date: 2020-11-02
+  authors: Li et al.
+  description: Proposes to use flows to transform anisotropic sentence embedding distributions from BERT to a smooth and isotropic Gaussian, learned through unsupervised objective. Demonstrates performance gains over SOTA sentence embeddings on semantic textual similarity tasks. Code available at <https://github.com/bohanli/BERT-flow>.
+
+- id: app-8
+  title: Normalizing Kalman Filters for Multivariate Time Series Analysis
+  url: https://assets.amazon.science/ea/0c/88b7bdd54eae8c08983fa4cc3e06/normalizing-kalman-filters-for-multivariate-time-series-analysis.pdf
+  date: 2020-12-06
+  authors: Emmanuel de Bézenac, Syama Sundar Rangapuram, Konstantinos Benidis, Michael Bohlke-Schneider, Richard Kurle, Lorenzo Stella, Hilaf Hasson, Patrick Gallinari, Tim Januschowski
+  description: Augments state space models with normalizing flows and thereby mitigates imprecisions stemming from idealized assumptions. Aimed at forecasting real-world data and handling varying levels of missing data. (Also available at [Amazon Science](https://amazon.science/publications/normalizing-kalman-filters-for-multivariate-time-series-analysis).)
