@@ -23,30 +23,31 @@ for key in sections:
 seen_ids: set[str] = set()
 
 
-req_keys = "id,title,url,date,authors,description".split(",")
-opt_keys = ["org", "authorsUrl", "lang"]
+req_keys = {"id", "title", "url", "date", "authors", "description"}
+opt_keys = {"org", "authorsUrl", "lang"}
 
 
 def validate_item(itm: dict[str, str]) -> None:
-    itm_keys = list(itm.keys())
+    # no need to check for duplicate keys, YAML enforces that
+    itm_keys = set(itm.keys())
     err = None
 
     if (id := itm["id"]) in seen_ids:
-        err = f"Duplicate id: {id}"
+        err = f"Duplicate {id = }"
     else:
         seen_ids.add(id)
 
     if not id.startswith(("pub-", "app-", "vid-", "pkg-", "code-", "post-")):
-        err = f"Invalid id: {id}"
+        err = f"Invalid {id = }"
 
     valid_langs = ("PyTorch", "TensorFlow", "JAX", "Julia", "Others")
     if id.startswith(("pkg-", "code-")) and itm["lang"] not in valid_langs:
         err = f"Invalid lang in {id}: {itm['lang']}, must be one of {valid_langs}"
 
-    if missing_keys := [k for k in req_keys if k not in itm_keys]:
+    if missing_keys := req_keys - itm_keys:
         err = f"Missing key(s) in {id}: {missing_keys}"
 
-    if bad_keys := set(itm_keys) - set(req_keys + opt_keys):
+    if bad_keys := itm_keys - req_keys - opt_keys:
         err = f"Unexpected key(s) in {id}: {bad_keys}"
 
     if err:
@@ -78,7 +79,7 @@ for key, sec in sections.items():
 
         validate_item(itm)
 
-        title, url, date, authors, description = (itm[k] for k in req_keys[1:])
+        authors, date, description, _id, title, url = (itm[k] for k in sorted(req_keys))
 
         # only print first 3 authors
         authors = authors.split(", ")
