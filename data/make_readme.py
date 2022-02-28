@@ -21,13 +21,13 @@ for key in sections:
 
 
 seen_ids: set[str] = set()
-
-
 req_keys = {"id", "title", "url", "date", "authors", "description"}
 opt_keys = {"org", "authorsUrl", "lang"}
+valid_langs = ("PyTorch", "TensorFlow", "JAX", "Julia", "Others")
 
 
 def validate_item(itm: dict[str, str]) -> None:
+    """Checks that an item conforms to schema. Raises ValueError if not."""
     # no need to check for duplicate keys, YAML enforces that
     itm_keys = set(itm.keys())
     err = None
@@ -40,7 +40,6 @@ def validate_item(itm: dict[str, str]) -> None:
     if not id.startswith(("pub-", "app-", "vid-", "pkg-", "code-", "post-")):
         err = f"Invalid {id = }"
 
-    valid_langs = ("PyTorch", "TensorFlow", "JAX", "Julia", "Others")
     if id.startswith(("pkg-", "code-")) and itm["lang"] not in valid_langs:
         err = f"Invalid lang in {id}: {itm['lang']}, must be one of {valid_langs}"
 
@@ -49,6 +48,9 @@ def validate_item(itm: dict[str, str]) -> None:
 
     if bad_keys := itm_keys - req_keys - opt_keys:
         err = f"Unexpected key(s) in {id}: {bad_keys}"
+
+    if "et al" in (authors := itm["authors"]):
+        err = f"Incomplete authors in {id}: don't use et al in {authors = }, list them all"
 
     if err:
         raise ValueError(err)
@@ -83,7 +85,7 @@ for key, sec in sections.items():
 
         # only print first 3 authors
         authors = authors.split(", ")
-        authors = ", ".join(authors[:3]) + (" et al." if len(authors) > 3 else "")
+        authors = ", ".join(authors[:2]) + (" et al." if len(authors) > 2 else "")
 
         if "authorsUrl" in itm:
             authors = f"[{authors}]({itm['authorsUrl']})"
