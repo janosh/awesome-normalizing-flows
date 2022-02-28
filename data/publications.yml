@@ -166,14 +166,14 @@
   title: Stochastic Normalizing Flows
   url: https://arxiv.org/abs/2002.06707
   date: 2020-02-16
-  authors: Hao Wu, Jonas Köhler, Frank Noé.
+  authors: Hao Wu, Jonas Köhler, Frank Noé
   description: Introduces SNF, an arbitrary sequence of deterministic invertible functions (the flow) and stochastic processes such as MCMC or Langevin Dynamics. The aim is to increase expressiveness of the chosen deterministic invertible function, while the trainable flow improves sampling efficiency over pure MCMC ([Tweet](https://twitter.com/FrankNoeBerlin/status/1229734899034329103?s=19)).
 
 - id: pub-25
   title: Stochastic Normalizing Flows
   url: https://arxiv.org/abs/2002.09547
   date: 2020-02-21
-  authors: Liam Hodgkinson, Chris van der Heide, Fred Roosta, Michael W. Mahoney.
+  authors: Liam Hodgkinson, Chris van der Heide, Fred Roosta, Michael W. Mahoney
   description: 'Name clash for a very different technique from the above SNF: an extension of continuous normalizing flows using stochastic differential equations (SDE). Treats Brownian motion in the SDE as a latent variable and approximates it by a flow. Aims to enable efficient training of neural SDEs which can be used for constructing efficient Markov chains.'
 
 - id: pub-26
