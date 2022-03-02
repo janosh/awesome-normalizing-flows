@@ -83,8 +83,9 @@ for key, sec in sections.items():
 
         authors, date, description, _id, title, url = (itm[k] for k in sorted(req_keys))
 
-        # only print first 3 authors
         authors = authors.split(", ")
+        if key in ("publications", "applications"):
+            authors = [author.split(" ")[-1] for author in authors]
         authors = ", ".join(authors[:2]) + (" et al." if len(authors) > 2 else "")
 
         if "authorsUrl" in itm:
