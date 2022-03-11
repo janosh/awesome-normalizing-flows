@@ -81,7 +81,7 @@
   url: https://github.com/bohanli/BERT-flow
   authors: Bohan Li
   lang: TensorFlow
-  description: TensorFlow implementation of "On the Sentence Embeddings from Pre-trained Language Models" (EMNLP 2020)
+  description: TensorFlow implementation of "On the Sentence Embeddings from Pre-trained Language Models" (EMNLP 2020).
 
 - id: code-11
   title: NormFlows

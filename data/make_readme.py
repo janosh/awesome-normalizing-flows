@@ -120,12 +120,12 @@ with open(f"{ROOT}/readme.md", "r+") as file:
 
     readme = file.read()
 
-    for key, val in sections.items():
-        section_start = start_section_pat(val["title"])
+    for key, sec in sections.items():
+        section_start = start_section_pat(sec["title"])
 
         # match everything up to next heading
         readme = re.sub(
-            rf"{section_start}[\s\S]+?\n\n{next_section_pat}", val["markdown"], readme
+            rf"{section_start}[\s\S]+?\n\n{next_section_pat}", sec["markdown"], readme
         )
 
     file.seek(0)
