@@ -3,6 +3,7 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg)](https://github.com/janosh/awesome-normalizing-flows/pulls)
 [![Link Check](https://github.com/janosh/awesome-normalizing-flows/actions/workflows/link-check.yml/badge.svg)](https://github.com/janosh/awesome-normalizing-flows/actions/workflows/link-check.yml)
+[![Update readme](https://github.com/janosh/awesome-normalizing-flows/actions/workflows/generate-readme.yml/badge.svg)](https://github.com/janosh/awesome-normalizing-flows/actions/workflows/generate-readme.yml)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/awesome-normalizing-flows/main.svg)](https://results.pre-commit.ci/latest/github/janosh/awesome-normalizing-flows/main)
 
 A list of awesome resources for understanding and applying normalizing flows (NF): a relatively simple yet powerful new tool in statistics for constructing expressive probability distributions from simple base distributions using a chain (flow) of trainable smooth bijective transformations (diffeomorphisms).
@@ -61,11 +62,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2020-04-08 - [Normalizing Flows with Multi-Scale Autoregressive Priors](https://arxiv.org/abs/2004.03891) by Mahajan, Bhattacharyya et al.
 
-   > Improves the representational power of flow-based models by introducing channel-wise dependencies in their latent space through multi-scale autoregressive priors (mAR) ([Author's Code](https://github.com/visinf/mar-scf))
+   > Improves the representational power of flow-based models by introducing channel-wise dependencies in their latent space through multi-scale autoregressive priors (mAR). ([Author's Code](https://github.com/visinf/mar-scf))
 
 1. 2020-03-31 - [Flows for simultaneous manifold learning and density estimation](https://arxiv.org/abs/2003.13913) by Brehmer, Cranmer
 
-   > Normalizing flows that learn the data manifold and probability density function on that manifold. ([Tweet](https://twitter.com/kylecranmer/status/1250129080395223040?lang=es) | [Author's Code](https://github.com/johannbrehmer/manifold-flow))
+   > Normalizing flows that learn the data manifold and probability density function on that manifold. ([Tweet](https://twitter.com/kylecranmer/status/1250129080395223040) | [Author's Code](https://github.com/johannbrehmer/manifold-flow))
 
 1. 2020-03-04 - [Gaussianization Flows](https://arxiv.org/abs/2003.01941) by Meng, Song et al.
 
@@ -77,7 +78,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2020-02-24 - [Modeling Continuous Stochastic Processes with Dynamic Normalizing Flows](https://arxiv.org/abs/2002.10516) by Deng, Chang et al.
 
-   > They propose a normalizing flow using differential deformation of the Wiener process. Applied to time series. ([Tweet](https://twitter.com/r_giaquinto/status/1309648804824723464?s=09))
+   > They propose a normalizing flow using differential deformation of the Wiener process. Applied to time series. ([Tweet](https://twitter.com/r_giaquinto/status/1309648804824723464))
 
 1. 2020-02-21 - [Stochastic Normalizing Flows](https://arxiv.org/abs/2002.09547) by Hodgkinson, Heide et al.
 
@@ -85,7 +86,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2020-02-16 - [Stochastic Normalizing Flows](https://arxiv.org/abs/2002.06707) by Wu, Köhler et al.
 
-   > Introduces SNF, an arbitrary sequence of deterministic invertible functions (the flow) and stochastic processes such as MCMC or Langevin Dynamics. The aim is to increase expressiveness of the chosen deterministic invertible function, while the trainable flow improves sampling efficiency over pure MCMC ([Tweet](https://twitter.com/FrankNoeBerlin/status/1229734899034329103?s=19)).
+   > Introduces SNF, an arbitrary sequence of deterministic invertible functions (the flow) and stochastic processes such as MCMC or Langevin Dynamics. The aim is to increase expressiveness of the chosen deterministic invertible function, while the trainable flow improves sampling efficiency over pure MCMC ([Tweet](https://twitter.com/FrankNoeBerlin/status/1229734899034329103)).
 
 1. 2020-01-17 - [Training Normalizing Flows with the Information Bottleneck for Competitive Generative Classification](https://arxiv.org/abs/2001.06448) by Ardizzone, Mackowiak et al.
 
@@ -129,7 +130,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2018-10-02 - [FFJORD: Free-form Continuous Dynamics for Scalable Reversible Generative Models](https://arxiv.org/abs/1810.01367) by Grathwohl, Chen et al.
 
-   > Uses Neural ODEs as a solver to produce continuous-time normalizing flows (CNF)
+   > Uses Neural ODEs as a solver to produce continuous-time normalizing flows (CNF).
 
 1. 2018-07-09 - [Glow: Generative Flow with Invertible 1x1 Convolutions](https://arxiv.org/abs/1807.03039) by Kingma, Dhariwal
 
@@ -367,7 +368,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. 2019-07-19 - [BERT-flow](https://github.com/bohanli/BERT-flow) by Bohan Li
    &ensp;<img src="https://img.shields.io/github/stars/bohanli/BERT-flow" alt="GitHub repo stars" valign="middle" />
 
-   > TensorFlow implementation of "On the Sentence Embeddings from Pre-trained Language Models" (EMNLP 2020)
+   > TensorFlow implementation of "On the Sentence Embeddings from Pre-trained Language Models" (EMNLP 2020).
 
 <br>
 
