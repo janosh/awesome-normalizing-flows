@@ -343,7 +343,3 @@
   date: 2019-07-18
   authors: Matej Grcić, Ivan Grubišić, Siniša Šegvić
   description: The authors created a nested coupling structure to add more expressivity to standard coupling layers. They also utilize slicing/factorization for dimensionality reduction and Nystromer for the coupling layer conditioning network. They achieved quite SOTA results for normalizing flow models. ([Authors Code](https://github.com/matejgrcic/DenseFlow))
-
-
-
-
