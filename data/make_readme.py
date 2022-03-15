@@ -131,3 +131,8 @@ with open(f"{ROOT}/readme.md", "r+") as file:
     file.seek(0)
     file.write(readme)
     file.truncate()
+
+section_counts = "\n".join(
+    f"- {key}: {len(sec['items'])}" for key, sec in sections.items()
+)
+print(f"finished writing {len(seen_ids)} items to readme:\n{section_counts}")
