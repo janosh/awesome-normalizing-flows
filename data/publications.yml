@@ -266,28 +266,28 @@
   date: 2019-01-30
   authors: Emiel Hoogeboom, Rianne van den Berg, Max Welling
   description: The authors introduce autoregressive-like convolutional layers that operate on the channel **and** spatial axes. This improved upon the performance of image datasets compared to the standard 1x1 Convolutions. The trade-off is that the inverse operator is quite expensive however the authors provide a fast C++ implementation. ([Author's Code](https://github.com/ehoogeboom/emerging))
-  
+
 - id: pub-39
   title: Fast Flow Reconstruction via Robust Invertible n×n Convolution
   url: https://arxiv.org/abs/1905.10170
   date: 2019-05-24
   authors: Thanh-Dat Truong, Khoa Luu, Chi Nhan Duong, Ngan Le, Minh-Triet Tran
   description: The authors seek to overcome the limitation of 1x1 convolutions and proposes invertible nxn convolutions via a clever convolutional *affine* function.
-  
+
 - id: pub-40
   title: MaCow: Masked Convolutional Generative Flow
   url: https://arxiv.org/abs/1902.04208
   date: 2019-02-19
   authors: Xuezhe Ma, Xiang Kong, Shanghang Zhang, Eduard Hovy
   description: The authors introduce a masked convolutional generative flow (MaCow) layer using a small kernel to capture local connectivity. They showed some improvement over the GLOW model while being fast and stable.
-  
+
 - id: pub-41
   title: MaCow: Masked Convolutional Generative Flow
   url: https://arxiv.org/abs/1902.04208
   date: 2019-02-19
   authors: Xuezhe Ma, Xiang Kong, Shanghang Zhang, Eduard Hovy
   description: The authors introduce a masked convolutional generative flow (MaCow) layer using a small kernel to capture local connectivity. They showed some improvement over the GLOW model while being fast and stable. ([Author's Code](https://github.com/XuezheMax/macow))
-  
+
 - id: pub-42
   title: iUNets: Fully invertible U-Nets with Learnable Upand Downsampling
   url: https://arxiv.org/abs/2005.05220
@@ -308,7 +308,7 @@
   date: 2021-07-03
   authors: Sandeep Nagar, Marius Dufraisse, Girish Varma
   description: These authors sought to improve the emerging convolutions as they were expensive. So they investigated the conditions for when 3x3 convolutions are invertible under which conditions (e.g. padding) and saw successful speedups. Furthermore, they developed a more expressive, invertible *Quad coupling* layer. ([Authors Code](https://github.com/Naagar/Normalizing_Flow_3x3_inv))
-  
+
 - id: pub-45
   title: Orthogonalizing Convolutional Layers with the Cayley Transform
   url: https://arxiv.org/abs/2104.07167
@@ -329,7 +329,7 @@
   date: 2019-06-15
   authors: Mahdi Karami, Dale Schuurmans, Jascha Sohl-Dickstein, Laurent Dinh, Daniel Duckworth
   description: The authors introduce convolutional layers that are circular and symmetric. The layer is invertible and cheap to evaluate. They also showcase how one can design non-linear elementwise bijectors that induce special properties via constraining the loss function. ([Authors Code](https://github.com/Karami-m/Invertible-Convolutional-Flow))
-  
+
 - id: pub-48
   title: Invertible Convolutional Networks
   url: https://invertibleworkshop.github.io/INNF_2019/accepted_papers/pdfs/INNF_2019_paper_26.pdf
@@ -350,7 +350,7 @@
   date: 2019-07-18
   authors: Matej Grcić, Ivan Grubišić, Siniša Šegvić
   description: The authors created a nested coupling structure to add more expressivity to standard coupling layers. They also utilize slicing/factorization for dimensionality reduction and Nystromer for the coupling layer conditioning network. They achieved quite SOTA results for normalizing flow models. ([Authors Code](https://github.com/matejgrcic/DenseFlow))
-  
-  
-  
-  
+
+
+
+
