@@ -16,7 +16,7 @@
 - id: post-3
   date: 2018-05-19
   title: 'Change of Variables: A Precursor to Normalizing Flows'
-  url: https://ruishu.io/2018/05/19/change-of-variables
+  url: http://ruishu.io/2018/05/19/change-of-variables/
   authors: Rui Shu
   description: Extended introduction to the change of variables theorem.
 
