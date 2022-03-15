@@ -9,7 +9,7 @@ on:
     paths: [data/*]
 
 jobs:
-  make_readme:
+  make-readme:
     if: github.repository_owner == 'janosh' # don't run on forks
     runs-on: ubuntu-latest
     steps:
