@@ -9,7 +9,7 @@ on:
     paths: [data/*]
 
 jobs:
-  make_readme:
+  make-readme:
     if: github.repository_owner == 'janosh' # don't run on forks
     runs-on: ubuntu-latest
     steps:
@@ -27,7 +27,7 @@ jobs:
         run: pip install pyyaml
 
       - name: Run make_readme.py
-        run: python -m data.make_readme
+        run: python data/make_readme.py
 
       - name: Push changes if any
         run: |

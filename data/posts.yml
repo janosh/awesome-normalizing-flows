@@ -14,20 +14,13 @@
   description: Introduction to flows covering change of variables, planar flow, radial flow, RNVP and autoregressive flows like MAF, IAF and Parallel WaveNet.
 
 - id: post-3
-  date: 2018-05-19
-  title: 'Change of Variables: A Precursor to Normalizing Flows'
-  url: https://ruishu.io/2018/05/19/change-of-variables
-  authors: Rui Shu
-  description: Extended introduction to the change of variables theorem.
-
-- id: post-4
   date: 2018-10-13
   title: Flow-based Deep Generative Models
   url: https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models
   authors: Lilian Weng
   description: Covers change of variables, NICE, RNVP, MADE, Glow, MAF, IAF, WaveNet, PixelRNN.
 
-- id: post-5
+- id: post-4
   date: 2018-10-21
   title: Change of Variables for Normalizing Flows
   url: https://nealjean.com/ml/change-of-variables
