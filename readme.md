@@ -226,6 +226,10 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > A comprehensive tutorial on flows explaining the challenges addressed by this class of algorithm. Provides intuition on how to address those challenges, and explains the underlying mathematics using a simple step by step approach.
 
+1. 2020-12-07 - [Normalizing Flows](https://youtu.be/7TOvhz93G9o) by [Marc Deisenroth](https://mml-book.github.io/slopes-expectations.html)
+
+   > Part of a NeurIPS 2020 tutorial series titled "There and Back Again: A Tale of Slopes and Expectations". Link to [full series](https://youtube.com/playlist?list=PL93aLKqThq4h7UpgeNhkOtEeCnX3DMseS).
+
 1. 2020-11-23 - [Introduction to Normalizing Flows](https://youtu.be/u3vVyFVU_lI) by [Marcus Brubaker](https://mbrubake.github.io)
 
    > A great introduction to normalizing flows by one of the creators of [Stan](https://mc-stan.org) presented at ECCV 2020. The tutorial also provides an excellent review of various practical implementations.

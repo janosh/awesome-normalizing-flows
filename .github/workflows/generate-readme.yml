@@ -27,7 +27,7 @@ jobs:
         run: pip install pyyaml
 
       - name: Run make_readme.py
-        run: python data/make_readme.py
+        run: python -m data.make_readme
 
       - name: Push changes if any
         run: |

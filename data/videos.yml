@@ -51,3 +51,11 @@
   authors: Kapil Sachdeva
   authorsUrl: https://github.com/ksachdeva
   description: A comprehensive tutorial on flows explaining the challenges addressed by this class of algorithm. Provides intuition on how to address those challenges, and explains the underlying mathematics using a simple step by step approach.
+
+- id: vid-8
+  title: Normalizing Flows
+  url: https://youtu.be/7TOvhz93G9o
+  date: 2020-12-07
+  authors: Marc Deisenroth
+  authorsUrl: https://mml-book.github.io/slopes-expectations.html
+  description: 'Part of a NeurIPS 2020 tutorial series titled "There and Back Again: A Tale of Slopes and Expectations". Link to [full series](https://youtube.com/playlist?list=PL93aLKqThq4h7UpgeNhkOtEeCnX3DMseS).'
