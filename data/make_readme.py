@@ -1,3 +1,4 @@
+import datetime
 import re
 from os.path import dirname
 from typing import cast
@@ -51,6 +52,9 @@ def validate_item(itm: dict[str, str]) -> None:
 
     if "et al" in (authors := itm["authors"]):
         err = f"Incomplete authors in {id}: don't use et al in {authors = }, list them all"
+
+    if not isinstance(itm["date"], datetime.date):
+        err = f"Invalid date in {id}: {itm['date']}"
 
     if err:
         raise ValueError(err)
