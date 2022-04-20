@@ -69,7 +69,8 @@
   url: https://arxiv.org/abs/1804.00779
   date: 2018-04-03
   authors: Chin-Wei Huang, David Krueger, Alexandre Lacoste, Aaron Courville
-  description: Unifies and generalize autoregressive and normalizing flow approaches, replacing the (conditionally) affine univariate transformations of MAF/IAF with a more general class of invertible univariate transformations expressed as monotonic neural networks. Also demonstrates that the proposed neural autoregressive flows (NAF) are universal approximators for continuous probability distributions. ([Author's Code](https://github.com/CW-Huang/NAF))
+  description: Unifies and generalize autoregressive and normalizing flow approaches, replacing the (conditionally) affine univariate transformations of MAF/IAF with a more general class of invertible univariate transformations expressed as monotonic neural networks. Also demonstrates that the proposed neural autoregressive flows (NAF) are universal approximators for continuous probability distributions.
+  repo: https://github.com/CW-Huang/NAF
 
 - id: pub-11
   title: Deep Density Destructors
@@ -97,7 +98,8 @@
   url: https://arxiv.org/abs/1811.02155
   date: 2018-11-06
   authors: Sungwon Kim, Sang-gil Lee, Jongyoon Song, Jaehyeon Kim, Sungroh Yoon
-  description: A flow-based generative model for raw audo synthesis. ([Author's Code](https://github.com/ksw0306/FloWaveNet))
+  description: A flow-based generative model for raw audo synthesis.
+  repo: https://github.com/ksw0306/FloWaveNet
 
 - id: pub-15
   title: Block Neural Autoregressive Flow
@@ -125,7 +127,7 @@
   url: https://arxiv.org/abs/1907.08982
   date: 2019-07-21
   authors: Jonas Rothfuss, Fabio Ferreira, Simon Boehm, Simon Walther, Maxim Ulrich, Tamim Asfour, Andreas Krause
-  description: Normalizing flows for conditional density estimation. This paper proposes noise regularization to reduce overfitting. ([Blog](https://siboehm.com/articles/19/normalizing-flow-network) | )
+  description: Normalizing flows for conditional density estimation. This paper proposes noise regularization to reduce overfitting. [Blog](https://siboehm.com/articles/19/normalizing-flow-network)
 
 - id: pub-19
   title: 'Normalizing Flows: An Introduction and Review of Current Methods'
@@ -160,14 +162,15 @@
   url: https://arxiv.org/abs/2001.06448
   date: 2020-01-17
   authors: Lynton Ardizzone, Radek Mackowiak, Carsten Rother, Ullrich Köthe
-  description: They introduce a class of conditional normalizing flows with an information bottleneck objective. ([Author's Code](https://github.com/VLL-HD/exact_information_bottleneck))
+  description: They introduce a class of conditional normalizing flows with an information bottleneck objective.
+  repo: https://github.com/VLL-HD/exact_information_bottleneck
 
 - id: pub-24
   title: Stochastic Normalizing Flows
   url: https://arxiv.org/abs/2002.06707
   date: 2020-02-16
   authors: Hao Wu, Jonas Köhler, Frank Noé
-  description: Introduces SNF, an arbitrary sequence of deterministic invertible functions (the flow) and stochastic processes such as MCMC or Langevin Dynamics. The aim is to increase expressiveness of the chosen deterministic invertible function, while the trainable flow improves sampling efficiency over pure MCMC ([Tweet](https://twitter.com/FrankNoeBerlin/status/1229734899034329103)).
+  description: Introduces SNF, an arbitrary sequence of deterministic invertible functions (the flow) and stochastic processes such as MCMC or Langevin Dynamics. The aim is to increase expressiveness of the chosen deterministic invertible function, while the trainable flow improves sampling efficiency over pure MCMC [[Tweet](https://twitter.com/FrankNoeBerlin/status/1229734899034329103)).]
 
 - id: pub-25
   title: Stochastic Normalizing Flows
@@ -181,35 +184,39 @@
   url: https://arxiv.org/abs/2002.10516
   date: 2020-02-24
   authors: Ruizhi Deng, Bo Chang, Marcus A. Brubaker, Greg Mori, Andreas Lehrmann
-  description: They propose a normalizing flow using differential deformation of the Wiener process. Applied to time series. ([Tweet](https://twitter.com/r_giaquinto/status/1309648804824723464))
+  description: They propose a normalizing flow using differential deformation of the Wiener process. Applied to time series. [[Tweet](https://twitter.com/r_giaquinto/status/1309648804824723464)]
 
 - id: pub-27
   title: Gradient Boosted Normalizing Flows
   url: https://arxiv.org/abs/2002.11896
   date: 2020-02-27
   authors: Robert Giaquinto, Arindam Banerjee
-  description: Augment traditional normalizing flows with gradient boosting. They show that training multiple models can achieve good results and it's not necessary to have more complex distributions. ([Author's Code](https://github.com/robert-giaquinto/gradient-boosted-normalizing-flows))
+  description: Augment traditional normalizing flows with gradient boosting. They show that training multiple models can achieve good results and it's not necessary to have more complex distributions.
+  repo: https://github.com/robert-giaquinto/gradient-boosted-normalizing-flows
 
 - id: pub-28
   title: Gaussianization Flows
   url: https://arxiv.org/abs/2003.01941
   date: 2020-03-04
   authors: Chenlin Meng, Yang Song, Jiaming Song, Stefano Ermon
-  description: Uses a repeated composition of trainable kernel layers and orthogonal transformations. Very competitive versus some of the SOTA like Real-NVP, Glow and FFJORD. ([Author's Code](https://github.com/chenlin9/Gaussianization_Flows))
+  description: Uses a repeated composition of trainable kernel layers and orthogonal transformations. Very competitive versus some of the SOTA like Real-NVP, Glow and FFJORD.
+  repo: https://github.com/chenlin9/Gaussianization_Flows
 
 - id: pub-29
   title: Flows for simultaneous manifold learning and density estimation
   url: https://arxiv.org/abs/2003.13913
   date: 2020-03-31
   authors: Johann Brehmer, Kyle Cranmer
-  description: Normalizing flows that learn the data manifold and probability density function on that manifold. ([Tweet](https://twitter.com/kylecranmer/status/1250129080395223040) | [Author's Code](https://github.com/johannbrehmer/manifold-flow))
+  description: Normalizing flows that learn the data manifold and probability density function on that manifold. [[Tweet](https://twitter.com/kylecranmer/status/1250129080395223040)]
+  repo: https://github.com/johannbrehmer/manifold-flow
 
 - id: pub-30
   title: Normalizing Flows with Multi-Scale Autoregressive Priors
   url: https://arxiv.org/abs/2004.03891
   date: 2020-04-08
   authors: Shweta Mahajan, Apratim Bhattacharyya, Mario Fritz, Bernt Schiele, Stefan Roth
-  description: Improves the representational power of flow-based models by introducing channel-wise dependencies in their latent space through multi-scale autoregressive priors (mAR). ([Author's Code](https://github.com/visinf/mar-scf))
+  description: Improves the representational power of flow-based models by introducing channel-wise dependencies in their latent space through multi-scale autoregressive priors (mAR).
+  repo: https://github.com/visinf/mar-scf
 
 - id: pub-31
   title: 'Equivariant Flows: exact likelihood generative learning for symmetric densities'
@@ -223,21 +230,24 @@
   url: https://arxiv.org/abs/2006.08545
   date: 2020-06-15
   authors: Polina Kirichenko, Pavel Izmailov, Andrew Gordon Wilson
-  description: This study how traditional normalizing flow models can suffer from out-of-distribution data. They offer a solution to combat this issue by modifying the coupling layers. ([Tweet](https://twitter.com/polkirichenko/status/1272715634544119809) | [Author's Code](https://github.com/PolinaKirichenko/flows_ood))
+  description: This study how traditional normalizing flow models can suffer from out-of-distribution data. They offer a solution to combat this issue by modifying the coupling layers. [[Tweet](https://twitter.com/polkirichenko/status/1272715634544119809)]
+  repo: https://github.com/PolinaKirichenko/flows_ood
 
 - id: pub-33
   title: 'SurVAE Flows: Surjections to Bridge the Gap between VAEs and Flows'
   url: https://arxiv.org/abs/2007.02731
   date: 2020-07-06
   authors: Didrik Nielsen, Priyank Jaini, Emiel Hoogeboom, Ole Winther, Max Welling
-  description: They present a generalized framework that encompasses both Flows (deterministic maps) and VAEs (stochastic maps). By seeing deterministic maps `x = f(z)` as limiting cases of stochastic maps `x ~ p(x|z)`, the ELBO is reinterpreted as a change of variables formula for the stochastic maps. Moreover, they present a few examples of surjective layers using stochastic maps, which can be composed together with flow layers. ([Video](https://youtu.be/bXp8fk4MRXQ) | [Author's Code](https://github.com/didriknielsen/survae_flows))
+  description: They present a generalized framework that encompasses both Flows (deterministic maps) and VAEs (stochastic maps). By seeing deterministic maps `x = f(z)` as limiting cases of stochastic maps `x ~ p(x|z)`, the ELBO is reinterpreted as a change of variables formula for the stochastic maps. Moreover, they present a few examples of surjective layers using stochastic maps, which can be composed together with flow layers. [[Video](https://youtu.be/bXp8fk4MRXQ)]
+  repo: https://github.com/didriknielsen/survae_flows
 
 - id: pub-34
   title: 'AdvFlow: Inconspicuous Black-box Adversarial Attacks using Normalizing Flows'
   url: https://arxiv.org/abs/2007.07435
   date: 2020-07-15
   authors: Hadi M. Dolatabadi, Sarah Erfani, Christopher Leckie
-  description: An adversarial attack method on image classifiers that use normalizing flows. ([Author's Code](https://github.com/hmdolatabadi/AdvFlow))
+  description: An adversarial attack method on image classifiers that use normalizing flows.
+  repo: https://github.com/hmdolatabadi/AdvFlow
 
 - id: pub-35
   title: Haar Wavelet based Block Autoregressive Flows for Trajectories
@@ -265,7 +275,8 @@
   url: https://arxiv.org/abs/1901.11137
   date: 2019-01-30
   authors: Emiel Hoogeboom, Rianne van den Berg, Max Welling
-  description: The authors introduce autoregressive-like convolutional layers that operate on the channel **and** spatial axes. This improved upon the performance of image datasets compared to the standard 1x1 Convolutions. The trade-off is that the inverse operator is quite expensive however the authors provide a fast C++ implementation. ([Author's Code](https://github.com/ehoogeboom/emerging))
+  description: The authors introduce autoregressive-like convolutional layers that operate on the channel **and** spatial axes. This improved upon the performance of image datasets compared to the standard 1x1 Convolutions. The trade-off is that the inverse operator is quite expensive however the authors provide a fast C++ implementation.
+  repo: https://github.com/ehoogeboom/emerging
 
 - id: pub-39
   title: Fast Flow Reconstruction via Robust Invertible n x n Convolution
@@ -293,21 +304,24 @@
   url: https://arxiv.org/abs/2006.01910
   date: 2020-06-02
   authors: Emiel Hoogeboom, Victor Garcia Satorras, Jakub M. Tomczak, Max Welling
-  description: These authors introduce the exponential convolution to add the spatial dependencies in linear layers as an improvement of the 1x1 convolutions. It uses matrix exponentials to create cheap and invertible layers. They also use this new architecture to create _convolutional Sylvester flows_ and _graph convolutional exponentials_. ([Authors Code](https://github.com/ehoogeboom/convolution_exponential_and_sylvester))
+  description: These authors introduce the exponential convolution to add the spatial dependencies in linear layers as an improvement of the 1x1 convolutions. It uses matrix exponentials to create cheap and invertible layers. They also use this new architecture to create _convolutional Sylvester flows_ and _graph convolutional exponentials_.
+  repo: https://github.com/ehoogeboom/convolution_exponential_and_sylvester
 
 - id: pub-43
   title: 'CInC Flow: Characterizable Invertible 3x3 Convolution'
   url: https://arxiv.org/abs/2107.01358
   date: 2021-07-03
   authors: Sandeep Nagar, Marius Dufraisse, Girish Varma
-  description: These authors sought to improve the emerging convolutions as they were expensive. So they investigated the conditions for when 3x3 convolutions are invertible under which conditions (e.g. padding) and saw successful speedups. Furthermore, they developed a more expressive, invertible _Quad coupling_ layer. ([Authors Code](https://github.com/Naagar/Normalizing_Flow_3x3_inv))
+  description: These authors sought to improve the emerging convolutions as they were expensive. So they investigated the conditions for when 3x3 convolutions are invertible under which conditions (e.g. padding) and saw successful speedups. Furthermore, they developed a more expressive, invertible _Quad coupling_ layer.
+  repo: https://github.com/Naagar/Normalizing_Flow_3x3_inv
 
 - id: pub-44
   title: Orthogonalizing Convolutional Layers with the Cayley Transform
   url: https://arxiv.org/abs/2104.07167
   date: 2021-04-14
   authors: Asher Trockman, J. Zico Kolter
-  description: The authors parameterized the multichannel convolution to be orthogonal via the Cayley transform (skew-symmetric convolutions in the Fourier domain). This enables the inverse to be computed efficiently. ([Authors Code](https://github.com/locuslab/orthogonal-convolutions))
+  description: The authors parameterized the multichannel convolution to be orthogonal via the Cayley transform (skew-symmetric convolutions in the Fourier domain). This enables the inverse to be computed efficiently.
+  repo: https://github.com/locuslab/orthogonal-convolutions
 
 - id: pub-45
   title: Improving Normalizing Flows via Better Orthogonal Parameterizations
@@ -321,7 +335,8 @@
   url: https://proceedings.neurips.cc/paper/2019/hash/b1f62fa99de9f27a048344d55c5ef7a6-Abstract.html
   date: 2019-06-15
   authors: Mahdi Karami, Dale Schuurmans, Jascha Sohl-Dickstein, Laurent Dinh, Daniel Duckworth
-  description: The authors introduce convolutional layers that are circular and symmetric. The layer is invertible and cheap to evaluate. They also showcase how one can design non-linear elementwise bijectors that induce special properties via constraining the loss function. ([Authors Code](https://github.com/Karami-m/Invertible-Convolutional-Flow))
+  description: The authors introduce convolutional layers that are circular and symmetric. The layer is invertible and cheap to evaluate. They also showcase how one can design non-linear elementwise bijectors that induce special properties via constraining the loss function.
+  repo: https://github.com/Karami-m/Invertible-Convolutional-Flow
 
 - id: pub-47
   title: Invertible Convolutional Networks
@@ -335,11 +350,13 @@
   url: https://arxiv.org/abs/1907.07945
   date: 2019-07-18
   authors: Yang Song, Chenlin Meng, Stefano Ermon
-  description: The authors create an autoregressive-like coupling layer via masked convolutions which is fast and efficient to evaluate.([Authors Code](https://github.com/ermongroup/mintnet))
+  description: The authors create an autoregressive-like coupling layer via masked convolutions which is fast and efficient to evaluate.
+  repo: https://github.com/ermongroup/mintnet
 
 - id: pub-49
   title: Densely connected normalizing flows
   url: https://arxiv.org/abs/2106.04627
   date: 2019-07-18
   authors: Matej Grcić, Ivan Grubišić, Siniša Šegvić
-  description: The authors created a nested coupling structure to add more expressivity to standard coupling layers. They also utilize slicing/factorization for dimensionality reduction and Nystromer for the coupling layer conditioning network. They achieved SOTA results for normalizing flow models. ([Authors Code](https://github.com/matejgrcic/DenseFlow))
+  description: The authors created a nested coupling structure to add more expressivity to standard coupling layers. They also utilize slicing/factorization for dimensionality reduction and Nystromer for the coupling layer conditioning network. They achieved SOTA results for normalizing flow models.
+  repo: https://github.com/matejgrcic/DenseFlow

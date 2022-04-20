@@ -41,11 +41,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2021-07-03 - [CInC Flow: Characterizable Invertible 3x3 Convolution](https://arxiv.org/abs/2107.01358) by Nagar, Dufraisse et al.
 
-   > These authors sought to improve the emerging convolutions as they were expensive. So they investigated the conditions for when 3x3 convolutions are invertible under which conditions (e.g. padding) and saw successful speedups. Furthermore, they developed a more expressive, invertible _Quad coupling_ layer. ([Authors Code](https://github.com/Naagar/Normalizing_Flow_3x3_inv))
+   > These authors sought to improve the emerging convolutions as they were expensive. So they investigated the conditions for when 3x3 convolutions are invertible under which conditions (e.g. padding) and saw successful speedups. Furthermore, they developed a more expressive, invertible _Quad coupling_ layer. [[Code](https://github.com/Naagar/Normalizing_Flow_3x3_inv)]
 
 1. 2021-04-14 - [Orthogonalizing Convolutional Layers with the Cayley Transform](https://arxiv.org/abs/2104.07167) by Trockman, Kolter
 
-   > The authors parameterized the multichannel convolution to be orthogonal via the Cayley transform (skew-symmetric convolutions in the Fourier domain). This enables the inverse to be computed efficiently. ([Authors Code](https://github.com/locuslab/orthogonal-convolutions))
+   > The authors parameterized the multichannel convolution to be orthogonal via the Cayley transform (skew-symmetric convolutions in the Fourier domain). This enables the inverse to be computed efficiently. [[Code](https://github.com/locuslab/orthogonal-convolutions)]
 
 1. 2021-04-14 - [Improving Normalizing Flows via Better Orthogonal Parameterizations](https://invertibleworkshop.github.io/INNF_2019/accepted_papers/pdfs/INNF_2019_paper_30.pdf) by Goliński, Lezcano-Casado et al.
 
@@ -57,15 +57,15 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2020-07-15 - [AdvFlow: Inconspicuous Black-box Adversarial Attacks using Normalizing Flows](https://arxiv.org/abs/2007.07435) by Dolatabadi, Erfani et al.
 
-   > An adversarial attack method on image classifiers that use normalizing flows. ([Author's Code](https://github.com/hmdolatabadi/AdvFlow))
+   > An adversarial attack method on image classifiers that use normalizing flows. [[Code](https://github.com/hmdolatabadi/AdvFlow)]
 
 1. 2020-07-06 - [SurVAE Flows: Surjections to Bridge the Gap between VAEs and Flows](https://arxiv.org/abs/2007.02731) by Nielsen, Jaini et al.
 
-   > They present a generalized framework that encompasses both Flows (deterministic maps) and VAEs (stochastic maps). By seeing deterministic maps `x = f(z)` as limiting cases of stochastic maps `x ~ p(x|z)`, the ELBO is reinterpreted as a change of variables formula for the stochastic maps. Moreover, they present a few examples of surjective layers using stochastic maps, which can be composed together with flow layers. ([Video](https://youtu.be/bXp8fk4MRXQ) | [Author's Code](https://github.com/didriknielsen/survae_flows))
+   > They present a generalized framework that encompasses both Flows (deterministic maps) and VAEs (stochastic maps). By seeing deterministic maps `x = f(z)` as limiting cases of stochastic maps `x ~ p(x|z)`, the ELBO is reinterpreted as a change of variables formula for the stochastic maps. Moreover, they present a few examples of surjective layers using stochastic maps, which can be composed together with flow layers. [[Video](https://youtu.be/bXp8fk4MRXQ)] [[Code](https://github.com/didriknielsen/survae_flows)]
 
 1. 2020-06-15 - [Why Normalizing Flows Fail to Detect Out-of-Distribution Data](https://arxiv.org/abs/2006.08545) by Kirichenko, Izmailov et al.
 
-   > This study how traditional normalizing flow models can suffer from out-of-distribution data. They offer a solution to combat this issue by modifying the coupling layers. ([Tweet](https://twitter.com/polkirichenko/status/1272715634544119809) | [Author's Code](https://github.com/PolinaKirichenko/flows_ood))
+   > This study how traditional normalizing flow models can suffer from out-of-distribution data. They offer a solution to combat this issue by modifying the coupling layers. [[Tweet](https://twitter.com/polkirichenko/status/1272715634544119809)] [[Code](https://github.com/PolinaKirichenko/flows_ood)]
 
 1. 2020-06-03 - [Equivariant Flows: exact likelihood generative learning for symmetric densities](https://arxiv.org/abs/2006.02425) by Köhler, Klein et al.
 
@@ -73,7 +73,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2020-06-02 - [The Convolution Exponential and Generalized Sylvester Flows](https://arxiv.org/abs/2006.01910) by Hoogeboom, Satorras et al.
 
-   > These authors introduce the exponential convolution to add the spatial dependencies in linear layers as an improvement of the 1x1 convolutions. It uses matrix exponentials to create cheap and invertible layers. They also use this new architecture to create _convolutional Sylvester flows_ and _graph convolutional exponentials_. ([Authors Code](https://github.com/ehoogeboom/convolution_exponential_and_sylvester))
+   > These authors introduce the exponential convolution to add the spatial dependencies in linear layers as an improvement of the 1x1 convolutions. It uses matrix exponentials to create cheap and invertible layers. They also use this new architecture to create _convolutional Sylvester flows_ and _graph convolutional exponentials_. [[Code](https://github.com/ehoogeboom/convolution_exponential_and_sylvester)]
 
 1. 2020-05-11 - [iUNets: Fully invertible U-Nets with Learnable Upand Downsampling](https://arxiv.org/abs/2005.05220) by Etmann, Ke et al.
 
@@ -81,23 +81,23 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2020-04-08 - [Normalizing Flows with Multi-Scale Autoregressive Priors](https://arxiv.org/abs/2004.03891) by Mahajan, Bhattacharyya et al.
 
-   > Improves the representational power of flow-based models by introducing channel-wise dependencies in their latent space through multi-scale autoregressive priors (mAR). ([Author's Code](https://github.com/visinf/mar-scf))
+   > Improves the representational power of flow-based models by introducing channel-wise dependencies in their latent space through multi-scale autoregressive priors (mAR). [[Code](https://github.com/visinf/mar-scf)]
 
 1. 2020-03-31 - [Flows for simultaneous manifold learning and density estimation](https://arxiv.org/abs/2003.13913) by Brehmer, Cranmer
 
-   > Normalizing flows that learn the data manifold and probability density function on that manifold. ([Tweet](https://twitter.com/kylecranmer/status/1250129080395223040) | [Author's Code](https://github.com/johannbrehmer/manifold-flow))
+   > Normalizing flows that learn the data manifold and probability density function on that manifold. [[Tweet](https://twitter.com/kylecranmer/status/1250129080395223040)] [[Code](https://github.com/johannbrehmer/manifold-flow)]
 
 1. 2020-03-04 - [Gaussianization Flows](https://arxiv.org/abs/2003.01941) by Meng, Song et al.
 
-   > Uses a repeated composition of trainable kernel layers and orthogonal transformations. Very competitive versus some of the SOTA like Real-NVP, Glow and FFJORD. ([Author's Code](https://github.com/chenlin9/Gaussianization_Flows))
+   > Uses a repeated composition of trainable kernel layers and orthogonal transformations. Very competitive versus some of the SOTA like Real-NVP, Glow and FFJORD. [[Code](https://github.com/chenlin9/Gaussianization_Flows)]
 
 1. 2020-02-27 - [Gradient Boosted Normalizing Flows](https://arxiv.org/abs/2002.11896) by Giaquinto, Banerjee
 
-   > Augment traditional normalizing flows with gradient boosting. They show that training multiple models can achieve good results and it's not necessary to have more complex distributions. ([Author's Code](https://github.com/robert-giaquinto/gradient-boosted-normalizing-flows))
+   > Augment traditional normalizing flows with gradient boosting. They show that training multiple models can achieve good results and it's not necessary to have more complex distributions. [[Code](https://github.com/robert-giaquinto/gradient-boosted-normalizing-flows)]
 
 1. 2020-02-24 - [Modeling Continuous Stochastic Processes with Dynamic Normalizing Flows](https://arxiv.org/abs/2002.10516) by Deng, Chang et al.
 
-   > They propose a normalizing flow using differential deformation of the Wiener process. Applied to time series. ([Tweet](https://twitter.com/r_giaquinto/status/1309648804824723464))
+   > They propose a normalizing flow using differential deformation of the Wiener process. Applied to time series. [[Tweet](https://twitter.com/r_giaquinto/status/1309648804824723464)]
 
 1. 2020-02-21 - [Stochastic Normalizing Flows](https://arxiv.org/abs/2002.09547) by Hodgkinson, Heide et al.
 
@@ -105,11 +105,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2020-02-16 - [Stochastic Normalizing Flows](https://arxiv.org/abs/2002.06707) by Wu, Köhler et al.
 
-   > Introduces SNF, an arbitrary sequence of deterministic invertible functions (the flow) and stochastic processes such as MCMC or Langevin Dynamics. The aim is to increase expressiveness of the chosen deterministic invertible function, while the trainable flow improves sampling efficiency over pure MCMC ([Tweet](https://twitter.com/FrankNoeBerlin/status/1229734899034329103)).
+   > Introduces SNF, an arbitrary sequence of deterministic invertible functions (the flow) and stochastic processes such as MCMC or Langevin Dynamics. The aim is to increase expressiveness of the chosen deterministic invertible function, while the trainable flow improves sampling efficiency over pure MCMC [[Tweet](https://twitter.com/FrankNoeBerlin/status/1229734899034329103)).]
 
 1. 2020-01-17 - [Training Normalizing Flows with the Information Bottleneck for Competitive Generative Classification](https://arxiv.org/abs/2001.06448) by Ardizzone, Mackowiak et al.
 
-   > They introduce a class of conditional normalizing flows with an information bottleneck objective. ([Author's Code](https://github.com/VLL-HD/exact_information_bottleneck))
+   > They introduce a class of conditional normalizing flows with an information bottleneck objective. [[Code](https://github.com/VLL-HD/exact_information_bottleneck)]
 
 1. 2020-01-15 - [Invertible Generative Modeling using Linear Rational Splines](https://arxiv.org/abs/2001.05168) by Dolatabadi, Erfani et al.
 
@@ -125,19 +125,19 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2019-07-21 - [Noise Regularization for Conditional Density Estimation](https://arxiv.org/abs/1907.08982) by Rothfuss, Ferreira et al.
 
-   > Normalizing flows for conditional density estimation. This paper proposes noise regularization to reduce overfitting. ([Blog](https://siboehm.com/articles/19/normalizing-flow-network) | )
+   > Normalizing flows for conditional density estimation. This paper proposes noise regularization to reduce overfitting. [Blog](https://siboehm.com/articles/19/normalizing-flow-network)
 
 1. 2019-07-18 - [MintNet: Building Invertible Neural Networks with Masked Convolutions](https://arxiv.org/abs/1907.07945) by Song, Meng et al.
 
-   > The authors create an autoregressive-like coupling layer via masked convolutions which is fast and efficient to evaluate.([Authors Code](https://github.com/ermongroup/mintnet))
+   > The authors create an autoregressive-like coupling layer via masked convolutions which is fast and efficient to evaluate. [[Code](https://github.com/ermongroup/mintnet)]
 
 1. 2019-07-18 - [Densely connected normalizing flows](https://arxiv.org/abs/2106.04627) by Grcić, Grubišić et al.
 
-   > The authors created a nested coupling structure to add more expressivity to standard coupling layers. They also utilize slicing/factorization for dimensionality reduction and Nystromer for the coupling layer conditioning network. They achieved SOTA results for normalizing flow models. ([Authors Code](https://github.com/matejgrcic/DenseFlow))
+   > The authors created a nested coupling structure to add more expressivity to standard coupling layers. They also utilize slicing/factorization for dimensionality reduction and Nystromer for the coupling layer conditioning network. They achieved SOTA results for normalizing flow models. [[Code](https://github.com/matejgrcic/DenseFlow)]
 
 1. 2019-06-15 - [Invertible Convolutional Flow](https://proceedings.neurips.cc/paper/2019/hash/b1f62fa99de9f27a048344d55c5ef7a6-Abstract.html) by Karami, Schuurmans et al.
 
-   > The authors introduce convolutional layers that are circular and symmetric. The layer is invertible and cheap to evaluate. They also showcase how one can design non-linear elementwise bijectors that induce special properties via constraining the loss function. ([Authors Code](https://github.com/Karami-m/Invertible-Convolutional-Flow))
+   > The authors introduce convolutional layers that are circular and symmetric. The layer is invertible and cheap to evaluate. They also showcase how one can design non-linear elementwise bijectors that induce special properties via constraining the loss function. [[Code](https://github.com/Karami-m/Invertible-Convolutional-Flow)]
 
 1. 2019-06-15 - [Invertible Convolutional Networks](https://invertibleworkshop.github.io/INNF_2019/accepted_papers/pdfs/INNF_2019_paper_26.pdf) by Finzi, Izmailov et al.
 
@@ -169,11 +169,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2019-01-30 - [Emerging Convolutions for Generative Normalizing Flows](https://arxiv.org/abs/1901.11137) by Hoogeboom, Berg et al.
 
-   > The authors introduce autoregressive-like convolutional layers that operate on the channel **and** spatial axes. This improved upon the performance of image datasets compared to the standard 1x1 Convolutions. The trade-off is that the inverse operator is quite expensive however the authors provide a fast C++ implementation. ([Author's Code](https://github.com/ehoogeboom/emerging))
+   > The authors introduce autoregressive-like convolutional layers that operate on the channel **and** spatial axes. This improved upon the performance of image datasets compared to the standard 1x1 Convolutions. The trade-off is that the inverse operator is quite expensive however the authors provide a fast C++ implementation. [[Code](https://github.com/ehoogeboom/emerging)]
 
 1. 2018-11-06 - [FloWaveNet : A Generative Flow for Raw Audio](https://arxiv.org/abs/1811.02155) by Kim, Lee et al.
 
-   > A flow-based generative model for raw audo synthesis. ([Author's Code](https://github.com/ksw0306/FloWaveNet))
+   > A flow-based generative model for raw audo synthesis. [[Code](https://github.com/ksw0306/FloWaveNet)]
 
 1. 2018-10-02 - [FFJORD: Free-form Continuous Dynamics for Scalable Reversible Generative Models](https://arxiv.org/abs/1810.01367) by Grathwohl, Chen et al.
 
@@ -189,7 +189,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2018-04-03 - [Neural Autoregressive Flows](https://arxiv.org/abs/1804.00779) by Huang, Krueger et al.
 
-   > Unifies and generalize autoregressive and normalizing flow approaches, replacing the (conditionally) affine univariate transformations of MAF/IAF with a more general class of invertible univariate transformations expressed as monotonic neural networks. Also demonstrates that the proposed neural autoregressive flows (NAF) are universal approximators for continuous probability distributions. ([Author's Code](https://github.com/CW-Huang/NAF))
+   > Unifies and generalize autoregressive and normalizing flow approaches, replacing the (conditionally) affine univariate transformations of MAF/IAF with a more general class of invertible univariate transformations expressed as monotonic neural networks. Also demonstrates that the proposed neural autoregressive flows (NAF) are universal approximators for continuous probability distributions. [[Code](https://github.com/CW-Huang/NAF)]
 
 1. 2018-03-15 - [Sylvester Normalizing Flow for Variational Inference](https://arxiv.org/abs/1803.05649) by Berg, Hasenclever et al.
 
@@ -251,7 +251,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2020-07-15 - [Faster Uncertainty Quantification for Inverse Problems with Conditional Normalizing Flows](https://arxiv.org/abs/2007.07985) by Siahkoohi, Rizzuti et al.
 
-   > Uses conditional normalizing flows for inverse problems. ([Video](https://youtu.be/nPvZIKaRBkI))
+   > Uses conditional normalizing flows for inverse problems. [[Video](https://youtu.be/nPvZIKaRBkI)]
 
 1. 2020-06-25 - [SRFlow: Learning the Super-Resolution Space with Normalizing Flow](https://arxiv.org/abs/2006.14200) by Lugmayr, Danelljan et al.
 

@@ -23,7 +23,7 @@ for key in sections:
 
 seen_ids: set[str] = set()
 req_keys = {"id", "title", "url", "date", "authors", "description"}
-opt_keys = {"org", "authorsUrl", "lang"}
+opt_keys = {"org", "authorsUrl", "lang", "repo"}
 valid_langs = ("PyTorch", "TensorFlow", "JAX", "Julia", "Others")
 
 
@@ -110,6 +110,8 @@ for key, sec in sections.items():
         description = description.removesuffix("\n").replace("\n", f"\n{indent}> ")
         description = re.sub(r"\s+\n", "\n", description)  # remove trailing whitespace
         md_str += f"\n\n{indent}> {description}"
+        if repo := itm.get("repo", None):
+            md_str += f" [[Code]({repo})]"
 
         sec["markdown"] += md_str + "\n\n"
 
