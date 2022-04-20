@@ -31,7 +31,7 @@
   url: https://arxiv.org/abs/2007.07985
   date: 2020-07-15
   authors: Ali Siahkoohi, Gabrio Rizzuti, Philipp A. Witte, Felix J. Herrmann
-  description: Uses conditional normalizing flows for inverse problems. ([Video](https://youtu.be/nPvZIKaRBkI))
+  description: Uses conditional normalizing flows for inverse problems. [[Video](https://youtu.be/nPvZIKaRBkI)]
 
 - id: app-6
   title: Targeted free energy estimation via learned mappings
