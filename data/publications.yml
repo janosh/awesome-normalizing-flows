@@ -360,3 +360,11 @@
   authors: Matej Grcić, Ivan Grubišić, Siniša Šegvić
   description: The authors created a nested coupling structure to add more expressivity to standard coupling layers. They also utilize slicing/factorization for dimensionality reduction and Nystromer for the coupling layer conditioning network. They achieved SOTA results for normalizing flow models.
   repo: https://github.com/matejgrcic/DenseFlow
+
+- id: pub-50
+  title: Multi-scale Attention Flow for Probabilistic Time Series Forecasting.
+  url: https://arxiv.org/abs/2205.07493
+  date: 2022-05-16
+  authors: Shibo Feng, Ke Xu, Jiaxiang Wu, Pengcheng Wu, Fan Lin, Peilin Zhao
+  description: The authors proposed a novel non-autoregressive deep learning model, called Multi-scale Attention Normalizing Flow(MANF), where ones integrate multi-scale attention and relative position information and the multivariate data distribution is represented by the conditioned normalizing flow.
+  repo: No code temporally
