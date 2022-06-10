@@ -67,3 +67,9 @@ repos:
         stages: [commit, commit-msg]
         exclude: yarn.lock
         args: [--ignore-words-list, 'ba,gool']
+        
+  - repo: https://github.com/hanlaoshi/Deep-Generative-Modeling
+    rev: v2.0
+    hooks:
+      - id: Deep-Generative-Modeling
+       
