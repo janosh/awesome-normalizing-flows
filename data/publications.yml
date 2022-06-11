@@ -320,7 +320,7 @@
   url: https://arxiv.org/abs/2104.07167
   date: 2021-04-14
   authors: Asher Trockman, J. Zico Kolter
-  description: Parameterizes the multichannel convolution to be orthogonal via the Cayley transform (skew-symmetric convolutions in the Fourier domain). This enables the inverse to be computed efficiently.
+  description: Parametrizes the multichannel convolution to be orthogonal via the Cayley transform (skew-symmetric convolutions in the Fourier domain). This enables the inverse to be computed efficiently.
   repo: https://github.com/locuslab/orthogonal-convolutions
 
 - id: pub-45
@@ -328,7 +328,7 @@
   url: https://invertibleworkshop.github.io/INNF_2019/accepted_papers/pdfs/INNF_2019_paper_30.pdf
   date: 2021-04-14
   authors: Adam Goliński, Mario Lezcano-Casado, Tom Rainforth
-  description: Parameterizes the 1x1 convolution via the exponential map and the Cayley map. They demonstrate an improved optimization for the Sylvester normalizing flows.
+  description: Parametrizes the 1x1 convolution via the exponential map and the Cayley map. They demonstrate an improved optimization for the Sylvester normalizing flows.
 
 - id: pub-46
   title: Invertible Convolutional Flow
