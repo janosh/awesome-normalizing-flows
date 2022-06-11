@@ -94,7 +94,7 @@
 - id: code-12
   title: Normalizing Flows Overview
   date: 2017-07-11
-  url: https://docs.pymc.io/en/stable/pymc-examples/examples/variational_inference/normalizing_flows_overview.html
+  url: https://docs.pymc.io/v3/pymc-examples/examples/variational_inference/normalizing_flows_overview.html
   authors: PyMC3
   lang: Others
   description: A very helpful notebook showcasing how to work with flows in practice and comparing it to PyMC3's NUTS-based HMC kernel. Based on [Theano](https://github.com/Theano/Theano).

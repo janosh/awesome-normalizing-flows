@@ -127,7 +127,7 @@
   url: https://arxiv.org/abs/1907.08982
   date: 2019-07-21
   authors: Jonas Rothfuss, Fabio Ferreira, Simon Boehm, Simon Walther, Maxim Ulrich, Tamim Asfour, Andreas Krause
-  description: Normalizing flows for conditional density estimation. This paper proposes noise regularization to reduce overfitting. [Blog](https://siboehm.com/articles/19/normalizing-flow-network)
+  description: Normalizing flows for conditional density estimation. This paper proposes noise regularization to reduce overfitting. [[Blog](https://siboehm.com/articles/19/normalizing-flow-network)]
 
 - id: pub-19
   title: 'Normalizing Flows: An Introduction and Review of Current Methods'
@@ -275,7 +275,7 @@
   url: https://arxiv.org/abs/1901.11137
   date: 2019-01-30
   authors: Emiel Hoogeboom, Rianne van den Berg, Max Welling
-  description: The authors introduce autoregressive-like convolutional layers that operate on the channel **and** spatial axes. This improved upon the performance of image datasets compared to the standard 1x1 Convolutions. The trade-off is that the inverse operator is quite expensive however the authors provide a fast C++ implementation.
+  description: Introduces autoregressive-like convolutional layers that operate on the channel **and** spatial axes. This improved upon the performance of image datasets compared to the standard 1x1 Convolutions. The trade-off is that the inverse operator is quite expensive however the authors provide a fast C++ implementation.
   repo: https://github.com/ehoogeboom/emerging
 
 - id: pub-39
@@ -283,28 +283,28 @@
   url: https://arxiv.org/abs/1905.10170
   date: 2019-05-24
   authors: Thanh-Dat Truong, Khoa Luu, Chi Nhan Duong, Ngan Le, Minh-Triet Tran
-  description: The authors seek to overcome the limitation of 1x1 convolutions and proposes invertible nxn convolutions via a clever convolutional _affine_ function.
+  description: Seeks to overcome the limitation of 1x1 convolutions and proposes invertible nxn convolutions via a clever convolutional _affine_ function.
 
 - id: pub-40
   title: 'MaCow: Masked Convolutional Generative Flow'
   url: https://arxiv.org/abs/1902.04208
   date: 2019-02-19
   authors: Xuezhe Ma, Xiang Kong, Shanghang Zhang, Eduard Hovy
-  description: The authors introduce a masked convolutional generative flow (MaCow) layer using a small kernel to capture local connectivity. They showed some improvement over the GLOW model while being fast and stable.
+  description: Introduces a masked convolutional generative flow (MaCow) layer using a small kernel to capture local connectivity. They showed some improvement over the GLOW model while being fast and stable.
 
 - id: pub-41
   title: 'iUNets: Fully invertible U-Nets with Learnable Upand Downsampling'
   url: https://arxiv.org/abs/2005.05220
   date: 2020-05-11
   authors: Christian Etmann, Rihuan Ke, Carola-Bibiane Schönlieb
-  description: The authors extend the classical UNet to be fully invertible by enabling invertible, orthogonal upsampling and downsampling layers. It is rather efficient so it should be able to enable stable training of deeper and larger networks.
+  description: Extends the classical UNet to be fully invertible by enabling invertible, orthogonal upsampling and downsampling layers. It is rather efficient so it should be able to enable stable training of deeper and larger networks.
 
 - id: pub-42
   title: The Convolution Exponential and Generalized Sylvester Flows
   url: https://arxiv.org/abs/2006.01910
   date: 2020-06-02
   authors: Emiel Hoogeboom, Victor Garcia Satorras, Jakub M. Tomczak, Max Welling
-  description: These authors introduce the exponential convolution to add the spatial dependencies in linear layers as an improvement of the 1x1 convolutions. It uses matrix exponentials to create cheap and invertible layers. They also use this new architecture to create _convolutional Sylvester flows_ and _graph convolutional exponentials_.
+  description: Introduces exponential convolution to add the spatial dependencies in linear layers as an improvement of the 1x1 convolutions. It uses matrix exponentials to create cheap and invertible layers. They also use this new architecture to create _convolutional Sylvester flows_ and _graph convolutional exponentials_.
   repo: https://github.com/ehoogeboom/convolution_exponential_and_sylvester
 
 - id: pub-43
@@ -312,7 +312,7 @@
   url: https://arxiv.org/abs/2107.01358
   date: 2021-07-03
   authors: Sandeep Nagar, Marius Dufraisse, Girish Varma
-  description: These authors sought to improve the emerging convolutions as they were expensive. So they investigated the conditions for when 3x3 convolutions are invertible under which conditions (e.g. padding) and saw successful speedups. Furthermore, they developed a more expressive, invertible _Quad coupling_ layer.
+  description: Seeks to improve expensive convolutions. They investigate the conditions for when 3x3 convolutions are invertible under which conditions (e.g. padding) and saw successful speedups. Furthermore, they developed a more expressive, invertible _Quad coupling_ layer.
   repo: https://github.com/Naagar/Normalizing_Flow_3x3_inv
 
 - id: pub-44
@@ -320,7 +320,7 @@
   url: https://arxiv.org/abs/2104.07167
   date: 2021-04-14
   authors: Asher Trockman, J. Zico Kolter
-  description: The authors parameterized the multichannel convolution to be orthogonal via the Cayley transform (skew-symmetric convolutions in the Fourier domain). This enables the inverse to be computed efficiently.
+  description: Parametrizes the multichannel convolution to be orthogonal via the Cayley transform (skew-symmetric convolutions in the Fourier domain). This enables the inverse to be computed efficiently.
   repo: https://github.com/locuslab/orthogonal-convolutions
 
 - id: pub-45
@@ -328,14 +328,14 @@
   url: https://invertibleworkshop.github.io/INNF_2019/accepted_papers/pdfs/INNF_2019_paper_30.pdf
   date: 2021-04-14
   authors: Adam Goliński, Mario Lezcano-Casado, Tom Rainforth
-  description: The authors parameterize the 1x1 convolution via the exponential map and the Cayley map. They demonstrate an improved optimization for the Sylvester normalizing flows.
+  description: Parametrizes the 1x1 convolution via the exponential map and the Cayley map. They demonstrate an improved optimization for the Sylvester normalizing flows.
 
 - id: pub-46
   title: Invertible Convolutional Flow
   url: https://proceedings.neurips.cc/paper/2019/hash/b1f62fa99de9f27a048344d55c5ef7a6-Abstract.html
   date: 2019-06-15
   authors: Mahdi Karami, Dale Schuurmans, Jascha Sohl-Dickstein, Laurent Dinh, Daniel Duckworth
-  description: The authors introduce convolutional layers that are circular and symmetric. The layer is invertible and cheap to evaluate. They also showcase how one can design non-linear elementwise bijectors that induce special properties via constraining the loss function.
+  description: Introduces convolutional layers that are circular and symmetric. The layer is invertible and cheap to evaluate. They also showcase how one can design non-linear elementwise bijectors that induce special properties via constraining the loss function.
   repo: https://github.com/Karami-m/Invertible-Convolutional-Flow
 
 - id: pub-47
@@ -343,14 +343,14 @@
   url: https://invertibleworkshop.github.io/INNF_2019/accepted_papers/pdfs/INNF_2019_paper_26.pdf
   date: 2019-06-15
   authors: Marc Finzi, Pavel Izmailov, Wesley Maddox, Polina Kirichenko, Andrew Gordon Wilson
-  description: The authors showcase how one can turn standard convolutional neural network layers to be invertible via Fourier transformations. They also introduce better activations which might be better suited to normalizing flows, e.g. SneakyRELU
+  description: Showcases how standard convolutional layers can be made invertible via Fourier transformations. They also introduce better activations which might be better suited to normalizing flows, e.g. SneakyRELU
 
 - id: pub-48
   title: 'MintNet: Building Invertible Neural Networks with Masked Convolutions'
   url: https://arxiv.org/abs/1907.07945
   date: 2019-07-18
   authors: Yang Song, Chenlin Meng, Stefano Ermon
-  description: The authors create an autoregressive-like coupling layer via masked convolutions which is fast and efficient to evaluate.
+  description: Creates an autoregressive-like coupling layer via masked convolutions which is fast and efficient to evaluate.
   repo: https://github.com/ermongroup/mintnet
 
 - id: pub-49
@@ -358,5 +358,21 @@
   url: https://arxiv.org/abs/2106.04627
   date: 2019-07-18
   authors: Matej Grcić, Ivan Grubišić, Siniša Šegvić
-  description: The authors created a nested coupling structure to add more expressivity to standard coupling layers. They also utilize slicing/factorization for dimensionality reduction and Nystromer for the coupling layer conditioning network. They achieved SOTA results for normalizing flow models.
+  description: Creates a nested coupling structure to add more expressivity to standard coupling layers. They also utilize slicing/factorization for dimensionality reduction and Nystromer for the coupling layer conditioning network. They achieved SOTA results for normalizing flow models.
   repo: https://github.com/matejgrcic/DenseFlow
+
+- id: pub-50
+  title: Multi-scale Attention Flow for Probabilistic Time Series Forecasting
+  url: https://arxiv.org/abs/2205.07493
+  date: 2022-05-16
+  authors: Shibo Feng, Ke Xu, Jiaxiang Wu, Pengcheng Wu, Fan Lin, Peilin Zhao
+  description: Proposes a novel non-autoregressive deep learning model, called Multi-scale Attention Normalizing Flow(MANF), where one integrates multi-scale attention and relative position information and the multivariate data distribution is represented by the conditioned normalizing flow.
+  repo: null
+
+- id: pub-51
+  title: Multivariate Probabilistic Time Series Forecasting via Conditioned Normalizing Flows
+  url: https://arxiv.org/abs/2002.06103
+  date: 2020-09-28
+  authors: Kashif Rasul, Abdul-Saboor Sheikh, Ingmar Schuster, Urs M Bergmann, Roland Vollgraf
+  description: Models the multi-variate temporal dynamics of time series via an autoregressive deep learning model, where the data distribution is represented by a conditioned normalizing flow. [[OpenReview.net](https://openreview.net/forum?id=WiGQBFuVRv)]
+  repo: https://github.com/zalandoresearch/pytorch-ts
