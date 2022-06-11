@@ -368,7 +368,7 @@
   authors: Shibo Feng, Ke Xu, Jiaxiang Wu, Pengcheng Wu, Fan Lin, Peilin Zhao
   description: Proposes a novel non-autoregressive deep learning model, called Multi-scale Attention Normalizing Flow(MANF), where one integrates multi-scale attention and relative position information and the multivariate data distribution is represented by the conditioned normalizing flow.
   repo: null
-  
+
   - id: pub-51
   title: Multivariate Probabilistic Time Series Forecasting via Conditioned Normalizing Flows
   url: https://openreview.net/forum?id=WiGQBFuVRv
