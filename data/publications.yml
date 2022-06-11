@@ -127,7 +127,7 @@
   url: https://arxiv.org/abs/1907.08982
   date: 2019-07-21
   authors: Jonas Rothfuss, Fabio Ferreira, Simon Boehm, Simon Walther, Maxim Ulrich, Tamim Asfour, Andreas Krause
-  description: Normalizing flows for conditional density estimation. This paper proposes noise regularization to reduce overfitting. [Blog](https://siboehm.com/articles/19/normalizing-flow-network)
+  description: Normalizing flows for conditional density estimation. This paper proposes noise regularization to reduce overfitting. [[Blog](https://siboehm.com/articles/19/normalizing-flow-network)]
 
 - id: pub-19
   title: 'Normalizing Flows: An Introduction and Review of Current Methods'
@@ -369,10 +369,10 @@
   description: Proposes a novel non-autoregressive deep learning model, called Multi-scale Attention Normalizing Flow(MANF), where one integrates multi-scale attention and relative position information and the multivariate data distribution is represented by the conditioned normalizing flow.
   repo: null
 
-  - id: pub-51
+- id: pub-51
   title: Multivariate Probabilistic Time Series Forecasting via Conditioned Normalizing Flows
-  url: https://openreview.net/forum?id=WiGQBFuVRv
+  url: https://arxiv.org/abs/2002.06103
   date: 2020-09-28
   authors: Kashif Rasul, Abdul-Saboor Sheikh, Ingmar Schuster, Urs M Bergmann, Roland Vollgraf
-  description: model the multi-variate temporal dynamics of time series via an autoregressive deep learning model, where the data distribution  is represented by a conditioned normalizing flow.
+  description: Models the multi-variate temporal dynamics of time series via an autoregressive deep learning model, where the data distribution is represented by a conditioned normalizing flow. [[OpenReview.net](https://openreview.net/forum?id=WiGQBFuVRv)]
   repo: https://github.com/zalandoresearch/pytorch-ts
