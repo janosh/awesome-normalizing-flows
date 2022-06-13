@@ -1,8 +1,16 @@
 {
+  "aliveStatusCodes": [
+    200,
+    503
+  ],
   "ignorePatterns": [
     {
       "pattern": "^#",
       "comment": "ignore links starting with a dash (those in the readme's ToC)"
+    },
+    {
+      "pattern": "^https://twitter.com",
+      "comment": "Twitter seems to block bot requests, getting a lot of 404s"
     }
   ]
 }
