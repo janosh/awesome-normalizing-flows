@@ -455,7 +455,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
    >
    > Table 1 in the paper has a good comparison with traditional NFs.
 
-1. 2017-07-11 - [Normalizing Flows Overview](https://docs.pymc.io/v3/pymc-examples/examples/variational_inference/normalizing_flows_overview.html) by PyMC3
+1. 2017-07-11 - [Normalizing Flows Overview](https://docs.pymc.io/en/v3/pymc-examples/examples/variational_inference/normalizing_flows_overview.html) by PyMC3
 
    > A very helpful notebook showcasing how to work with flows in practice and comparing it to PyMC3's NUTS-based HMC kernel. Based on [Theano](https://github.com/Theano/Theano).
 
@@ -467,6 +467,10 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 <br>
 
 ## 🌐 Blog Posts
+
+1. 2020-08-19 - [Chapter on flows from the book 'Deep Learning for Molecules and Materials'](https://dmol.pub/dl/flows) by Andrew White
+
+   > A nice introduction starting with the change of variables formula (aka flow equation), going on to cover some common bijectors and finishing with a code example showing how to fit the double-moon distribution with TensorFlow Probability.
 
 1. 2018-10-21 - [Change of Variables for Normalizing Flows](https://nealjean.com/ml/change-of-variables) by Neal Jean
 
