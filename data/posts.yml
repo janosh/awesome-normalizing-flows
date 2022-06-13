@@ -26,3 +26,14 @@
   url: https://nealjean.com/ml/change-of-variables
   authors: Neal Jean
   description: Short and simple explanation of change of variables theorem i.t.o. probability mass conservation.
+
+- id: post-5
+  date: 2020-08-19
+  date_added: 2022-06-13
+  title: Chapter on flows from the book 'Deep Learning for Molecules and Materials'
+  url: https://dmol.pub/dl/flows
+  # NF chapter was added 2020-12-06 in commit
+  # https://github.com/whitead/dmol-book/commit/e6d0b3295b73184423ab3a331feba3edbc103c0a
+  # file url: https://github.com/whitead/dmol-book/blob/master/dl/flows.ipynb
+  authors: Andrew White
+  description: A nice introduction starting with the change of variables formula (aka flow equation), going on to cover some common bijectors and finishing with a code example showing how to fit the double-moon distribution with TensorFlow Probability.
