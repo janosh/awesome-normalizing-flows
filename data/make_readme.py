@@ -1,13 +1,13 @@
 import datetime
 import re
 from os.path import dirname
-from typing import cast
+from typing import Any, cast
 
 import yaml
 
 ROOT = dirname(dirname(__file__))
 
-sections = {
+sections: dict[str, dict[str, Any]] = {
     "publications": {"title": "## 📝 Publications"},
     "applications": {"title": "## 🛠️ Applications"},
     "videos": {"title": "## 📺 Videos"},
@@ -22,9 +22,9 @@ for key in sections:
 
 
 seen_ids: set[str] = set()
-req_keys = {"id", "title", "url", "date", "authors", "description"}
-opt_keys = {"org", "authorsUrl", "lang", "repo"}
-valid_langs = ("PyTorch", "TensorFlow", "JAX", "Julia", "Others")
+required_keys = {"id", "title", "url", "date", "authors", "description"}
+optional_keys = {"org", "authors_url", "lang", "repo", "date_added"}
+valid_languages = ("PyTorch", "TensorFlow", "JAX", "Julia", "Others")
 
 
 def validate_item(itm: dict[str, str]) -> None:
@@ -41,17 +41,21 @@ def validate_item(itm: dict[str, str]) -> None:
     if not id.startswith(("pub-", "app-", "vid-", "pkg-", "code-", "post-")):
         err = f"Invalid {id = }"
 
-    if id.startswith(("pkg-", "code-")) and itm["lang"] not in valid_langs:
-        err = f"Invalid lang in {id}: {itm['lang']}, must be one of {valid_langs}"
+    if id.startswith(("pkg-", "code-")) and itm["lang"] not in valid_languages:
+        err = f"Invalid lang in {id}: {itm['lang']}, must be one of {valid_languages}"
 
-    if missing_keys := req_keys - itm_keys:
+    if missing_keys := required_keys - itm_keys:
         err = f"Missing key(s) in {id}: {missing_keys}"
 
-    if bad_keys := itm_keys - req_keys - opt_keys:
+    if bad_keys := itm_keys - required_keys - optional_keys:
         err = f"Unexpected key(s) in {id}: {bad_keys}"
 
-    if "et al" in (authors := itm["authors"]):
-        err = f"Incomplete authors in {id}: don't use et al in {authors = }, list them all"
+    authors = itm["authors"]
+    if "et al" in authors or "et. al" in authors:
+        err = (
+            f"Incomplete authors in {id}: don't use 'et al' in {authors = }, list "
+            "them all"
+        )
 
     if not isinstance(itm["date"], datetime.date):
         err = f"Invalid date in {id}: {itm['date']}"
@@ -85,15 +89,17 @@ for key, sec in sections.items():
 
         validate_item(itm)
 
-        authors, date, description, _id, title, url = (itm[k] for k in sorted(req_keys))
+        authors, date, description, _id, title, url = (
+            itm[k] for k in sorted(required_keys)
+        )
 
         authors = authors.split(", ")
         if key in ("publications", "applications"):
             authors = [author.split(" ")[-1] for author in authors]
         authors = ", ".join(authors[:2]) + (" et al." if len(authors) > 2 else "")
 
-        if "authorsUrl" in itm:
-            authors = f"[{authors}]({itm['authorsUrl']})"
+        if "authors_url" in itm:
+            authors = f"[{authors}]({itm['authors_url']})"
 
         md_str = f"1. {date} - [{title}]({url}) by {authors}"
 

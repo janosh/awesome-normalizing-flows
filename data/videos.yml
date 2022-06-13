@@ -17,7 +17,7 @@
   url: https://youtu.be/P4Ta-TZPVi0
   date: 2019-10-09
   authors: Laurent Dinh
-  authorsUrl: https://laurent-dinh.github.io
+  authors_url: https://laurent-dinh.github.io
   description: The first author on both the NICE and RNVP papers and one of the first in this field gives an introductory talk at "Machine Learning for Physics and the Physics Learning of, 2019".
 
 - id: vid-4
@@ -25,7 +25,7 @@
   url: https://youtu.be/i7LjDvsLWCg
   date: 2019-12-06
   authors: Ari Seff
-  authorsUrl: https://scholar.google.com/citations?user=IxBGctYAAAAJ
+  authors_url: https://scholar.google.com/citations?user=IxBGctYAAAAJ
   description: A great 3blue1brown-style video explaining the basics of normalizing flows.
 
 - id: vid-5
@@ -33,7 +33,7 @@
   url: https://youtu.be/JBb5sSC0JoY
   date: 2020-02-06
   authors: Pieter Abbeel
-  authorsUrl: https://sites.google.com/view/berkeley-cs294-158-sp20/home
+  authors_url: https://sites.google.com/view/berkeley-cs294-158-sp20/home
   description: A really thorough explanation of normalizing flows. Also includes some sample code.
 
 - id: vid-6
@@ -41,7 +41,7 @@
   url: https://youtu.be/u3vVyFVU_lI
   date: 2020-11-23
   authors: Marcus Brubaker
-  authorsUrl: https://mbrubake.github.io
+  authors_url: https://mbrubake.github.io
   description: A great introduction to normalizing flows by one of the creators of [Stan](https://mc-stan.org) presented at ECCV 2020. The tutorial also provides an excellent review of various practical implementations.
 
 - id: vid-7
@@ -49,7 +49,7 @@
   url: https://youtu.be/IuXU2dBOJyw
   date: 2021-01-16
   authors: Kapil Sachdeva
-  authorsUrl: https://github.com/ksachdeva
+  authors_url: https://github.com/ksachdeva
   description: A comprehensive tutorial on flows explaining the challenges addressed by this class of algorithm. Provides intuition on how to address those challenges, and explains the underlying mathematics using a simple step by step approach.
 
 - id: vid-8
@@ -57,5 +57,5 @@
   url: https://youtu.be/7TOvhz93G9o
   date: 2020-12-07
   authors: Marc Deisenroth
-  authorsUrl: https://mml-book.github.io/slopes-expectations.html
+  authors_url: https://mml-book.github.io/slopes-expectations.html
   description: 'Part of a NeurIPS 2020 tutorial series titled "There and Back Again: A Tale of Slopes and Expectations". Link to [full series](https://youtube.com/playlist?list=PL93aLKqThq4h7UpgeNhkOtEeCnX3DMseS).'
