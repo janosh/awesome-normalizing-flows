@@ -19,7 +19,7 @@
   date: 2019-02-06
   url: https://github.com/acids-ircam/pytorch_flows
   authors: acids-ircam
-  authorsUrl: https://github.com/acids-ircam
+  authors_url: https://github.com/acids-ircam
   lang: PyTorch
   description: A great repo with some basic PyTorch implementations of normalizing flows from scratch.
 
@@ -37,7 +37,7 @@
   url: https://git.io/JiWaG # Jupyter notebook 1
   # Jupyter notebook 2: https://git.io/JiW2H
   authors: torchdyn
-  authorsUrl: https://torchdyn.readthedocs.io
+  authors_url: https://torchdyn.readthedocs.io
   lang: PyTorch
   description: Example of how to use FFJORD as a continuous normalizing flow (CNF). Based on the PyTorch suite `torchdyn` which offers continuous neural architectures.
 
@@ -46,7 +46,7 @@
   date: 2020-07-19
   url: https://pyro.ai/examples/normalizing_flows_i
   authors: pyro.ai
-  authorsUrl: https://pyro.ai
+  authors_url: https://pyro.ai
   lang: PyTorch
   description: A tutorial about how to use the `pyro-ppl` library (based on PyTorch) to use Normalizing flows. They provide some SOTA methods including NSF and MAF. [Parts 2 and 3 coming later](https://github.com/pyro-ppl/pyro/issues/1992).
 
@@ -63,7 +63,7 @@
   date: 2020-06-12
   url: https://pyro.ai/numpyro/examples/neutra
   authors: numpyro
-  authorsUrl: https://num.pyro.ai
+  authors_url: https://num.pyro.ai
   lang: JAX
   description: Features an example of how Normalizing flows can be used to get more robust posteriors from Monte Carlo methods. Uses the `numpyro` library which is a PPL with JAX as the backend. The NF implementations include the basic ones like IAF and BNAF.
 
@@ -104,7 +104,7 @@
   date: 2018-06-11
   url: https://github.com/davidinouye/destructive-deep-learning
   authors: David Inouye
-  authorsUrl: https://davidinouye.com
+  authors_url: https://davidinouye.com
   lang: Others
   description: |
     Code base for the paper [Deep Density Destructors](https://proceedings.mlr.press/v80/inouye18a.html) by Inouye & Ravikumar (2018). An entire suite of iterative methods including tree-based as well as Gaussianization methods which are similar to normalizing flows except they converge iteratively instead of fully parametrized. That is, they still use bijective transforms, compute the Jacobian, check the likelihood and you can still sample and get probability density estimates. The only difference is you repeat the following two steps until convergence:
