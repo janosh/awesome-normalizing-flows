@@ -7,7 +7,7 @@ default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.1.0
+    rev: v4.3.0
     hooks:
       - id: check-case-conflict
       - id: check-symlinks
@@ -25,7 +25,7 @@ repos:
       - id: flake8
 
   - repo: https://github.com/psf/black
-    rev: 22.3.0
+    rev: 22.6.0
     hooks:
       - id: black
 
@@ -51,8 +51,6 @@ repos:
         language: pygrep
         types: [markdown]
 
-  - repo: local
-    hooks:
       - id: no-http
         name: URLs must use HTTPS
         entry: 'http:'
@@ -60,8 +58,6 @@ repos:
         types_or: [markdown, yaml]
         exclude: .pre-commit-config.yaml
 
-  - repo: local
-    hooks:
       - id: no-repeated-whitespace
         name: No repeated spaces
         entry: '\S+\s{2,}'
