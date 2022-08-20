@@ -35,6 +35,10 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ## 📝 Publications
 
+1. 2022-08-18 - [ManiFlow: Implicitly Representing Manifolds with Normalizing Flows](https://arxiv.org/abs/2208.08932) by Postels, Danelljan et al.
+
+   > The invertibility constraint of NFs imposes limitations on data distributions that reside on lower dimensional manifolds embedded in higher dimensional space. This is often bypassed by adding noise to the data which impacts generated sample quality. This work generates samples from the original data distribution given full knowledge of perturbed distribution and noise model. They establish NFs trained on perturbed data implicitly represent the manifold in regions of maximum likelihood, then propose an optimization objective that recovers the most likely point on the manifold given a sample from the perturbed distribution.
+
 1. 2022-05-16 - [Multi-scale Attention Flow for Probabilistic Time Series Forecasting](https://arxiv.org/abs/2205.07493) by Feng, Xu et al.
 
    > Proposes a novel non-autoregressive deep learning model, called Multi-scale Attention Normalizing Flow(MANF), where one integrates multi-scale attention and relative position information and the multivariate data distribution is represented by the conditioned normalizing flow.

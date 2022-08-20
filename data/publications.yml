@@ -376,3 +376,10 @@
   authors: Kashif Rasul, Abdul-Saboor Sheikh, Ingmar Schuster, Urs M Bergmann, Roland Vollgraf
   description: Models the multi-variate temporal dynamics of time series via an autoregressive deep learning model, where the data distribution is represented by a conditioned normalizing flow. [[OpenReview.net](https://openreview.net/forum?id=WiGQBFuVRv)]
   repo: https://github.com/zalandoresearch/pytorch-ts
+
+- id: pub-52
+  title: 'ManiFlow: Implicitly Representing Manifolds with Normalizing Flows'
+  url: https://arxiv.org/abs/2208.08932
+  date: 2022-08-18
+  authors: Janis Postels, Martin Danelljan, Luc Van Gool, Federico Tombari
+  description: The invertibility constraint of NFs imposes limitations on data distributions that reside on lower dimensional manifolds embedded in higher dimensional space. This is often bypassed by adding noise to the data which impacts generated sample quality. This work generates samples from the original data distribution given full knowledge of perturbed distribution and noise model. They establish NFs trained on perturbed data implicitly represent the manifold in regions of maximum likelihood, then propose an optimization objective that recovers the most likely point on the manifold given a sample from the perturbed distribution.
