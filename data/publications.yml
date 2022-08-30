@@ -383,3 +383,19 @@
   date: 2022-08-18
   authors: Janis Postels, Martin Danelljan, Luc Van Gool, Federico Tombari
   description: The invertibility constraint of NFs imposes limitations on data distributions that reside on lower dimensional manifolds embedded in higher dimensional space. This is often bypassed by adding noise to the data which impacts generated sample quality. This work generates samples from the original data distribution given full knowledge of perturbed distribution and noise model. They establish NFs trained on perturbed data implicitly represent the manifold in regions of maximum likelihood, then propose an optimization objective that recovers the most likely point on the manifold given a sample from the perturbed distribution.
+
+- id: pub-53
+  title: Unconstrained Monotonic Neural Networks
+  url: https://arxiv.org/abs/1908.05164
+  date: 2019-09-14
+  authors: Antoine Wehenkel, Gilles Louppe
+  description: UMNN relaxes the constraints on weights and activation functions of monotonic neural networks by setting the derivative of the transformation as the output of an unconstrained neural network. The transformation itself is computed by numerical integration (Clenshaw-Curtis quadrature) of the derivative.
+  repo: https://github.com/AWehenkel/UMNN
+
+- id: pub-54
+  title: Graphical Normalizing Flows
+  url: https://arxiv.org/abs/2006.02548
+  date: 2022-06-03
+  authors: Antoine Wehenkel, Gilles Louppe
+  description: This work revisits coupling and autoregressive transformations as probabilistic graphical models showing they reduce to Bayesian networks with a pre-defined topology. From this new perspective, the authors propose the graphical normalizing flow, a new invertible transformation with either a prescribed or a learnable graphical structure. This model provides a promising way to inject domain knowledge into normalizing flows while preserving both the interpretability of Bayesian networks and the representation capacity of normalizing flows.
+  repo: https://github.com/AWehenkel/Graphical-Normalizing-Flows
