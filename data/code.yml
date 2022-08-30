@@ -115,7 +115,7 @@
     Table 1 in the paper has a good comparison with traditional NFs.
 
 - id: code-14
-  title: UMNN
+  title: Unconstrained Monotonic Neural Networks (UMNN)
   date: 2019-09-19
   url: https://github.com/AWehenkel/UMNN
   authors: Antoine Wehenkel
@@ -123,7 +123,7 @@
   description: Official implementation of "Unconstrained Monotonic Neural Networks" and the experiments presented in the paper.
 
 - id: code-15
-  title: Graphical-Normalizing-Flows
+  title: Graphical Normalizing Flows
   date: 2020-02-04
   url: https://github.com/AWehenkel/Graphical-Normalizing-Flows
   authors: Antoine Wehenkel
