@@ -325,6 +325,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ### <img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages
 
+1. 2022-05-21 - [LAMPE](https://github.com/francois-rozet/lampe) by [François Rozet](https://francois-rozet.github.io)
+   &ensp;<img src="https://img.shields.io/github/stars/francois-rozet/lampe" alt="GitHub repo stars" valign="middle" />
+
+   > LAMPE is a PyTorch library for posterior estimation that also implements normalizing flows. It relies heavily on PyTorch's built-in distributions and transformations, which makes the implementation concise, easy to understand and extend.
+
 1. 2020-12-07 - [flowtorch](https://github.com/facebookincubator/flowtorch) by [Facebook / Meta](https://opensource.fb.com)
    &ensp;<img src="https://img.shields.io/github/stars/facebookincubator/flowtorch" alt="GitHub repo stars" valign="middle" />
 
