@@ -67,14 +67,15 @@ def validate_item(itm: dict[str, str]) -> None:
 for key, sec in sections.items():
     sec["markdown"] = ""
 
-    # keep in outer loop to refill subsections for Code/Packages
+    # keep inside outer sections loop to refill language subsections for sections
+    # Code and Packages
     lang_names = ["PyTorch", "TensorFlow", "JAX", "Julia", "Others"]
 
     # sort first by language with order determined by lang_names (only applies to
     # Package and Code sections), then by date
     sec["items"].sort(key=lambda x: x["date"], reverse=True)
     if key in ("packages", "code"):
-        sec["items"].sort(key=lambda x: lang_names.index(x["lang"]))
+        sec["items"].sort(key=lambda itm: lang_names.index(itm["lang"]))  # noqa: B023
 
     for itm in sec["items"]:
         itm = cast(dict[str, str], itm)
@@ -132,7 +133,7 @@ with open(f"{ROOT}/readme.md", "r+") as file:
 
     readme = file.read()
 
-    for key, sec in sections.items():
+    for sec in sections.values():
         section_start = start_section_pat(sec["title"])
 
         # match everything up to next heading
