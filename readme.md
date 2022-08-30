@@ -39,6 +39,10 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > The invertibility constraint of NFs imposes limitations on data distributions that reside on lower dimensional manifolds embedded in higher dimensional space. This is often bypassed by adding noise to the data which impacts generated sample quality. This work generates samples from the original data distribution given full knowledge of perturbed distribution and noise model. They establish NFs trained on perturbed data implicitly represent the manifold in regions of maximum likelihood, then propose an optimization objective that recovers the most likely point on the manifold given a sample from the perturbed distribution.
 
+1. 2022-06-03 - [Graphical Normalizing Flows](https://arxiv.org/abs/2006.02548) by Wehenkel, Louppe
+
+   > This work revisits coupling and autoregressive transformations as probabilistic graphical models showing they reduce to Bayesian networks with a pre-defined topology. From this new perspective, the authors propose the graphical normalizing flow, a new invertible transformation with either a prescribed or a learnable graphical structure. This model provides a promising way to inject domain knowledge into normalizing flows while preserving both the interpretability of Bayesian networks and the representation capacity of normalizing flows. [[Code](https://github.com/AWehenkel/Graphical-Normalizing-Flows)]
+
 1. 2022-05-16 - [Multi-scale Attention Flow for Probabilistic Time Series Forecasting](https://arxiv.org/abs/2205.07493) by Feng, Xu et al.
 
    > Proposes a novel non-autoregressive deep learning model, called Multi-scale Attention Normalizing Flow(MANF), where one integrates multi-scale attention and relative position information and the multivariate data distribution is represented by the conditioned normalizing flow.
@@ -130,6 +134,10 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. 2019-12-05 - [Normalizing Flows for Probabilistic Modeling and Inference](https://arxiv.org/abs/1912.02762) by Papamakarios, Nalisnick et al.
 
    > A thorough and very readable review article by some of the guys at DeepMind involved in the development of flows. Highly recommended.
+
+1. 2019-09-14 - [Unconstrained Monotonic Neural Networks](https://arxiv.org/abs/1908.05164) by Wehenkel, Louppe
+
+   > UMNN relaxes the constraints on weights and activation functions of monotonic neural networks by setting the derivative of the transformation as the output of an unconstrained neural network. The transformation itself is computed by numerical integration (Clenshaw-Curtis quadrature) of the derivative. [[Code](https://github.com/AWehenkel/UMNN)]
 
 1. 2019-08-25 - [Normalizing Flows: An Introduction and Review of Current Methods](https://arxiv.org/abs/1908.09257) by Kobyzev, Prince et al.
 
@@ -408,10 +416,20 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > Example of how to use FFJORD as a continuous normalizing flow (CNF). Based on the PyTorch suite `torchdyn` which offers continuous neural architectures.
 
+1. 2020-02-04 - [Graphical Normalizing Flows](https://github.com/AWehenkel/Graphical-Normalizing-Flows) by Antoine Wehenkel
+   &ensp;<img src="https://img.shields.io/github/stars/AWehenkel/Graphical-Normalizing-Flows" alt="GitHub repo stars" valign="middle" />
+
+   > Official implementation of "Graphical Normalizing Flows" and the experiments presented in the paper.
+
 1. 2019-12-09 - [pytorch-normalizing-flows](https://github.com/karpathy/pytorch-normalizing-flows) by Andrej Karpathy
    &ensp;<img src="https://img.shields.io/github/stars/karpathy/pytorch-normalizing-flows" alt="GitHub repo stars" valign="middle" />
 
    > A Jupyter notebook with PyTorch implementations of the most commonly used flows: NICE, RNVP, MAF, Glow, NSF.
+
+1. 2019-09-19 - [Unconstrained Monotonic Neural Networks (UMNN)](https://github.com/AWehenkel/UMNN) by Antoine Wehenkel
+   &ensp;<img src="https://img.shields.io/github/stars/AWehenkel/UMNN" alt="GitHub repo stars" valign="middle" />
+
+   > Official implementation of "Unconstrained Monotonic Neural Networks" and the experiments presented in the paper.
 
 1. 2019-02-06 - [pytorch_flows](https://github.com/acids-ircam/pytorch_flows) by [acids-ircam](https://github.com/acids-ircam)
    &ensp;<img src="https://img.shields.io/github/stars/acids-ircam/pytorch_flows" alt="GitHub repo stars" valign="middle" />
