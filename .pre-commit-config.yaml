@@ -26,7 +26,7 @@ repos:
         additional_dependencies: [flake8-bugbear]
 
   - repo: https://github.com/psf/black
-    rev: 22.6.0
+    rev: 22.8.0
     hooks:
       - id: black
 
@@ -73,6 +73,6 @@ repos:
         stages: [commit, commit-msg]
 
   - repo: https://github.com/PyCQA/autoflake
-    rev: v1.5.2
+    rev: v1.6.1
     hooks:
       - id: autoflake
