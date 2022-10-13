@@ -339,7 +339,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
    > LAMPE is a PyTorch library for posterior estimation that also implements normalizing flows. It relies heavily on PyTorch's built-in distributions and transformations, which makes the implementation concise, easy to understand and extend.
 
 1. 2021-01-25 - [Jammy Flows](https://github.com/thoglu/jammy_flows) by [Thorsten Glüsenkamp](https://github.com/thoglu)
-   &ensp;<img src="https://img.shields.io/github/stars/thoglu/jammy_flows" alt="GitHub repo stars" valign="middle" />
+   &ensp;<img src="https://img.shields.io/github/stars/thoglu/jammy_flows" alt="GitHub repo stars" valign="middle" /> &ensp; (added 2022-10-13)
 
    > A package that models joint (conditional) PDFs on tensor products of manifolds (Euclidean, sphere, interval, simplex) - like inverse autoregressive flows, but connects manifolds, models conditional PDFs, and allows for arbitrary couplings instead of affine ones. Includes a few SOTA flows like Gaussianization flows.
 
@@ -500,7 +500,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ## 🌐 Blog Posts
 
-1. 2020-08-19 - [Chapter on flows from the book 'Deep Learning for Molecules and Materials'](https://dmol.pub/dl/flows) by Andrew White
+1. 2020-08-19 - [Chapter on flows from the book 'Deep Learning for Molecules and Materials'](https://dmol.pub/dl/flows) by Andrew White &ensp; (added 2022-06-13)
 
    > A nice introduction starting with the change of variables formula (aka flow equation), going on to cover some common bijectors and finishing with a code example showing how to fit the double-moon distribution with TensorFlow Probability.
 

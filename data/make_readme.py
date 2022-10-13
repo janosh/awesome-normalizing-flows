@@ -1,36 +1,62 @@
 import datetime
 import re
 from os.path import dirname
-from typing import Any, cast
+from typing import TypedDict
 
 import yaml
 
 ROOT = dirname(dirname(__file__))
 
-sections: dict[str, dict[str, Any]] = {
-    "publications": {"title": "## 📝 Publications"},
-    "applications": {"title": "## 🛠️ Applications"},
-    "videos": {"title": "## 📺 Videos"},
-    "packages": {"title": "## 📦 Packages"},
-    "code": {"title": "## 🧑‍💻 Code"},
-    "posts": {"title": "## 🌐 Blog Posts"},
-}
 
-for key in sections:
-    with open(f"{ROOT}/data/{key}.yml") as file:
-        sections[key]["items"] = yaml.safe_load(file.read())
+class Item(TypedDict):
+    id: str
+    title: str
+    authors: str
+    date: datetime.date
+    lang: str
+    url: str
+    description: str
+    authors_url: str | None
+    repo: str | None
+    date_added: datetime.date | None
+
+
+class Section(TypedDict):
+    title: str
+    items: list[Item]
+    markdown: str
+
+
+titles = dict(
+    publications="## 📝 Publications",
+    applications="## 🛠️ Applications",
+    videos="## 📺 Videos",
+    packages="## 📦 Packages",
+    code="## 🧑‍💻 Code",
+    posts="## 🌐 Blog Posts",
+)
+
+sections: dict[str, Section] = {
+    key: dict(
+        title=titles[key],
+        items=yaml.safe_load(open(f"{ROOT}/data/{key}.yml").read()),
+        markdown="",  # will be filled below
+    )
+    for key in titles
+}
 
 
 seen_ids: set[str] = set()
 required_keys = {"id", "title", "url", "date", "authors", "description"}
-optional_keys = {"org", "authors_url", "lang", "repo", "date_added"}
-valid_languages = ("PyTorch", "TensorFlow", "JAX", "Julia", "Others")
+optional_keys = {"authors_url", "lang", "repo", "date_added"}
+valid_languages = {"PyTorch", "TensorFlow", "JAX", "Julia", "Others"}
+et_al_after = 2
 
 
-def validate_item(itm: dict[str, str]) -> None:
+def validate_item(itm: Item) -> None:
     """Checks that an item conforms to schema. Raises ValueError if not."""
     # no need to check for duplicate keys, YAML enforces that
-    itm_keys = set(itm.keys())
+    itm_keys = set(itm)
     err = None
 
     if (id := itm["id"]) in seen_ids:
@@ -64,43 +90,49 @@ def validate_item(itm: dict[str, str]) -> None:
         raise ValueError(err)
 
 
-for key, sec in sections.items():
-    sec["markdown"] = ""
-
-    # keep inside outer sections loop to refill language subsections for sections
-    # Code and Packages
+for key, section in sections.items():
+    # Keep lang_names inside sections loop to refill language subsections for each new
+    # section. Used by both Code and Packages. Is a list for order and mutability.
     lang_names = ["PyTorch", "TensorFlow", "JAX", "Julia", "Others"]
 
     # sort first by language with order determined by lang_names (only applies to
     # Package and Code sections), then by date
-    sec["items"].sort(key=lambda x: x["date"], reverse=True)
+    section["items"].sort(key=lambda x: x["date"], reverse=True)
     if key in ("packages", "code"):
-        sec["items"].sort(key=lambda itm: lang_names.index(itm["lang"]))  # noqa: B023
+        section["items"].sort(
+            key=lambda itm: lang_names.index(itm["lang"])  # noqa: B023
+        )
 
-    for itm in sec["items"]:
-        itm = cast(dict[str, str], itm)
+    # add item count after section title
+    # section["markdown"] += f"\n\n{len(section['items'])} items\n\n"
 
+    for itm in section["items"]:
         if (lang := itm.get("lang", None)) in lang_names:
             lang_names.remove(lang)
-            # print subsection titles
-            sec["markdown"] += (
+            # print language subsection title if this is the first item with that lang
+            section["markdown"] += (
                 f'<br>\n\n### <img src="assets/{lang.lower()}.svg" alt="{lang}" '
                 f'height="20px"> &nbsp;{lang} {key.title()}\n\n'
             )
 
         validate_item(itm)
 
-        authors, date, description, _id, title, url = (
-            itm[k] for k in sorted(required_keys)
-        )
+        authors = itm["authors"]
+        date = itm["date"]
+        description = itm["description"]
+        title = itm["title"]
+        url = itm["url"]
 
-        authors = authors.split(", ")
+        author_list = authors.split(", ")
         if key in ("publications", "applications"):
-            authors = [author.split(" ")[-1] for author in authors]
-        authors = ", ".join(authors[:2]) + (" et al." if len(authors) > 2 else "")
+            # only show people's last name for papers
+            author_list = [author.split(" ")[-1] for author in author_list]
+        authors = ", ".join(author_list[:et_al_after])
+        if len(author_list) > et_al_after:
+            authors += " et al."
 
-        if "authors_url" in itm:
-            authors = f"[{authors}]({itm['authors_url']})"
+        if authors_url := itm.get("authors_url", None):
+            authors = f"[{authors}]({authors_url})"
 
         md_str = f"1. {date} - [{title}]({url}) by {authors}"
 
@@ -113,6 +145,8 @@ for key, sec in sections.items():
                 f'\n{indent}&ensp;<img src="https://img.shields.io/github/stars/'
                 f'{gh_login}/{repo_name}" alt="GitHub repo stars" valign="middle" />'
             )
+        if date_added := itm.get("date_added"):
+            md_str += f" &ensp; (added {date_added})"
 
         description = description.removesuffix("\n").replace("\n", f"\n{indent}> ")
         description = re.sub(r"\s+\n", "\n", description)  # remove trailing whitespace
@@ -120,25 +154,24 @@ for key, sec in sections.items():
         if repo := itm.get("repo", None):
             md_str += f" [[Code]({repo})]"
 
-        sec["markdown"] += md_str + "\n\n"
-
-
-# look ahead without matching
-start_section_pat = lambda title: f"(?<={title}\n\n)"
-# look behind without matching
-next_section_pat = "(?=<br>\n\n## )"
+        section["markdown"] += md_str + "\n\n"
 
 
 with open(f"{ROOT}/readme.md", "r+") as file:
 
     readme = file.read()
 
-    for sec in sections.values():
-        section_start = start_section_pat(sec["title"])
+    for section in sections.values():
+        # look ahead without matching
+        section_start_pat = f"(?<={section['title']}\n\n)"
+        # look behind without matching
+        next_section_pat = "(?=<br>\n\n## )"
 
         # match everything up to next heading
         readme = re.sub(
-            rf"{section_start}[\s\S]+?\n\n{next_section_pat}", sec["markdown"], readme
+            rf"{section_start_pat}[\s\S]+?\n\n{next_section_pat}",
+            section["markdown"],
+            readme,
         )
 
     file.seek(0)
