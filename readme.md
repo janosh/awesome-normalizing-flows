@@ -1,7 +1,7 @@
 # Awesome Normalizing Flows
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg)](https://github.com/janosh/awesome-normalizing-flows/pulls)
+[![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg?logo=github)](https://github.com/janosh/awesome-normalizing-flows/pulls)
 [![Link Check](https://github.com/janosh/awesome-normalizing-flows/actions/workflows/link-check.yml/badge.svg)](https://github.com/janosh/awesome-normalizing-flows/actions/workflows/link-check.yml)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/awesome-normalizing-flows/main.svg)](https://results.pre-commit.ci/latest/github/janosh/awesome-normalizing-flows/main)
 
@@ -337,6 +337,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
    &ensp;<img src="https://img.shields.io/github/stars/francois-rozet/lampe" alt="GitHub repo stars" valign="middle" />
 
    > LAMPE is a PyTorch library for posterior estimation that also implements normalizing flows. It relies heavily on PyTorch's built-in distributions and transformations, which makes the implementation concise, easy to understand and extend.
+
+1. 2021-01-25 - [Jammy Flows](https://github.com/thoglu/jammy_flows) by [Thorsten Glüsenkamp](https://github.com/thoglu)
+   &ensp;<img src="https://img.shields.io/github/stars/thoglu/jammy_flows" alt="GitHub repo stars" valign="middle" />
+
+   > A package that models joint (conditional) PDFs on tensor products of manifolds (Euclidean, sphere, interval, simplex) - like inverse autoregressive flows, but connects manifolds, models conditional PDFs, and allows for arbitrary couplings instead of affine ones. Includes a few SOTA flows like Gaussianization flows.
 
 1. 2020-12-07 - [flowtorch](https://github.com/facebookincubator/flowtorch) by [Facebook / Meta](https://opensource.fb.com)
    &ensp;<img src="https://img.shields.io/github/stars/facebookincubator/flowtorch" alt="GitHub repo stars" valign="middle" />

@@ -87,3 +87,13 @@
   authors_url: https://francois-rozet.github.io
   lang: PyTorch
   description: LAMPE is a PyTorch library for posterior estimation that also implements normalizing flows. It relies heavily on PyTorch's built-in distributions and transformations, which makes the implementation concise, easy to understand and extend.
+
+- id: pkg-11
+  date: 2021-01-25
+  title: Jammy Flows
+  url: https://github.com/thoglu/jammy_flows
+  authors: Thorsten Glüsenkamp
+  authors_url: https://github.com/thoglu
+  lang: PyTorch
+  description: A package that models joint (conditional) PDFs on tensor products of manifolds (Euclidean, sphere, interval, simplex) - like inverse autoregressive flows, but connects manifolds, models conditional PDFs, and allows for arbitrary couplings instead of affine ones. Includes a few SOTA flows like Gaussianization flows.
+  date_added: 2022-10-13
