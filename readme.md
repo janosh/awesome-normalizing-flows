@@ -333,13 +333,15 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ### <img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages
 
-1. 2022-05-21 - [LAMPE](https://github.com/francois-rozet/lampe) by [François Rozet](https://francois-rozet.github.io)
-   &ensp;<img src="https://img.shields.io/github/stars/francois-rozet/lampe" alt="GitHub repo stars" valign="middle" />
+1. 2022-05-21 - [Zuko](https://github.com/francois-rozet/zuko) by [François Rozet](https://francois-rozet.github.io)
+   &ensp;<img src="https://img.shields.io/github/stars/francois-rozet/zuko" alt="GitHub repo stars" valign="middle" />
 
-   > LAMPE is a PyTorch library for posterior estimation that also implements normalizing flows. It relies heavily on PyTorch's built-in distributions and transformations, which makes the implementation concise, easy to understand and extend.
+   > Zuko is a Python package that implements normalizing flows in PyTorch. It relies heavily on PyTorch's built-in distributions and transformations, which makes the implementation concise, easy to understand and extend. The API is fully documented with references to the original papers.
+   >
+   > Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likelihood-free AMortized Posterior Estimation with PyTorch.
 
 1. 2021-01-25 - [Jammy Flows](https://github.com/thoglu/jammy_flows) by [Thorsten Glüsenkamp](https://github.com/thoglu)
-   &ensp;<img src="https://img.shields.io/github/stars/thoglu/jammy_flows" alt="GitHub repo stars" valign="middle" /> &ensp; (added 2022-10-13)
+   &ensp;<img src="https://img.shields.io/github/stars/thoglu/jammy_flows" alt="GitHub repo stars" valign="middle" />
 
    > A package that models joint (conditional) PDFs on tensor products of manifolds (Euclidean, sphere, interval, simplex) - like inverse autoregressive flows, but connects manifolds, models conditional PDFs, and allows for arbitrary couplings instead of affine ones. Includes a few SOTA flows like Gaussianization flows.
 
@@ -500,7 +502,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ## 🌐 Blog Posts
 
-1. 2020-08-19 - [Chapter on flows from the book 'Deep Learning for Molecules and Materials'](https://dmol.pub/dl/flows) by Andrew White &ensp; (added 2022-06-13)
+1. 2020-08-19 - [Chapter on flows from the book 'Deep Learning for Molecules and Materials'](https://dmol.pub/dl/flows) by Andrew White
 
    > A nice introduction starting with the change of variables formula (aka flow equation), going on to cover some common bijectors and finishing with a code example showing how to fit the double-moon distribution with TensorFlow Probability.
 
