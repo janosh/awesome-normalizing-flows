@@ -81,12 +81,12 @@
 
 - id: pkg-10
   date: 2022-05-21
-  title: LAMPE
-  url: https://github.com/francois-rozet/lampe
+  title: Zuko
+  url: https://github.com/francois-rozet/zuko
   authors: François Rozet
   authors_url: https://francois-rozet.github.io
   lang: PyTorch
-  description: LAMPE is a PyTorch library for posterior estimation that also implements normalizing flows. It relies heavily on PyTorch's built-in distributions and transformations, which makes the implementation concise, easy to understand and extend.
+  description: Zuko is a Python package that implements normalizing flows in PyTorch. It relies heavily on PyTorch's built-in distributions and transformations, which makes the implementation concise, easy to understand and extend. The API is fully documented with references to the original papers.
 
 - id: pkg-11
   date: 2021-01-25
