@@ -81,12 +81,17 @@
 
 - id: pkg-10
   date: 2022-05-21
+  date_added: 2022-10-19
+  last_updated: 2022-10-19
   title: Zuko
   url: https://github.com/francois-rozet/zuko
   authors: François Rozet
   authors_url: https://francois-rozet.github.io
   lang: PyTorch
-  description: Zuko is a Python package that implements normalizing flows in PyTorch. It relies heavily on PyTorch's built-in distributions and transformations, which makes the implementation concise, easy to understand and extend. The API is fully documented with references to the original papers.
+  description: |
+    Zuko is a Python package that implements normalizing flows in PyTorch. It relies heavily on PyTorch's built-in distributions and transformations, which makes the implementation concise, easy to understand and extend. The API is fully documented with references to the original papers.
+
+    Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likelihood-free AMortized Posterior Estimation with PyTorch.
 
 - id: pkg-11
   date: 2021-01-25
