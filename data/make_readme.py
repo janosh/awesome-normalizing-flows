@@ -48,7 +48,7 @@ sections: dict[str, Section] = {
 
 seen_ids: set[str] = set()
 required_keys = {"id", "title", "url", "date", "authors", "description"}
-optional_keys = {"authors_url", "lang", "repo", "date_added"}
+optional_keys = {"authors_url", "lang", "repo", "date_added", "last_updated"}
 valid_languages = {"PyTorch", "TensorFlow", "JAX", "Julia", "Others"}
 et_al_after = 2
 
@@ -146,7 +146,10 @@ for key, section in sections.items():
                 f'{gh_login}/{repo_name}" alt="GitHub repo stars" valign="middle" />'
             )
         if date_added := itm.get("date_added"):
-            md_str += f" &ensp; (added {date_added})"
+            assert isinstance(date_added, datetime.date)
+            # md_str += f" &ensp; (added {date_added})"
+        if last_updated := itm.get("last_updated"):
+            assert isinstance(last_updated, datetime.date)
 
         description = description.removesuffix("\n").replace("\n", f"\n{indent}> ")
         description = re.sub(r"\s+\n", "\n", description)  # remove trailing whitespace
