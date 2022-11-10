@@ -410,6 +410,12 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ### <img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Code
 
+1. 2021-09-27 - [DeeProb-kit](https://github.com/deeprob-org/deeprob-kit) by [Lorenzo Loconte](https://github.com/loreloc)
+   &ensp;<img src="https://img.shields.io/github/stars/deeprob-org/deeprob-kit" alt="GitHub repo stars" valign="middle" />
+
+   > A general-purpose Python library providing a collection of deep probabilistic models (DPMs) which are easy to use and extend.
+   > Implements flows such as MAF, RealNVP and NICE.
+
 1. 2021-08-21 - [NICE: Non-linear Independent Components Estimation](https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/NICE_Non_linear_Independent_Components_Estimation) by Maxime Vandegar
    &ensp;<img src="https://img.shields.io/github/stars/MaximeVandegar/Papers-in-100-Lines-of-Code" alt="GitHub repo stars" valign="middle" />
 
@@ -423,7 +429,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > Example of how to use FFJORD as a continuous normalizing flow (CNF). Based on the PyTorch suite `torchdyn` which offers continuous neural architectures.
 
-1. 2020-02-04 - [Graphical Normalizing Flows](https://github.com/AWehenkel/Graphical-Normalizing-Flows) by Antoine Wehenkel
+1. 2020-02-04 - [Graphical Normalizing Flows](https://github.com/AWehenkel/Graphical-Normalizing-Flows) by [Antoine Wehenkel](https://awehenkel.github.io)
    &ensp;<img src="https://img.shields.io/github/stars/AWehenkel/Graphical-Normalizing-Flows" alt="GitHub repo stars" valign="middle" />
 
    > Official implementation of "Graphical Normalizing Flows" and the experiments presented in the paper.
@@ -479,7 +485,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ### <img src="assets/others.svg" alt="Others" height="20px"> &nbsp;Others Code
 
-1. 2018-06-11 - [destructive-deep-learning](https://github.com/davidinouye/destructive-deep-learning) by [David Inouye](https://davidinouye.com)
+1. 2018-06-11 - [Destructive Deep Learning (ddl)](https://github.com/davidinouye/destructive-deep-learning) by [David Inouye](https://davidinouye.com)
    &ensp;<img src="https://img.shields.io/github/stars/davidinouye/destructive-deep-learning" alt="GitHub repo stars" valign="middle" />
 
    > Code base for the paper [Deep Density Destructors](https://proceedings.mlr.press/v80/inouye18a.html) by Inouye & Ravikumar (2018). An entire suite of iterative methods including tree-based as well as Gaussianization methods which are similar to normalizing flows except they converge iteratively instead of fully parametrized. That is, they still use bijective transforms, compute the Jacobian, check the likelihood and you can still sample and get probability density estimates. The only difference is you repeat the following two steps until convergence:

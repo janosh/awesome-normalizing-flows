@@ -86,6 +86,11 @@ def validate_item(itm: Item) -> None:
     if not isinstance(itm["date"], datetime.date):
         err = f"Invalid date in {id}: {itm['date']}"
 
+    if date_added := itm.get("date_added"):
+        assert isinstance(date_added, datetime.date)
+    if last_updated := itm.get("last_updated"):
+        assert isinstance(last_updated, datetime.date)
+
     if err:
         raise ValueError(err)
 
@@ -139,17 +144,11 @@ for key, section in sections.items():
         indent = " " * 3
 
         if key in ("packages", "code") and url.startswith("https://github.com"):
-
             gh_login, repo_name = url.split("/")[3:5]
             md_str += (
                 f'\n{indent}&ensp;<img src="https://img.shields.io/github/stars/'
                 f'{gh_login}/{repo_name}" alt="GitHub repo stars" valign="middle" />'
             )
-        if date_added := itm.get("date_added"):
-            assert isinstance(date_added, datetime.date)
-            # md_str += f" &ensp; (added {date_added})"
-        if last_updated := itm.get("last_updated"):
-            assert isinstance(last_updated, datetime.date)
 
         description = description.removesuffix("\n").replace("\n", f"\n{indent}> ")
         description = re.sub(r"\s+\n", "\n", description)  # remove trailing whitespace
