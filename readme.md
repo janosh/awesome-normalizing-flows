@@ -119,7 +119,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > Name clash for a very different technique from the above SNF: an extension of continuous normalizing flows using stochastic differential equations (SDE). Treats Brownian motion in the SDE as a latent variable and approximates it by a flow. Aims to enable efficient training of neural SDEs which can be used for constructing efficient Markov chains.
 
-1. 2020-02-16 - [Stochastic Normalizing Flows](https://arxiv.org/abs/2002.06707) by Wu, Köhler et al.
+1. 2020-02-16 - [Stochastic Normalizing Flows (SNF)](https://arxiv.org/abs/2002.06707) by Wu, Köhler et al.
 
    > Introduces SNF, an arbitrary sequence of deterministic invertible functions (the flow) and stochastic processes such as MCMC or Langevin Dynamics. The aim is to increase expressiveness of the chosen deterministic invertible function, while the trainable flow improves sampling efficiency over pure MCMC [[Tweet](https://twitter.com/FrankNoeBerlin/status/1229734899034329103)).]
 

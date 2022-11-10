@@ -1,36 +1,31 @@
-- id: post-1
+- title: Normalizing Flows Tutorial
   date: 2018-01-17
-  title: Normalizing Flows Tutorial
   url: https://blog.evjang.com/2018/01/nf1.html
   authors: Eric Jang
   description: |
     [Part 1](https://blog.evjang.com/2018/01/nf1.html): Distributions and Determinants. [Part 2](https://blog.evjang.com/2018/01/nf2.html): Modern Normalizing Flows. Lots of great graphics.
 
-- id: post-2
+- title: Normalizing Flows
   date: 2018-04-03
-  title: Normalizing Flows
   url: https://akosiorek.github.io/ml/2018/04/03/norm_flows
   authors: Adam Kosiorek
   description: Introduction to flows covering change of variables, planar flow, radial flow, RNVP and autoregressive flows like MAF, IAF and Parallel WaveNet.
 
-- id: post-3
+- title: Flow-based Deep Generative Models
   date: 2018-10-13
-  title: Flow-based Deep Generative Models
   url: https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models
   authors: Lilian Weng
   description: Covers change of variables, NICE, RNVP, MADE, Glow, MAF, IAF, WaveNet, PixelRNN.
 
-- id: post-4
+- title: Change of Variables for Normalizing Flows
   date: 2018-10-21
-  title: Change of Variables for Normalizing Flows
   url: https://nealjean.com/ml/change-of-variables
   authors: Neal Jean
   description: Short and simple explanation of change of variables theorem i.t.o. probability mass conservation.
 
-- id: post-5
+- title: Chapter on flows from the book 'Deep Learning for Molecules and Materials'
   date: 2020-08-19
   date_added: 2022-06-13
-  title: Chapter on flows from the book 'Deep Learning for Molecules and Materials'
   url: https://dmol.pub/dl/flows
   # NF chapter was added 2020-12-06 in commit
   # https://github.com/whitead/dmol-book/commit/e6d0b3295b73184423ab3a331feba3edbc103c0a

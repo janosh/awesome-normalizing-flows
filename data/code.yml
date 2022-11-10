@@ -1,21 +1,18 @@
-- id: code-1
-  title: pytorch-flows
+- title: pytorch-flows
   date: 2018-09-01
   url: https://github.com/ikostrikov/pytorch-flows
   authors: Ilya Kostrikov
   lang: PyTorch
   description: 'PyTorch implementations of density estimation algorithms: MAF, RNVP, Glow.'
 
-- id: code-2
-  title: normalizing_flows
+- title: normalizing_flows
   date: 2018-12-30
   url: https://github.com/kamenbliznashki/normalizing_flows
   authors: Kamen Bliznashki
   lang: PyTorch
   description: 'Pytorch implementations of density estimation algorithms: BNAF, Glow, MAF, RealNVP, planar flows.'
 
-- id: code-3
-  title: pytorch_flows
+- title: pytorch_flows
   date: 2019-02-06
   url: https://github.com/acids-ircam/pytorch_flows
   authors: acids-ircam
@@ -23,16 +20,14 @@
   lang: PyTorch
   description: A great repo with some basic PyTorch implementations of normalizing flows from scratch.
 
-- id: code-4
-  title: pytorch-normalizing-flows
+- title: pytorch-normalizing-flows
   date: 2019-12-09
   url: https://github.com/karpathy/pytorch-normalizing-flows
   authors: Andrej Karpathy
   lang: PyTorch
   description: 'A Jupyter notebook with PyTorch implementations of the most commonly used flows: NICE, RNVP, MAF, Glow, NSF.'
 
-- id: code-5
-  title: Density Estimation with Neural ODEs and Density Estimation with FFJORDs
+- title: Density Estimation with Neural ODEs and Density Estimation with FFJORDs
   date: 2020-07-03
   url: https://git.io/JiWaG # Jupyter notebook 1
   # Jupyter notebook 2: https://git.io/JiW2H
@@ -41,8 +36,7 @@
   lang: PyTorch
   description: Example of how to use FFJORD as a continuous normalizing flow (CNF). Based on the PyTorch suite `torchdyn` which offers continuous neural architectures.
 
-- id: code-6
-  title: Normalizing Flows - Introduction (Part 1)
+- title: Normalizing Flows - Introduction (Part 1)
   date: 2020-07-19
   url: https://pyro.ai/examples/normalizing_flows_i
   authors: pyro.ai
@@ -50,16 +44,14 @@
   lang: PyTorch
   description: A tutorial about how to use the `pyro-ppl` library (based on PyTorch) to use Normalizing flows. They provide some SOTA methods including NSF and MAF. [Parts 2 and 3 coming later](https://github.com/pyro-ppl/pyro/issues/1992).
 
-- id: code-7
-  title: 'NICE: Non-linear Independent Components Estimation'
+- title: 'NICE: Non-linear Independent Components Estimation'
   date: 2021-08-21
   url: https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/NICE_Non_linear_Independent_Components_Estimation
   authors: Maxime Vandegar
   lang: PyTorch
   description: PyTorch implementation that reproduces results from the paper NICE in about 100 lines of code.
 
-- id: code-8
-  title: Neural Transport
+- title: Neural Transport
   date: 2020-06-12
   url: https://pyro.ai/numpyro/examples/neutra
   authors: numpyro
@@ -67,40 +59,35 @@
   lang: JAX
   description: Features an example of how Normalizing flows can be used to get more robust posteriors from Monte Carlo methods. Uses the `numpyro` library which is a PPL with JAX as the backend. The NF implementations include the basic ones like IAF and BNAF.
 
-- id: code-9
-  title: Variational Inference using Normalizing Flows (VINF)
+- title: Variational Inference using Normalizing Flows (VINF)
   date: 2020-11-02
   url: https://github.com/pierresegonne/VINF
   authors: Pierre Segonne
   lang: TensorFlow
   description: This repository provides a hands-on TensorFlow implementation of Normalizing Flows as presented in the [paper](https://arxiv.org/pdf/1505.05770.pdf) introducing the concept (D. Rezende & S. Mohamed).
 
-- id: code-10
-  title: BERT-flow
+- title: BERT-flow
   date: 2019-07-19
   url: https://github.com/bohanli/BERT-flow
   authors: Bohan Li
   lang: TensorFlow
   description: TensorFlow implementation of "On the Sentence Embeddings from Pre-trained Language Models" (EMNLP 2020).
 
-- id: code-11
-  title: NormFlows
+- title: NormFlows
   date: 2017-03-21
   url: https://github.com/andymiller/NormFlows
   authors: Andy Miller
   lang: Others
   description: Simple didactic example using [`autograd`](https://github.com/HIPS/autograd), so pretty low-level.
 
-- id: code-12
-  title: Normalizing Flows Overview
+- title: Normalizing Flows Overview
   date: 2017-07-11
   url: https://docs.pymc.io/en/v3/pymc-examples/examples/variational_inference/normalizing_flows_overview.html
   authors: PyMC3
   lang: Others
   description: A very helpful notebook showcasing how to work with flows in practice and comparing it to PyMC3's NUTS-based HMC kernel. Based on [Theano](https://github.com/Theano/Theano).
 
-- id: code-13
-  title: Destructive Deep Learning (ddl)
+- title: Destructive Deep Learning (ddl)
   date: 2018-06-11
   url: https://github.com/davidinouye/destructive-deep-learning
   authors: David Inouye
@@ -114,16 +101,14 @@
 
     Table 1 in the paper has a good comparison with traditional NFs.
 
-- id: code-14
-  title: Unconstrained Monotonic Neural Networks (UMNN)
+- title: Unconstrained Monotonic Neural Networks (UMNN)
   date: 2019-09-19
   url: https://github.com/AWehenkel/UMNN
   authors: Antoine Wehenkel
   lang: PyTorch
   description: Official implementation of "Unconstrained Monotonic Neural Networks" and the experiments presented in the paper.
 
-- id: code-15
-  title: Graphical Normalizing Flows
+- title: Graphical Normalizing Flows
   date: 2020-02-04
   url: https://github.com/AWehenkel/Graphical-Normalizing-Flows
   authors: Antoine Wehenkel
@@ -131,9 +116,10 @@
   lang: PyTorch
   description: Official implementation of "Graphical Normalizing Flows" and the experiments presented in the paper.
 
-- id: code-16
-  title: DeeProb-kit
+- title: DeeProb-kit
   date: 2021-09-27
+  date_added: 2022-11-10
+  last_updated: 2022-11-10
   url: https://github.com/deeprob-org/deeprob-kit
   authors: Lorenzo Loconte
   authors_url: https://github.com/loreloc
