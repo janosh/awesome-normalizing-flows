@@ -100,7 +100,7 @@
   description: A very helpful notebook showcasing how to work with flows in practice and comparing it to PyMC3's NUTS-based HMC kernel. Based on [Theano](https://github.com/Theano/Theano).
 
 - id: code-13
-  title: destructive-deep-learning
+  title: Destructive Deep Learning (ddl)
   date: 2018-06-11
   url: https://github.com/davidinouye/destructive-deep-learning
   authors: David Inouye
@@ -127,5 +127,17 @@
   date: 2020-02-04
   url: https://github.com/AWehenkel/Graphical-Normalizing-Flows
   authors: Antoine Wehenkel
+  authors_url: https://awehenkel.github.io
   lang: PyTorch
   description: Official implementation of "Graphical Normalizing Flows" and the experiments presented in the paper.
+
+- id: code-16
+  title: DeeProb-kit
+  date: 2021-09-27
+  url: https://github.com/deeprob-org/deeprob-kit
+  authors: Lorenzo Loconte
+  authors_url: https://github.com/loreloc
+  lang: PyTorch
+  description: |
+    A general-purpose Python library providing a collection of deep probabilistic models (DPMs) which are easy to use and extend.
+    Implements flows such as MAF, RealNVP and NICE.

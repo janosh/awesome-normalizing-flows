@@ -119,6 +119,7 @@
   title: Graph Normalizing Flows
   url: https://arxiv.org/abs/1905.13177
   date: 2019-05-30
+  date_added: 2020-05-28
   authors: Jenny Liu, Aviral Kumar, Jimmy Ba, Jamie Kiros, Kevin Swersky
   description: A new, reversible graph network for prediction and generation. They perform similarly to message passing neural networks on supervised tasks, but at significantly reduced memory use, allowing them to scale to larger graphs. Combined with a novel graph auto-encoder for unsupervised learning, graph normalizing flows are a generative model for graph structures.
 

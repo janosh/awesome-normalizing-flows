@@ -9,6 +9,7 @@
   title: Graph Normalizing Flows
   url: https://youtu.be/frMPP30QQgY
   date: 2019-09-24
+  date_added: 2020-05-28
   authors: Jenny Liu
   description: Introduces a new graph generating model for use e.g. in drug discovery, where training on molecules that are known to bind/dissolve/etc. may help to generate novel, similarly effective molecules.
 
@@ -16,6 +17,7 @@
   title: A primer on normalizing flows
   url: https://youtu.be/P4Ta-TZPVi0
   date: 2019-10-09
+  date_added: 2020-05-28
   authors: Laurent Dinh
   authors_url: https://laurent-dinh.github.io
   description: The first author on both the NICE and RNVP papers and one of the first in this field gives an introductory talk at "Machine Learning for Physics and the Physics Learning of, 2019".
@@ -24,6 +26,7 @@
   title: What are normalizing flows?
   url: https://youtu.be/i7LjDvsLWCg
   date: 2019-12-06
+  date_added: 2020-05-28
   authors: Ari Seff
   authors_url: https://scholar.google.com/citations?user=IxBGctYAAAAJ
   description: A great 3blue1brown-style video explaining the basics of normalizing flows.
