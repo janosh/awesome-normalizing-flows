@@ -1,54 +1,46 @@
-- id: app-1
-  title: Latent Space Policies for Hierarchical Reinforcement Learning
+- title: Latent Space Policies for Hierarchical Reinforcement Learning
   url: https://arxiv.org/abs/1804.02808
   date: 2018-04-09
   authors: Tuomas Haarnoja, Kristian Hartikainen, Pieter Abbeel, Sergey Levine
   description: Uses normalizing flows, specifically RealNVPs, as policies for reinforcement learning and also applies them for the hierarchical reinforcement learning setting.
 
-- id: app-2
-  title: Analyzing Inverse Problems with Invertible Neural Networks
+- title: Analyzing Inverse Problems with Invertible Neural Networks
   url: https://arxiv.org/abs/1808.04730
   date: 2018-08-14
   authors: Lynton Ardizzone, Jakob Kruse, Sebastian Wirkert, Daniel Rahner, Eric W. Pellegrini, Ralf S. Klessen, Lena Maier-Hein, Carsten Rother, Ullrich Köthe
   description: Normalizing flows for inverse problems.
 
-- id: app-3
-  title: NeuTra-lizing Bad Geometry in Hamiltonian Monte Carlo Using Neural Transport
+- title: NeuTra-lizing Bad Geometry in Hamiltonian Monte Carlo Using Neural Transport
   url: https://arxiv.org/abs/1903.03704
   date: 2019-03-09
   authors: Matthew Hoffman, Pavel Sountsov, Joshua V. Dillon, Ian Langmore, Dustin Tran, Srinivas Vasudevan
   description: Uses normalizing flows in conjunction with Monte Carlo estimation to have more expressive distributions and better posterior estimation.
 
-- id: app-4
-  title: 'SRFlow: Learning the Super-Resolution Space with Normalizing Flow'
+- title: 'SRFlow: Learning the Super-Resolution Space with Normalizing Flow'
   url: https://arxiv.org/abs/2006.14200
   date: 2020-06-25
   authors: Andreas Lugmayr, Martin Danelljan, Luc Van Gool, Radu Timofte
   description: Uses normalizing flows for super-resolution.
 
-- id: app-5
-  title: Faster Uncertainty Quantification for Inverse Problems with Conditional Normalizing Flows
+- title: Faster Uncertainty Quantification for Inverse Problems with Conditional Normalizing Flows
   url: https://arxiv.org/abs/2007.07985
   date: 2020-07-15
   authors: Ali Siahkoohi, Gabrio Rizzuti, Philipp A. Witte, Felix J. Herrmann
   description: Uses conditional normalizing flows for inverse problems. [[Video](https://youtu.be/nPvZIKaRBkI)]
 
-- id: app-6
-  title: Targeted free energy estimation via learned mappings
+- title: Targeted free energy estimation via learned mappings
   url: https://aip.scitation.org/doi/10.1063/5.0018903
   date: 2020-10-13
   authors: Peter Wirnsberger, Andrew J. Ballard, George Papamakarios, Stuart Abercrombie, Sébastien Racanière, Alexander Pritzel, Danilo Jimenez Rezende, Charles Blundell
   description: Normalizing flows used to estimate free energy differences.
 
-- id: app-7
-  title: On the Sentence Embeddings from Pre-trained Language Models
+- title: On the Sentence Embeddings from Pre-trained Language Models
   url: https://aclweb.org/anthology/2020.emnlp-main.733
   date: 2020-11-02
   authors: Bohan Li, Hao Zhou, Junxian He, Mingxuan Wang, Yiming Yang, Lei Li
   description: Proposes to use flows to transform anisotropic sentence embedding distributions from BERT to a smooth and isotropic Gaussian, learned through unsupervised objective. Demonstrates performance gains over SOTA sentence embeddings on semantic textual similarity tasks. Code available at <https://github.com/bohanli/BERT-flow>.
 
-- id: app-8
-  title: Normalizing Kalman Filters for Multivariate Time Series Analysis
+- title: Normalizing Kalman Filters for Multivariate Time Series Analysis
   url: https://assets.amazon.science/ea/0c/88b7bdd54eae8c08983fa4cc3e06/normalizing-kalman-filters-for-multivariate-time-series-analysis.pdf
   date: 2020-12-06
   authors: Emmanuel de Bézenac, Syama Sundar Rangapuram, Konstantinos Benidis, Michael Bohlke-Schneider, Richard Kurle, Lorenzo Stella, Hilaf Hasson, Patrick Gallinari, Tim Januschowski

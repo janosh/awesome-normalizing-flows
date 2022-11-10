@@ -9,7 +9,6 @@ ROOT = dirname(dirname(__file__))
 
 
 class Item(TypedDict):
-    id: str
     title: str
     authors: str
     date: datetime.date
@@ -46,45 +45,44 @@ sections: dict[str, Section] = {
 }
 
 
-seen_ids: set[str] = set()
-required_keys = {"id", "title", "url", "date", "authors", "description"}
+seen_titles: set[tuple[str, str]] = set()
+required_keys = {"title", "url", "date", "authors", "description"}
 optional_keys = {"authors_url", "lang", "repo", "date_added", "last_updated"}
 valid_languages = {"PyTorch", "TensorFlow", "JAX", "Julia", "Others"}
 et_al_after = 2
 
 
-def validate_item(itm: Item) -> None:
+def validate_item(itm: Item, section_title: str) -> None:
     """Checks that an item conforms to schema. Raises ValueError if not."""
     # no need to check for duplicate keys, YAML enforces that
     itm_keys = set(itm)
     err = None
 
-    if (id := itm["id"]) in seen_ids:
-        err = f"Duplicate {id = }"
+    if (title := itm["title"]) in seen_titles:
+        err = f"Duplicate {title = }"
     else:
-        seen_ids.add(id)
+        seen_titles.add((title, section_title))
 
-    if not id.startswith(("pub-", "app-", "vid-", "pkg-", "code-", "post-")):
-        err = f"Invalid {id = }"
-
-    if id.startswith(("pkg-", "code-")) and itm["lang"] not in valid_languages:
-        err = f"Invalid lang in {id}: {itm['lang']}, must be one of {valid_languages}"
+    if section_title in ("packages", "code") and itm["lang"] not in valid_languages:
+        err = (
+            f"Invalid lang in {title}: {itm['lang']}, must be one of {valid_languages}"
+        )
 
     if missing_keys := required_keys - itm_keys:
-        err = f"Missing key(s) in {id}: {missing_keys}"
+        err = f"Missing key(s) in {title}: {missing_keys}"
 
     if bad_keys := itm_keys - required_keys - optional_keys:
-        err = f"Unexpected key(s) in {id}: {bad_keys}"
+        err = f"Unexpected key(s) in {title}: {bad_keys}"
 
     authors = itm["authors"]
     if "et al" in authors or "et. al" in authors:
         err = (
-            f"Incomplete authors in {id}: don't use 'et al' in {authors = }, list "
+            f"Incomplete authors in {title}: don't use 'et al' in {authors = }, list "
             "them all"
         )
 
     if not isinstance(itm["date"], datetime.date):
-        err = f"Invalid date in {id}: {itm['date']}"
+        err = f"Invalid date in {title}: {itm['date']}"
 
     if date_added := itm.get("date_added"):
         assert isinstance(date_added, datetime.date)
@@ -120,7 +118,7 @@ for key, section in sections.items():
                 f'height="20px"> &nbsp;{lang} {key.title()}\n\n'
             )
 
-        validate_item(itm)
+        validate_item(itm, section["title"])
 
         authors = itm["authors"]
         date = itm["date"]
@@ -183,4 +181,4 @@ with open(f"{ROOT}/readme.md", "r+") as file:
 section_counts = "\n".join(
     f"- {key}: {len(sec['items'])}" for key, sec in sections.items()
 )
-print(f"finished writing {len(seen_ids)} items to readme:\n{section_counts}")
+print(f"finished writing {len(seen_titles)} items to readme:\n{section_counts}")
