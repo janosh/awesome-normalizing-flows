@@ -150,7 +150,7 @@ for key, section in sections.items():
 
         description = description.removesuffix("\n").replace("\n", f"\n{indent}> ")
         description = re.sub(r"\s+\n", "\n", description)  # remove trailing whitespace
-        md_str += f"\n\n{indent}> {description}"
+        md_str += f"\n\n{indent}{description}"
         if repo := itm.get("repo", None):
             md_str += f" [[Code]({repo})]"
 
