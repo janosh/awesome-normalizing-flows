@@ -97,7 +97,7 @@
     Code base for the paper [Deep Density Destructors](https://proceedings.mlr.press/v80/inouye18a.html) by Inouye & Ravikumar (2018). An entire suite of iterative methods including tree-based as well as Gaussianization methods which are similar to normalizing flows except they converge iteratively instead of fully parametrized. That is, they still use bijective transforms, compute the Jacobian, check the likelihood and you can still sample and get probability density estimates. The only difference is you repeat the following two steps until convergence:
 
     1. compute one layer or block layer (e.g. Marginal Gaussianization + PCA rotation)
-    2. check for convergence (e.g log-likelihood using the change-of-variables formula)
+    1. check for convergence (e.g log-likelihood using the change-of-variables formula)
 
     Table 1 in the paper has a good comparison with traditional NFs.
 
@@ -127,3 +127,15 @@
   description: |
     A general-purpose Python library providing a collection of deep probabilistic models (DPMs) which are easy to use and extend.
     Implements flows such as MAF, RealNVP and NICE.
+
+- title: StyleFlow
+  date: 2020-05-26
+  date_added: 2022-11-11
+  last_updated: 2022-11-11
+  url: https://github.com/RameenAbdal/StyleFlow
+  docs: https://rameenabdal.github.io/StyleFlow
+  authors: Rameen Abdal
+  authors_url: https://twitter.com/AbdalRameen
+  lang: PyTorch
+  description: |
+    Attribute-conditioned Exploration of StyleGAN-generated Images using Conditional Continuous Normalizing Flows.
