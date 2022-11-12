@@ -47,7 +47,7 @@ sections: dict[str, Section] = {
 
 seen_titles: set[tuple[str, str]] = set()
 required_keys = {"title", "url", "date", "authors", "description"}
-optional_keys = {"authors_url", "lang", "repo", "date_added", "last_updated"}
+optional_keys = {"authors_url", "lang", "repo", "docs", "date_added", "last_updated"}
 valid_languages = {"PyTorch", "TensorFlow", "JAX", "Julia", "Others"}
 et_al_after = 2
 

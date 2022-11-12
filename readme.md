@@ -429,6 +429,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    > Example of how to use FFJORD as a continuous normalizing flow (CNF). Based on the PyTorch suite `torchdyn` which offers continuous neural architectures.
 
+1. 2020-05-26 - [StyleFlow](https://github.com/RameenAbdal/StyleFlow) by [Rameen Abdal](https://twitter.com/AbdalRameen)
+   &ensp;<img src="https://img.shields.io/github/stars/RameenAbdal/StyleFlow" alt="GitHub repo stars" valign="middle" />
+
+   > Attribute-conditioned Exploration of StyleGAN-generated Images using Conditional Continuous Normalizing Flows.
+
 1. 2020-02-04 - [Graphical Normalizing Flows](https://github.com/AWehenkel/Graphical-Normalizing-Flows) by [Antoine Wehenkel](https://awehenkel.github.io)
    &ensp;<img src="https://img.shields.io/github/stars/AWehenkel/Graphical-Normalizing-Flows" alt="GitHub repo stars" valign="middle" />
 

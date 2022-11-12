@@ -127,3 +127,15 @@
   description: |
     A general-purpose Python library providing a collection of deep probabilistic models (DPMs) which are easy to use and extend.
     Implements flows such as MAF, RealNVP and NICE.
+
+- title: StyleFlow
+  date: 2020-05-26
+  date_added: 2022-11-11
+  last_updated: 2022-11-11
+  url: https://github.com/RameenAbdal/StyleFlow
+  docs: https://rameenabdal.github.io/StyleFlow
+  authors: Rameen Abdal
+  authors_url: https://twitter.com/AbdalRameen
+  lang: PyTorch
+  description: |
+    Attribute-conditioned Exploration of StyleGAN-generated Images using Conditional Continuous Normalizing Flows.
