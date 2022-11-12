@@ -47,7 +47,7 @@ sections: dict[str, Section] = {
 
 seen_titles: set[tuple[str, str]] = set()
 required_keys = {"title", "url", "date", "authors", "description"}
-optional_keys = {"authors_url", "lang", "repo", "date_added", "last_updated"}
+optional_keys = {"authors_url", "lang", "repo", "docs", "date_added", "last_updated"}
 valid_languages = {"PyTorch", "TensorFlow", "JAX", "Julia", "Others"}
 et_al_after = 2
 
@@ -110,7 +110,7 @@ for key, section in sections.items():
     # section["markdown"] += f"\n\n{len(section['items'])} items\n\n"
 
     for itm in section["items"]:
-        if (lang := itm.get("lang", None)) in lang_names:
+        if (lang := itm.get("lang")) in lang_names:
             lang_names.remove(lang)
             # print language subsection title if this is the first item with that lang
             section["markdown"] += (
@@ -134,24 +134,20 @@ for key, section in sections.items():
         if len(author_list) > et_al_after:
             authors += " et al."
 
-        if authors_url := itm.get("authors_url", None):
+        if authors_url := itm.get("authors_url"):
             authors = f"[{authors}]({authors_url})"
 
         md_str = f"1. {date} - [{title}]({url}) by {authors}"
 
-        indent = " " * 3
-
         if key in ("packages", "code") and url.startswith("https://github.com"):
             gh_login, repo_name = url.split("/")[3:5]
             md_str += (
-                f'\n{indent}&ensp;<img src="https://img.shields.io/github/stars/'
+                f'\n&ensp;\n<img src="https://img.shields.io/github/stars/'
                 f'{gh_login}/{repo_name}" alt="GitHub repo stars" valign="middle" />'
             )
 
-        description = description.removesuffix("\n").replace("\n", f"\n{indent}> ")
-        description = re.sub(r"\s+\n", "\n", description)  # remove trailing whitespace
-        md_str += f"\n\n{indent}> {description}"
-        if repo := itm.get("repo", None):
+        md_str += "<br>\n   " + description.removesuffix("\n")
+        if repo := itm.get("repo"):
             md_str += f" [[Code]({repo})]"
 
         section["markdown"] += md_str + "\n\n"
