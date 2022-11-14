@@ -23,11 +23,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
    1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
    1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
    1. [<img src="assets/julia.svg" alt="Julia" height="15px"> &nbsp;Julia Packages](#-julia-packages)
-1. [🧑‍💻 Code](#-code)
-   1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-code)
-   1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-code)
-   1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos](#-tensorflow-code)
-   1. [<img src="assets/others.svg" alt="Others" height="15px"> &nbsp;Others](#-others-code)
+1. [🧑‍💻 Codes](#-codes)
+   1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-codes)
+   1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-codes)
+   1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos](#-tensorflow-codes)
+   1. [<img src="assets/others.svg" alt="Other" height="15px"> &nbsp;Other](#-other-codes)
 1. [🌐 Blog Posts](#-blog-posts)
 1. [🎉 Open to Suggestions!](#-open-to-suggestions)
 
@@ -334,11 +334,11 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 
 <br>
 
-## 🧑‍💻 Code
+## 🧑‍💻 Codes
 
 <br>
 
-### <img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Code
+### <img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Codes
 
 1. 2021-09-27 - [DeeProb-kit](https://github.com/deeprob-org/deeprob-kit) by [Lorenzo Loconte](https://github.com/loreloc)
 &ensp;
@@ -394,7 +394,7 @@ Implements flows such as MAF, RealNVP and NICE.
 
 <br>
 
-### <img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Code
+### <img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Codes
 
 1. 2020-11-02 - [Variational Inference using Normalizing Flows (VINF)](https://github.com/pierresegonne/VINF) by Pierre Segonne
 &ensp;
@@ -413,14 +413,14 @@ Implements flows such as MAF, RealNVP and NICE.
 
 <br>
 
-### <img src="assets/jax.svg" alt="JAX" height="20px"> &nbsp;JAX Code
+### <img src="assets/jax.svg" alt="JAX" height="20px"> &nbsp;JAX Codes
 
 1. 2020-06-12 - [Neural Transport](https://pyro.ai/numpyro/examples/neutra) by [numpyro](https://num.pyro.ai)<br>
    Features an example of how Normalizing flows can be used to get more robust posteriors from Monte Carlo methods. Uses the `numpyro` library which is a PPL with JAX as the backend. The NF implementations include the basic ones like IAF and BNAF.
 
 <br>
 
-### <img src="assets/others.svg" alt="Others" height="20px"> &nbsp;Others Code
+### <img src="assets/other.svg" alt="Other" height="20px"> &nbsp;Other Codes
 
 1. 2018-06-11 - [Destructive Deep Learning (ddl)](https://github.com/davidinouye/destructive-deep-learning) by [David Inouye](https://davidinouye.com)
 &ensp;

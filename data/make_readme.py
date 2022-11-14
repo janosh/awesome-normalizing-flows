@@ -31,7 +31,7 @@ titles = dict(
     applications="## 🛠️ Applications",
     videos="## 📺 Videos",
     packages="## 📦 Packages",
-    code="## 🧑‍💻 Code",
+    codes="## 🧑‍💻 Codes",
     posts="## 🌐 Blog Posts",
 )
 
@@ -48,7 +48,7 @@ sections: dict[str, Section] = {
 seen_titles: set[tuple[str, str]] = set()
 required_keys = {"title", "url", "date", "authors", "description"}
 optional_keys = {"authors_url", "lang", "repo", "docs", "date_added", "last_updated"}
-valid_languages = {"PyTorch", "TensorFlow", "JAX", "Julia", "Others"}
+valid_languages = {"PyTorch", "TensorFlow", "JAX", "Julia", "Other"}
 et_al_after = 2
 
 
@@ -63,7 +63,7 @@ def validate_item(itm: Item, section_title: str) -> None:
     else:
         seen_titles.add((title, section_title))
 
-    if section_title in ("packages", "code") and itm["lang"] not in valid_languages:
+    if section_title in ("packages", "codes") and itm["lang"] not in valid_languages:
         err = (
             f"Invalid lang in {title}: {itm['lang']}, must be one of {valid_languages}"
         )
@@ -95,13 +95,13 @@ def validate_item(itm: Item, section_title: str) -> None:
 
 for key, section in sections.items():
     # Keep lang_names inside sections loop to refill language subsections for each new
-    # section. Used by both Code and Packages. Is a list for order and mutability.
-    lang_names = ["PyTorch", "TensorFlow", "JAX", "Julia", "Others"]
+    # section. Used by both Codes and Packages. Is a list for order and mutability.
+    lang_names = ["PyTorch", "TensorFlow", "JAX", "Julia", "Other"]
 
     # sort first by language with order determined by lang_names (only applies to
-    # Package and Code sections), then by date
+    # Package and Codes sections), then by date
     section["items"].sort(key=lambda x: x["date"], reverse=True)
-    if key in ("packages", "code"):
+    if key in ("packages", "codes"):
         section["items"].sort(
             key=lambda itm: lang_names.index(itm["lang"])  # noqa: B023
         )
@@ -139,7 +139,7 @@ for key, section in sections.items():
 
         md_str = f"1. {date} - [{title}]({url}) by {authors}"
 
-        if key in ("packages", "code") and url.startswith("https://github.com"):
+        if key in ("packages", "codes") and url.startswith("https://github.com"):
             gh_login, repo_name = url.split("/")[3:5]
             md_str += (
                 f'\n&ensp;\n<img src="https://img.shields.io/github/stars/'
