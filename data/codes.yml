@@ -77,14 +77,14 @@
   date: 2017-03-21
   url: https://github.com/andymiller/NormFlows
   authors: Andy Miller
-  lang: Others
+  lang: Other
   description: Simple didactic example using [`autograd`](https://github.com/HIPS/autograd), so pretty low-level.
 
 - title: Normalizing Flows Overview
   date: 2017-07-11
   url: https://docs.pymc.io/en/v3/pymc-examples/examples/variational_inference/normalizing_flows_overview.html
   authors: PyMC3
-  lang: Others
+  lang: Other
   description: A very helpful notebook showcasing how to work with flows in practice and comparing it to PyMC3's NUTS-based HMC kernel. Based on [Theano](https://github.com/Theano/Theano).
 
 - title: Destructive Deep Learning (ddl)
@@ -92,7 +92,7 @@
   url: https://github.com/davidinouye/destructive-deep-learning
   authors: David Inouye
   authors_url: https://davidinouye.com
-  lang: Others
+  lang: Other
   description: |
     Code base for the paper [Deep Density Destructors](https://proceedings.mlr.press/v80/inouye18a.html) by Inouye & Ravikumar (2018). An entire suite of iterative methods including tree-based as well as Gaussianization methods which are similar to normalizing flows except they converge iteratively instead of fully parametrized. That is, they still use bijective transforms, compute the Jacobian, check the likelihood and you can still sample and get probability density estimates. The only difference is you repeat the following two steps until convergence:
 
