@@ -401,6 +401,11 @@ Implements flows such as MAF, RealNVP and NICE.
 <img src="https://img.shields.io/github/stars/pierresegonne/VINF" alt="GitHub repo stars" valign="middle" /><br>
    This repository provides a hands-on TensorFlow implementation of Normalizing Flows as presented in the [paper](https://arxiv.org/pdf/1505.05770.pdf) introducing the concept (D. Rezende & S. Mohamed).
 
+1. 2020-01-29 - [Normalizing Flows](https://github.com/LukasRinder/normalizing-flows) by [Lukas Rinder](https://github.com/LukasRinder)
+&ensp;
+<img src="https://img.shields.io/github/stars/LukasRinder/normalizing-flows" alt="GitHub repo stars" valign="middle" /><br>
+   Implementation of normalizing flows (Planar Flow, Radial Flow, Real NVP, Masked Autoregressive Flow (MAF), Inverse Autoregressive Flow (IAF), Neural Spline Flow) in TensorFlow 2 including a small tutorial.
+
 1. 2019-07-19 - [BERT-flow](https://github.com/bohanli/BERT-flow) by Bohan Li
 &ensp;
 <img src="https://img.shields.io/github/stars/bohanli/BERT-flow" alt="GitHub repo stars" valign="middle" /><br>

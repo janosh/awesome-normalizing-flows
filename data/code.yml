@@ -139,3 +139,14 @@
   lang: PyTorch
   description: |
     Attribute-conditioned Exploration of StyleGAN-generated Images using Conditional Continuous Normalizing Flows.
+
+- title: Normalizing Flows
+  date: 2020-01-29
+  date_added: 2022-11-14
+  last_updated: 2022-11-14
+  url: https://github.com/LukasRinder/normalizing-flows
+  authors: Lukas Rinder
+  authors_url: https://github.com/LukasRinder
+  lang: TensorFlow
+  description: |
+    Implementation of normalizing flows (Planar Flow, Radial Flow, Real NVP, Masked Autoregressive Flow (MAF), Inverse Autoregressive Flow (IAF), Neural Spline Flow) in TensorFlow 2 including a small tutorial.
