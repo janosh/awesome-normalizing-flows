@@ -182,8 +182,8 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. 2017-05-19 - [Masked Autoregressive Flow for Density Estimation](https://arxiv.org/abs/1705.07057) by Papamakarios, Pavlakou et al.<br>
    Introduces MAF, a stack of autoregressive models forming a normalizing flow suitable for fast density estimation but slow at sampling. Analogous to Inverse Autoregressive Flow (IAF) except the forward and inverse passes are exchanged. Generalization of RNVP.
 
-   <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf.svg#gh-dark-mode-only" alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer">
-   <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf.svg#gh-light-mode-only" alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer">
+   ![Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer](https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf-white.svg#gh-dark-mode-only)
+   ![Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer](https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf.svg#gh-light-mode-only)
 
    <sup>_[View figure source](https://github.com/janosh/tikz/tree/main/assets/maf)._</sup>
 
@@ -196,8 +196,8 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. 2016-05-27 - [Density estimation using Real NVP](https://arxiv.org/abs/1605.08803) by Dinh, Sohl-Dickstein et al.<br>
    They introduce the affine coupling layer (RNVP), a major improvement in terms of flexibility over the additive coupling layer (NICE) with unit Jacobian while keeping a single-pass forward and inverse transformation for fast sampling and density estimation, respectively.
 
-   <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp.svg#gh-dark-mode-only" alt="Diagram of real-valued non-volume preserving (RNVP) coupling layer">
-   <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp.svg#gh-light-mode-only" alt="Diagram of real-valued non-volume preserving (RNVP) coupling layer">
+   ![Diagram of real-valued non-volume preserving (RNVP) coupling layer](https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp-white.svg#gh-dark-mode-only)
+   ![Diagram of real-valued non-volume preserving (RNVP) coupling layer](https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp.svg#gh-light-mode-only)
 
    <sup>_[View figure source](https://github.com/janosh/tikz/tree/main/assets/rnvp)._</sup>
 
@@ -209,8 +209,8 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    A popular and efficient way to make flows autoregressive is to construct them from MADE nets.
 
-   <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made.svg#gh-dark-mode-only" alt="MADE">
-   <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made.svg#gh-light-mode-only" alt="MADE">
+   ![MADE](https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made-white.svg#gh-dark-mode-only)
+   ![MADE](https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made.svg#gh-light-mode-only)
 
    <sup>_[View figure source](https://github.com/janosh/tikz/tree/main/assets/made)._</sup>
 
