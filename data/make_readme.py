@@ -31,7 +31,7 @@ titles = dict(
     applications="## 🛠️ Applications",
     videos="## 📺 Videos",
     packages="## 📦 Packages",
-    codes="## 🧑‍💻 Codes",
+    repos="## 🧑‍💻 Repos",
     posts="## 🌐 Blog Posts",
 )
 
@@ -63,7 +63,7 @@ def validate_item(itm: Item, section_title: str) -> None:
     else:
         seen_titles.add((title, section_title))
 
-    if section_title in ("packages", "codes") and itm["lang"] not in valid_languages:
+    if section_title in ("packages", "repos") and itm["lang"] not in valid_languages:
         err = (
             f"Invalid lang in {title}: {itm['lang']}, must be one of {valid_languages}"
         )
@@ -95,13 +95,13 @@ def validate_item(itm: Item, section_title: str) -> None:
 
 for key, section in sections.items():
     # Keep lang_names inside sections loop to refill language subsections for each new
-    # section. Used by both Codes and Packages. Is a list for order and mutability.
+    # section. Used by both repos and Packages. Is a list for order and mutability.
     lang_names = ["PyTorch", "TensorFlow", "JAX", "Julia", "Other"]
 
     # sort first by language with order determined by lang_names (only applies to
-    # Package and Codes sections), then by date
+    # Package and repos sections), then by date
     section["items"].sort(key=lambda x: x["date"], reverse=True)
-    if key in ("packages", "codes"):
+    if key in ("packages", "repos"):
         section["items"].sort(
             key=lambda itm: lang_names.index(itm["lang"])  # noqa: B023
         )
@@ -139,7 +139,7 @@ for key, section in sections.items():
 
         md_str = f"1. {date} - [{title}]({url}) by {authors}"
 
-        if key in ("packages", "codes") and url.startswith("https://github.com"):
+        if key in ("packages", "repos") and url.startswith("https://github.com"):
             gh_login, repo_name = url.split("/")[3:5]
             md_str += (
                 f'\n&ensp;\n<img src="https://img.shields.io/github/stars/'
