@@ -1,13 +1,19 @@
-# Awesome Normalizing Flows
+<h1 align="center">
+Awesome Normalizing Flows
+</h1>
+
+<h4 align="center">
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg?logo=github)](https://github.com/janosh/awesome-normalizing-flows/pulls)
+[![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg?logo=github)](#-contributing)
 [![Link Check](https://github.com/janosh/awesome-normalizing-flows/actions/workflows/link-check.yml/badge.svg)](https://github.com/janosh/awesome-normalizing-flows/actions/workflows/link-check.yml)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/awesome-normalizing-flows/main.svg)](https://results.pre-commit.ci/latest/github/janosh/awesome-normalizing-flows/main)
+</h4>
 
 A list of awesome resources for understanding and applying normalizing flows (NF): a relatively simple yet powerful new tool in statistics for constructing expressive probability distributions from simple base distributions using a chain (flow) of trainable smooth bijective transformations (diffeomorphisms).
 
-<img src="assets/normalizing-flow.svg" alt="Normalizing Flow" width="1000">
+<img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/normalizing-flow/normalizing-flow.svg#gh-dark-mode-only" alt="Normalizing flow diagram" width="1000" style="filter: invert();">
+<img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/normalizing-flow/normalizing-flow.svg#gh-light-mode-only" alt="Normalizing flow diagram" width="1000">
 
 <sup>_Figure inspired by [Lilian Weng](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models). Created in TikZ. [View source](https://github.com/janosh/tikz/tree/main/assets/normalizing-flow)._</sup>
 
@@ -29,7 +35,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
    1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos](#-tensorflow-codes)
    1. [<img src="assets/others.svg" alt="Other" height="15px"> &nbsp;Other](#-other-codes)
 1. [🌐 Blog Posts](#-blog-posts)
-1. [🎉 Open to Suggestions!](#-open-to-suggestions)
+1. [🚧 Contributing](#-contributing)
 
 <br>
 
@@ -176,6 +182,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. 2017-05-19 - [Masked Autoregressive Flow for Density Estimation](https://arxiv.org/abs/1705.07057) by Papamakarios, Pavlakou et al.<br>
    Introduces MAF, a stack of autoregressive models forming a normalizing flow suitable for fast density estimation but slow at sampling. Analogous to Inverse Autoregressive Flow (IAF) except the forward and inverse passes are exchanged. Generalization of RNVP.
 
+   ![Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer](https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf-white.svg#gh-dark-mode-only)
+   ![Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer](https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf.svg#gh-light-mode-only)
+
+   <sup>_[View figure source](https://github.com/janosh/tikz/tree/main/assets/maf)._</sup>
+
 1. 2017-03-06 - [Multiplicative Normalizing Flows for Variational Bayesian Neural Networks](https://arxiv.org/abs/1703.01961) by Louizos, Welling<br>
    They introduce a new type of variational Bayesian neural network that uses flows to generate auxiliary random variables which boost the flexibility of the variational family by multiplying the means of a fully-factorized Gaussian posterior over network parameters. This turns the usual diagonal covariance Gaussian into something that allows for multimodality and non-linear dependencies between network parameters.
 
@@ -185,13 +196,23 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. 2016-05-27 - [Density estimation using Real NVP](https://arxiv.org/abs/1605.08803) by Dinh, Sohl-Dickstein et al.<br>
    They introduce the affine coupling layer (RNVP), a major improvement in terms of flexibility over the additive coupling layer (NICE) with unit Jacobian while keeping a single-pass forward and inverse transformation for fast sampling and density estimation, respectively.
 
+   ![Diagram of real-valued non-volume preserving (RNVP) coupling layer](https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp-white.svg#gh-dark-mode-only)
+   ![Diagram of real-valued non-volume preserving (RNVP) coupling layer](https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp.svg#gh-light-mode-only)
+
+   <sup>_[View figure source](https://github.com/janosh/tikz/tree/main/assets/rnvp)._</sup>
+
 1. 2015-05-21 - [Variational Inference with Normalizing Flows](https://arxiv.org/abs/1505.05770) by Rezende, Mohamed<br>
    They show how to go beyond mean-field variational inference by using flows to increase the flexibility of the variational family.
 
 1. 2015-02-12 - [Masked Autoencoder for Distribution Estimation](https://arxiv.org/abs/1502.03509) by Germain, Gregor et al.<br>
-   Introduces MADE, a feed-forward network that uses carefully constructed binary masks on its weights to control the precise flow of information through the network. The masks ensure that each output unit receives signals only from input units that come before it in some arbitrary order. Yet all outputs can be computed in a single pass.<br>
-A popular and efficient method to bestow flows with autoregressivity is to construct them from MADE nets.
-<br><img src="assets/made.svg" alt="MADE"><br><sup>_Figure created in TikZ. [View source](https://github.com/janosh/tikz/tree/main/assets/made)._</sup>
+   Introduces MADE, a feed-forward network that uses carefully constructed binary masks on its weights to control the precise flow of information through the network. The masks ensure that each output unit receives signals only from input units that come before it in some arbitrary order. Yet all outputs can be computed in a single pass.
+
+   A popular and efficient way to make flows autoregressive is to construct them from MADE nets.
+
+   ![MADE](https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made-white.svg#gh-dark-mode-only)
+   ![MADE](https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made.svg#gh-light-mode-only)
+
+   <sup>_[View figure source](https://github.com/janosh/tikz/tree/main/assets/made)._</sup>
 
 1. 2014-10-30 - [Non-linear Independent Components Estimation](https://arxiv.org/abs/1410.8516) by Dinh, Krueger et al.<br>
    Introduces the additive coupling layer (NICE) and shows how to use it for image generation and inpainting.
@@ -461,8 +482,9 @@ Table 1 in the paper has a good comparison with traditional NFs.
 
 <br>
 
-## 🎉 Open to Suggestions
+## 🚧 Contributing
 
-See something that's missing from this list? [PRs welcome!](https://github.com/janosh/awesome-normalizing-flows/edit/main/readme.md)
+See something that's missing from this list? PRs welcome! Note: Don't edit the readme directly (it's auto-generated). Add your submission
+to the appropriate [`data/*.yml`](https://github.com/janosh/awesome-normalizing-flows/edit/main/data) file.
 
 Papers should be peer-reviewed and published in a journal. If you're unsure if a paper or resource belongs in this list, feel free to [open an issue](https://github.com/janosh/awesome-normalizing-flows/issues/new) or [start a discussion](https://github.com/janosh/awesome-normalizing-flows/discussions). This repo is meant to be a community effort. Don't hesitate to voice an opinion.
