@@ -181,11 +181,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2017-05-19 - [Masked Autoregressive Flow for Density Estimation](https://arxiv.org/abs/1705.07057) by Papamakarios, Pavlakou et al.<br>
    Introduces MAF, a stack of autoregressive models forming a normalizing flow suitable for fast density estimation but slow at sampling. Analogous to Inverse Autoregressive Flow (IAF) except the forward and inverse passes are exchanged. Generalization of RNVP.
-<br>
-<img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf.svg#gh-dark-mode-only" alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer" style="filter: invert();">
-<img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf.svg#gh-light-mode-only" alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer">
-<br>
-<sup>_Figure created in TikZ. [View source](https://github.com/janosh/tikz/tree/main/assets/maf)._</sup>
+   <br>
+   <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf.svg#gh-dark-mode-only" alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer" style="filter: invert();">
+   <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf.svg#gh-light-mode-only" alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer">
+   <br>
+   <sup>_Figure created in TikZ. [View source](https://github.com/janosh/tikz/tree/main/assets/maf)._</sup>
 
 1. 2017-03-06 - [Multiplicative Normalizing Flows for Variational Bayesian Neural Networks](https://arxiv.org/abs/1703.01961) by Louizos, Welling<br>
    They introduce a new type of variational Bayesian neural network that uses flows to generate auxiliary random variables which boost the flexibility of the variational family by multiplying the means of a fully-factorized Gaussian posterior over network parameters. This turns the usual diagonal covariance Gaussian into something that allows for multimodality and non-linear dependencies between network parameters.
@@ -195,24 +195,24 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2016-05-27 - [Density estimation using Real NVP](https://arxiv.org/abs/1605.08803) by Dinh, Sohl-Dickstein et al.<br>
    They introduce the affine coupling layer (RNVP), a major improvement in terms of flexibility over the additive coupling layer (NICE) with unit Jacobian while keeping a single-pass forward and inverse transformation for fast sampling and density estimation, respectively.
-<br>
-<img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp.svg#gh-dark-mode-only" alt="Diagram of real-valued non-volume preserving (RNVP) coupling layer" style="filter: invert();">
-<img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp.svg#gh-light-mode-only" alt="Diagram of real-valued non-volume preserving (RNVP) coupling layer">
-<br>
-<sup>_Figure created in TikZ. [View source](https://github.com/janosh/tikz/tree/main/assets/rnvp)._</sup>
+   <br>
+   <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp.svg#gh-dark-mode-only" alt="Diagram of real-valued non-volume preserving (RNVP) coupling layer" style="filter: invert();">
+   <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp.svg#gh-light-mode-only" alt="Diagram of real-valued non-volume preserving (RNVP) coupling layer">
+   <br>
+   <sup>_Figure created in TikZ. [View source](https://github.com/janosh/tikz/tree/main/assets/rnvp)._</sup>
 
 1. 2015-05-21 - [Variational Inference with Normalizing Flows](https://arxiv.org/abs/1505.05770) by Rezende, Mohamed<br>
    They show how to go beyond mean-field variational inference by using flows to increase the flexibility of the variational family.
 
 1. 2015-02-12 - [Masked Autoencoder for Distribution Estimation](https://arxiv.org/abs/1502.03509) by Germain, Gregor et al.<br>
    Introduces MADE, a feed-forward network that uses carefully constructed binary masks on its weights to control the precise flow of information through the network. The masks ensure that each output unit receives signals only from input units that come before it in some arbitrary order. Yet all outputs can be computed in a single pass.
-<br>
-A popular and efficient way to make flows autoregressive is to construct them from MADE nets.
-<br>
-<img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made.svg#gh-dark-mode-only" alt="MADE" style="filter: invert();">
-<img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made.svg#gh-light-mode-only" alt="MADE">
-<br>
-<sup>_Figure created in TikZ. [View source](https://github.com/janosh/tikz/tree/main/assets/made)._</sup>
+   <br>
+   A popular and efficient way to make flows autoregressive is to construct them from MADE nets.
+   <br>
+   <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made.svg#gh-dark-mode-only" alt="MADE" style="filter: invert();">
+   <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made.svg#gh-light-mode-only" alt="MADE">
+   <br>
+   <sup>_Figure created in TikZ. [View source](https://github.com/janosh/tikz/tree/main/assets/made)._</sup>
 
 1. 2014-10-30 - [Non-linear Independent Components Estimation](https://arxiv.org/abs/1410.8516) by Dinh, Krueger et al.<br>
    Introduces the additive coupling layer (NICE) and shows how to use it for image generation and inpainting.
