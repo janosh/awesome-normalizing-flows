@@ -12,8 +12,7 @@ Awesome Normalizing Flows
 
 A list of awesome resources for understanding and applying normalizing flows (NF): a relatively simple yet powerful new tool in statistics for constructing expressive probability distributions from simple base distributions using a chain (flow) of trainable smooth bijective transformations (diffeomorphisms).
 
-<img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/normalizing-flow/normalizing-flow.svg#gh-dark-mode-only" alt="Normalizing flow diagram" width="1000" style="filter: invert();">
-<img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/normalizing-flow/normalizing-flow.svg#gh-light-mode-only" alt="Normalizing flow diagram" width="1000">
+<img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/normalizing-flow/normalizing-flow.svg" alt="Normalizing flow diagram" width="1000">
 
 <sup>_Figure inspired by [Lilian Weng](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models). Created in TikZ. [View source](https://github.com/janosh/tikz/tree/main/assets/normalizing-flow)._</sup>
 
@@ -29,11 +28,11 @@ A list of awesome resources for understanding and applying normalizing flows (NF
    1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
    1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
    1. [<img src="assets/julia.svg" alt="Julia" height="15px"> &nbsp;Julia Packages](#-julia-packages)
-1. [🧑‍💻 Codes](#-codes)
-   1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-codes)
-   1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-codes)
-   1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos](#-tensorflow-codes)
-   1. [<img src="assets/others.svg" alt="Other" height="15px"> &nbsp;Other](#-other-codes)
+1. [🧑‍💻 Repos](#-repos)
+   1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
+   1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
+   1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos](#-tensorflow-repos)
+   1. [<img src="assets/other.svg" alt="Other" height="15px"> &nbsp;Other Repos](#-other-repos)
 1. [🌐 Blog Posts](#-blog-posts)
 1. [🚧 Contributing](#-contributing)
 
@@ -355,11 +354,11 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 
 <br>
 
-## 🧑‍💻 Codes
+## 🧑‍💻 Repos
 
 <br>
 
-### <img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Codes
+### <img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos
 
 1. 2021-09-27 - [DeeProb-kit](https://github.com/deeprob-org/deeprob-kit) by [Lorenzo Loconte](https://github.com/loreloc)
 &ensp;
@@ -415,7 +414,7 @@ Implements flows such as MAF, RealNVP and NICE.
 
 <br>
 
-### <img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Codes
+### <img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos
 
 1. 2020-11-02 - [Variational Inference using Normalizing Flows (VINF)](https://github.com/pierresegonne/VINF) by Pierre Segonne
 &ensp;
@@ -434,14 +433,14 @@ Implements flows such as MAF, RealNVP and NICE.
 
 <br>
 
-### <img src="assets/jax.svg" alt="JAX" height="20px"> &nbsp;JAX Codes
+### <img src="assets/jax.svg" alt="JAX" height="20px"> &nbsp;JAX Repos
 
 1. 2020-06-12 - [Neural Transport](https://pyro.ai/numpyro/examples/neutra) by [numpyro](https://num.pyro.ai)<br>
    Features an example of how Normalizing flows can be used to get more robust posteriors from Monte Carlo methods. Uses the `numpyro` library which is a PPL with JAX as the backend. The NF implementations include the basic ones like IAF and BNAF.
 
 <br>
 
-### <img src="assets/other.svg" alt="Other" height="20px"> &nbsp;Other Codes
+### <img src="assets/other.svg" alt="Other" height="20px"> &nbsp;Other Repos
 
 1. 2018-06-11 - [Destructive Deep Learning (ddl)](https://github.com/davidinouye/destructive-deep-learning) by [David Inouye](https://davidinouye.com)
 &ensp;
