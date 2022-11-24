@@ -19,7 +19,7 @@
 
        A popular and efficient way to make flows autoregressive is to construct them from MADE nets.
 
-       <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made.svg#gh-dark-mode-only" alt="MADE" style="filter: invert();">
+       <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made.svg#gh-dark-mode-only" alt="MADE">
        <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made.svg#gh-light-mode-only" alt="MADE">
 
        <sup>_[View figure source](https://github.com/janosh/tikz/tree/main/assets/made)._</sup>
@@ -37,7 +37,7 @@
   description: |
     They introduce the affine coupling layer (RNVP), a major improvement in terms of flexibility over the additive coupling layer (NICE) with unit Jacobian while keeping a single-pass forward and inverse transformation for fast sampling and density estimation, respectively.
 
-       <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp.svg#gh-dark-mode-only" alt="Diagram of real-valued non-volume preserving (RNVP) coupling layer" style="filter: invert();">
+       <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp.svg#gh-dark-mode-only" alt="Diagram of real-valued non-volume preserving (RNVP) coupling layer">
        <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp.svg#gh-light-mode-only" alt="Diagram of real-valued non-volume preserving (RNVP) coupling layer">
 
        <sup>_[View figure source](https://github.com/janosh/tikz/tree/main/assets/rnvp)._</sup>
@@ -61,7 +61,7 @@
   description: |
     Introduces MAF, a stack of autoregressive models forming a normalizing flow suitable for fast density estimation but slow at sampling. Analogous to Inverse Autoregressive Flow (IAF) except the forward and inverse passes are exchanged. Generalization of RNVP.
 
-       <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf.svg#gh-dark-mode-only" alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer" style="filter: invert();">
+       <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf.svg#gh-dark-mode-only" alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer">
        <img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf.svg#gh-light-mode-only" alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer">
 
        <sup>_[View figure source](https://github.com/janosh/tikz/tree/main/assets/maf)._</sup>
