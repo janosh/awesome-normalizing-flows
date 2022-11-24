@@ -29,7 +29,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
    1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos](#-tensorflow-codes)
    1. [<img src="assets/others.svg" alt="Other" height="15px"> &nbsp;Other](#-other-codes)
 1. [🌐 Blog Posts](#-blog-posts)
-1. [🎉 Open to Suggestions!](#-open-to-suggestions)
+1. [🚧 Contributing](#-contributing)
 
 <br>
 
@@ -461,8 +461,9 @@ Table 1 in the paper has a good comparison with traditional NFs.
 
 <br>
 
-## 🎉 Open to Suggestions
+## 🚧 Contributing
 
-See something that's missing from this list? [PRs welcome!](https://github.com/janosh/awesome-normalizing-flows/edit/main/readme.md)
+See something that's missing from this list? PRs welcome! Note: Don't edit the readme directly (it's auto-generated). Add your submission
+to the appropriate [`data/*.yml`](https://github.com/janosh/awesome-normalizing-flows/edit/main/data) file.
 
 Papers should be peer-reviewed and published in a journal. If you're unsure if a paper or resource belongs in this list, feel free to [open an issue](https://github.com/janosh/awesome-normalizing-flows/issues/new) or [start a discussion](https://github.com/janosh/awesome-normalizing-flows/discussions). This repo is meant to be a community effort. Don't hesitate to voice an opinion.
