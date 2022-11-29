@@ -181,10 +181,12 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. 2017-05-19 - [Masked Autoregressive Flow for Density Estimation](https://arxiv.org/abs/1705.07057) by Papamakarios, Pavlakou et al.<br>
    Introduces MAF, a stack of autoregressive models forming a normalizing flow suitable for fast density estimation but slow at sampling. Analogous to Inverse Autoregressive Flow (IAF) except the forward and inverse passes are exchanged. Generalization of RNVP.
 
-   ![Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer](https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf-white.svg#gh-dark-mode-only)
-   ![Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer](https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf.svg#gh-light-mode-only)
-
-   <sup>_[View figure source](https://github.com/janosh/tikz/tree/main/assets/maf)._</sup>
+   <a href="https://github.com/janosh/tikz/tree/main/assets/maf">
+     <picture>
+       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf-white.svg">
+       <img alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer" src="https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf.svg">
+     </picture>
+   </a>
 
 1. 2017-03-06 - [Multiplicative Normalizing Flows for Variational Bayesian Neural Networks](https://arxiv.org/abs/1703.01961) by Louizos, Welling<br>
    They introduce a new type of variational Bayesian neural network that uses flows to generate auxiliary random variables which boost the flexibility of the variational family by multiplying the means of a fully-factorized Gaussian posterior over network parameters. This turns the usual diagonal covariance Gaussian into something that allows for multimodality and non-linear dependencies between network parameters.
@@ -195,10 +197,12 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. 2016-05-27 - [Density estimation using Real NVP](https://arxiv.org/abs/1605.08803) by Dinh, Sohl-Dickstein et al.<br>
    They introduce the affine coupling layer (RNVP), a major improvement in terms of flexibility over the additive coupling layer (NICE) with unit Jacobian while keeping a single-pass forward and inverse transformation for fast sampling and density estimation, respectively.
 
-   ![Diagram of real-valued non-volume preserving (RNVP) coupling layer](https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp-white.svg#gh-dark-mode-only)
-   ![Diagram of real-valued non-volume preserving (RNVP) coupling layer](https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp.svg#gh-light-mode-only)
-
-   <sup>_[View figure source](https://github.com/janosh/tikz/tree/main/assets/rnvp)._</sup>
+   <a href="https://github.com/janosh/tikz/tree/main/assets/rnvp">
+     <picture>
+       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp-white.svg">
+       <img alt="Diagram of real-valued non-volume preserving (RNVP) coupling layer" src="https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp.svg">
+     </picture>
+   </a>
 
 1. 2015-05-21 - [Variational Inference with Normalizing Flows](https://arxiv.org/abs/1505.05770) by Rezende, Mohamed<br>
    They show how to go beyond mean-field variational inference by using flows to increase the flexibility of the variational family.
@@ -208,10 +212,12 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    A popular and efficient way to make flows autoregressive is to construct them from MADE nets.
 
-   ![MADE](https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made-white.svg#gh-dark-mode-only)
-   ![MADE](https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made.svg#gh-light-mode-only)
-
-   <sup>_[View figure source](https://github.com/janosh/tikz/tree/main/assets/made)._</sup>
+   <a href="https://github.com/janosh/tikz/tree/main/assets/made">
+     <picture>
+       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made-white.svg">
+       <img alt="Masked Autoencoder for Distribution Estimation" src="https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made.svg">
+     </picture>
+   </a>
 
 1. 2014-10-30 - [Non-linear Independent Components Estimation](https://arxiv.org/abs/1410.8516) by Dinh, Krueger et al.<br>
    Introduces the additive coupling layer (NICE) and shows how to use it for image generation and inpainting.
