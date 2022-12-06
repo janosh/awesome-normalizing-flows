@@ -147,6 +147,8 @@ for key, section in sections.items():
             )
 
         md_str += "<br>\n   " + description.removesuffix("\n")
+        if docs := itm.get("docs"):
+            md_str += f" [[Docs]({docs})]"
         if repo := itm.get("repo"):
             md_str += f" [[Code]({repo})]"
 

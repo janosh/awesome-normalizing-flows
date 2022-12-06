@@ -386,7 +386,7 @@ Implements flows such as MAF, RealNVP and NICE.
 1. 2020-05-26 - [StyleFlow](https://github.com/RameenAbdal/StyleFlow) by [Rameen Abdal](https://twitter.com/AbdalRameen)
 &ensp;
 <img src="https://img.shields.io/github/stars/RameenAbdal/StyleFlow" alt="GitHub repo stars" valign="middle" /><br>
-   Attribute-conditioned Exploration of StyleGAN-generated Images using Conditional Continuous Normalizing Flows.
+   Attribute-conditioned Exploration of StyleGAN-generated Images using Conditional Continuous Normalizing Flows. [[Docs](https://rameenabdal.github.io/StyleFlow)]
 
 1. 2020-02-04 - [Graphical Normalizing Flows](https://github.com/AWehenkel/Graphical-Normalizing-Flows) by [Antoine Wehenkel](https://awehenkel.github.io)
 &ensp;
@@ -451,7 +451,7 @@ Implements flows such as MAF, RealNVP and NICE.
 1. 2021-11-10 - [ICNF.jl](https://github.com/impICNF/ICNF.jl) by [Hossein Pourbozorg](https://github.com/prbzrg)
 &ensp;
 <img src="https://img.shields.io/github/stars/impICNF/ICNF.jl" alt="GitHub repo stars" valign="middle" /><br>
-   Implementations of Infinitesimal Continuous Normalizing Flows in Julia.
+   Implementations of Infinitesimal Continuous Normalizing Flows in Julia. [[Docs](https://impicnf.github.io/ICNF.jl/dev)]
 
 <br>
 
