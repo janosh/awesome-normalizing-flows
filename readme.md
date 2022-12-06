@@ -446,6 +446,15 @@ Implements flows such as MAF, RealNVP and NICE.
 
 <br>
 
+### <img src="assets/julia.svg" alt="Julia" height="20px"> &nbsp;Julia Repos
+
+1. 2021-11-10 - [ICNF.jl](https://github.com/impICNF/ICNF.jl) by [Hossein Pourbozorg](https://github.com/prbzrg)
+&ensp;
+<img src="https://img.shields.io/github/stars/impICNF/ICNF.jl" alt="GitHub repo stars" valign="middle" /><br>
+   Implementations of Infinitesimal Continuous Normalizing Flows in Julia.
+
+<br>
+
 ### <img src="assets/other.svg" alt="Other" height="20px"> &nbsp;Other Repos
 
 1. 2018-06-11 - [Destructive Deep Learning (ddl)](https://github.com/davidinouye/destructive-deep-learning) by [David Inouye](https://davidinouye.com)
@@ -489,7 +498,9 @@ Table 1 in the paper has a good comparison with traditional NFs.
 
 ## 🚧 Contributing
 
-See something that's missing from this list? PRs welcome! Note: Don't edit the readme directly (it's auto-generated). Add your submission
+See something that's missing from this list? PRs welcome! A good place to find new items for the Repos section is the [Normalizing Flows topic on GitHub](https://github.com/topics/normalizing-flows).
+
+Note: Don't edit the readme directly (it's auto-generated). Add your submission
 to the appropriate [`data/*.yml`](https://github.com/janosh/awesome-normalizing-flows/edit/main/data) file.
 
 Papers should be peer-reviewed and published in a journal. If you're unsure if a paper or resource belongs in this list, feel free to [open an issue](https://github.com/janosh/awesome-normalizing-flows/issues/new) or [start a discussion](https://github.com/janosh/awesome-normalizing-flows/discussions). This repo is meant to be a community effort. Don't hesitate to voice an opinion.
