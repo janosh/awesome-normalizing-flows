@@ -369,3 +369,10 @@
   authors: Antoine Wehenkel, Gilles Louppe
   description: This work revisits coupling and autoregressive transformations as probabilistic graphical models showing they reduce to Bayesian networks with a pre-defined topology. From this new perspective, the authors propose the graphical normalizing flow, a new invertible transformation with either a prescribed or a learnable graphical structure. This model provides a promising way to inject domain knowledge into normalizing flows while preserving both the interpretability of Bayesian networks and the representation capacity of normalizing flows.
   repo: https://github.com/AWehenkel/Graphical-Normalizing-Flows
+
+- title: Block Neural Autoregressive Flow
+  url: https://arxiv.org/abs/1904.04676
+  date: 2019-04-09
+  authors: Antoine Wehenkel, Gilles Louppe
+  description: As an alternative to hand-crafted bijections, Huang et al. (2018) proposed NAF, a universal approximator for density functions. Their flow is a neural net whose parameters are predicted by another NN. The latter grows quadratically with the size of the former which is inefficient. We propose block neural autoregressive flow (B-NAF), a much more compact universal approximator of density functions, where we model a bijection directly using a single feed-forward network. Invertibility is ensured by carefully designing affine transformations with block matrices that make the flow autoregressive and monotone. We compare B-NAF to NAF and show our flow is competitive across datasets while using orders of magnitude fewer parameters.
+  repo: https://github.com/nicola-decao/BNAF
