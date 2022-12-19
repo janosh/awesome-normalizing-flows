@@ -12,7 +12,12 @@ Awesome Normalizing Flows
 
 A list of awesome resources for understanding and applying normalizing flows (NF): a relatively simple yet powerful new tool in statistics for constructing expressive probability distributions from simple base distributions using a chain (flow) of trainable smooth bijective transformations (diffeomorphisms).
 
-<img src="https://raw.githubusercontent.com/janosh/tikz/main/assets/normalizing-flow/normalizing-flow.svg" alt="Normalizing flow diagram" width="1000">
+<a href="https://github.com/janosh/tikz/tree/main/assets/normalizing-flow">
+   <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/janosh/tikz/main/assets/normalizing-flow/normalizing-flow-white.svg">
+      <img alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer" src="https://raw.githubusercontent.com/janosh/tikz/main/assets/normalizing-flow/normalizing-flow.svg">
+   </picture>
+</a>
 
 <sup>_Figure inspired by [Lilian Weng](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models). Created in TikZ. [View source](https://github.com/janosh/tikz/tree/main/assets/normalizing-flow)._</sup>
 
@@ -150,6 +155,9 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 1. 2019-04-09 - [Block Neural Autoregressive Flow](https://arxiv.org/abs/1904.04676)) by Cao, Titov et al.<br>
    Introduces (B-NAF), a more efficient probability density approximator. Claims to be competitive with other flows across datasets while using orders of magnitude fewer parameters.
+
+1. 2019-04-09 - [Block Neural Autoregressive Flow](https://arxiv.org/abs/1904.04676) by Wehenkel, Louppe<br>
+   As an alternative to hand-crafted bijections, Huang et al. (2018) proposed NAF, a universal approximator for density functions. Their flow is a neural net whose parameters are predicted by another NN. The latter grows quadratically with the size of the former which is inefficient. We propose block neural autoregressive flow (B-NAF), a much more compact universal approximator of density functions, where we model a bijection directly using a single feed-forward network. Invertibility is ensured by carefully designing affine transformations with block matrices that make the flow autoregressive and monotone. We compare B-NAF to NAF and show our flow is competitive across datasets while using orders of magnitude fewer parameters. [[Code](https://github.com/nicola-decao/BNAF)]
 
 1. 2019-02-19 - [MaCow: Masked Convolutional Generative Flow](https://arxiv.org/abs/1902.04208) by Ma, Kong et al.<br>
    Introduces a masked convolutional generative flow (MaCow) layer using a small kernel to capture local connectivity. They showed some improvement over the GLOW model while being fast and stable.
