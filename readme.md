@@ -319,6 +319,11 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 <img src="https://img.shields.io/github/stars/bayesiains/nflows" alt="GitHub repo stars" valign="middle" /><br>
    A suite of most of the SOTA methods using PyTorch. From an ML group in Edinburgh. They created the current SOTA spline flows. Almost as complete as you'll find from a single repo.
 
+1. 2020-01-28 - [normflows](https://github.com/VincentStimper/normalizing-flows) by [Vincent Stimper](https://github.com/VincentStimper)
+&ensp;
+<img src="https://img.shields.io/github/stars/VincentStimper/normalizing-flows" alt="GitHub repo stars" valign="middle" /><br>
+   The library provides most of the common normalizing flow architectures. It also includes stochastic layers, flows on tori and spheres, and other tools that are particularly useful for applications to the physical sciences.
+
 1. 2018-09-07 - [FrEIA](https://github.com/VLL-HD/FrEIA) by [VLL Heidelberg](https://hci.iwr.uni-heidelberg.de/vislearn)
 &ensp;
 <img src="https://img.shields.io/github/stars/VLL-HD/FrEIA" alt="GitHub repo stars" valign="middle" /><br>
