@@ -322,7 +322,7 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 1. 2020-01-28 - [normflows](https://github.com/VincentStimper/normalizing-flows) by [Vincent Stimper](https://github.com/VincentStimper)
 &ensp;
 <img src="https://img.shields.io/github/stars/VincentStimper/normalizing-flows" alt="GitHub repo stars" valign="middle" /><br>
-   The library provides most of the common normalizing flow architectures. It also includes stochastic layers, flows on tori and spheres, and other tools that are particularly useful for applications to the physical sciences. 
+   The library provides most of the common normalizing flow architectures. It also includes stochastic layers, flows on tori and spheres, and other tools that are particularly useful for applications to the physical sciences.
 
 1. 2018-09-07 - [FrEIA](https://github.com/VLL-HD/FrEIA) by [VLL Heidelberg](https://hci.iwr.uni-heidelberg.de/vislearn)
 &ensp;
