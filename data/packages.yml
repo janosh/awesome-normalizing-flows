@@ -91,3 +91,12 @@
   lang: PyTorch
   description: A package that models joint (conditional) PDFs on tensor products of manifolds (Euclidean, sphere, interval, simplex) - like inverse autoregressive flows, but connects manifolds, models conditional PDFs, and allows for arbitrary couplings instead of affine ones. Includes a few SOTA flows like Gaussianization flows.
   date_added: 2022-10-13
+
+- title: normflows
+  date: 2020-01-28
+  url: https://github.com/VincentStimper/normalizing-flows
+  authors: Vincent Stimper
+  authors_url: https://github.com/VincentStimper
+  lang: PyTorch
+  description: The library provides most of the common normalizing flow architectures. It also includes stochastic layers, flows on tori and spheres, and other tools that are particularly useful for applications to the physical sciences.
+  date_added: 2022-12-21
