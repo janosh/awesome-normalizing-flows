@@ -200,7 +200,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
    They introduce a new type of variational Bayesian neural network that uses flows to generate auxiliary random variables which boost the flexibility of the variational family by multiplying the means of a fully-factorized Gaussian posterior over network parameters. This turns the usual diagonal covariance Gaussian into something that allows for multimodality and non-linear dependencies between network parameters.
 
 1. 2016-06-15 - [Improving Variational Inference with Inverse Autoregressive Flow](https://arxiv.org/abs/1606.04934) by Kingma, Salimans et al.<br>
-   Introduces inverse autoregressive flow (IAF), a new type of flow which scales well to high-dimensional latent spaces.
+   Introduces inverse autoregressive flow (IAF), a new type of flow which scales well to high-dimensional latent spaces. [[Code](https://github.com/openai/iaf)]
 
 1. 2016-05-27 - [Density estimation using Real NVP](https://arxiv.org/abs/1605.08803) by Dinh, Sohl-Dickstein et al.<br>
    They introduce the affine coupling layer (RNVP), a major improvement in terms of flexibility over the additive coupling layer (NICE) with unit Jacobian while keeping a single-pass forward and inverse transformation for fast sampling and density estimation, respectively.

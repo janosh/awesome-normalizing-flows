@@ -51,6 +51,7 @@
   date: 2016-06-15
   authors: Diederik P. Kingma, Tim Salimans, Rafal Jozefowicz, Xi Chen, Ilya Sutskever, Max Welling
   description: Introduces inverse autoregressive flow (IAF), a new type of flow which scales well to high-dimensional latent spaces.
+  repo: https://github.com/openai/iaf
 
 - title: Multiplicative Normalizing Flows for Variational Bayesian Neural Networks
   url: https://arxiv.org/abs/1703.01961
