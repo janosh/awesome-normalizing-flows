@@ -156,7 +156,6 @@ for key, section in sections.items():
 
 
 with open(f"{ROOT}/readme.md", "r+") as file:
-
     readme = file.read()
 
     for section in sections.values():
