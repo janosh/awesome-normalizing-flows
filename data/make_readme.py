@@ -1,3 +1,5 @@
+"""Script to generate readme.md from data/*.yml files."""
+
 import datetime
 import re
 from os.path import dirname
@@ -9,6 +11,8 @@ ROOT = dirname(dirname(__file__))
 
 
 class Item(TypedDict):
+    """An item in a readme section like a paper or package."""
+
     title: str
     authors: str
     date: datetime.date
@@ -21,6 +25,8 @@ class Item(TypedDict):
 
 
 class Section(TypedDict):
+    """A section of the readme like 'Publications' or 'Packages'."""
+
     title: str
     items: list[Item]
     markdown: str
@@ -35,13 +41,16 @@ titles = dict(
     posts="## 🌐 Blog Posts",
 )
 
+
+def load_items(key: str) -> list[Item]:
+    """Load list[Item] from YAML file."""
+    with open(f"{ROOT}/data/{key}.yml") as file:
+        return yaml.safe_load(file.read())
+
+
 sections: dict[str, Section] = {
-    key: dict(
-        title=titles[key],
-        items=yaml.safe_load(open(f"{ROOT}/data/{key}.yml").read()),
-        markdown="",  # will be filled below
-    )
-    for key in titles
+    key: dict(title=titles[key], items=load_items(key), markdown="")
+    for key in titles  # markdown is set below
 }
 
 
@@ -53,7 +62,7 @@ et_al_after = 2
 
 
 def validate_item(itm: Item, section_title: str) -> None:
-    """Checks that an item conforms to schema. Raises ValueError if not."""
+    """Check that an item conforms to schema. Raise ValueError if not."""
     # no need to check for duplicate keys, YAML enforces that
     itm_keys = set(itm)
     err = None
@@ -102,9 +111,7 @@ for key, section in sections.items():
     # Package and repos sections), then by date
     section["items"].sort(key=lambda x: x["date"], reverse=True)
     if key in ("packages", "repos"):
-        section["items"].sort(
-            key=lambda itm: lang_names.index(itm["lang"])  # noqa: B023
-        )
+        section["items"].sort(key=lambda itm: lang_names.index(itm["lang"]))
 
     # add item count after section title
     # section["markdown"] += f"\n\n{len(section['items'])} items\n\n"

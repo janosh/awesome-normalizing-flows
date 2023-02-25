@@ -6,6 +6,12 @@ default_stages: [commit]
 default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.0.252
+    hooks:
+      - id: ruff
+        args: [--fix, --select, ALL, --ignore, 'ERA,INP,C408,PTH,S,T201,D203,D211,D212']
+
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
@@ -19,21 +25,10 @@ repos:
       - id: mixed-line-ending
       - id: trailing-whitespace
 
-  - repo: https://github.com/PyCQA/flake8
-    rev: 6.0.0
-    hooks:
-      - id: flake8
-        additional_dependencies: [flake8-bugbear]
-
   - repo: https://github.com/psf/black
     rev: 23.1.0
     hooks:
       - id: black
-
-  - repo: https://github.com/PyCQA/isort
-    rev: 5.12.0
-    hooks:
-      - id: isort
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.33.0
@@ -71,8 +66,4 @@ repos:
     hooks:
       - id: codespell
         stages: [commit, commit-msg]
-
-  - repo: https://github.com/PyCQA/autoflake
-    rev: v2.0.1
-    hooks:
-      - id: autoflake
+        args: [--ignore-words-list, gool]
