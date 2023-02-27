@@ -1,3 +1,10 @@
+- title: FInC Flow: Fast and Invertible k×k Convolutions for Normalizing Flows
+  url: https://arxiv.org/abs/2301.09266
+  date: 2023-01-03
+  authors: Aditya Kallapa, Sandeep Nagar, Girish Varma
+  description: propose a k×k convolutional layer and Deep Normalizing Flow architecture which i.) has a fast parallel inversion algorithm with running time O(nk^2) (n is height and width of the input image and k is kernel size), ii.) masks the minimal amount of learnable parameters in a layer. iii.) gives better forward pass and sampling times comparable to other k×k convolution-based models on real-world benchmarks. We provide an implementation of the proposed parallel algorithm for sampling using our invertible convolutions on GPUs.
+  repo: https://github.com/aditya-v-kallappa/FInCFlow
+  
 - title: 'Iterative Gaussianization: from ICA to Random Rotations'
   url: https://arxiv.org/abs/1602.00229
   date: 2011-04-01
