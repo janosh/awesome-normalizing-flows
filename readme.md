@@ -45,6 +45,9 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ## 📝 Publications
 
+1. 2023-01-03 - [FInC Flow: Fast and Invertible k×k Convolutions for Normalizing Flows](https://arxiv.org/abs/2301.09266) by Kallapa, Nagar et al.<br>
+   propose a k×k convolutional layer and Deep Normalizing Flow architecture which i) has a fast parallel inversion algorithm with running time O(nk^2) (n is height and width of the input image and k is kernel size), ii) masks the minimal amount of learnable parameters in a layer. iii) gives better forward pass and sampling times comparable to other k×k convolution-based models on real-world benchmarks. We provide an implementation of the proposed parallel algorithm for sampling using our invertible convolutions on GPUs. [[Code](https://github.com/aditya-v-kallappa/FInCFlow)]
+
 1. 2022-08-18 - [ManiFlow: Implicitly Representing Manifolds with Normalizing Flows](https://arxiv.org/abs/2208.08932) by Postels, Danelljan et al.<br>
    The invertibility constraint of NFs imposes limitations on data distributions that reside on lower dimensional manifolds embedded in higher dimensional space. This is often bypassed by adding noise to the data which impacts generated sample quality. This work generates samples from the original data distribution given full knowledge of perturbed distribution and noise model. They establish NFs trained on perturbed data implicitly represent the manifold in regions of maximum likelihood, then propose an optimization objective that recovers the most likely point on the manifold given a sample from the perturbed distribution.
 
