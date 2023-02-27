@@ -296,7 +296,7 @@
   authors: Sandeep Nagar, Marius Dufraisse, Girish Varma
   description: Seeks to improve expensive convolutions. They investigate the conditions for when 3x3 convolutions are invertible under which conditions (e.g. padding) and saw successful speedups. Furthermore, they developed a more expressive, invertible _Quad coupling_ layer.
   repo: https://github.com/Naagar/Normalizing_Flow_3x3_inv
-  
+
 - title: Orthogonalizing Convolutional Layers with the Cayley Transform
   url: https://arxiv.org/abs/2104.07167
   date: 2021-04-14
