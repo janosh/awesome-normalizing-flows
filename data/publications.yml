@@ -1,10 +1,3 @@
-- title: FInC Flow: Fast and Invertible k×k Convolutions for Normalizing Flows
-  url: https://arxiv.org/abs/2301.09266
-  date: 2023-01-03
-  authors: Aditya Kallapa, Sandeep Nagar, Girish Varma
-  description: propose a k×k convolutional layer and Deep Normalizing Flow architecture which i.) has a fast parallel inversion algorithm with running time O(nk^2) (n is height and width of the input image and k is kernel size), ii.) masks the minimal amount of learnable parameters in a layer. iii.) gives better forward pass and sampling times comparable to other k×k convolution-based models on real-world benchmarks. We provide an implementation of the proposed parallel algorithm for sampling using our invertible convolutions on GPUs.
-  repo: https://github.com/aditya-v-kallappa/FInCFlow
-
 - title: 'Iterative Gaussianization: from ICA to Random Rotations'
   url: https://arxiv.org/abs/1602.00229
   date: 2011-04-01
@@ -384,3 +377,10 @@
   authors: Antoine Wehenkel, Gilles Louppe
   description: As an alternative to hand-crafted bijections, Huang et al. (2018) proposed NAF, a universal approximator for density functions. Their flow is a neural net whose parameters are predicted by another NN. The latter grows quadratically with the size of the former which is inefficient. We propose block neural autoregressive flow (B-NAF), a much more compact universal approximator of density functions, where we model a bijection directly using a single feed-forward network. Invertibility is ensured by carefully designing affine transformations with block matrices that make the flow autoregressive and monotone. We compare B-NAF to NAF and show our flow is competitive across datasets while using orders of magnitude fewer parameters.
   repo: https://github.com/nicola-decao/BNAF
+
+- title: 'FInC Flow: Fast and Invertible k×k Convolutions for Normalizing Flows'
+  url: https://arxiv.org/abs/2301.09266
+  date: 2023-01-03
+  authors: Aditya Kallapa, Sandeep Nagar, Girish Varma
+  description: propose a k×k convolutional layer and Deep Normalizing Flow architecture which i) has a fast parallel inversion algorithm with running time O(nk^2) (n is height and width of the input image and k is kernel size), ii) masks the minimal amount of learnable parameters in a layer. iii) gives better forward pass and sampling times comparable to other k×k convolution-based models on real-world benchmarks. We provide an implementation of the proposed parallel algorithm for sampling using our invertible convolutions on GPUs.
+  repo: https://github.com/aditya-v-kallappa/FInCFlow
