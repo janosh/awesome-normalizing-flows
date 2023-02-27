@@ -371,6 +371,13 @@
   description: This work revisits coupling and autoregressive transformations as probabilistic graphical models showing they reduce to Bayesian networks with a pre-defined topology. From this new perspective, the authors propose the graphical normalizing flow, a new invertible transformation with either a prescribed or a learnable graphical structure. This model provides a promising way to inject domain knowledge into normalizing flows while preserving both the interpretability of Bayesian networks and the representation capacity of normalizing flows.
   repo: https://github.com/AWehenkel/Graphical-Normalizing-Flows
 
+- title: FInC Flow: Fast and Invertible k×k Convolutions for Normalizing Flows
+  url: https://arxiv.org/abs/2301.09266
+  date: 2023-01-03
+  authors: Aditya Kallappa, Sandeep Nagar, Girish Varma
+  description: This paper propose a k×k convolutional layer and Deep Normalizing Flow architecture which i.) has a fast parallel inversion algorithm with running time O(nk2) (n is height and width of the input image and k is kernel size), ii.) masks the minimal amount of learnable parameters in a layer. iii.) gives better forward pass and sampling times comparable to other k×k convolution-based models on real-world benchmarks. We provide an implementation of the proposed parallel algorithm for sampling using our invertible convolutions on GPUs.
+  repo: https://github.com/aditya-v-kallappa/FInCFlow
+
 - title: Block Neural Autoregressive Flow
   url: https://arxiv.org/abs/1904.04676
   date: 2019-04-09
