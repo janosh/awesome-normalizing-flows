@@ -504,7 +504,7 @@ Table 1 in the paper has a good comparison with traditional NFs.
 1. 2018-10-13 - [Flow-based Deep Generative Models](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models) by Lilian Weng<br>
    Covers change of variables, NICE, RNVP, MADE, Glow, MAF, IAF, WaveNet, PixelRNN.
 
-1. 2018-04-03 - [Normalizing Flows](https://akosiorek.github.io/ml/2018/04/03/norm_flows) by Adam Kosiorek<br>
+1. 2018-04-03 - [Normalizing Flows](https://akosiorek.github.io/norm_flows) by Adam Kosiorek<br>
    Introduction to flows covering change of variables, planar flow, radial flow, RNVP and autoregressive flows like MAF, IAF and Parallel WaveNet.
 
 1. 2018-01-17 - [Normalizing Flows Tutorial](https://blog.evjang.com/2018/01/nf1.html) by Eric Jang<br>

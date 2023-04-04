@@ -7,7 +7,7 @@
 
 - title: Normalizing Flows
   date: 2018-04-03
-  url: https://akosiorek.github.io/ml/2018/04/03/norm_flows
+  url: https://akosiorek.github.io/norm_flows
   authors: Adam Kosiorek
   description: Introduction to flows covering change of variables, planar flow, radial flow, RNVP and autoregressive flows like MAF, IAF and Parallel WaveNet.
 
