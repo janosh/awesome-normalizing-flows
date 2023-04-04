@@ -44,7 +44,7 @@ titles = dict(
 
 def load_items(key: str) -> list[Item]:
     """Load list[Item] from YAML file."""
-    with open(f"{ROOT}/data/{key}.yml") as file:
+    with open(f"{ROOT}/data/{key}.yml", encoding="utf8") as file:
         return yaml.safe_load(file.read())
 
 
@@ -162,7 +162,7 @@ for key, section in sections.items():
         section["markdown"] += md_str + "\n\n"
 
 
-with open(f"{ROOT}/readme.md", "r+") as file:
+with open(f"{ROOT}/readme.md", "r+", encoding="utf8") as file:
     readme = file.read()
 
     for section in sections.values():
