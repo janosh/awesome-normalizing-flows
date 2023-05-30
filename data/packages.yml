@@ -103,11 +103,11 @@
 
 - title: ContinuousNormalizingFlows.jl
   date: 2021-11-07
-  date_added: 2023-05-31
+  date_added: 2022-12-05
   last_updated: 2023-05-31
   url: https://github.com/impICNF/ContinuousNormalizingFlows.jl
   authors: Hossein Pourbozorg
   authors_url: https://github.com/prbzrg
   description: Implementations of Infinitesimal Continuous Normalizing Flows Algorithms in Julia.
   lang: Julia
-  docs: https://impicnf.github.io/ContinuousNormalizingFlows.jl/
+  docs: https://impicnf.github.io/ContinuousNormalizingFlows.jl
