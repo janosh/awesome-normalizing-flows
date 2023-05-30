@@ -150,14 +150,3 @@
   lang: TensorFlow
   description: |
     Implementation of normalizing flows (Planar Flow, Radial Flow, Real NVP, Masked Autoregressive Flow (MAF), Inverse Autoregressive Flow (IAF), Neural Spline Flow) in TensorFlow 2 including a small tutorial.
-
-- title: ICNF.jl
-  date: 2021-11-10
-  date_added: 2022-12-05
-  last_updated: 2022-12-05
-  url: https://github.com/impICNF/ICNF.jl
-  docs: https://impicnf.github.io/ICNF.jl/dev
-  authors: Hossein Pourbozorg
-  authors_url: https://github.com/prbzrg
-  lang: Julia
-  description: Implementations of Infinitesimal Continuous Normalizing Flows in Julia.
