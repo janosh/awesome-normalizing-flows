@@ -372,6 +372,11 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 
 ### <img src="assets/julia.svg" alt="Julia" height="20px"> &nbsp;Julia Packages
 
+1. 2021-11-07 - [ContinuousNormalizingFlows.jl](https://github.com/impICNF/ContinuousNormalizingFlows.jl) by [Hossein Pourbozorg](https://github.com/prbzrg)
+&ensp;
+<img src="https://img.shields.io/github/stars/impICNF/ContinuousNormalizingFlows.jl" alt="GitHub repo stars" valign="middle" /><br>
+   Implementations of Infinitesimal Continuous Normalizing Flows Algorithms in Julia. [[Docs](https://impicnf.github.io/ContinuousNormalizingFlows.jl/)]
+
 1. 2020-02-07 - [InvertibleNetworks.jl](https://github.com/slimgroup/InvertibleNetworks.jl) by [SLIM](https://slim.gatech.edu)
 &ensp;
 <img src="https://img.shields.io/github/stars/slimgroup/InvertibleNetworks.jl" alt="GitHub repo stars" valign="middle" /><br>
@@ -462,15 +467,6 @@ Implements flows such as MAF, RealNVP and NICE.
 
 1. 2020-06-12 - [Neural Transport](https://pyro.ai/numpyro/examples/neutra) by [numpyro](https://num.pyro.ai)<br>
    Features an example of how Normalizing flows can be used to get more robust posteriors from Monte Carlo methods. Uses the `numpyro` library which is a PPL with JAX as the backend. The NF implementations include the basic ones like IAF and BNAF.
-
-<br>
-
-### <img src="assets/julia.svg" alt="Julia" height="20px"> &nbsp;Julia Repos
-
-1. 2021-11-10 - [ICNF.jl](https://github.com/impICNF/ICNF.jl) by [Hossein Pourbozorg](https://github.com/prbzrg)
-&ensp;
-<img src="https://img.shields.io/github/stars/impICNF/ICNF.jl" alt="GitHub repo stars" valign="middle" /><br>
-   Implementations of Infinitesimal Continuous Normalizing Flows in Julia. [[Docs](https://impicnf.github.io/ICNF.jl/dev)]
 
 <br>
 
