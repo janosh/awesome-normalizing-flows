@@ -100,3 +100,14 @@
   lang: PyTorch
   description: The library provides most of the common normalizing flow architectures. It also includes stochastic layers, flows on tori and spheres, and other tools that are particularly useful for applications to the physical sciences.
   date_added: 2022-12-21
+
+- title: ContinuousNormalizingFlows.jl
+  date: 2021-11-07
+  date_added: 2022-12-05
+  last_updated: 2023-05-31
+  url: https://github.com/impICNF/ContinuousNormalizingFlows.jl
+  authors: Hossein Pourbozorg
+  authors_url: https://github.com/prbzrg
+  description: Implementations of Infinitesimal Continuous Normalizing Flows Algorithms in Julia.
+  lang: Julia
+  docs: https://impicnf.github.io/ContinuousNormalizingFlows.jl
