@@ -1,5 +1,5 @@
 <h1 align="center">
-Awesome Normalizing Flows
+  Awesome Normalizing Flows
 </h1>
 
 <h4 align="center">
@@ -25,25 +25,25 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ## <img src="assets/toc.svg" alt="Contents" height="18px"> &nbsp;Table of Contents
 
-1. [📝 Publications](#-publications)
-1. [🛠️ Applications](#️-applications)
-1. [📺 Videos](#-videos)
-1. [📦 Packages](#-packages)
+1. [📝 Publications](#-publications-57)
+1. [🛠️ Applications](#️-applications-8)
+1. [📺 Videos](#-videos-8)
+1. [📦 Packages](#-packages-13)
    1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages](#-pytorch-packages)
    1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
    1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
    1. [<img src="assets/julia.svg" alt="Julia" height="15px"> &nbsp;Julia Packages](#-julia-packages)
-1. [🧑‍💻 Repos](#-repos)
+1. [🧑‍💻 Repos](#-repos-18)
    1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
    1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
    1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos](#-tensorflow-repos)
    1. [<img src="assets/other.svg" alt="Other" height="15px"> &nbsp;Other Repos](#-other-repos)
-1. [🌐 Blog Posts](#-blog-posts)
+1. [🌐 Blog Posts](#-blog-posts-5)
 1. [🚧 Contributing](#-contributing)
 
 <br>
 
-## 📝 Publications
+## 📝 Publications <small>(57)</small>
 
 1. 2023-01-03 - [FInC Flow: Fast and Invertible k×k Convolutions for Normalizing Flows](https://arxiv.org/abs/2301.09266) by Kallapa, Nagar et al.<br>
    propose a k×k convolutional layer and Deep Normalizing Flow architecture which i) has a fast parallel inversion algorithm with running time O(nk^2) (n is height and width of the input image and k is kernel size), ii) masks the minimal amount of learnable parameters in a layer. iii) gives better forward pass and sampling times comparable to other k×k convolution-based models on real-world benchmarks. We provide an implementation of the proposed parallel algorithm for sampling using our invertible convolutions on GPUs. [[Code](https://github.com/aditya-v-kallappa/FInCFlow)]
@@ -241,7 +241,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 <br>
 
-## 🛠️ Applications
+## 🛠️ Applications <small>(8)</small>
 
 1. 2020-12-06 - [Normalizing Kalman Filters for Multivariate Time Series Analysis](https://assets.amazon.science/ea/0c/88b7bdd54eae8c08983fa4cc3e06/normalizing-kalman-filters-for-multivariate-time-series-analysis.pdf) by Bézenac, Rangapuram et al.<br>
    Augments state space models with normalizing flows and thereby mitigates imprecisions stemming from idealized assumptions. Aimed at forecasting real-world data and handling varying levels of missing data. (Also available at [Amazon Science](https://amazon.science/publications/normalizing-kalman-filters-for-multivariate-time-series-analysis).)
@@ -269,7 +269,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 <br>
 
-## 📺 Videos
+## 📺 Videos <small>(8)</small>
 
 1. 2021-01-16 - [Normalizing Flows - Motivations, The Big Idea & Essential Foundations](https://youtu.be/IuXU2dBOJyw) by [Kapil Sachdeva](https://github.com/ksachdeva)<br>
    A comprehensive tutorial on flows explaining the challenges addressed by this class of algorithm. Provides intuition on how to address those challenges, and explains the underlying mathematics using a simple step by step approach.
@@ -297,7 +297,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 <br>
 
-## 📦 Packages
+## 📦 Packages <small>(13)</small>
 
 <br>
 
@@ -375,7 +375,7 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 1. 2021-11-07 - [ContinuousNormalizingFlows.jl](https://github.com/impICNF/ContinuousNormalizingFlows.jl) by [Hossein Pourbozorg](https://github.com/prbzrg)
 &ensp;
 <img src="https://img.shields.io/github/stars/impICNF/ContinuousNormalizingFlows.jl" alt="GitHub repo stars" valign="middle" /><br>
-   Implementations of Infinitesimal Continuous Normalizing Flows Algorithms in Julia. [[Docs](https://impicnf.github.io/ContinuousNormalizingFlows.jl/)]
+   Implementations of Infinitesimal Continuous Normalizing Flows Algorithms in Julia. [[Docs](https://impicnf.github.io/ContinuousNormalizingFlows.jl)]
 
 1. 2020-02-07 - [InvertibleNetworks.jl](https://github.com/slimgroup/InvertibleNetworks.jl) by [SLIM](https://slim.gatech.edu)
 &ensp;
@@ -384,7 +384,7 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 
 <br>
 
-## 🧑‍💻 Repos
+## 🧑‍💻 Repos <small>(18)</small>
 
 <br>
 
@@ -492,7 +492,7 @@ Table 1 in the paper has a good comparison with traditional NFs.
 
 <br>
 
-## 🌐 Blog Posts
+## 🌐 Blog Posts <small>(5)</small>
 
 1. 2020-08-19 - [Chapter on flows from the book 'Deep Learning for Molecules and Materials'](https://dmol.pub/dl/flows) by Andrew White<br>
    A nice introduction starting with the change of variables formula (aka flow equation), going on to cover some common bijectors and finishing with a code example showing how to fit the double-moon distribution with TensorFlow Probability.
