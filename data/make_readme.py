@@ -32,14 +32,14 @@ class Section(TypedDict):
     markdown: str
 
 
-titles = dict(
-    publications="## 📝 Publications",
-    applications="## 🛠️ Applications",
-    videos="## 📺 Videos",
-    packages="## 📦 Packages",
-    repos="## 🧑‍💻 Repos",
-    posts="## 🌐 Blog Posts",
-)
+titles = {
+    "publications": "## 📝 Publications",
+    "applications": "## 🛠️ Applications",
+    "videos": "## 📺 Videos",
+    "packages": "## 📦 Packages",
+    "repos": "## 🧑‍💻 Repos",
+    "posts": "## 🌐 Blog Posts",
+}
 
 
 def load_items(key: str) -> list[Item]:
@@ -49,7 +49,7 @@ def load_items(key: str) -> list[Item]:
 
 
 sections: dict[str, Section] = {
-    key: dict(title=titles[key], items=load_items(key), markdown="")
+    key: {"title": titles[key], "items": load_items(key), "markdown": ""}
     for key in titles  # markdown is set below
 }
 
@@ -114,7 +114,7 @@ for key, section in sections.items():
         section["items"].sort(key=lambda itm: lang_names.index(itm["lang"]))
 
     # add item count after section title
-    # section["markdown"] += f"\n\n{len(section['items'])} items\n\n"
+    section["markdown"] += f" <small>({len(section['items'])})</small>\n\n"
 
     for itm in section["items"]:
         if (lang := itm.get("lang")) in lang_names:
@@ -167,7 +167,7 @@ with open(f"{ROOT}/readme.md", "r+", encoding="utf8") as file:
 
     for section in sections.values():
         # look ahead without matching
-        section_start_pat = f"(?<={section['title']}\n\n)"
+        section_start_pat = f"(?<={section['title']})"
         # look behind without matching
         next_section_pat = "(?=<br>\n\n## )"
 

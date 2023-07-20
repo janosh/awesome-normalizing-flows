@@ -6,11 +6,11 @@ default_stages: [commit]
 default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
-  - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: v0.0.260
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.0.278
     hooks:
       - id: ruff
-        args: [--fix, --select, ALL, --ignore, 'ERA,INP,C408,PTH,S,T201,D203,D211,D212']
+        args: [--fix, --select, ALL, --ignore, 'INP,C408,PTH,S,T201']
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
@@ -26,30 +26,30 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/psf/black
-    rev: 23.3.0
+    rev: 23.7.0
     hooks:
       - id: black
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.33.0
+    rev: v0.35.0
     hooks:
       - id: markdownlint
         # MD013: line length
         # MD033: no inline HTML
         # MD041: first line in a file should be a top-level heading
-        args: [--disable, MD013, MD033, MD041, '--']
+        args: [--disable, MD013, MD033, MD041, "--"]
 
   - repo: local
     hooks:
       - id: no-bracket-links
-        name: 'Brackets should not be inside links [[link]](url) -> [[link](url)]'
+        name: "Brackets should not be inside links [[link]](url) -> [[link](url)]"
         entry: '\]\]\('
         language: pygrep
         types: [markdown]
 
       - id: no-http
         name: URLs must use HTTPS
-        entry: 'http:'
+        entry: "http:"
         language: pygrep
         types_or: [markdown, yaml]
         exclude: .pre-commit-config.yaml
@@ -62,7 +62,7 @@ repos:
         exclude_types: [python]
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.4
+    rev: v2.2.5
     hooks:
       - id: codespell
         stages: [commit, commit-msg]
