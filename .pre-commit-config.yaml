@@ -7,13 +7,21 @@ default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.0.278
+    rev: v0.1.3
     hooks:
       - id: ruff
-        args: [--fix, --select, ALL, --ignore, 'INP,C408,PTH,S,T201']
+        args:
+          - --fix
+          - --select
+          - ALL
+          - --ignore
+          - INP,C408,PTH,S,T201
+          - --target-version
+          - py311
+      - id: ruff-format
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: check-case-conflict
       - id: check-symlinks
@@ -25,13 +33,8 @@ repos:
       - id: mixed-line-ending
       - id: trailing-whitespace
 
-  - repo: https://github.com/psf/black
-    rev: 23.7.0
-    hooks:
-      - id: black
-
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.35.0
+    rev: v0.37.0
     hooks:
       - id: markdownlint
         # MD013: line length
@@ -62,8 +65,8 @@ repos:
         exclude_types: [python]
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.5
+    rev: v2.2.6
     hooks:
       - id: codespell
         stages: [commit, commit-msg]
-        args: [--ignore-words-list, gool]
+        args: [--ignore-words-list, gool, --check-filenames]
