@@ -1,8 +1,5 @@
 {
-  "aliveStatusCodes": [
-    200,
-    503
-  ],
+  "aliveStatusCodes": [0, 200, 503],
   "ignorePatterns": [
     {
       "pattern": "^#",

@@ -3,14 +3,14 @@
   url: https://github.com/ikostrikov/pytorch-flows
   authors: Ilya Kostrikov
   lang: PyTorch
-  description: 'PyTorch implementations of density estimation algorithms: MAF, RNVP, Glow.'
+  description: "PyTorch implementations of density estimation algorithms: MAF, RNVP, Glow."
 
 - title: normalizing_flows
   date: 2018-12-30
   url: https://github.com/kamenbliznashki/normalizing_flows
   authors: Kamen Bliznashki
   lang: PyTorch
-  description: 'Pytorch implementations of density estimation algorithms: BNAF, Glow, MAF, RealNVP, planar flows.'
+  description: "Pytorch implementations of density estimation algorithms: BNAF, Glow, MAF, RealNVP, planar flows."
 
 - title: pytorch_flows
   date: 2019-02-06
@@ -25,7 +25,7 @@
   url: https://github.com/karpathy/pytorch-normalizing-flows
   authors: Andrej Karpathy
   lang: PyTorch
-  description: 'A Jupyter notebook with PyTorch implementations of the most commonly used flows: NICE, RNVP, MAF, Glow, NSF.'
+  description: "A Jupyter notebook with PyTorch implementations of the most commonly used flows: NICE, RNVP, MAF, Glow, NSF."
 
 - title: Density Estimation with Neural ODEs and Density Estimation with FFJORDs
   date: 2020-07-03
@@ -44,7 +44,7 @@
   lang: PyTorch
   description: A tutorial about how to use the `pyro-ppl` library (based on PyTorch) to use Normalizing flows. They provide some SOTA methods including NSF and MAF. [Parts 2 and 3 coming later](https://github.com/pyro-ppl/pyro/issues/1992).
 
-- title: 'NICE: Non-linear Independent Components Estimation'
+- title: "NICE: Non-linear Independent Components Estimation"
   date: 2021-08-21
   url: https://github.com/MaximeVandegar/Papers-in-100-Lines-of-Code/tree/main/NICE_Non_linear_Independent_Components_Estimation
   authors: Maxime Vandegar
@@ -82,7 +82,7 @@
 
 - title: Normalizing Flows Overview
   date: 2017-07-11
-  url: https://docs.pymc.io/en/v3/pymc-examples/examples/variational_inference/normalizing_flows_overview.html
+  url: https://www.pymc.io/projects/examples/en/2022.12.0/variational_inference/normalizing_flows_overview.html
   authors: PyMC3
   lang: Other
   description: A very helpful notebook showcasing how to work with flows in practice and comparing it to PyMC3's NUTS-based HMC kernel. Based on [Theano](https://github.com/Theano/Theano).
