@@ -483,7 +483,7 @@ Implements flows such as MAF, RealNVP and NICE.
 
 Table 1 in the paper has a good comparison with traditional NFs.
 
-1. 2017-07-11 - [Normalizing Flows Overview](https://docs.pymc.io/en/v3/pymc-examples/examples/variational_inference/normalizing_flows_overview.html) by PyMC3<br>
+1. 2017-07-11 - [Normalizing Flows Overview](https://www.pymc.io/projects/examples/en/2022.12.0/variational_inference/normalizing_flows_overview.html) by PyMC3<br>
    A very helpful notebook showcasing how to work with flows in practice and comparing it to PyMC3's NUTS-based HMC kernel. Based on [Theano](https://github.com/Theano/Theano).
 
 1. 2017-03-21 - [NormFlows](https://github.com/andymiller/NormFlows) by Andy Miller
