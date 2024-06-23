@@ -65,41 +65,40 @@ def validate_item(itm: Item, section_title: str) -> None:
     """Check that an item conforms to schema. Raise ValueError if not."""
     # no need to check for duplicate keys, YAML enforces that
     itm_keys = set(itm)
-    err = None
+    errors = ""
 
     if (title := itm["title"]) in seen_titles:
-        err = f"Duplicate {title = }"
+        errors += [f"Duplicate {title = }"]
     else:
         seen_titles.add((title, section_title))
 
     if section_title in ("packages", "repos") and itm["lang"] not in valid_languages:
-        err = (
+        errors += [
             f"Invalid lang in {title}: {itm['lang']}, must be one of {valid_languages}"
-        )
+        ]
 
     if missing_keys := required_keys - itm_keys:
-        err = f"Missing key(s) in {title}: {missing_keys}"
+        errors += [f"Missing key(s) in {title}: {missing_keys}"]
 
     if bad_keys := itm_keys - required_keys - optional_keys:
-        err = f"Unexpected key(s) in {title}: {bad_keys}"
+        errors += [f"Unexpected key(s) in {title}: {bad_keys}"]
 
     authors = itm["authors"]
     if "et al" in authors or "et. al" in authors:
-        err = (
+        errors += [
             f"Incomplete authors in {title}: don't use 'et al' in {authors = }, list "
             "them all"
-        )
+        ]
 
     if not isinstance(itm["date"], datetime.date):
-        err = f"Invalid date in {title}: {itm['date']}"
+        errors += [f"Invalid date in {title}: {itm['date']}"]
 
-    if date_added := itm.get("date_added"):
-        assert isinstance(date_added, datetime.date)
-    if last_updated := itm.get("last_updated"):
-        assert isinstance(last_updated, datetime.date)
+    for date_field in ("date_added", "last_updated"):
+        if (date := itm.get(date_field)) and not isinstance(date, datetime.date):
+            errors += [f"Invalid {date_field} in {title}: {date}"]
 
-    if err:
-        raise ValueError(err)
+    if errors:
+        raise ValueError("\n".join(errors))
 
 
 for key, section in sections.items():
@@ -185,4 +184,4 @@ with open(f"{ROOT}/readme.md", "r+", encoding="utf8") as file:
 section_counts = "\n".join(
     f"- {key}: {len(sec['items'])}" for key, sec in sections.items()
 )
-print(f"finished writing {len(seen_titles)} items to readme:\n{section_counts}")
+print(f"finished writing {len(seen_titles)} items to readme:\n{section_counts}")  # noqa: T201
