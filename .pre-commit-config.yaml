@@ -15,9 +15,9 @@ repos:
           - --select
           - ALL
           - --ignore
-          - INP,C408,PTH,S,T201
+          - INP,C408,PTH,TRY003,EM102,COM812
           - --target-version
-          - py311
+          - py312
       - id: ruff-format
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
