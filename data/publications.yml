@@ -391,3 +391,24 @@
   authors: Byeongkeun Ahn, Chiyoon Kim, Youngjoon Hong, Hyunwoo J. Kim
   description: This work proposes the monotone formulation to overcome the issue of the Lipschitz constants in previous ResNet-based normalizing flows using monotone operators and provides an in-depth theoretical analysis. Furthermore, this work constructs an activation function called Concatenated Pila (CPila) to improve gradient flow. The resulting model, Monotone Flows, exhibits an excellent performance on multiple density estimation benchmarks (MNIST, CIFAR-10, ImageNet32, ImageNet64).
   repo: https://github.com/mlvlab/MonotoneFlows
+
+- title: 'Efficient Bayesian Sampling Using Normalizing Flows to Assist Markov Chain Monte Carlo Methods'
+  url: https://arxiv.org/abs/2107.08001
+  date: 2021-07-16
+  authors: Marylou Gabrié, Grant M. Rotskoff, Eric Vanden-Eijnden
+  description: Normalizing flows have potential in Bayesian statistics as a complementary or alternative method to MCMC for sampling posteriors. However, their training via reverse KL divergence may be inadequate for complex posteriors. This research proposes a new training approach utilizing direct KL divergence, which involves augmenting a local MCMC algorithm with a normalizing flow to enhance mixing rate and utilizing the resulting samples to train the flow. This method requires minimal prior knowledge of the posterior and can be applied for model validation and evidence estimation, offering a promising strategy for efficient posterior sampling.
+
+
+- title: 'Adaptive Monte Carlo augmented with normalizing flows'
+  url: https://www.pnas.org/doi/10.1073/pnas.2109420119
+  date: 2022-03-02
+  authors: Marylou Gabrié, Grant M. Rotskoff, Eric Vanden-Eijnden
+  description: Markov Chain Monte Carlo (MCMC) algorithms struggle with sampling from high-dimensional, multimodal distributions, requiring extensive computational effort or specialized importance sampling strategies. To address this, an adaptive MCMC approach is proposed, combining local updates with nonlocal transitions via normalizing flows. This method blends standard transition kernels with generative model moves, adapting the generative model using generated data to improve sampling efficiency. Theoretical analysis and numerical experiments demonstrate the algorithm's ability to equilibrate quickly between metastable modes, sampling effectively across large free energy barriers and achieving significant accelerations over traditional MCMC methods.
+  repo: https://zenodo.org/records/4783701#.Yfv53urMJD8
+
+- title: 'Transferable Boltzmann Generators'
+  url: https://arxiv.org/abs/2406.14426
+  date: 2024-06-20
+  authors: Leon Klein, Frank Noé
+  description: Boltzmann Generators, a machine learning method, generate equilibrium samples of molecular systems by learning a transformation from a simple prior distribution to the target Boltzmann distribution via normalizing flows. Recently, flow matching has been used to train Boltzmann Generators for small systems in Cartesian coordinates. This work extends this approach by proposing a framework for transferable Boltzmann Generators that can predict Boltzmann distributions for unseen molecules without retraining. This allows for approximate sampling and efficient reweighting to the target distribution. The framework is tested on dipeptides, demonstrating efficient generalization to new systems and improved efficiency compared to single-system training.
+  repo: https://osf.io/n8vz3/?view_only=1052300a21bd43c08f700016728aa96e

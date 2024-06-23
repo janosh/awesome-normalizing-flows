@@ -27,7 +27,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 ## <img src="assets/toc.svg" alt="Contents" height="18px"> &nbsp;Table of Contents
 
 - [Table of Contents](#-table-of-contents)
-- [📝 Publications (57)](#-publications-57)
+- [📝 Publications (60)](#-publications-60)
 - [🛠️ Applications (8)](#️-applications-8)
 - [📺 Videos (8)](#-videos-8)
 - [📦 Packages (14)](#-packages-14)
@@ -45,7 +45,10 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 <br>
 
-## 📝 Publications <small>(57)</small>
+## 📝 Publications <small>(60)</small>
+
+1. 2024-06-20 - [Transferable Boltzmann Generators](https://arxiv.org/abs/2406.14426) by Klein, Noé<br>
+   Boltzmann Generators, a machine learning method, generate equilibrium samples of molecular systems by learning a transformation from a simple prior distribution to the target Boltzmann distribution via normalizing flows. Recently, flow matching has been used to train Boltzmann Generators for small systems in Cartesian coordinates. This work extends this approach by proposing a framework for transferable Boltzmann Generators that can predict Boltzmann distributions for unseen molecules without retraining. This allows for approximate sampling and efficient reweighting to the target distribution. The framework is tested on dipeptides, demonstrating efficient generalization to new systems and improved efficiency compared to single-system training. [[Code](https://osf.io/n8vz3/?view_only=1052300a21bd43c08f700016728aa96e)]
 
 1. 2023-01-03 - [FInC Flow: Fast and Invertible k×k Convolutions for Normalizing Flows](https://arxiv.org/abs/2301.09266) by Kallapa, Nagar et al.<br>
    propose a k×k convolutional layer and Deep Normalizing Flow architecture which i) has a fast parallel inversion algorithm with running time O(nk^2) (n is height and width of the input image and k is kernel size), ii) masks the minimal amount of learnable parameters in a layer. iii) gives better forward pass and sampling times comparable to other k×k convolution-based models on real-world benchmarks. We provide an implementation of the proposed parallel algorithm for sampling using our invertible convolutions on GPUs. [[Code](https://github.com/aditya-v-kallappa/FInCFlow)]
@@ -62,8 +65,14 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. 2022-05-16 - [Multi-scale Attention Flow for Probabilistic Time Series Forecasting](https://arxiv.org/abs/2205.07493) by Feng, Xu et al.<br>
    Proposes a novel non-autoregressive deep learning model, called Multi-scale Attention Normalizing Flow(MANF), where one integrates multi-scale attention and relative position information and the multivariate data distribution is represented by the conditioned normalizing flow.
 
+1. 2022-03-02 - [Adaptive Monte Carlo augmented with normalizing flows](https://www.pnas.org/doi/10.1073/pnas.2109420119) by Gabrié, Rotskoff et al.<br>
+   Markov Chain Monte Carlo (MCMC) algorithms struggle with sampling from high-dimensional, multimodal distributions, requiring extensive computational effort or specialized importance sampling strategies. To address this, an adaptive MCMC approach is proposed, combining local updates with nonlocal transitions via normalizing flows. This method blends standard transition kernels with generative model moves, adapting the generative model using generated data to improve sampling efficiency. Theoretical analysis and numerical experiments demonstrate the algorithm's ability to equilibrate quickly between metastable modes, sampling effectively across large free energy barriers and achieving significant accelerations over traditional MCMC methods. [[Code](https://zenodo.org/records/4783701#.Yfv53urMJD8)]
+
 1. 2022-01-14 - [E(n) Equivariant Normalizing Flows](https://arxiv.org/abs/2105.09016) by Satorras, Hoogeboom et al.<br>
    Introduces equivariant graph neural networks into the normalizing flow framework which combine to give invertible equivariant functions. Demonstrates their flow beats prior equivariant models and allows sampling of molecular configurations with positions, atom types and charges.
+
+1. 2021-07-16 - [Efficient Bayesian Sampling Using Normalizing Flows to Assist Markov Chain Monte Carlo Methods](https://arxiv.org/abs/2107.08001) by Gabrié, Rotskoff et al.<br>
+   Normalizing flows have potential in Bayesian statistics as a complementary or alternative method to MCMC for sampling posteriors. However, their training via reverse KL divergence may be inadequate for complex posteriors. This research proposes a new training approach utilizing direct KL divergence, which involves augmenting a local MCMC algorithm with a normalizing flow to enhance mixing rate and utilizing the resulting samples to train the flow. This method requires minimal prior knowledge of the posterior and can be applied for model validation and evidence estimation, offering a promising strategy for efficient posterior sampling.
 
 1. 2021-07-03 - [CInC Flow: Characterizable Invertible 3x3 Convolution](https://arxiv.org/abs/2107.01358) by Nagar, Dufraisse et al.<br>
    Seeks to improve expensive convolutions. They investigate the conditions for when 3x3 convolutions are invertible under which conditions (e.g. padding) and saw successful speedups. Furthermore, they developed a more expressive, invertible _Quad coupling_ layer. [[Code](https://github.com/Naagar/Normalizing_Flow_3x3_inv)]
