@@ -111,3 +111,14 @@
   description: Implementations of Infinitesimal Continuous Normalizing Flows Algorithms in Julia.
   lang: Julia
   docs: https://impicnf.github.io/ContinuousNormalizingFlows.jl
+
+- title: flowMC
+  date: 2022-06-17
+  date_added: 2024-06-22
+  last_updated: 2024-06-22
+  url: https://github.com/kazewong/flowMC
+  authors: Kaze Wong
+  authors_url: https://www.kaze-wong.com/
+  lang: JAX
+  docs: https://flowmc.readthedocs.io/en/main/
+  description: Normalizing-flow enhanced sampling package for probabilistic inference
