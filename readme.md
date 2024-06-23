@@ -26,22 +26,21 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ## <img src="assets/toc.svg" alt="Contents" height="18px"> &nbsp;Table of Contents
 
-- [Table of Contents](#-table-of-contents)
-- [📝 Publications (60)](#-publications-60)
-- [🛠️ Applications (8)](#️-applications-8)
-- [📺 Videos (8)](#-videos-8)
-- [📦 Packages (14)](#-packages-14)
-  - [PyTorch Packages](#-pytorch-packages)
-  - [TensorFlow Packages](#-tensorflow-packages)
-  - [JAX Packages](#-jax-packages)
-  - [Julia Packages](#-julia-packages)
-- [🧑‍💻 Repos (18)](#-repos-18)
-  - [PyTorch Repos](#-pytorch-repos)
-  - [TensorFlow Repos](#-tensorflow-repos)
-  - [JAX Repos](#-jax-repos)
-  - [Other Repos](#-other-repos)
-- [🌐 Blog Posts (5)](#-blog-posts-5)
-- [🚧 Contributing](#-contributing)
+1. [📝 Publications](#-publications-60)
+1. [🛠️ Applications](#️-applications-8)
+1. [📺 Videos](#-videos-8)
+1. [📦 Packages](#-packages-14)
+   1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages](#-pytorch-packages)
+   1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
+   1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
+   1. [<img src="assets/julia.svg" alt="Julia" height="15px"> &nbsp;Julia Packages](#-julia-packages)
+1. [🧑‍💻 Repos](#-repos-18)
+   1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
+   1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
+   1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos](#-tensorflow-repos)
+   1. [<img src="assets/other.svg" alt="Other" height="15px"> &nbsp;Other Repos](#-other-repos)
+1. [🌐 Blog Posts](#-blog-posts-5)
+1. [🚧 Contributing](#-contributing)
 
 <br>
 
@@ -65,7 +64,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. 2022-05-16 - [Multi-scale Attention Flow for Probabilistic Time Series Forecasting](https://arxiv.org/abs/2205.07493) by Feng, Xu et al.<br>
    Proposes a novel non-autoregressive deep learning model, called Multi-scale Attention Normalizing Flow(MANF), where one integrates multi-scale attention and relative position information and the multivariate data distribution is represented by the conditioned normalizing flow.
 
-1. 2022-03-02 - [Adaptive Monte Carlo augmented with normalizing flows](https://www.pnas.org/doi/10.1073/pnas.2109420119) by Gabrié, Rotskoff et al.<br>
+1. 2022-03-02 - [Adaptive Monte Carlo augmented with normalizing flows](https://pnas.org/doi/10.1073/pnas.2109420119) by Gabrié, Rotskoff et al.<br>
    Markov Chain Monte Carlo (MCMC) algorithms struggle with sampling from high-dimensional, multimodal distributions, requiring extensive computational effort or specialized importance sampling strategies. To address this, an adaptive MCMC approach is proposed, combining local updates with nonlocal transitions via normalizing flows. This method blends standard transition kernels with generative model moves, adapting the generative model using generated data to improve sampling efficiency. Theoretical analysis and numerical experiments demonstrate the algorithm's ability to equilibrate quickly between metastable modes, sampling effectively across large free energy barriers and achieving significant accelerations over traditional MCMC methods. [[Code](https://zenodo.org/records/4783701#.Yfv53urMJD8)]
 
 1. 2022-01-14 - [E(n) Equivariant Normalizing Flows](https://arxiv.org/abs/2105.09016) by Satorras, Hoogeboom et al.<br>

@@ -1,4 +1,4 @@
-- title: 'Iterative Gaussianization: from ICA to Random Rotations'
+- title: "Iterative Gaussianization: from ICA to Random Rotations"
   url: https://arxiv.org/abs/1602.00229
   date: 2011-04-01
   authors: Valero Laparra, Gustavo Camps-Valls, Jesús Malo
@@ -92,19 +92,19 @@
   authors: David Inouye, Pradeep Ravikumar
   description: Normalizing flows but from an iterative perspective. Features a Tree-based density estimator.
 
-- title: 'Glow: Generative Flow with Invertible 1x1 Convolutions'
+- title: "Glow: Generative Flow with Invertible 1x1 Convolutions"
   url: https://arxiv.org/abs/1807.03039
   date: 2018-07-09
   authors: Diederik P. Kingma, Prafulla Dhariwal
   description: They show that flows using invertible 1x1 convolution achieve high likelihood on standard generative benchmarks and can efficiently synthesize realistic-looking, large images.
 
-- title: 'FFJORD: Free-form Continuous Dynamics for Scalable Reversible Generative Models'
+- title: "FFJORD: Free-form Continuous Dynamics for Scalable Reversible Generative Models"
   url: https://arxiv.org/abs/1810.01367
   date: 2018-10-02
   authors: Will Grathwohl, Ricky T. Q. Chen, Jesse Bettencourt, Ilya Sutskever, David Duvenaud
   description: Uses Neural ODEs as a solver to produce continuous-time normalizing flows (CNF).
 
-- title: 'FloWaveNet : A Generative Flow for Raw Audio'
+- title: "FloWaveNet : A Generative Flow for Raw Audio"
   url: https://arxiv.org/abs/1811.02155
   date: 2018-11-06
   authors: Sungwon Kim, Sang-gil Lee, Jongyoon Song, Jaehyeon Kim, Sungroh Yoon
@@ -136,7 +136,7 @@
   authors: Jonas Rothfuss, Fabio Ferreira, Simon Boehm, Simon Walther, Maxim Ulrich, Tamim Asfour, Andreas Krause
   description: Normalizing flows for conditional density estimation. This paper proposes noise regularization to reduce overfitting. [[Blog](https://siboehm.com/articles/19/normalizing-flow-network)]
 
-- title: 'Normalizing Flows: An Introduction and Review of Current Methods'
+- title: "Normalizing Flows: An Introduction and Review of Current Methods"
   url: https://arxiv.org/abs/1908.09257
   date: 2019-08-25
   authors: Ivan Kobyzev, Simon J.D. Prince, Marcus A. Brubaker
@@ -177,7 +177,7 @@
   url: https://arxiv.org/abs/2002.09547
   date: 2020-02-21
   authors: Liam Hodgkinson, Chris van der Heide, Fred Roosta, Michael W. Mahoney
-  description: 'Name clash for a very different technique from the above SNF: an extension of continuous normalizing flows using stochastic differential equations (SDE). Treats Brownian motion in the SDE as a latent variable and approximates it by a flow. Aims to enable efficient training of neural SDEs which can be used for constructing efficient Markov chains.'
+  description: "Name clash for a very different technique from the above SNF: an extension of continuous normalizing flows using stochastic differential equations (SDE). Treats Brownian motion in the SDE as a latent variable and approximates it by a flow. Aims to enable efficient training of neural SDEs which can be used for constructing efficient Markov chains."
 
 - title: Modeling Continuous Stochastic Processes with Dynamic Normalizing Flows
   url: https://arxiv.org/abs/2002.10516
@@ -213,7 +213,7 @@
   description: Improves the representational power of flow-based models by introducing channel-wise dependencies in their latent space through multi-scale autoregressive priors (mAR).
   repo: https://github.com/visinf/mar-scf
 
-- title: 'Equivariant Flows: exact likelihood generative learning for symmetric densities'
+- title: "Equivariant Flows: exact likelihood generative learning for symmetric densities"
   url: https://arxiv.org/abs/2006.02425
   date: 2020-06-03
   authors: Jonas Köhler, Leon Klein, Frank Noé
@@ -226,14 +226,14 @@
   description: This study how traditional normalizing flow models can suffer from out-of-distribution data. They offer a solution to combat this issue by modifying the coupling layers. [[Tweet](https://twitter.com/polkirichenko/status/1272715634544119809)]
   repo: https://github.com/PolinaKirichenko/flows_ood
 
-- title: 'SurVAE Flows: Surjections to Bridge the Gap between VAEs and Flows'
+- title: "SurVAE Flows: Surjections to Bridge the Gap between VAEs and Flows"
   url: https://arxiv.org/abs/2007.02731
   date: 2020-07-06
   authors: Didrik Nielsen, Priyank Jaini, Emiel Hoogeboom, Ole Winther, Max Welling
   description: They present a generalized framework that encompasses both Flows (deterministic maps) and VAEs (stochastic maps). By seeing deterministic maps `x = f(z)` as limiting cases of stochastic maps `x ~ p(x|z)`, the ELBO is reinterpreted as a change of variables formula for the stochastic maps. Moreover, they present a few examples of surjective layers using stochastic maps, which can be composed together with flow layers. [[Video](https://youtu.be/bXp8fk4MRXQ)]
   repo: https://github.com/didriknielsen/survae_flows
 
-- title: 'AdvFlow: Inconspicuous Black-box Adversarial Attacks using Normalizing Flows'
+- title: "AdvFlow: Inconspicuous Black-box Adversarial Attacks using Normalizing Flows"
   url: https://arxiv.org/abs/2007.07435
   date: 2020-07-15
   authors: Hadi M. Dolatabadi, Sarah Erfani, Christopher Leckie
@@ -271,13 +271,13 @@
   authors: Thanh-Dat Truong, Khoa Luu, Chi Nhan Duong, Ngan Le, Minh-Triet Tran
   description: Seeks to overcome the limitation of 1x1 convolutions and proposes invertible nxn convolutions via a clever convolutional _affine_ function.
 
-- title: 'MaCow: Masked Convolutional Generative Flow'
+- title: "MaCow: Masked Convolutional Generative Flow"
   url: https://arxiv.org/abs/1902.04208
   date: 2019-02-19
   authors: Xuezhe Ma, Xiang Kong, Shanghang Zhang, Eduard Hovy
   description: Introduces a masked convolutional generative flow (MaCow) layer using a small kernel to capture local connectivity. They showed some improvement over the GLOW model while being fast and stable.
 
-- title: 'iUNets: Fully invertible U-Nets with Learnable Upand Downsampling'
+- title: "iUNets: Fully invertible U-Nets with Learnable Upand Downsampling"
   url: https://arxiv.org/abs/2005.05220
   date: 2020-05-11
   authors: Christian Etmann, Rihuan Ke, Carola-Bibiane Schönlieb
@@ -290,7 +290,7 @@
   description: Introduces exponential convolution to add the spatial dependencies in linear layers as an improvement of the 1x1 convolutions. It uses matrix exponentials to create cheap and invertible layers. They also use this new architecture to create _convolutional Sylvester flows_ and _graph convolutional exponentials_.
   repo: https://github.com/ehoogeboom/convolution_exponential_and_sylvester
 
-- title: 'CInC Flow: Characterizable Invertible 3x3 Convolution'
+- title: "CInC Flow: Characterizable Invertible 3x3 Convolution"
   url: https://arxiv.org/abs/2107.01358
   date: 2021-07-03
   authors: Sandeep Nagar, Marius Dufraisse, Girish Varma
@@ -323,7 +323,7 @@
   authors: Marc Finzi, Pavel Izmailov, Wesley Maddox, Polina Kirichenko, Andrew Gordon Wilson
   description: Showcases how standard convolutional layers can be made invertible via Fourier transformations. They also introduce better activations which might be better suited to normalizing flows, e.g. SneakyRELU
 
-- title: 'MintNet: Building Invertible Neural Networks with Masked Convolutions'
+- title: "MintNet: Building Invertible Neural Networks with Masked Convolutions"
   url: https://arxiv.org/abs/1907.07945
   date: 2019-07-18
   authors: Yang Song, Chenlin Meng, Stefano Ermon
@@ -351,7 +351,7 @@
   description: Models the multi-variate temporal dynamics of time series via an autoregressive deep learning model, where the data distribution is represented by a conditioned normalizing flow. [[OpenReview.net](https://openreview.net/forum?id=WiGQBFuVRv)]
   repo: https://github.com/zalandoresearch/pytorch-ts
 
-- title: 'ManiFlow: Implicitly Representing Manifolds with Normalizing Flows'
+- title: "ManiFlow: Implicitly Representing Manifolds with Normalizing Flows"
   url: https://arxiv.org/abs/2208.08932
   date: 2022-08-18
   authors: Janis Postels, Martin Danelljan, Luc Van Gool, Federico Tombari
@@ -378,35 +378,34 @@
   description: As an alternative to hand-crafted bijections, Huang et al. (2018) proposed NAF, a universal approximator for density functions. Their flow is a neural net whose parameters are predicted by another NN. The latter grows quadratically with the size of the former which is inefficient. We propose block neural autoregressive flow (B-NAF), a much more compact universal approximator of density functions, where we model a bijection directly using a single feed-forward network. Invertibility is ensured by carefully designing affine transformations with block matrices that make the flow autoregressive and monotone. We compare B-NAF to NAF and show our flow is competitive across datasets while using orders of magnitude fewer parameters.
   repo: https://github.com/nicola-decao/BNAF
 
-- title: 'FInC Flow: Fast and Invertible k×k Convolutions for Normalizing Flows'
+- title: "FInC Flow: Fast and Invertible k×k Convolutions for Normalizing Flows"
   url: https://arxiv.org/abs/2301.09266
   date: 2023-01-03
   authors: Aditya Kallapa, Sandeep Nagar, Girish Varma
   description: propose a k×k convolutional layer and Deep Normalizing Flow architecture which i) has a fast parallel inversion algorithm with running time O(nk^2) (n is height and width of the input image and k is kernel size), ii) masks the minimal amount of learnable parameters in a layer. iii) gives better forward pass and sampling times comparable to other k×k convolution-based models on real-world benchmarks. We provide an implementation of the proposed parallel algorithm for sampling using our invertible convolutions on GPUs.
   repo: https://github.com/aditya-v-kallappa/FInCFlow
 
-- title: 'Invertible Monotone Operators for Normalizing Flows'
+- title: Invertible Monotone Operators for Normalizing Flows
   url: https://arxiv.org/abs/2210.08176
   date: 2022-10-15
   authors: Byeongkeun Ahn, Chiyoon Kim, Youngjoon Hong, Hyunwoo J. Kim
   description: This work proposes the monotone formulation to overcome the issue of the Lipschitz constants in previous ResNet-based normalizing flows using monotone operators and provides an in-depth theoretical analysis. Furthermore, this work constructs an activation function called Concatenated Pila (CPila) to improve gradient flow. The resulting model, Monotone Flows, exhibits an excellent performance on multiple density estimation benchmarks (MNIST, CIFAR-10, ImageNet32, ImageNet64).
   repo: https://github.com/mlvlab/MonotoneFlows
 
-- title: 'Efficient Bayesian Sampling Using Normalizing Flows to Assist Markov Chain Monte Carlo Methods'
+- title: Efficient Bayesian Sampling Using Normalizing Flows to Assist Markov Chain Monte Carlo Methods
   url: https://arxiv.org/abs/2107.08001
   date: 2021-07-16
   authors: Marylou Gabrié, Grant M. Rotskoff, Eric Vanden-Eijnden
   description: Normalizing flows have potential in Bayesian statistics as a complementary or alternative method to MCMC for sampling posteriors. However, their training via reverse KL divergence may be inadequate for complex posteriors. This research proposes a new training approach utilizing direct KL divergence, which involves augmenting a local MCMC algorithm with a normalizing flow to enhance mixing rate and utilizing the resulting samples to train the flow. This method requires minimal prior knowledge of the posterior and can be applied for model validation and evidence estimation, offering a promising strategy for efficient posterior sampling.
 
-
-- title: 'Adaptive Monte Carlo augmented with normalizing flows'
-  url: https://www.pnas.org/doi/10.1073/pnas.2109420119
+- title: Adaptive Monte Carlo augmented with normalizing flows
+  url: https://pnas.org/doi/10.1073/pnas.2109420119
   date: 2022-03-02
   authors: Marylou Gabrié, Grant M. Rotskoff, Eric Vanden-Eijnden
   description: Markov Chain Monte Carlo (MCMC) algorithms struggle with sampling from high-dimensional, multimodal distributions, requiring extensive computational effort or specialized importance sampling strategies. To address this, an adaptive MCMC approach is proposed, combining local updates with nonlocal transitions via normalizing flows. This method blends standard transition kernels with generative model moves, adapting the generative model using generated data to improve sampling efficiency. Theoretical analysis and numerical experiments demonstrate the algorithm's ability to equilibrate quickly between metastable modes, sampling effectively across large free energy barriers and achieving significant accelerations over traditional MCMC methods.
   repo: https://zenodo.org/records/4783701#.Yfv53urMJD8
 
-- title: 'Transferable Boltzmann Generators'
+- title: Transferable Boltzmann Generators
   url: https://arxiv.org/abs/2406.14426
   date: 2024-06-20
   authors: Leon Klein, Frank Noé
