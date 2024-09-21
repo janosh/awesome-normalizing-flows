@@ -26,21 +26,22 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ## <img src="assets/toc.svg" alt="Contents" height="18px"> &nbsp;Table of Contents
 
-1. [📝 Publications](#-publications-60)
-1. [🛠️ Applications](#️-applications-8)
-1. [📺 Videos](#-videos-8)
-1. [📦 Packages](#-packages-14)
-   1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages](#-pytorch-packages)
-   1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
-   1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
-   1. [<img src="assets/julia.svg" alt="Julia" height="15px"> &nbsp;Julia Packages](#-julia-packages)
-1. [🧑‍💻 Repos](#-repos-18)
-   1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
-   1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
-   1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos](#-tensorflow-repos)
-   1. [<img src="assets/other.svg" alt="Other" height="15px"> &nbsp;Other Repos](#-other-repos)
-1. [🌐 Blog Posts](#-blog-posts-5)
-1. [🚧 Contributing](#-contributing)
+- [Table of Contents](#-table-of-contents)
+- [📝 Publications (60)](#-publications-60)
+- [🛠️ Applications (8)](#️-applications-8)
+- [📺 Videos (8)](#-videos-8)
+- [📦 Packages (15)](#-packages-15)
+  - [PyTorch Packages](#-pytorch-packages)
+  - [TensorFlow Packages](#-tensorflow-packages)
+  - [JAX Packages](#-jax-packages)
+  - [Julia Packages](#-julia-packages)
+- [🧑‍💻 Repos (18)](#-repos-18)
+  - [PyTorch Repos](#-pytorch-repos)
+  - [TensorFlow Repos](#-tensorflow-repos)
+  - [JAX Repos](#-jax-repos)
+  - [Other Repos](#-other-repos)
+- [🌐 Blog Posts (5)](#-blog-posts-5)
+- [🚧 Contributing](#-contributing)
 
 <br>
 
@@ -307,7 +308,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 <br>
 
-## 📦 Packages <small>(14)</small>
+## 📦 Packages <small>(15)</small>
 
 <br>
 
@@ -357,6 +358,11 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 <br>
 
 ### <img src="assets/jax.svg" alt="JAX" height="20px"> &nbsp;JAX Packages
+
+1. 2024-07-05 - [GWKokab](https://github.com/gwkokab/gwkokab) by Meesum Qazalbash, Muhammad Zeeshan et al.
+&ensp;
+<img src="https://img.shields.io/github/stars/gwkokab/gwkokab" alt="GitHub repo stars" valign="middle" /><br>
+   A JAX-based gravitational-wave population inference toolkit for parametric models [[Docs](https://gwkokab.readthedocs.io/en/stable/)]
 
 1. 2022-06-17 - [flowMC](https://github.com/kazewong/flowMC) by [Kaze Wong](https://www.kaze-wong.com/)
 &ensp;
