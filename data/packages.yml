@@ -20,8 +20,7 @@
   authors: Facebook / Meta
   authors_url: https://opensource.fb.com
   lang: PyTorch
-  description: |
-    [FlowTorch Docs](https://flowtorch.ai) is a PyTorch library for learning and sampling from complex probability distributions using a class of methods called Normalizing Flows.
+  description: FlowTorch is a PyTorch library for learning and sampling from complex probability distributions using Normalizing Flows.
 
 - title: TensorFlow Probability
   date: 2018-06-22
@@ -122,3 +121,13 @@
   lang: JAX
   docs: https://flowmc.readthedocs.io/en/main/
   description: Normalizing-flow enhanced sampling package for probabilistic inference
+
+- title: GWKokab
+  date: 2024-07-05
+  date_added: 2024-09-21
+  last_updated: 2024-09-21
+  url: https://github.com/gwkokab/gwkokab
+  authors: Meesum Qazalbash, Muhammad Zeeshan, Richard O'Shaughnessy
+  lang: JAX
+  docs: https://gwkokab.readthedocs.io
+  description: A JAX-based gravitational-wave population inference toolkit for parametric models

@@ -6,6 +6,10 @@
       "comment": "ignore links starting with a dash (those in the readme's ToC)"
     },
     {
+      "pattern": "https://doi.org/10.1073/pnas.2109420119",
+      "comment": "status 403 in CI but works in browser"
+    },
+    {
       "pattern": "^https://twitter.com",
       "comment": "Twitter seems to block bot requests, getting a lot of 404s"
     }

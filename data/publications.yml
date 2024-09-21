@@ -399,7 +399,7 @@
   description: Normalizing flows have potential in Bayesian statistics as a complementary or alternative method to MCMC for sampling posteriors. However, their training via reverse KL divergence may be inadequate for complex posteriors. This research proposes a new training approach utilizing direct KL divergence, which involves augmenting a local MCMC algorithm with a normalizing flow to enhance mixing rate and utilizing the resulting samples to train the flow. This method requires minimal prior knowledge of the posterior and can be applied for model validation and evidence estimation, offering a promising strategy for efficient posterior sampling.
 
 - title: Adaptive Monte Carlo augmented with normalizing flows
-  url: https://pnas.org/doi/10.1073/pnas.2109420119
+  url: https://doi.org/10.1073/pnas.2109420119
   date: 2022-03-02
   authors: Marylou Gabrié, Grant M. Rotskoff, Eric Vanden-Eijnden
   description: Markov Chain Monte Carlo (MCMC) algorithms struggle with sampling from high-dimensional, multimodal distributions, requiring extensive computational effort or specialized importance sampling strategies. To address this, an adaptive MCMC approach is proposed, combining local updates with nonlocal transitions via normalizing flows. This method blends standard transition kernels with generative model moves, adapting the generative model using generated data to improve sampling efficiency. Theoretical analysis and numerical experiments demonstrate the algorithm's ability to equilibrate quickly between metastable modes, sampling effectively across large free energy barriers and achieving significant accelerations over traditional MCMC methods.

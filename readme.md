@@ -26,20 +26,21 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ## <img src="assets/toc.svg" alt="Contents" height="18px"> &nbsp;Table of Contents
 
-1. [📝 Publications](#-publications-60)
-1. [🛠️ Applications](#️-applications-8)
-1. [📺 Videos](#-videos-8)
-1. [📦 Packages](#-packages-14)
-   1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Packages](#-pytorch-packages)
-   1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Packages](#-tensorflow-packages)
-   1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Packages](#-jax-packages)
-   1. [<img src="assets/julia.svg" alt="Julia" height="15px"> &nbsp;Julia Packages](#-julia-packages)
-1. [🧑‍💻 Repos](#-repos-18)
-   1. [<img src="assets/pytorch.svg" alt="PyTorch" height="20px"> &nbsp;PyTorch Repos](#-pytorch-repos)
-   1. [<img src="assets/jax.svg" alt="JAX" height="15px"> &nbsp;JAX Repos](#-jax-repos)
-   1. [<img src="assets/tensorflow.svg" alt="TensorFlow" height="20px"> &nbsp;TensorFlow Repos](#-tensorflow-repos)
-   1. [<img src="assets/other.svg" alt="Other" height="15px"> &nbsp;Other Repos](#-other-repos)
-1. [🌐 Blog Posts](#-blog-posts-5)
+1. [Table of Contents](#-table-of-contents)
+1. [📝 Publications (60)](#-publications-60)
+1. [🛠️ Applications (8)](#️-applications-8)
+1. [📺 Videos (8)](#-videos-8)
+1. [📦 Packages (15)](#-packages-15)
+   1. [PyTorch Packages](#-pytorch-packages)
+   1. [TensorFlow Packages](#-tensorflow-packages)
+   1. [JAX Packages](#-jax-packages)
+   1. [Julia Packages](#-julia-packages)
+1. [🧑‍💻 Repos (18)](#-repos-18)
+   1. [PyTorch Repos](#-pytorch-repos)
+   1. [TensorFlow Repos](#-tensorflow-repos)
+   1. [JAX Repos](#-jax-repos)
+   1. [Other Repos](#-other-repos)
+1. [🌐 Blog Posts (5)](#-blog-posts-5)
 1. [🚧 Contributing](#-contributing)
 
 <br>
@@ -64,7 +65,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. 2022-05-16 - [Multi-scale Attention Flow for Probabilistic Time Series Forecasting](https://arxiv.org/abs/2205.07493) by Feng, Xu et al.<br>
    Proposes a novel non-autoregressive deep learning model, called Multi-scale Attention Normalizing Flow(MANF), where one integrates multi-scale attention and relative position information and the multivariate data distribution is represented by the conditioned normalizing flow.
 
-1. 2022-03-02 - [Adaptive Monte Carlo augmented with normalizing flows](https://pnas.org/doi/10.1073/pnas.2109420119) by Gabrié, Rotskoff et al.<br>
+1. 2022-03-02 - [Adaptive Monte Carlo augmented with normalizing flows](https://doi.org/10.1073/pnas.2109420119) by Gabrié, Rotskoff et al.<br>
    Markov Chain Monte Carlo (MCMC) algorithms struggle with sampling from high-dimensional, multimodal distributions, requiring extensive computational effort or specialized importance sampling strategies. To address this, an adaptive MCMC approach is proposed, combining local updates with nonlocal transitions via normalizing flows. This method blends standard transition kernels with generative model moves, adapting the generative model using generated data to improve sampling efficiency. Theoretical analysis and numerical experiments demonstrate the algorithm's ability to equilibrate quickly between metastable modes, sampling effectively across large free energy barriers and achieving significant accelerations over traditional MCMC methods. [[Code](https://zenodo.org/records/4783701#.Yfv53urMJD8)]
 
 1. 2022-01-14 - [E(n) Equivariant Normalizing Flows](https://arxiv.org/abs/2105.09016) by Satorras, Hoogeboom et al.<br>
@@ -307,7 +308,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 <br>
 
-## 📦 Packages <small>(14)</small>
+## 📦 Packages <small>(15)</small>
 
 <br>
 
@@ -328,7 +329,7 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 1. 2020-12-07 - [flowtorch](https://github.com/facebookincubator/flowtorch) by [Facebook / Meta](https://opensource.fb.com)
 &ensp;
 <img src="https://img.shields.io/github/stars/facebookincubator/flowtorch" alt="GitHub repo stars" valign="middle" /><br>
-   [FlowTorch Docs](https://flowtorch.ai) is a PyTorch library for learning and sampling from complex probability distributions using a class of methods called Normalizing Flows.
+   FlowTorch is a PyTorch library for learning and sampling from complex probability distributions using Normalizing Flows.
 
 1. 2020-02-09 - [nflows](https://github.com/bayesiains/nflows) by [Bayesiains](https://homepages.inf.ed.ac.uk/imurray2/group)
 &ensp;
@@ -357,6 +358,11 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 <br>
 
 ### <img src="assets/jax.svg" alt="JAX" height="20px"> &nbsp;JAX Packages
+
+1. 2024-07-05 - [GWKokab](https://github.com/gwkokab/gwkokab) by Meesum Qazalbash, Muhammad Zeeshan et al.
+&ensp;
+<img src="https://img.shields.io/github/stars/gwkokab/gwkokab" alt="GitHub repo stars" valign="middle" /><br>
+   A JAX-based gravitational-wave population inference toolkit for parametric models [[Docs](https://gwkokab.readthedocs.io)]
 
 1. 2022-06-17 - [flowMC](https://github.com/kazewong/flowMC) by [Kaze Wong](https://www.kaze-wong.com/)
 &ensp;
