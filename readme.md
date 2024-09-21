@@ -26,22 +26,22 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 ## <img src="assets/toc.svg" alt="Contents" height="18px"> &nbsp;Table of Contents
 
-- [Table of Contents](#-table-of-contents)
-- [📝 Publications (60)](#-publications-60)
-- [🛠️ Applications (8)](#️-applications-8)
-- [📺 Videos (8)](#-videos-8)
-- [📦 Packages (15)](#-packages-15)
-  - [PyTorch Packages](#-pytorch-packages)
-  - [TensorFlow Packages](#-tensorflow-packages)
-  - [JAX Packages](#-jax-packages)
-  - [Julia Packages](#-julia-packages)
-- [🧑‍💻 Repos (18)](#-repos-18)
-  - [PyTorch Repos](#-pytorch-repos)
-  - [TensorFlow Repos](#-tensorflow-repos)
-  - [JAX Repos](#-jax-repos)
-  - [Other Repos](#-other-repos)
-- [🌐 Blog Posts (5)](#-blog-posts-5)
-- [🚧 Contributing](#-contributing)
+1. [Table of Contents](#-table-of-contents)
+1. [📝 Publications (60)](#-publications-60)
+1. [🛠️ Applications (8)](#️-applications-8)
+1. [📺 Videos (8)](#-videos-8)
+1. [📦 Packages (15)](#-packages-15)
+   1. [PyTorch Packages](#-pytorch-packages)
+   1. [TensorFlow Packages](#-tensorflow-packages)
+   1. [JAX Packages](#-jax-packages)
+   1. [Julia Packages](#-julia-packages)
+1. [🧑‍💻 Repos (18)](#-repos-18)
+   1. [PyTorch Repos](#-pytorch-repos)
+   1. [TensorFlow Repos](#-tensorflow-repos)
+   1. [JAX Repos](#-jax-repos)
+   1. [Other Repos](#-other-repos)
+1. [🌐 Blog Posts (5)](#-blog-posts-5)
+1. [🚧 Contributing](#-contributing)
 
 <br>
 
