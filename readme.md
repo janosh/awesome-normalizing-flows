@@ -65,7 +65,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. 2022-05-16 - [Multi-scale Attention Flow for Probabilistic Time Series Forecasting](https://arxiv.org/abs/2205.07493) by Feng, Xu et al.<br>
    Proposes a novel non-autoregressive deep learning model, called Multi-scale Attention Normalizing Flow(MANF), where one integrates multi-scale attention and relative position information and the multivariate data distribution is represented by the conditioned normalizing flow.
 
-1. 2022-03-02 - [Adaptive Monte Carlo augmented with normalizing flows](https://pnas.org/doi/10.1073/pnas.2109420119) by Gabrié, Rotskoff et al.<br>
+1. 2022-03-02 - [Adaptive Monte Carlo augmented with normalizing flows](https://doi.org/10.1073/pnas.2109420119) by Gabrié, Rotskoff et al.<br>
    Markov Chain Monte Carlo (MCMC) algorithms struggle with sampling from high-dimensional, multimodal distributions, requiring extensive computational effort or specialized importance sampling strategies. To address this, an adaptive MCMC approach is proposed, combining local updates with nonlocal transitions via normalizing flows. This method blends standard transition kernels with generative model moves, adapting the generative model using generated data to improve sampling efficiency. Theoretical analysis and numerical experiments demonstrate the algorithm's ability to equilibrate quickly between metastable modes, sampling effectively across large free energy barriers and achieving significant accelerations over traditional MCMC methods. [[Code](https://zenodo.org/records/4783701#.Yfv53urMJD8)]
 
 1. 2022-01-14 - [E(n) Equivariant Normalizing Flows](https://arxiv.org/abs/2105.09016) by Satorras, Hoogeboom et al.<br>
@@ -329,7 +329,7 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 1. 2020-12-07 - [flowtorch](https://github.com/facebookincubator/flowtorch) by [Facebook / Meta](https://opensource.fb.com)
 &ensp;
 <img src="https://img.shields.io/github/stars/facebookincubator/flowtorch" alt="GitHub repo stars" valign="middle" /><br>
-   [FlowTorch Docs](https://flowtorch.ai) is a PyTorch library for learning and sampling from complex probability distributions using a class of methods called Normalizing Flows.
+   FlowTorch is a PyTorch library for learning and sampling from complex probability distributions using Normalizing Flows.
 
 1. 2020-02-09 - [nflows](https://github.com/bayesiains/nflows) by [Bayesiains](https://homepages.inf.ed.ac.uk/imurray2/group)
 &ensp;
