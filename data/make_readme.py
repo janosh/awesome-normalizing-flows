@@ -7,7 +7,6 @@ from typing import TypedDict
 
 import yaml
 
-
 ROOT = dirname(dirname(__file__))
 
 
