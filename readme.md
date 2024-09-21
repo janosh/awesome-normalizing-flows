@@ -362,7 +362,7 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 1. 2024-07-05 - [GWKokab](https://github.com/gwkokab/gwkokab) by Meesum Qazalbash, Muhammad Zeeshan et al.
 &ensp;
 <img src="https://img.shields.io/github/stars/gwkokab/gwkokab" alt="GitHub repo stars" valign="middle" /><br>
-   A JAX-based gravitational-wave population inference toolkit for parametric models [[Docs](https://gwkokab.readthedocs.io/en/stable/)]
+   A JAX-based gravitational-wave population inference toolkit for parametric models [[Docs](https://gwkokab.readthedocs.io)]
 
 1. 2022-06-17 - [flowMC](https://github.com/kazewong/flowMC) by [Kaze Wong](https://www.kaze-wong.com/)
 &ensp;

@@ -129,5 +129,5 @@
   url: https://github.com/gwkokab/gwkokab
   authors: Meesum Qazalbash, Muhammad Zeeshan, Richard O'Shaughnessy
   lang: JAX
-  docs: https://gwkokab.readthedocs.io/en/stable/
+  docs: https://gwkokab.readthedocs.io
   description: A JAX-based gravitational-wave population inference toolkit for parametric models
