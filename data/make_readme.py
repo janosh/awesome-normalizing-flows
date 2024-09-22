@@ -39,6 +39,7 @@ def load_items(key: str) -> list[Item]:
     with open(f"{ROOT_DIR}/data/{key}.yml", encoding="utf8") as file:
         return yaml.safe_load(file.read())
 
+
 def validate_item(itm: Item, section_title: str) -> None:
     """Check that an item conforms to schema. Raise ValueError if not."""
     # no need to check for duplicate keys, YAML enforces that
@@ -94,16 +95,23 @@ if __name__ == "__main__":
         for key in titles  # markdown is set below
     }
 
-
     seen_titles: set[tuple[str, str]] = set()
     required_keys = {"title", "url", "date", "authors", "description"}
-    optional_keys = {"authors_url", "lang", "repo", "docs", "date_added", "last_updated"}
+    optional_keys = {
+        "authors_url",
+        "lang",
+        "repo",
+        "docs",
+        "date_added",
+        "last_updated",
+    }
     valid_languages = {"PyTorch", "TensorFlow", "JAX", "Julia", "Other"}
     et_al_after = 2
 
     for key, section in sections.items():
-        # Keep lang_names inside sections loop to refill language subsections for each new
-        # section. Used by both repos and Packages. Is a list for order and mutability.
+        # Keep lang_names inside sections loop to refill language
+        # subsections for each new section. Used by both repos and Packages.
+        # Is a list for order and mutability.
         lang_names = ["PyTorch", "TensorFlow", "JAX", "Julia", "Other"]
 
         # sort first by language with order determined by lang_names (only applies to
@@ -118,7 +126,8 @@ if __name__ == "__main__":
         for itm in section["items"]:
             if (lang := itm.get("lang")) in lang_names:
                 lang_names.remove(lang)
-                # print language subsection title if this is the first item with that lang
+                # print language subsection title if this is the first item
+                # with that language
                 section["markdown"] += (
                     f'<br>\n\n### <img src="assets/{lang.lower()}.svg" alt="{lang}" '
                     f'height="20px"> &nbsp;{lang} {key.title()}\n\n'
@@ -149,7 +158,8 @@ if __name__ == "__main__":
                 gh_login, repo_name = url.split("/")[3:5]
                 md_str += (
                     f'\n&ensp;\n<img src="https://img.shields.io/github/stars/'
-                    f'{gh_login}/{repo_name}" alt="GitHub repo stars" valign="middle" />'
+                    f'{gh_login}/{repo_name}" alt="GitHub repo stars"'
+                    'valign="middle" />'
                 )
 
             md_str += "<br>\n   " + description.removesuffix("\n")
@@ -159,7 +169,6 @@ if __name__ == "__main__":
                 md_str += f" [[Code]({repo})]"
 
             section["markdown"] += md_str + "\n\n"
-
 
     with open(f"{ROOT_DIR}/readme.md", "r+", encoding="utf8") as file:
         readme = file.read()
