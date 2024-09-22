@@ -359,7 +359,7 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 
 ### <img src="assets/jax.svg" alt="JAX" height="20px"> &nbsp;JAX Packages
 
-1. 2024-07-05 - [GWKokab](https://github.com/gwkokab/gwkokab) by Meesum Qazalbash, Muhammad Zeeshan et al.
+1. 2024-07-05 - [GWKokab](https://github.com/gwkokab/gwkokab) by [Meesum Qazalbash](https://github.com/Qazalbash), [Muhammad Zeeshan](https://ccrg.rit.edu/user/muhammad.zeeshan) et al.
 &ensp;
 <img src="https://img.shields.io/github/stars/gwkokab/gwkokab" alt="GitHub repo stars" valign="middle" /><br>
    A JAX-based gravitational-wave population inference toolkit for parametric models [[Docs](https://gwkokab.readthedocs.io)]
@@ -515,7 +515,7 @@ Table 1 in the paper has a good comparison with traditional NFs.
 
 ## 🌐 Blog Posts <small>(5)</small>
 
-1. 2020-08-19 - [Chapter on flows from the book 'Deep Learning for Molecules and Materials'](https://dmol.pub/dl/flows) by Andrew White<br>
+1. 2020-08-19 - [Chapter on flows from the book 'Deep Learning for Molecules and Materials'](https://dmol.pub/dl/flows) by [Andrew White](https://thewhitelab.org)<br>
    A nice introduction starting with the change of variables formula (aka flow equation), going on to cover some common bijectors and finishing with a code example showing how to fit the double-moon distribution with TensorFlow Probability.
 
 1. 2018-10-21 - [Change of Variables for Normalizing Flows](https://nealjean.com/ml/change-of-variables) by Neal Jean<br>

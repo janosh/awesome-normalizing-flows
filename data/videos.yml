@@ -1,56 +1,64 @@
 - title: Sylvester Normalizing Flow for Variational Inference
   url: https://youtu.be/VeYyUcIDVHI
   date: 2018-10-04
-  authors: Rianne van den Berg
+  authors:
+    - name: Rianne van den Berg
   description: Introduces Sylvester normalizing flows which remove the single-unit bottleneck from planar flows for increased flexibility in the variational posterior.
 
 - title: Graph Normalizing Flows
   url: https://youtu.be/frMPP30QQgY
   date: 2019-09-24
   date_added: 2020-05-28
-  authors: Jenny Liu
+  authors:
+    - name: Jenny Liu
   description: Introduces a new graph generating model for use e.g. in drug discovery, where training on molecules that are known to bind/dissolve/etc. may help to generate novel, similarly effective molecules.
 
 - title: A primer on normalizing flows
   url: https://youtu.be/P4Ta-TZPVi0
   date: 2019-10-09
   date_added: 2020-05-28
-  authors: Laurent Dinh
-  authors_url: https://laurent-dinh.github.io
+  authors:
+    - name: Laurent Dinh
+      url: https://laurent-dinh.github.io
   description: The first author on both the NICE and RNVP papers and one of the first in this field gives an introductory talk at "Machine Learning for Physics and the Physics Learning of, 2019".
 
 - title: What are normalizing flows?
   url: https://youtu.be/i7LjDvsLWCg
   date: 2019-12-06
   date_added: 2020-05-28
-  authors: Ari Seff
-  authors_url: https://scholar.google.com/citations?user=IxBGctYAAAAJ
+  authors:
+    - name: Ari Seff
+      url: https://scholar.google.com/citations?user=IxBGctYAAAAJ
   description: A great 3blue1brown-style video explaining the basics of normalizing flows.
 
 - title: Flow Models
   url: https://youtu.be/JBb5sSC0JoY
   date: 2020-02-06
-  authors: Pieter Abbeel
-  authors_url: https://sites.google.com/view/berkeley-cs294-158-sp20/home
+  authors:
+    - name: Pieter Abbeel
+      url: https://sites.google.com/view/berkeley-cs294-158-sp20/home
   description: A really thorough explanation of normalizing flows. Also includes some sample code.
 
 - title: Introduction to Normalizing Flows
   url: https://youtu.be/u3vVyFVU_lI
   date: 2020-11-23
-  authors: Marcus Brubaker
-  authors_url: https://mbrubake.github.io
+  authors:
+    - name: Marcus Brubaker
+      url: https://mbrubake.github.io
   description: A great introduction to normalizing flows by one of the creators of [Stan](https://mc-stan.org) presented at ECCV 2020. The tutorial also provides an excellent review of various practical implementations.
 
 - title: Normalizing Flows - Motivations, The Big Idea & Essential Foundations
   url: https://youtu.be/IuXU2dBOJyw
   date: 2021-01-16
-  authors: Kapil Sachdeva
-  authors_url: https://github.com/ksachdeva
+  authors:
+    - name: Kapil Sachdeva
+      url: https://github.com/ksachdeva
   description: A comprehensive tutorial on flows explaining the challenges addressed by this class of algorithm. Provides intuition on how to address those challenges, and explains the underlying mathematics using a simple step by step approach.
 
 - title: Normalizing Flows
   url: https://youtu.be/7TOvhz93G9o
   date: 2020-12-07
-  authors: Marc Deisenroth
-  authors_url: https://mml-book.github.io/slopes-expectations.html
+  authors:
+    - name: Marc Deisenroth
+      url: https://mml-book.github.io/slopes-expectations.html
   description: 'Part of a NeurIPS 2020 tutorial series titled "There and Back Again: A Tale of Slopes and Expectations". Link to [full series](https://youtube.com/playlist?list=PL93aLKqThq4h7UpgeNhkOtEeCnX3DMseS).'
