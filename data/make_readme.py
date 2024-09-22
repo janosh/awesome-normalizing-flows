@@ -9,7 +9,7 @@ from typing import TypedDict
 
 import yaml
 
-ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
 class Author(TypedDict):
@@ -43,10 +43,38 @@ class Section(TypedDict):
     markdown: str
 
 
+titles = {
+    "publications": "## 📝 Publications",
+    "applications": "## 🛠️ Applications",
+    "videos": "## 📺 Videos",
+    "packages": "## 📦 Packages",
+    "repos": "## 🧑‍💻 Repos",
+    "posts": "## 🌐 Blog Posts",
+}
+
+
 def load_items(key: str) -> list[Item]:
     """Load list[Item] from YAML file."""
     with open(f"{ROOT_DIR}/data/{key}.yml", encoding="utf8") as file:
         return yaml.safe_load(file.read())
+
+
+sections: dict[str, Section] = {
+    key: {"title": titles[key], "items": load_items(key), "markdown": ""}
+    for key in titles  # markdown is set below
+}
+
+seen_titles: set[tuple[str, str]] = set()
+required_keys = {"title", "url", "date", "authors", "description"}
+optional_keys = {
+    "lang",
+    "repo",
+    "docs",
+    "date_added",
+    "last_updated",
+}
+valid_languages = {"PyTorch", "TensorFlow", "JAX", "Julia", "Other"}
+et_al_after = 2
 
 
 def validate_item(itm: Item, section_title: str) -> None:
@@ -90,32 +118,6 @@ def validate_item(itm: Item, section_title: str) -> None:
 
 
 if __name__ == "__main__":
-    titles = {
-        "publications": "## 📝 Publications",
-        "applications": "## 🛠️ Applications",
-        "videos": "## 📺 Videos",
-        "packages": "## 📦 Packages",
-        "repos": "## 🧑‍💻 Repos",
-        "posts": "## 🌐 Blog Posts",
-    }
-
-    sections: dict[str, Section] = {
-        key: {"title": titles[key], "items": load_items(key), "markdown": ""}
-        for key in titles  # markdown is set below
-    }
-
-    seen_titles: set[tuple[str, str]] = set()
-    required_keys = {"title", "url", "date", "authors", "description"}
-    optional_keys = {
-        "lang",
-        "repo",
-        "docs",
-        "date_added",
-        "last_updated",
-    }
-    valid_languages = {"PyTorch", "TensorFlow", "JAX", "Julia", "Other"}
-    et_al_after = 2
-
     for key, section in sections.items():
         # Keep lang_names inside sections loop to refill language
         # subsections for each new section. Used by both repos and Packages.
