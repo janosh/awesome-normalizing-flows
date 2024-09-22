@@ -1,26 +1,30 @@
 - title: Normalizing Flows Tutorial
   date: 2018-01-17
   url: https://blog.evjang.com/2018/01/nf1.html
-  authors: Eric Jang
+  authors:
+    - name: Eric Jang
   description: |
     [Part 1](https://blog.evjang.com/2018/01/nf1.html): Distributions and Determinants. [Part 2](https://blog.evjang.com/2018/01/nf2.html): Modern Normalizing Flows. Lots of great graphics.
 
 - title: Normalizing Flows
   date: 2018-04-03
   url: https://akosiorek.github.io/norm_flows
-  authors: Adam Kosiorek
+  authors:
+    - name: Adam Kosiorek
   description: Introduction to flows covering change of variables, planar flow, radial flow, RNVP and autoregressive flows like MAF, IAF and Parallel WaveNet.
 
 - title: Flow-based Deep Generative Models
   date: 2018-10-13
   url: https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models
-  authors: Lilian Weng
+  authors:
+    - name: Lilian Weng
   description: Covers change of variables, NICE, RNVP, MADE, Glow, MAF, IAF, WaveNet, PixelRNN.
 
 - title: Change of Variables for Normalizing Flows
   date: 2018-10-21
   url: https://nealjean.com/ml/change-of-variables
-  authors: Neal Jean
+  authors:
+    - name: Neal Jean
   description: Short and simple explanation of change of variables theorem i.t.o. probability mass conservation.
 
 - title: Chapter on flows from the book 'Deep Learning for Molecules and Materials'
@@ -30,5 +34,6 @@
   # NF chapter was added 2020-12-06 in commit
   # https://github.com/whitead/dmol-book/commit/e6d0b3295b73184423ab3a331feba3edbc103c0a
   # file url: https://github.com/whitead/dmol-book/blob/master/dl/flows.ipynb
-  authors: Andrew White
+  authors:
+    - name: Andrew White
   description: A nice introduction starting with the change of variables formula (aka flow equation), going on to cover some common bijectors and finishing with a code example showing how to fit the double-moon distribution with TensorFlow Probability.
