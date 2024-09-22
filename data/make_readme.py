@@ -12,16 +12,25 @@ import yaml
 ROOT_DIR = dirname(dirname(__file__))
 
 
+class Author(TypedDict):
+    """An author of a paper or application."""
+
+    name: str
+    url: str | None
+    affiliation: str | None
+    github: str | None
+    orcid: str | None
+
+
 class Item(TypedDict):
     """An item in a readme section like a paper or package."""
 
     title: str
-    authors: str
+    authors: list[Author]
     date: datetime.date
     lang: str
     url: str
     description: str
-    authors_url: str | None
     repo: str | None
     date_added: datetime.date | None
 
@@ -98,7 +107,6 @@ if __name__ == "__main__":
     seen_titles: set[tuple[str, str]] = set()
     required_keys = {"title", "url", "date", "authors", "description"}
     optional_keys = {
-        "authors_url",
         "lang",
         "repo",
         "docs",
@@ -141,25 +149,29 @@ if __name__ == "__main__":
             title = itm["title"]
             url = itm["url"]
 
-            author_list = authors.split(", ")
             if key in ("publications", "applications"):
                 # only show people's last name for papers
-                author_list = [author.split(" ")[-1] for author in author_list]
-            authors = ", ".join(author_list[:et_al_after])
-            if len(author_list) > et_al_after:
-                authors += " et al."
+                authors = [
+                    auth | {"name": auth["name"].split(" ")[-1]} for auth in authors
+                ]
 
-            if authors_url := itm.get("authors_url"):
-                authors = f"[{authors}]({authors_url})"
+            authors_str = ", ".join(
+                f"[{auth['name']}]({auth_url})"
+                if (auth_url := auth.get("url"))
+                else auth["name"]
+                for auth in authors[:et_al_after]
+            )
+            if len(authors) > et_al_after:
+                authors_str += " et al."
 
-            md_str = f"1. {date} - [{title}]({url}) by {authors}"
+            md_str = f"1. {date} - [{title}]({url}) by {authors_str}"
 
             if key in ("packages", "repos") and url.startswith("https://github.com"):
                 gh_login, repo_name = url.split("/")[3:5]
                 md_str += (
                     f'\n&ensp;\n<img src="https://img.shields.io/github/stars/'
                     f'{gh_login}/{repo_name}" alt="GitHub repo stars"'
-                    'valign="middle" />'
+                    ' valign="middle" />'
                 )
 
             md_str += "<br>\n   " + description.removesuffix("\n")
