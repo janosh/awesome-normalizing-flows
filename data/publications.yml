@@ -399,7 +399,7 @@
   url: https://arxiv.org/abs/1901.11137
   date: 2019-01-30
   authors:
-    - name: Emiel Hoogeboom,
+    - name: Emiel Hoogeboom
     - name: Rianne van den Berg
     - name: Max Welling
   description: Introduces autoregressive-like convolutional layers that operate on the channel **and** spatial axes. This improved upon the performance of image datasets compared to the standard 1x1 Convolutions. The trade-off is that the inverse operator is quite expensive however the authors provide a fast C++ implementation.
