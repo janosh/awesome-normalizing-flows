@@ -3,13 +3,13 @@
 """Script to generate readme.md from data/*.yml files."""
 
 import datetime
+import os
 import re
-from os.path import dirname
 from typing import TypedDict
 
 import yaml
 
-ROOT_DIR = dirname(dirname(__file__))
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 class Author(TypedDict):
