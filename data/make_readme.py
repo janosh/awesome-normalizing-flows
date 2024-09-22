@@ -66,13 +66,7 @@ sections: dict[str, Section] = {
 
 seen_titles: set[tuple[str, str]] = set()
 required_keys = {"title", "url", "date", "authors", "description"}
-optional_keys = {
-    "lang",
-    "repo",
-    "docs",
-    "date_added",
-    "last_updated",
-}
+optional_keys = {"lang", "repo", "docs", "date_added", "last_updated"}
 valid_languages = {"PyTorch", "TensorFlow", "JAX", "Julia", "Other"}
 et_al_after = 2
 
@@ -157,12 +151,18 @@ if __name__ == "__main__":
                     auth | {"name": auth["name"].split(" ")[-1]} for auth in authors
                 ]
 
-            authors_str = ", ".join(
-                f"[{auth['name']}]({auth_url})"
-                if (auth_url := auth.get("url"))
-                else auth["name"]
-                for auth in authors[:et_al_after]
-            )
+            def auth_str(auth: Author) -> str:
+                """Return a markdown string for an author."""
+                auth_str = auth["name"]
+                if url := auth.get("url"):
+                    if not url.startswith("https://"):
+                        raise ValueError(
+                            f"Invalid author {url=}, must start with https://"
+                        )
+                    auth_str = f"[{auth_str}]({url})"
+                return auth_str
+
+            authors_str = ", ".join(map(auth_str, authors[:et_al_after]))
             if len(authors) > et_al_after:
                 authors_str += " et al."
 

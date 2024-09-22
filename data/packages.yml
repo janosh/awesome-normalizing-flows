@@ -55,8 +55,9 @@
   date: 2021-04-12
   url: https://github.com/deepmind/distrax
   authors:
-  - name: DeepMind
-    url: https://deepmind.com
+    - name: DeepMind
+      url: https://deepmind.com
+      github: https://github.com/google-deepmind
   lang: JAX
   description: Distrax is a lightweight library of probability distributions and bijectors. It acts as a JAX-native re-implementation of a subset of TensorFlow Probability (TFP), with some new features and emphasis on extensibility.
 

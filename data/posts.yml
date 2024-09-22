@@ -36,4 +36,6 @@
   # file url: https://github.com/whitead/dmol-book/blob/master/dl/flows.ipynb
   authors:
     - name: Andrew White
+      url: https://thewhitelab.org
+      github: https://github.com/whitead
   description: A nice introduction starting with the change of variables formula (aka flow equation), going on to cover some common bijectors and finishing with a code example showing how to fit the double-moon distribution with TensorFlow Probability.

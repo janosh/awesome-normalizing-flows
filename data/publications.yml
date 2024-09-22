@@ -194,13 +194,13 @@
   url: https://arxiv.org/abs/1907.08982
   date: 2019-07-21
   authors:
-  - name: Jonas Rothfuss
-  - name: Fabio Ferreira
-  - name: Simon Boehm
-  - name: Simon Walther
-  - name: Maxim Ulrich
-  - name: Tamim Asfour
-  - name: Andreas Krause
+    - name: Jonas Rothfuss
+    - name: Fabio Ferreira
+    - name: Simon Boehm
+    - name: Simon Walther
+    - name: Maxim Ulrich
+    - name: Tamim Asfour
+    - name: Andreas Krause
   description: Normalizing flows for conditional density estimation. This paper proposes noise regularization to reduce overfitting. [[Blog](https://siboehm.com/articles/19/normalizing-flow-network)]
 
 - title: "Normalizing Flows: An Introduction and Review of Current Methods"
@@ -337,9 +337,9 @@
   url: https://arxiv.org/abs/2006.08545
   date: 2020-06-15
   authors:
-  - name: Polina Kirichenko
-  - name: Pavel Izmailov
-  - name: Andrew Gordon Wilson
+    - name: Polina Kirichenko
+    - name: Pavel Izmailov
+    - name: Andrew Gordon Wilson
   description: This study how traditional normalizing flow models can suffer from out-of-distribution data. They offer a solution to combat this issue by modifying the coupling layers. [[Tweet](https://twitter.com/polkirichenko/status/1272715634544119809)]
   repo: https://github.com/PolinaKirichenko/flows_ood
 

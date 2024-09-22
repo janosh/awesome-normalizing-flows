@@ -2,7 +2,7 @@
   url: https://youtu.be/VeYyUcIDVHI
   date: 2018-10-04
   authors:
-   - name: Rianne van den Berg
+    - name: Rianne van den Berg
   description: Introduces Sylvester normalizing flows which remove the single-unit bottleneck from planar flows for increased flexibility in the variational posterior.
 
 - title: Graph Normalizing Flows

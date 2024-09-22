@@ -515,7 +515,7 @@ Table 1 in the paper has a good comparison with traditional NFs.
 
 ## 🌐 Blog Posts <small>(5)</small>
 
-1. 2020-08-19 - [Chapter on flows from the book 'Deep Learning for Molecules and Materials'](https://dmol.pub/dl/flows) by Andrew White<br>
+1. 2020-08-19 - [Chapter on flows from the book 'Deep Learning for Molecules and Materials'](https://dmol.pub/dl/flows) by [Andrew White](https://thewhitelab.org)<br>
    A nice introduction starting with the change of variables formula (aka flow equation), going on to cover some common bijectors and finishing with a code example showing how to fit the double-moon distribution with TensorFlow Probability.
 
 1. 2018-10-21 - [Change of Variables for Normalizing Flows](https://nealjean.com/ml/change-of-variables) by Neal Jean<br>

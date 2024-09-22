@@ -35,7 +35,7 @@
     - name: Srinivas Vasudevan
   description: Uses normalizing flows in conjunction with Monte Carlo estimation to have more expressive distributions and better posterior estimation.
 
-- title: 'SRFlow: Learning the Super-Resolution Space with Normalizing Flow'
+- title: "SRFlow: Learning the Super-Resolution Space with Normalizing Flow"
   url: https://arxiv.org/abs/2006.14200
   date: 2020-06-25
   authors:
