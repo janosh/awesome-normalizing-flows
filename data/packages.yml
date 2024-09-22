@@ -143,8 +143,11 @@
   url: https://github.com/gwkokab/gwkokab
   authors:
     - name: Meesum Qazalbash
+      url: https://github.com/Qazalbash
     - name: Muhammad Zeeshan
+      url: https://ccrg.rit.edu/user/muhammad.zeeshan
     - name: Richard O'Shaughnessy
+      url: https://ccrgpages.rit.edu/~oshaughn/Richard_OShaughnessy/Home.html
   lang: JAX
   docs: https://gwkokab.readthedocs.io
   description: A JAX-based gravitational-wave population inference toolkit for parametric models
