@@ -15,7 +15,7 @@
   description: A suite of most of the SOTA methods using PyTorch. From an ML group in Edinburgh. They created the current SOTA spline flows. Almost as complete as you'll find from a single repo.
 
 - title: flowtorch
-    date: 2020-12-07
+   date: 2020-12-07
   url: https://github.com/facebookincubator/flowtorch
   authors: Facebook / Meta
   authors_url: https://opensource.fb.com
