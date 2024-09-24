@@ -49,6 +49,11 @@ repos:
         stages: [commit, commit-msg]
         args: [--ignore-words-list, gool, --check-filenames]
 
+  - repo: https://github.com/google/yamlfmt
+    rev: v0.10.0
+    hooks:
+      - id: yamlfmt
+
   - repo: local
     hooks:
       - id: no-bracket-links
