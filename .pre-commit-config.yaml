@@ -7,7 +7,7 @@ default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.6.6
+    rev: v0.6.7
     hooks:
       - id: ruff
         args:
@@ -34,13 +34,26 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.41.0
+    rev: v0.42.0
     hooks:
       - id: markdownlint
         # MD013: line length
         # MD033: no inline HTML
         # MD041: first line in a file should be a top-level heading
         args: [--disable, MD013, MD033, MD041, "--"]
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.3.0
+    hooks:
+      - id: codespell
+        stages: [commit, commit-msg]
+        args: [--ignore-words-list, gool, --check-filenames]
+
+  - repo: https://github.com/google/yamlfmt
+    rev: v0.13.0
+    hooks:
+      - id: yamlfmt
+        args: [-formatter, retain_line_breaks=true]
 
   - repo: local
     hooks:
@@ -63,10 +76,3 @@ repos:
         language: pygrep
         types: [text]
         exclude_types: [python]
-
-  - repo: https://github.com/codespell-project/codespell
-    rev: v2.3.0
-    hooks:
-      - id: codespell
-        stages: [commit, commit-msg]
-        args: [--ignore-words-list, gool, --check-filenames]
