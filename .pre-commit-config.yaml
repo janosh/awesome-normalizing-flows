@@ -1,13 +1,13 @@
 ci:
   autoupdate_schedule: quarterly
 
-default_stages: [commit]
+default_stages: [Nonepre-commitNone]
 
 default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.6.7
+    rev: v0.6.9
     hooks:
       - id: ruff
         args:
@@ -21,7 +21,7 @@ repos:
       - id: ruff-format
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       - id: check-case-conflict
       - id: check-symlinks
@@ -46,7 +46,7 @@ repos:
     rev: v2.3.0
     hooks:
       - id: codespell
-        stages: [commit, commit-msg]
+        stages: [Nonepre-commitNone, commit-msg]
         args: [--ignore-words-list, gool, --check-filenames]
 
   - repo: https://github.com/google/yamlfmt
