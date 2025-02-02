@@ -1,13 +1,8 @@
-ci:
-  autoupdate_schedule: quarterly
-
-default_stages: [commit]
-
 default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.6.7
+    rev: v0.15.7
     hooks:
       - id: ruff
         args:
@@ -20,21 +15,20 @@ repos:
           - py312
       - id: ruff-format
 
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+  - repo: builtin
     hooks:
+      - id: check-added-large-files
       - id: check-case-conflict
       - id: check-symlinks
       - id: check-yaml
       - id: destroyed-symlinks
       - id: end-of-file-fixer
         exclude_types: [svg]
-      - id: forbid-new-submodules
       - id: mixed-line-ending
       - id: trailing-whitespace
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.42.0
+    rev: v0.48.0
     hooks:
       - id: markdownlint
         # MD013: line length
@@ -43,14 +37,14 @@ repos:
         args: [--disable, MD013, MD033, MD041, "--"]
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.3.0
+    rev: v2.4.2
     hooks:
       - id: codespell
-        stages: [commit, commit-msg]
+        stages: [pre-commit, commit-msg]
         args: [--ignore-words-list, gool, --check-filenames]
 
   - repo: https://github.com/google/yamlfmt
-    rev: v0.13.0
+    rev: v0.21.0
     hooks:
       - id: yamlfmt
         args: [-formatter, retain_line_breaks=true]

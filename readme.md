@@ -13,14 +13,14 @@
 
 A list of awesome resources for understanding and applying normalizing flows (NF): a relatively simple yet powerful new tool in statistics for constructing expressive probability distributions from simple base distributions using a chain (flow) of trainable smooth bijective transformations (diffeomorphisms).
 
-<a href="https://github.com/janosh/tikz/tree/main/assets/normalizing-flow">
+<a href="https://github.com/janosh/diagrams/tree/main/assets/normalizing-flow">
    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/janosh/tikz/main/assets/normalizing-flow/normalizing-flow-white.svg">
-      <img alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer" src="https://raw.githubusercontent.com/janosh/tikz/main/assets/normalizing-flow/normalizing-flow.svg">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/janosh/diagrams/main/assets/normalizing-flow/normalizing-flow-white.svg">
+      <img alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer" src="https://raw.githubusercontent.com/janosh/diagrams/main/assets/normalizing-flow/normalizing-flow.svg">
    </picture>
 </a>
 
-<sup>_Figure inspired by [Lilian Weng](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models). Created in TikZ. [View source](https://github.com/janosh/tikz/tree/main/assets/normalizing-flow)._</sup>
+<sup>_Figure inspired by [Lilian Weng](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models). Created in [CeTZ](https://cetz-package.github.io). [View source](https://github.com/janosh/diagrams/blob/main/assets/normalizing-flow/normalizing-flow.typ)._</sup>
 
 <br>
 
@@ -30,7 +30,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. [📝 Publications (60)](#-publications-60)
 1. [🛠️ Applications (8)](#️-applications-8)
 1. [📺 Videos (8)](#-videos-8)
-1. [📦 Packages (15)](#-packages-15)
+1. [📦 Packages (14)](#-packages-14)
    1. [PyTorch Packages](#-pytorch-packages)
    1. [TensorFlow Packages](#-tensorflow-packages)
    1. [JAX Packages](#-jax-packages)
@@ -129,7 +129,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
    Introduces SNF, an arbitrary sequence of deterministic invertible functions (the flow) and stochastic processes such as MCMC or Langevin Dynamics. The aim is to increase expressiveness of the chosen deterministic invertible function, while the trainable flow improves sampling efficiency over pure MCMC [[Tweet](https://twitter.com/FrankNoeBerlin/status/1229734899034329103)).]
 
 1. 2020-01-17 - [Training Normalizing Flows with the Information Bottleneck for Competitive Generative Classification](https://arxiv.org/abs/2001.06448) by Ardizzone, Mackowiak et al.<br>
-   They introduce a class of conditional normalizing flows with an information bottleneck objective. [[Code](https://github.com/VLL-HD/exact_information_bottleneck)]
+   They introduce a class of conditional normalizing flows with an information bottleneck objective. [[Code](https://github.com/vislearn/IB-INN)]
 
 1. 2020-01-15 - [Invertible Generative Modeling using Linear Rational Splines](https://arxiv.org/abs/2001.05168) by Dolatabadi, Erfani et al.<br>
    A successor to the Neural spline flows which features an easy-to-compute inverse.
@@ -183,7 +183,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
    Introduces autoregressive-like convolutional layers that operate on the channel **and** spatial axes. This improved upon the performance of image datasets compared to the standard 1x1 Convolutions. The trade-off is that the inverse operator is quite expensive however the authors provide a fast C++ implementation. [[Code](https://github.com/ehoogeboom/emerging)]
 
 1. 2018-11-06 - [FloWaveNet : A Generative Flow for Raw Audio](https://arxiv.org/abs/1811.02155) by Kim, Lee et al.<br>
-   A flow-based generative model for raw audo synthesis. [[Code](https://github.com/ksw0306/FloWaveNet)]
+   A flow-based generative model for raw audio synthesis. [[Code](https://github.com/ksw0306/FloWaveNet)]
 
 1. 2018-10-02 - [FFJORD: Free-form Continuous Dynamics for Scalable Reversible Generative Models](https://arxiv.org/abs/1810.01367) by Grathwohl, Chen et al.<br>
    Uses Neural ODEs as a solver to produce continuous-time normalizing flows (CNF).
@@ -206,10 +206,10 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. 2017-05-19 - [Masked Autoregressive Flow for Density Estimation](https://arxiv.org/abs/1705.07057) by Papamakarios, Pavlakou et al.<br>
    Introduces MAF, a stack of autoregressive models forming a normalizing flow suitable for fast density estimation but slow at sampling. Analogous to Inverse Autoregressive Flow (IAF) except the forward and inverse passes are exchanged. Generalization of RNVP.
 
-   <a href="https://github.com/janosh/tikz/tree/main/assets/maf">
+   <a href="https://github.com/janosh/diagrams/tree/main/assets/masked-autoregressive-flow">
      <picture>
-       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf-white.svg">
-       <img alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer" src="https://raw.githubusercontent.com/janosh/tikz/main/assets/maf/maf.svg">
+       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/janosh/diagrams/main/assets/masked-autoregressive-flow/masked-autoregressive-flow-white.svg">
+       <img alt="Diagram of the slow (sequential) forward pass of a Masked Autoregressive Flow (MAF) layer" src="https://raw.githubusercontent.com/janosh/diagrams/main/assets/masked-autoregressive-flow/masked-autoregressive-flow.svg">
      </picture>
    </a>
 
@@ -222,10 +222,10 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 1. 2016-05-27 - [Density estimation using Real NVP](https://arxiv.org/abs/1605.08803) by Dinh, Sohl-Dickstein et al.<br>
    They introduce the affine coupling layer (RNVP), a major improvement in terms of flexibility over the additive coupling layer (NICE) with unit Jacobian while keeping a single-pass forward and inverse transformation for fast sampling and density estimation, respectively.
 
-   <a href="https://github.com/janosh/tikz/tree/main/assets/rnvp">
+   <a href="https://github.com/janosh/diagrams/tree/main/assets/rnvp-affine-coupling-layer">
      <picture>
-       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp-white.svg">
-       <img alt="Diagram of real-valued non-volume preserving (RNVP) coupling layer" src="https://raw.githubusercontent.com/janosh/tikz/main/assets/rnvp/rnvp.svg">
+       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/janosh/diagrams/main/assets/rnvp-affine-coupling-layer/rnvp-affine-coupling-layer-white.svg">
+       <img alt="Diagram of real-valued non-volume preserving (RNVP) coupling layer" src="https://raw.githubusercontent.com/janosh/diagrams/main/assets/rnvp-affine-coupling-layer/rnvp-affine-coupling-layer.svg">
      </picture>
    </a>
 
@@ -237,10 +237,10 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
    A popular and efficient way to make flows autoregressive is to construct them from MADE nets.
 
-   <a href="https://github.com/janosh/tikz/tree/main/assets/made">
+   <a href="https://github.com/janosh/diagrams/tree/main/assets/made">
      <picture>
-       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made-white.svg">
-       <img alt="Masked Autoencoder for Distribution Estimation" src="https://raw.githubusercontent.com/janosh/tikz/main/assets/made/made.svg">
+       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/janosh/diagrams/main/assets/made/made-white.svg">
+       <img alt="Masked Autoencoder for Distribution Estimation" src="https://raw.githubusercontent.com/janosh/diagrams/main/assets/made/made.svg">
      </picture>
    </a>
 
@@ -308,7 +308,7 @@ A list of awesome resources for understanding and applying normalizing flows (NF
 
 <br>
 
-## 📦 Packages <small>(15)</small>
+## 📦 Packages <small>(14)</small>
 
 <br>
 
@@ -341,9 +341,9 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 <img src="https://img.shields.io/github/stars/VincentStimper/normalizing-flows" alt="GitHub repo stars" valign="middle" /><br>
    The library provides most of the common normalizing flow architectures. It also includes stochastic layers, flows on tori and spheres, and other tools that are particularly useful for applications to the physical sciences.
 
-1. 2018-09-07 - [FrEIA](https://github.com/VLL-HD/FrEIA) by [VLL Heidelberg](https://hci.iwr.uni-heidelberg.de/vislearn)
+1. 2018-09-07 - [FrEIA](https://github.com/vislearn/FrEIA) by [VLL Heidelberg](https://github.com/vislearn)
 &ensp;
-<img src="https://img.shields.io/github/stars/VLL-HD/FrEIA" alt="GitHub repo stars" valign="middle" /><br>
+<img src="https://img.shields.io/github/stars/vislearn/FrEIA" alt="GitHub repo stars" valign="middle" /><br>
    The Framework for Easily Invertible Architectures (FrEIA) is based on RNVP flows. Easy to setup, it allows to define complex Invertible Neural Networks (INNs) from simple invertible building blocks.
 
 <br>
@@ -367,7 +367,7 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 1. 2022-06-17 - [flowMC](https://github.com/kazewong/flowMC) by [Kaze Wong](https://www.kaze-wong.com/)
 &ensp;
 <img src="https://img.shields.io/github/stars/kazewong/flowMC" alt="GitHub repo stars" valign="middle" /><br>
-   Normalizing-flow enhanced sampling package for probabilistic inference [[Docs](https://flowmc.readthedocs.io/en/main/)]
+   Normalizing-flow enhanced sampling package for probabilistic inference [[Docs](https://pypi.org/project/flowMC)]
 
 1. 2021-06-17 - [pzflow](https://github.com/jfcrenshaw/pzflow) by [John Franklin Crenshaw](https://jfcrenshaw.github.io)
 &ensp;
@@ -378,11 +378,6 @@ Zuko is used in [LAMPE](https://github.com/francois-rozet/lampe) to enable Likel
 &ensp;
 <img src="https://img.shields.io/github/stars/deepmind/distrax" alt="GitHub repo stars" valign="middle" /><br>
    Distrax is a lightweight library of probability distributions and bijectors. It acts as a JAX-native re-implementation of a subset of TensorFlow Probability (TFP), with some new features and emphasis on extensibility.
-
-1. 2020-03-23 - [jax-flows](https://github.com/ChrisWaites/jax-flows) by [Chris Waites](https://chriswaites.com)
-&ensp;
-<img src="https://img.shields.io/github/stars/ChrisWaites/jax-flows" alt="GitHub repo stars" valign="middle" /><br>
-   Another library that has normalizing flows using JAX as the backend. Has some of the SOTA methods.
 
 1. 2020-03-09 - [NuX](https://github.com/Information-Fusion-Lab-Umass/NuX) by Information Fusion Labs (UMass)
 &ensp;

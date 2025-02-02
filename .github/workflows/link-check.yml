@@ -7,15 +7,13 @@ on:
     branches: [main]
 
 jobs:
-  markdown-link-check:
+  link-check:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
-      - name: Run markdown link check
-        uses: gaurav-nelson/github-action-markdown-link-check@v1
-        # docs at https://git.io/JBaKu
+      - name: Discover broken links
+        uses: lycheeverse/lychee-action@v2
         with:
-          config-file: .github/workflows/link-check-config.json
-          max-depth: 1 # only check readme.md
+          args: --accept 100..=103,200..=299,403,429,500 -- ./**/*.{md,py,ipynb}
