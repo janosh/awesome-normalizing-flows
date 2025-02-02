@@ -1,40 +1,32 @@
-ci:
-  autoupdate_schedule: quarterly
-
-default_stages: [commit]
-
 default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.6.7
+    rev: v0.15.17
     hooks:
       - id: ruff
         args:
           - --fix
-          - --select
-          - ALL
-          - --ignore
-          - INP,C408,PTH,TRY003,EM102,COM812
-          - --target-version
-          - py312
+          - --select=ALL
+          - --ignore=INP,C408,PTH,TRY003,EM102,COM812
+          - --target-version=py314
       - id: ruff-format
 
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+  - repo: builtin
     hooks:
+      - id: check-added-large-files
       - id: check-case-conflict
+      - id: check-json
+      - id: check-merge-conflict
       - id: check-symlinks
       - id: check-yaml
       - id: destroyed-symlinks
       - id: end-of-file-fixer
-        exclude_types: [svg]
-      - id: forbid-new-submodules
       - id: mixed-line-ending
       - id: trailing-whitespace
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.42.0
+    rev: v0.48.0
     hooks:
       - id: markdownlint
         # MD013: line length
@@ -43,14 +35,14 @@ repos:
         args: [--disable, MD013, MD033, MD041, "--"]
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.3.0
+    rev: v2.4.2
     hooks:
       - id: codespell
-        stages: [commit, commit-msg]
+        stages: [pre-commit, commit-msg]
         args: [--ignore-words-list, gool, --check-filenames]
 
   - repo: https://github.com/google/yamlfmt
-    rev: v0.13.0
+    rev: v0.21.0
     hooks:
       - id: yamlfmt
         args: [-formatter, retain_line_breaks=true]
@@ -67,12 +59,13 @@ repos:
         name: URLs must use HTTPS
         entry: "http:"
         language: pygrep
-        types_or: [markdown, yaml]
-        exclude: .pre-commit-config.yaml
+        exclude_types: [svg]
+        exclude: ^\.pre-commit-config\.yaml$
 
-      - id: no-repeated-whitespace
-        name: No repeated spaces
-        entry: '\S+\s{2,}'
-        language: pygrep
-        types: [text]
-        exclude_types: [python]
+      - id: make-readme
+        name: Regenerate readme.md from data/*.yml
+        entry: python data/make_readme.py
+        language: python
+        additional_dependencies: [pyyaml]
+        files: ^(data/.*\.yml|readme\.md)$
+        pass_filenames: false
