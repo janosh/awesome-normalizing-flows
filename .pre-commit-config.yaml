@@ -7,7 +7,7 @@ default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.9.4
+    rev: v0.11.4
     hooks:
       - id: ruff
         args:
@@ -50,7 +50,7 @@ repos:
         args: [--ignore-words-list, gool, --check-filenames]
 
   - repo: https://github.com/google/yamlfmt
-    rev: v0.15.0
+    rev: v0.16.0
     hooks:
       - id: yamlfmt
         args: [-formatter, retain_line_breaks=true]
